@@ -186,12 +186,16 @@ Keine Recap-Seite und kein `ahead`: Jede Voraussetzung liegt im Strang und kommt
 - Den Link holen: `node scripts/challenges.ts --links`. Im deutschen Text `https://lernapps.net/coding/app/?c=…`,
   im englischen `https://lernapps.net/coding/en/app/?c=…`. Nach jeder Änderung an einer Challenge die Links in der
   Seite ersetzen.
-- Die Unit-Tests (`test/challenges.test.ts`, auch `node scripts/challenges.ts`) prüft: Prüfskript v1 mit Musterlösung, Format und Version 1, jeder
+- Die Unit-Tests (`test/challenges.test.ts`, auch `node scripts/challenges.ts`) prüft: Prüfskript v1 mit Musterlösung (Vorhersage: ohne), Format und Version 1, jeder
   Werkstatt-Link in `src/**/*.yaml` gehört zu einer Challenge und zur Sprache des Textes, jede Challenge ist auf
   ihrer `back.url`-Seite in beiden Sprachen verlinkt.
 - Zu jeder Challenge mindestens eine typische falsche Lösung als `challenges/<id>.falsch-<n>.json` (links/rechts
   verwechselt, Drehungen vergessen, eins zu weit, Schleife statt Sequenz …). Der Test verlangt, dass jede durchfällt;
   sonst prüft die Challenge zu wenig (dann Blocklimit, `benutzt-block:…` oder weitere Testfälle ergänzen).
+- Vorhersage-Aufgaben (Prüfung `"checks": ["vorhersage"]`, seit coding#4): festes Startprogramm (`"locked": true`),
+  Lernende sagen den Weg Feld für Feld voraus. Keine Musterlösung, keine falschen Lösungen; das Startprogramm endet
+  am besten auf dem Ziel. Gebaut: `kiko-vorhersage-sequenz` (sequenz), `kiko-vorhersage-schleife` (zaehlschleife),
+  `kiko-vorhersage-solange` (bedingte-wiederholung). Auf der Seite als „Erst lesen, dann voraussagen“.
 - Höchstens 8 Blöcke in der Musterlösung, solange die Arbeitsfläche der Werkstatt klein ist (Orchestrator,
   Checkpoint Musterseite). `back.label` „Zurück zur Seite „<Titel>““ / “Back to the page “<title>””.
 - Die Challenge-Seite zeigt das Spielfeld der Challenge als Bild (`kiko-challenge-<name>.svg`) und erklärt einmal

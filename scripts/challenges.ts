@@ -9,6 +9,7 @@
 //    im deutschen Text /coding/app/?c=…, im englischen /coding/en/app/?c=….
 // 4. Jede Challenge ist auf der Seite verlinkt, auf die ihr back.url zeigt, in beiden Sprachen.
 // 5. Jede falsche Lösung challenges/<id>.falsch-<n>.json fällt durch (mindestens eine je Challenge).
+// 6. Eine Vorhersage-Aufgabe (Prüfung „vorhersage“) hat keine Musterlösung; ihr festes Startprogramm muss durchlaufen.
 //
 // Aufruf: node scripts/challenges.ts          prüft alles (auch test/challenges.test.ts)
 //         node scripts/challenges.ts --links  gibt die Links je Challenge aus (zum Einfügen in eine Seite)
@@ -51,7 +52,11 @@ export function challenges(): { list: Challenge[]; problems: string[] } {
       format?: unknown;
       world?: { version?: unknown };
       back?: { url?: unknown };
+      checks?: unknown;
     };
+    // Eine Vorhersage-Aufgabe (Prüfung „vorhersage“) hat keine Musterlösung: Lernende lesen das feste Startprogramm
+    // und sagen den Weg voraus. Das Prüfskript prüft, dass das Startprogramm durchläuft.
+    const prediction = Array.isArray(c.checks) && c.checks.includes("vorhersage");
     if (c.id !== id) fail(where, `"id" ist „${String(c.id)}“, der Dateiname sagt „${id}“.`);
     if (c.format !== 1) fail(where, `"format" ist ${String(c.format)}, das Prüfskript v1 kennt Format 1.`);
     if (c.world?.version !== 1) fail(where, `Die Welt hat Version ${String(c.world?.version)}, erwartet 1.`);
@@ -70,7 +75,8 @@ export function challenges(): { list: Challenge[]; problems: string[] } {
     }
     let out: string;
     try {
-      out = execFileSync(process.execPath, [CHECK, join(DIR, name), join(DIR, `${id}.loesung.json`)], {
+      const args = prediction ? [CHECK, join(DIR, name)] : [CHECK, join(DIR, name), join(DIR, `${id}.loesung.json`)];
+      out = execFileSync(process.execPath, args, {
         encoding: "utf8",
         stdio: ["ignore", "pipe", "pipe"],
       });
@@ -88,7 +94,9 @@ export function challenges(): { list: Challenge[]; problems: string[] } {
     }
     // Falsche Lösungen (challenges/<id>.falsch-<n>.json): Jede muss das Prüfskript ablehnen. Mindestens eine.
     const wrong = all.filter((n) => n.startsWith(`${id}.falsch-`) && n.endsWith(".json")).sort();
-    if (wrong.length === 0)
+    if (prediction && (wrong.length > 0 || all.includes(`${id}.loesung.json`)))
+      fail(where, "Eine Vorhersage-Aufgabe hat keine Musterlösung und keine falschen Lösungen.");
+    if (!prediction && wrong.length === 0)
       fail(where, `Es fehlt eine falsche Lösung challenges/${id}.falsch-1.json, die durchfallen muss.`);
     for (const w of wrong) {
       try {

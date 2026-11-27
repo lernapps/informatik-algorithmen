@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "id": "kiko-vorhersage-schleife",
+  "title": {
+    "de": "Wohin führt die Schleife?",
+    "en": "Where does the loop lead?"
+  },
+  "task": {
+    "de": "Lies das Programm mit der Schleife, ohne es zu starten. Sag voraus, welchen Weg Kiko nimmt: Feld für Feld. Danach läuft das Programm zum Vergleich.",
+    "en": "Read the program with the loop without running it. Predict which way Kiko goes, square by square. Then the program runs so you can compare."
+  },
+  "world": {
+    "type": "labyrinth",
+    "version": 1,
+    "config": {
+      "map": ["#######", "#.....#", "#...Z.#", "#.....#", "#.....#", "#S....#", "#######"],
+      "facing": "east"
+    }
+  },
+  "toolbox": ["vorwaerts", "links", "rechts", "wiederhole"],
+  "start": {
+    "main": [
+      {
+        "s": "repeat",
+        "times": {
+          "e": "num",
+          "value": 3
+        },
+        "body": [
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": [],
+            "locked": true
+          },
+          {
+            "s": "cmd",
+            "name": "links",
+            "args": [],
+            "locked": true
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": [],
+            "locked": true
+          },
+          {
+            "s": "cmd",
+            "name": "rechts",
+            "args": [],
+            "locked": true
+          }
+        ],
+        "locked": true
+      }
+    ]
+  },
+  "limits": {},
+  "tests": [],
+  "checks": ["vorhersage"],
+  "hints": [
+    {
+      "de": "Ein Durchlauf: vorwärts, links drehen, vorwärts, rechts drehen. Wo steht Kiko danach?",
+      "en": "One pass: forward, turn left, forward, turn right. Where is Kiko after that?"
+    },
+    {
+      "de": "Die Schleife läuft 3-mal. Jeder Durchlauf ist eine Stufe.",
+      "en": "The loop runs 3 times. Each pass is one step of a staircase."
+    }
+  ],
+  "view": "bloecke",
+  "back": {
+    "url": {
+      "de": "/informatik-algorithmen/bloecke/zaehlschleife/",
+      "en": "/informatik-algorithmen/en/bloecke/zaehlschleife/"
+    },
+    "label": {
+      "de": "Zurück zur Seite „Zählschleife“",
+      "en": "Back to the page “Count-controlled loop”"
+    }
+  }
+}
