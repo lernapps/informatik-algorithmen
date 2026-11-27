@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357 176" width="357" height="176">
+<title>Toms drei eigene Karten</title>
+<desc>Kiko und die Welt nach der Programmierwerkstatt lernapps.net/coding, © 2026 Oliver Jägle, CC BY 4.0. Erzeugt mit scripts/kiko-bilder.ts.</desc>
+<style>.t{font:14px sans-serif;fill:#111111}.n{font:bold 14px sans-serif;fill:#1f2a44;text-anchor:middle}</style>
+<rect width="357" height="176" fill="#ffffff"/><text x="20" y="32" class="n">1</text><rect x="36" y="8" width="312.56" height="36" rx="6" fill="#ffffff" stroke="#2f5d8a" stroke-width="3"/><path d="M 46 20 L 56 26 L 46 32 Z" fill="#2f5d8a"/><text x="64" y="31" class="t">gehe ein Stück</text><text x="20" y="76" class="n">2</text><rect x="36" y="52" width="312.56" height="36" rx="6" fill="#ffffff" stroke="#2f5d8a" stroke-width="3"/><path d="M 46 64 L 56 70 L 46 76 Z" fill="#2f5d8a"/><text x="64" y="75" class="t">spring über die Wand</text><text x="20" y="120" class="n">3</text><rect x="36" y="96" width="312.56" height="36" rx="6" fill="#ffffff" stroke="#2f5d8a" stroke-width="3"/><path d="M 46 108 L 56 114 L 46 120 Z" fill="#2f5d8a"/><text x="64" y="119" class="t">drehe dich immer wieder nach links</text>
+</svg>

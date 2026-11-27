@@ -33,7 +33,14 @@ type Stmt =
   | { s: "if"; cond: Expr; then: Stmt[]; else?: Stmt[] };
 type Program = { main: Stmt[] };
 type Feld = { title: string; map: string[]; facing: Facing; marks?: Record<string, [number, number]>; kiko?: boolean };
-type Programm = { title: Record<Lang, string>; program: Program; als?: "karten" | "bloecke"; numbers?: boolean };
+/** Ein Programm als Bild. Karten mit eigenen Wörtern (z. B. Toms kaputte Karten): `texte` statt `program`. */
+type Programm = {
+  title: Record<Lang, string>;
+  program?: Program;
+  texte?: Record<Lang, string[]>;
+  als?: "karten" | "bloecke";
+  numbers?: boolean;
+};
 type Source = { felder?: Record<string, Feld>; programme?: Record<string, Programm> };
 
 /** Die Wörter der Blöcke, wie in der Werkstatt (src/messages/{de,en}.json). */
@@ -244,13 +251,16 @@ export function bloecke(program: Program, lang: Lang, title: string, numbers = f
   return svg(w, h, title, `<rect width="${w}" height="${h}" fill="#ffffff"/>` + bars.join("") + parts.join(""), style);
 }
 
-/** Eine Reihe Befehlskarten (nur Befehle ohne Schleifen), nummeriert, wie die Karten zum Ausdrucken. */
-export function karten(program: Program, lang: Lang, title: string): string {
-  const words = WORDS[lang];
-  const cards = program.main.map((s) => {
+/** Die Wörter der Karten eines Programms (nur Befehle ohne Schleifen). */
+function cardWords(program: Program, lang: Lang): string[] {
+  return program.main.map((s) => {
     if (s.s !== "cmd") throw new Error("Karten zeigen nur Befehle");
-    return word(words, s.name);
+    return word(WORDS[lang], s.name);
   });
+}
+
+/** Eine Reihe Befehlskarten, nummeriert, wie die Karten zum Ausdrucken. */
+export function karten(cards: string[], title: string): string {
   const cw = Math.max(...cards.map((c) => charWidth(c))) + 46;
   const parts: string[] = [];
   let y = 8;
@@ -271,6 +281,11 @@ export function karten(program: Program, lang: Lang, title: string): string {
 
 // Alles aus der Quelle --------------------------------------------------------------------------------------------
 
+function need(program: Program | undefined, name: string): Program {
+  if (program === undefined) throw new Error(`${name}: Es fehlt "program".`);
+  return program;
+}
+
 /** Dateiname → Inhalt, für jedes Bild der Quelle. */
 export function render(source: Source): Map<string, string> {
   const files = new Map<string, string>();
@@ -280,8 +295,8 @@ export function render(source: Source): Map<string, string> {
       files.set(
         `${PREFIX}${name}-${lang}.svg`,
         p.als === "karten"
-          ? karten(p.program, lang, p.title[lang])
-          : bloecke(p.program, lang, p.title[lang], p.numbers ?? false),
+          ? karten(p.texte?.[lang] ?? cardWords(need(p.program, name), lang), p.title[lang])
+          : bloecke(need(p.program, name), lang, p.title[lang], p.numbers ?? false),
       );
   return files;
 }

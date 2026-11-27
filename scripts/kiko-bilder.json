@@ -53,6 +53,17 @@
         "de": "Drei Befehlskarten",
         "en": "Three command cards"
       }
+    },
+    "eigenschaften-toms-karten": {
+      "als": "karten",
+      "title": {
+        "de": "Toms drei eigene Karten",
+        "en": "Tom's three home-made cards"
+      },
+      "texte": {
+        "de": ["gehe ein Stück", "spring über die Wand", "drehe dich immer wieder nach links"],
+        "en": ["move a bit", "jump over the wall", "keep turning left again and again"]
+      }
     }
   }
 }

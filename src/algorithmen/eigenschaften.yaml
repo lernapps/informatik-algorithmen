@@ -1,0 +1,269 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Eigenschaften von Algorithmen
+  en: Properties of algorithms
+description:
+  de: "Mit vier Fragen prüfen, ob eine Anleitung ein Algorithmus ist: endlich beschrieben, eindeutig, ausführbar, endet."
+  en: "Checking with four questions whether a set of instructions is an algorithm: finite, unambiguous, can be carried out, terminates."
+competencies: [algorithmische-eigenschaften]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Toms kaputte Karten
+      en: Tom's broken cards
+    blocks:
+      - type: text
+        text:
+          de: |-
+            Im Klassenchat der 7b, nach der Informatikstunde:
+
+            **Frau Berg:** Danke fürs Mitspielen! Jede Karte war ein Schritt, und Mia hat genau gemacht, was draufstand.
+
+            **Tom:** Ich hab noch eigene Karten gemalt 😎
+
+            **Mia:** Bei „gehe ein Stück“ wusste ich nicht, wie weit. Und springen kann Kiko gar nicht!
+
+            Hier lernst du vier Fragen, mit denen du prüfst, ob eine Anleitung ein Algorithmus ist.
+          en: |-
+            In class 7b's group chat, after the computing lesson:
+
+            **Frau Berg:** Thanks for playing! Every card was one step, and Mia did exactly what it said.
+
+            **Tom:** I drew some cards of my own 😎
+
+            **Mia:** With “move a bit” I didn't know how far. And Kiko can't jump at all!
+
+            Here you learn four questions to check whether a set of instructions is an algorithm.
+      - type: single-choice
+        id: ein-stueck
+        text:
+          de: Was ist an Toms Karte „gehe ein Stück“ das Problem?
+          en: What is the problem with Tom's card “move a bit”?
+        material:
+          - type: figure
+            image:
+              de: images/kiko-eigenschaften-toms-karten-de.svg
+              en: images/kiko-eigenschaften-toms-karten-en.svg
+            alt:
+              de: "Drei Karten untereinander: 1 gehe ein Stück, 2 spring über die Wand, 3 drehe dich immer wieder nach links."
+              en: "Three cards, one below the other: 1 move a bit, 2 jump over the wall, 3 keep turning left again and again."
+            caption:
+              de: Toms selbst gemalte Karten
+              en: Tom's home-made cards
+            source:
+              de: eigene Zeichnung
+              en: own drawing
+            licence: CC-BY-4.0
+        options:
+          - text:
+              de: Jede und jeder versteht etwas anderes darunter.
+              en: Everyone understands something different by it.
+            correct: true
+            info:
+              de: Ein Feld? Drei Felder? Bis zur Wand? Wer die Karte ausführt, muss raten.
+              en: One square? Three squares? Up to the wall? Whoever carries out the card has to guess.
+          - text:
+              de: Kiko kann das gar nicht.
+              en: Kiko can't do that at all.
+            correct: false
+            info:
+              de: Gehen kann Kiko. Unklar ist nur, wie weit. Das gilt für „spring über die Wand“.
+              en: Kiko can move. It's only unclear how far. That applies to “jump over the wall”.
+          - text:
+              de: Kiko hört dann nie mehr auf.
+              en: Kiko then never stops.
+            correct: false
+            info:
+              de: Ein Stück ist irgendwann gegangen. Nie aufhören würde Kiko bei Toms dritter Karte.
+              en: A bit is walked at some point. Kiko would never stop with Tom's third card.
+          - text:
+              de: Die Karte hat zu viele Wörter.
+              en: The card has too many words.
+            correct: false
+            info:
+              de: Die Karte ist kurz. Es kommt nicht auf die Länge an, sondern darauf, ob sie klar ist.
+              en: The card is short. Length doesn't matter; what matters is whether it is clear.
+        explanation:
+          de: Bei „gehe ein Stück“ gibt es mehrere Möglichkeiten. Eine Anleitung für Kiko muss eindeutig sein.
+          en: With “move a bit” there are several possibilities. Instructions for Kiko have to be unambiguous.
+  - type: section
+    id: idee
+    title:
+      de: Vier Fragen an eine Anleitung
+      en: Four questions for a set of instructions
+    blocks:
+      - type: table
+        caption:
+          de: Die vier Eigenschaften eines Algorithmus, jede mit einer kaputten Karte als Gegenbeispiel
+          en: The four properties of an algorithm, each with a broken card as a counterexample
+        header:
+          - { de: Eigenschaft, en: Property }
+          - { de: Prüffrage, en: Question to check }
+          - { de: Kaputte Karte, en: Broken card }
+        rows:
+          - - { de: endlich beschrieben, en: finite (finitely described) }
+            - { de: Hat der Zettel mit den Schritten ein Ende?, en: Does the list of steps come to an end? }
+            - { de: "Schritt 1, Schritt 2, … ohne Ende", en: "step 1, step 2, … with no end" }
+          - - { de: eindeutig, en: unambiguous }
+            - de: "Ist bei jedem Schritt klar, was zu tun ist und was danach kommt?"
+              en: "Is it clear at every step what to do and what comes next?"
+            - { de: „gehe ein Stück“, en: “move a bit” }
+          - - { de: ausführbar, en: can be carried out (executable) }
+            - {
+                de: "Kann der, der sie ausführt, jeden Schritt machen, hier Kiko?",
+                en: "Can whoever carries it out do every step, here Kiko?",
+              }
+            - { de: „spring über die Wand“, en: “jump over the wall” }
+          - - { de: endet, en: terminates }
+            - { de: Ist man nach endlich vielen Schritten fertig?, en: Is it finished after a finite number of steps? }
+            - { de: „drehe dich immer wieder nach links“, en: “keep turning left again and again” }
+      - type: definition
+        term:
+          de: Eigenschaften eines Algorithmus
+          en: properties of an algorithm
+        explanation:
+          de: "Ein Algorithmus hat vier Eigenschaften: Er ist endlich beschrieben, eindeutig, ausführbar, und er endet nach endlich vielen Schritten."
+          en: "An algorithm has four properties: it is finite (finitely described), unambiguous, can be carried out, and it terminates after a finite number of steps."
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: >-
+                „Endlich beschrieben“ ist nicht dasselbe wie „endet“. Toms dritte Karte ist kurz, aber wer sie
+                ausführt, dreht sich für immer. Ein Programm, das nie endet, löst keine Aufgabe, die enden soll. Darum
+                muss ein Algorithmus enden.
+              en: >-
+                “Finite” is not the same as “terminates”. Tom's third card is short, but whoever carries it out keeps
+                turning forever. A program that never ends doesn't solve a task that is meant to end. That is why an
+                algorithm has to terminate.
+  - type: section
+    id: ausprobieren
+    title:
+      de: Selbst ausprobieren
+      en: Try it yourself
+    blocks:
+      - type: text
+        text:
+          de: |-
+            **Kartenspiel „Kaputte Karten“, ohne Computer, in zwei Gruppen:**
+
+            1. Druckt das [Spielfeld](https://lernapps.net/coding/karten/de/spielfeld.svg) und die [Befehlskarten](https://lernapps.net/coding/karten/de/befehlskarten-1.svg) aus.
+            2. Jede Gruppe malt heimlich eine kaputte Karte und mischt sie unter die richtigen Karten.
+            3. Die andere Gruppe spielt Kiko. Bei der kaputten Karte ruft sie „Stopp!“ und sagt, welche der vier Fragen nicht stimmt.
+            4. Gemeinsam repariert ihr die Karte. Dann wechselt ihr.
+          en: |-
+            **Card game “Broken cards”, without a computer, in two groups:**
+
+            1. Print the [board](https://lernapps.net/coding/karten/en/spielfeld.svg) and the [command cards](https://lernapps.net/coding/karten/en/befehlskarten-1.svg).
+            2. Each group secretly draws a broken card and mixes it in with the proper cards.
+            3. The other group plays Kiko. At the broken card they call “Stop!” and say which of the four questions fails.
+            4. Fix the card together. Then swap.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: matching
+        id: was-fehlt
+        text:
+          de: Welche Eigenschaft fehlt der Anleitung?
+          en: Which property is the set of instructions missing?
+        pairs:
+          - left:
+              de: "„Rühre, bis es gut aussieht.“"
+              en: "“Stir until it looks good.”"
+            right: { de: nicht eindeutig, en: ambiguous }
+          - left: { de: „Flieg aus dem Fenster zum Schulhof.“, en: “Fly out of the window to the playground.” }
+            right: { de: nicht ausführbar, en: cannot be carried out }
+          - left:
+              de: "„Zähl 1, 2, 3 und so weiter und hör nie auf.“"
+              en: "“Count 1, 2, 3 and so on and never stop.”"
+            right: { de: endet nicht, en: does not terminate }
+          - left:
+              {
+                de: "Ein Zettel, auf dem die Schritte nie aufhören: Schritt 1, Schritt 2, …",
+                en: "A sheet on which the steps never stop: step 1, step 2, …",
+              }
+            right: { de: nicht endlich beschrieben, en: not finite }
+        explanation:
+          de: „Gut aussehen“ versteht jeder anders. Fliegen kann niemand. Wer nie aufhört zu zählen, ist nie fertig. Und ein Zettel ohne Ende lässt sich gar nicht aufschreiben.
+          en: Everyone sees “looks good” differently. Nobody can fly. Someone who never stops counting is never finished. And a sheet with no end can't even be written down.
+      - type: matching
+        id: karten-reparieren
+        text:
+          de: Mia repariert Toms Karten. Welche Karte wird zu welcher?
+          en: Mia fixes Tom's cards. Which card becomes which?
+        pairs:
+          - left: { de: „gehe ein Stück“, en: “move a bit” }
+            right: { de: „gehe vorwärts“ (genau ein Feld), en: “move forward” (exactly one square) }
+          - left: { de: „spring über die Wand“, en: “jump over the wall” }
+            right: { de: „geh um die Wand herum“, en: “go around the wall” }
+          - left: { de: „drehe dich immer wieder nach links“, en: “keep turning left again and again” }
+            right: { de: „drehe dich zweimal nach links“, en: “turn left twice” }
+        explanation:
+          de: Die reparierten Karten sind eindeutig, Kiko kann sie ausführen, und jede ist nach wenigen Schritten fertig.
+          en: The fixed cards are unambiguous, Kiko can carry them out, and each is finished after a few steps.
+      - type: multiple-choice
+        id: karten-in-ordnung
+        text:
+          de: Welche Karten kann Kiko auf dem Spielfeld ausführen, ohne zu raten?
+          en: Which cards can Kiko carry out on the board without guessing?
+        options:
+          - text: { de: „gehe vorwärts“, en: “move forward” }
+            correct: true
+            info:
+              de: Genau ein Feld in Blickrichtung. Das ist klar und machbar.
+              en: Exactly one square in the direction Kiko faces. That is clear and doable.
+          - text: { de: „gehe ein paar Felder“, en: “move a few squares” }
+            correct: false
+            info:
+              de: Wie viele sind „ein paar“? Die Karte ist nicht eindeutig.
+              en: How many is “a few”? The card is not unambiguous.
+          - text: { de: „drehe dich nach rechts“, en: “turn right” }
+            correct: true
+            info:
+              de: Eine Vierteldrehung auf der Stelle. Das ist klar und machbar.
+              en: A quarter turn on the spot. That is clear and doable.
+          - text: { de: „fliege zum Ziel“, en: “fly to the goal” }
+            correct: false
+            info:
+              de: Kiko kann nicht fliegen. Die Karte ist nicht ausführbar.
+              en: Kiko can't fly. The card cannot be carried out.
+          - text: { de: „drehe dich nach links“, en: “turn left” }
+            correct: true
+            info:
+              de: Eine Vierteldrehung auf der Stelle, nur andersherum. Auch das ist klar und machbar.
+              en: A quarter turn on the spot, just the other way. That is clear and doable too.
+        explanation:
+          de: Kiko kennt drei Befehle. Jede Karte, die genau einen davon meint, kann er ohne Raten ausführen.
+          en: Kiko knows three commands. Every card that means exactly one of them, Kiko can carry out without guessing.
+      - type: true-false
+        id: kurz-endet
+        text:
+          de: "Jona sagt: „Eine Anleitung, die kurz aufgeschrieben ist, endet auch immer.“ Stimmt das?"
+          en: "Jona says: “Instructions that are short to write down always terminate too.” Is that true?"
+        answer: false
+        explanation:
+          de: „Drehe dich immer wieder nach links“ ist kurz aufgeschrieben, aber Kiko dreht sich für immer. Endlich beschrieben heißt nicht, dass die Ausführung endet.
+          en: “Keep turning left again and again” is short to write down, but Kiko keeps turning forever. Being finitely described doesn't mean that carrying it out terminates.
+  - type: section
+    id: weiter
+    title:
+      de: Wie es weitergeht
+      en: What comes next
+    blocks:
+      - type: text
+        text:
+          de: >-
+            Du kannst jetzt mit vier Fragen prüfen, ob eine Anleitung ein Algorithmus ist. **Mia** schreibt: „Mit den
+            reparierten Karten komme ich ans Ziel. Aber nur, wenn Jona sie richtig hinlegt.“ Auf der nächsten Seite
+            geht es um die Reihenfolge der Karten.
+          en: >-
+            You can now check with four questions whether a set of instructions is an algorithm. **Mia** writes:
+            “With the fixed cards I get to the goal. But only if Jona lays them out right.” The next page is about the
+            order of the cards.
