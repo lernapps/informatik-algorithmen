@@ -1,0 +1,58 @@
+{
+  "felder": {
+    "sequenz-einstieg": {
+      "title": "Spielfeld mit Kiko und vier markierten Feldern A bis D",
+      "map": ["#######", "#.....#", "#.....#", "#S....#", "#.....#", "#######"],
+      "facing": "east",
+      "marks": {
+        "A": [3, 2],
+        "B": [3, 3],
+        "C": [2, 2],
+        "D": [3, 5]
+      }
+    },
+    "sequenz-zaehlen": {
+      "title": "Spielfeld mit Kiko und Ziel",
+      "map": ["#######", "#S...##", "####.##", "####..#", "#####Z#", "#######"],
+      "facing": "east"
+    },
+    "sequenz-auswahl": {
+      "title": "Spielfeld mit Kiko und Ziel",
+      "map": ["######", "#...Z#", "#.####", "#S####", "######"],
+      "facing": "north"
+    },
+    "challenge-sequenz-schulhof": {
+      "title": "Spielfeld der Challenge „Kiko holt den Ball“",
+      "map": ["#######", "#S..###", "###.###", "###...#", "#####Z#", "#######"],
+      "facing": "east"
+    }
+  },
+  "programme": {
+    "sequenz-einstieg-karten": {
+      "als": "karten",
+      "program": {
+        "main": [
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "links",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          }
+        ]
+      },
+      "title": {
+        "de": "Drei Befehlskarten",
+        "en": "Three command cards"
+      }
+    }
+  }
+}

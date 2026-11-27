@@ -1,0 +1,52 @@
+{
+  "format": 1,
+  "id": "kiko-sequenz-schulhof",
+  "title": {
+    "de": "Kiko holt den Ball",
+    "en": "Kiko fetches the ball"
+  },
+  "task": {
+    "de": "Der Ball liegt im Ziel. Leg die Befehle in die richtige Reihenfolge, damit Kiko ohne Umweg zum Ball kommt. Kiko schaut am Anfang nach rechts.",
+    "en": "The ball is at the goal. Put the commands in the right order so that Kiko gets to the ball without a detour. At the start, Kiko faces right."
+  },
+  "world": {
+    "type": "labyrinth",
+    "version": 1,
+    "config": {
+      "map": ["#######", "#S..###", "###.###", "###...#", "#####Z#", "#######"],
+      "facing": "east"
+    }
+  },
+  "toolbox": ["vorwaerts", "links", "rechts"],
+  "start": null,
+  "limits": {
+    "blocks": 12
+  },
+  "tests": [],
+  "checks": ["ziel-erreicht"],
+  "hints": [
+    {
+      "de": "Fahr den Weg erst mit dem Finger nach. Zähl die Felder bis zur ersten Kurve.",
+      "en": "First trace the path with your finger. Count the squares up to the first bend."
+    },
+    {
+      "de": "Vor jeder Kurve dreht Kiko sich. Drehen bewegt ihn nicht vom Feld.",
+      "en": "Kiko turns before each bend. Turning does not move it off its square."
+    },
+    {
+      "de": "Der Anfang: 2-mal vorwärts, dann rechts drehen.",
+      "en": "The start: forward twice, then turn right."
+    }
+  ],
+  "view": "bloecke",
+  "back": {
+    "url": {
+      "de": "/informatik-algorithmen/algorithmen/sequenz/",
+      "en": "/informatik-algorithmen/en/algorithmen/sequenz/"
+    },
+    "label": {
+      "de": "Zurück zum Explainer",
+      "en": "Back to the explainer"
+    }
+  }
+}

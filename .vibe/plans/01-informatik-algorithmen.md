@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: {}
+failedChecks: { checks-pass: 1 }
 ---
 
 # Plan: informatik-algorithmen, first version
@@ -36,7 +36,7 @@ Lernende der Klassen 7 und 8 erkennen Algorithmen im Alltag, prüfen ihre Eigens
 - Challenges als JSON in `challenges/`, je mit Musterlösung; `scripts/challenges.mjs` prüft sie mit dem Prüfskript v1 (Kopie mit Herkunft) und gleicht die Links in den Seiten ab; läuft in `npm test`.
 - Keine Recap-Seite: Kein Baustein der Welle braucht etwas außerhalb des Strangs.
 - Kein `scope`: kein `open-task`.
-- `tasks: { start: first }`, damit eine Klasse über „Aufgabe 1“ sprechen kann (guess).
+- Kein `tasks: { start: first }`, also der Standard `random`: Laut Schema ist `first` für junge Lernende gedacht; mit `random` bekommen Lernende einer Klasse verschiedene Aufgaben (guess, der Auftrag sagt „Erwäge“).
 - Musterseite `sequenz` (Orchestrator, Checkpoint Plan).
 
 ## Notes
@@ -199,12 +199,12 @@ Die Antworten stehen im Auftrag des Orchestrators (Epic lernapps/apps#509, Issue
       `npx --no -- lernapps create --archetype explainer`.
 - [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
-- [ ] Load skill `lernapps-explainer`.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer`.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [ ] Musterseite algorithmen/sequenz (Baustein sequenz) in de und en: Chat, Frage A–D mit Spielfeld- und Kartenbild, Merke, Unplugged-Anleitung, Challenge C1, Übungen number, single-choice, generated, true-false; dazu scripts/kiko-bilder.mjs, scripts/challenges.mjs mit Prüfskript v1 in npm test, LICENSE auf Oliver Jägle.
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->

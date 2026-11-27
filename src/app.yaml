@@ -1,10 +1,26 @@
 # yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 format: 2
-# The strand of the learning map the app stays in, <subject>/<strand> (e.g. mathematik/stochastik); then each page
-# names its competencies. none: the app is on no strand, and no page names competencies. A unit app across the strands
-# of a subject whose map allows it names subject: <subject> (e.g. franzoesisch) instead of strand.
-strand: none
-title: Platzhalter
-intro: Dieses Kapitel hält den Platz frei, bis der geplante Inhalt da ist.
-languages: [de]
-chapters: [thema]
+strand: informatik/algorithmen
+title:
+  de: Algorithmen und Programme
+  en: Algorithms and programs
+intro:
+  de: >-
+    Die Klasse 7b steuert Kiko, einen kleinen Roboter, über ein Spielfeld: erst ohne Computer mit Befehlskarten, dann
+    mit Blöcken in der Programmierwerkstatt. Du lernst, was ein Algorithmus ist, und schreibst Programme mit Sequenz,
+    Verzweigung und Schleifen.
+  en: >-
+    Class 7b steers Kiko, a small robot, across a board: first without a computer, with command cards, then with
+    blocks in the programming workshop. You learn what an algorithm is and write programs with sequence, selection
+    and loops.
+languages: [de, en]
+chapters: [algorithmen]
+sources:
+  - title:
+      de: "Gesellschaft für Informatik: Bildungsstandards Informatik für die Sekundarstufe I (2025), Abschnitt 5.2 Algorithmen"
+      en: "Gesellschaft für Informatik: Educational standards in computer science for lower secondary school (2025), section 5.2 Algorithms"
+    url: "https://doi.org/10.18420/rec2025_052"
+  - title:
+      de: Programmierwerkstatt von lernapps.net mit Kiko, Befehlskarten und Spielfeld
+      en: The lernapps.net programming workshop with Kiko, command cards and board
+    url: "https://lernapps.net/coding/"
