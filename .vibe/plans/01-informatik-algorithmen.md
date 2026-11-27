@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -57,6 +57,14 @@ Lernende der Klassen 7 und 8 erkennen Algorithmen im Alltag, prüfen ihre Eigens
   - wiederholung-mit-bedingung: Gänge unbekannter Länge; Fehler: um eins verzählt, Endlosschleife.
 - Umfang: Kapitel 1 und 2, de und en. Labyrinth-Welt der Werkstatt, keine Turtle-Welt.
 - Quellen: Lernlandkarte Informatik (Bausteine, iCan); GI-Bildungsstandards Informatik Sek I 2025, doi:10.18420/rec2025_052, Abschnitt 5.2 AL-1 bis AL-8 (gelesen); Programmierwerkstatt lernapps.net/coding: Schema challenge.v1, Prüfskript v1 (MIT), Befehlskarten, Kiko (CC BY 4.0). Lehrpläne HE/BY/NRW: nicht nötig, die Karte gibt Strang und Reihenfolge (Skill lernapps-content-research, 3); im Einzelnen ungeprüft.
+- Behoben nach der Prüfung der ganzen App als Lernende (7. Klasse, de/en, 360 px, alle 7 Challenges gelöst):
+  Personen und Kiko auf `algorithmus` eingeführt; Kartenspiel-Befehle auf `eigenschaften` genannt; „Programm“ in
+  Kapitel 1 ersetzt; Übergänge Sequenz → Blöcke und Zählschleife-Chat stimmig; Glossar um Befehl, Sensor, debuggen,
+  Schleife, Endlosschleife ergänzt; alle Sensoren auf `verzweigung` vor der Challenge genannt; Spielfeld A/B → 1/2
+  (Namenskonflikt mit Feld A/B); Treppe mit 4 Stufen (Startzahl 3 der Werkstatt war die Lösung); Toms reparierte
+  Karten aus Kikos Befehlen; Auswahlfelder bei 360 px gekürzt; Werkstatt-Wörter „Liste“, „Rätsel“; EN-Wendungen.
+- Behoben nach der fachlichen Prüfung: keine Sachfehler; Begriffe präzisiert (Bedingung wahr, einseitige Verzweigung,
+  Prüfung vor jedem Durchlauf, Endlosschleife allgemein, kein „until“), „im Bild“ in Challenges, neutrale Bildtitel.
 - Voraussetzungen, die die App nicht übt: keine, je Seite (alle `requires` liegen im Strang und werden auf einer früheren Seite geübt). Darum keine Recap-Seite und kein `ahead`.
 
 ## Explore
@@ -223,7 +231,7 @@ Die Antworten stehen im Auftrag des Orchestrators (Epic lernapps/apps#509, Issue
 - [x] Run `npx --no -- lernapps check` until it passes.
 - [x] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
-- [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
+- [x] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
       fixed.
 
 ## Commit
@@ -236,7 +244,7 @@ Die Antworten stehen im Auftrag des Orchestrators (Epic lernapps/apps#509, Issue
 
 ### Tasks
 
-- [ ] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
+- [x] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
       decisions" why the app has none. Commit.
 - [ ] Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
       every click only the creator can make, in one message.

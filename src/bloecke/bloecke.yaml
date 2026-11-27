@@ -100,11 +100,16 @@ blocks:
       - type: text
         text:
           de: >-
-            Die Blöcke haben dieselben Wörter und Farben wie die Karten. Neu ist: Ein Computer führt sie aus, und
-            der rät nie. Darum schreibst du den Algorithmus in einer Sprache auf, die er versteht.
+            Neu ist: Ein Computer führt die Blöcke aus, und der rät nie. Darum schreibst du den Algorithmus in einer Sprache auf, die er versteht.
           en: >-
-            The blocks have the same words and colours as the cards. What is new: a computer carries them out, and it
-            never guesses. So you write the algorithm down in a language it understands.
+            What is new: a computer carries out the blocks, and it never guesses. So you write the algorithm down in a language it understands.
+      - type: definition
+        term:
+          de: Programm
+          en: program
+        explanation:
+          de: Ein Programm ist ein Algorithmus, aufgeschrieben in einer Programmiersprache, damit ein Computer ihn ausführen kann.
+          en: A program is an algorithm written down in a programming language so that a computer can carry it out.
       - type: figure
         image:
           de: images/kiko-bloecke-karten-als-bloecke-de.svg
@@ -121,18 +126,18 @@ blocks:
         licence: CC-BY-4.0
       - type: definition
         term:
-          de: Programm
-          en: program
-        explanation:
-          de: Ein Programm ist ein Algorithmus, aufgeschrieben in einer Programmiersprache, damit ein Computer ihn ausführen kann.
-          en: A program is an algorithm written down in a programming language so that a computer can carry it out.
-      - type: definition
-        term:
           de: blockbasierte Programmiersprache
           en: block-based programming language
         explanation:
           de: In einer blockbasierten (visuellen) Programmiersprache baust du Programme aus Blöcken, die du zusammensteckst, statt sie zu tippen.
           en: In a block-based (visual) programming language you build programs from blocks that you snap together instead of typing them.
+      - type: definition
+        term:
+          de: debuggen
+          en: debugging
+        explanation:
+          de: "Debuggen heißt, Fehler im Programm finden und beheben. Dazu gehst du das Programm Schritt für Schritt durch."
+          en: "Debugging means finding and fixing bugs (mistakes) in a program. To do it, you go through the program step by step."
       - type: note
         title:
           de: Merke
@@ -141,13 +146,11 @@ blocks:
           - type: text
             text:
               de: >-
-                Ein Block, der nicht am Kopf „Programm“ hängt, wird nicht ausgeführt. Läuft Kiko falsch, ist das ein
-                Fehler im Programm. Fehler finden und beheben heißt debuggen: Geh das Programm Schritt für Schritt
-                durch.
+                Ein Block, der nicht am Kopf „Programm“ hängt, wird nicht ausgeführt. Läuft Kiko falsch, steckt ein
+                Fehler im Programm, nicht in Kiko.
               en: >-
-                A block that is not attached to the head “Program” is not carried out. If Kiko goes the wrong way, that
-                is a bug in the program. Finding and fixing bugs is called debugging: go through the program step by
-                step.
+                A block that is not attached to the head “Program” is not carried out. If Kiko goes the wrong way, the
+                bug is in the program, not in Kiko.
   - type: section
     id: ausprobieren
     title:
@@ -157,13 +160,13 @@ blocks:
       - type: text
         text:
           de: |-
-            **In der Werkstatt:** Links liegen die Blöcke (die Werkzeugkiste), rechts baust du dein Programm unter den Kopf „Programm“ (die Arbeitsfläche). „Start“ lässt Kiko das ganze Programm laufen, „Ein Schritt“ führt einen Block nach dem anderen aus.
+            **In der Werkstatt:** Links liegen die Blöcke in einer Liste (der Werkzeugkiste), rechts baust du dein Programm unter den Kopf „Programm“ (die Arbeitsfläche). „Start“ lässt Kiko das ganze Programm laufen, „Ein Schritt“ führt einen Block nach dem anderen aus.
 
-            Ben hat ein Programm gebaut, aber Kiko läuft gegen die Wand. Finde den einen falschen Block und tausch ihn aus: [Challenge „Finde den Fehler“ öffnen](https://lernapps.net/coding/app/?c=zVSxbuQ2EP2VwbiVdUgZNcE5zl0RIDnABxiw4WJEjcQ5UcMFSVnxGQtskc_wpco3pErnP9kvCUjtroODE6TMNhK4jzNvnt68R-x9mChh802F0mGDo4z-vGfrOJz3oh0rVpgkOcbmETvGBt_lY-hY4V3BYYWsh3NIlqGdB9xWmCiOp0sXrGApAYvCh-CHQNMEA7c0pwqo5QA_yujBPf8-9wkGHlihE4Zr0q6Gy_D8pxlhv_vtB1G4MjZISvvdE8zaQTSW5gpaFljYGcsTXDhvRuCY_xPuB7aphudftePAoHPIpSPriqugI1WI3rmVhGiEG2EHo58m1vo4YJ6hncUlINisM1TQzmm9tZAbI4gmX0RYyLkaPgSOEfa7p5-VISbe7HdfgLSDhZKxsFgxFtrCdvAcYQlehxq-t6QDg1f3ACnL1q5Ek2Vdu0XrZ9dBYDK29Bs8uTrLvvjguqx7ethk5R21D0E0WazwnkMUr-VzG6-9DBk40QabWzwrP6zw7Ko-vJy9vNQ360vB3FXYkxEdsEGmmHCbv7f3rvW_5FL3PizEIUWs0ImO-RnY2BTz1ZgopLWxKDa3jxixQTN1WKHSlEn_vQCFIWJze7etXgEeq_8r6D9X-z-1vdtm7SZJMUtVDBCx-TYLzTEVTIXGcjm-xc_C7pxDYDE2ZZWtaEEdFvA9W-govizfJOmVhermYGwN196Krpt1sLdmo33i7rhd3x234n32e_DzsPrwsBiwSLJfGb-G6-L3hR6gy24vhXsyDNQnDlDM3K7Vs1CF-CWHQ9DkOmZMIJpjhANcBrazDkATvNWedDit6sc1hkDyRgJBmoOCMoXCsRiwfmnxU-6bJ-MQE5_0gGmOB5IywYW4blVh1gwq4rDWcEkRJJZo4xOlAlwtfyL1tgyZCfQSYiqyVGt9SxHSQYvOL7rmqKfQ1fAxB4DE4xSHfAky2DzDXYX3wgs22SJsRsYKWzIleefgTgH8RnTNehnPyQ0-SLIT65vDrdPzSPaf8K9dyU6lll-a3cxrYH-eA1yxJM5Ou3DPf5iR97unU6CSGY_zbGjIqKdirrjffcHtdvsX)
+            Ben hat noch ein Programm gebaut, aber Kiko läuft gegen die Wand. Einen Block löschst du, indem du ihn anklickst und Entf drückst oder ihn zurück in die Liste ziehst. Finde den einen falschen Block und tausch ihn aus: [Challenge „Finde den Fehler“ öffnen](https://lernapps.net/coding/app/?c=zVS9buQ2EH6VwbiVdUgZNcE5zl0RIDnABxiw4WJEjcQ5UcMFSVnxGQtskcfwpcozpErnN9knCUjtroODE6SMGhHU_Hzz6ZvvEXsfJkrYfFOhdNjgKKM_79k6Due9aMeKFSZJjrF5xI6xwXf5GjpWeFfisELWwz0ky9DOA24rTBTHU9IFK1hKwKLwIfgh0DTBwC3NqQJqOcCPMnpwz7_PfYKBB1bohOGatKvhMjz_aUbY7377QRSujA2S0n73BLN2EI2luYKWBRZ2xvIEF86bETjmb8L9wDbV8PyrdhwYdA65dGRd4yroSBWid24FIRrhRtjB6KeJtT4OmGdoZ3EJCDbrDBW0c1qzFnJjBNHkCwkLOVfDh8Axwn739LMyxMSb_e4LkHawUDIWFivGQlvQDp4jLMHrUMP3lnRg8OoeIGXa2hVosqxrt2j97DoITMaWfoMnV2faFx9cl3lPD5vMvKP2IYgmixXec4jitfxu47WXIQdOtMHmFs_KgxWeXdWHw9nLob5ZDyXmrsKejOiADTLFhNv8v713rf8ll7r3YSEOKWKFTnTM78DGpphTY6KQ1sai2Nw-YsQGzdRhhUpTBv33AhSGiM3t3bZ6JfBY_V-D_nO1_1Pbu23mbpIUM1VFABGbbzPRHFOJqdBYLte3-FnYnXMILMamzLIVLVGHBXzPFjqKL8s3SXplobo5GFvDtbei62Yd5K1ZaJ-4O27Xd8eteJ_1Hvw8rDo8LAYskuxXwq_huuh9oQfostpL4Z4MA_WJAxQxt2v1TFQBfsnhYDS5jhkTiGYb4QCXge2sA9AEb7UnHU6r-nG1IZC8kUCQ5qCgTKFgLAKsX1r8lPvmyTjExCc-YJrjAaRMcCGuW1mYNQcVclhruKQIEou18QlSCVwlfwL1tgyZAfQSYiq0VGt9SxHSgYvOL7r6qKfQ1fAxG4DE4xQHfwky2DzDXYX3wgs2WSJsRsYKWzLFeefgTgb8RnT1ehnPyQ0-SLIT65tD1ul9BPtP8a-lZKVSyy_NbubVsD_PAa5YEmelHZUnHFiL_C7c8x9mZN3vnk4eS2Y8jrihISc-nRJ1WGW1LsN-9wW32-1f)
           en: |-
-            **In the workshop:** the blocks are on the left (the toolbox), and you build your program under the head “Program” on the right (the workspace). “Run” lets Kiko run the whole program, “One step” carries out one block after another.
+            **In the workshop:** the blocks are in a list on the left (the toolbox), and you build your program under the head “Program” on the right (the workspace). “Run” lets Kiko run the whole program, “One step” carries out one block after another.
 
-            Ben built a program, but Kiko walks into the wall. Find the one wrong block and swap it: [open the challenge “Find the bug”](https://lernapps.net/coding/en/app/?c=zVSxbuQ2EP2VwbiVdUgZNcE5zl0RIDnABxiw4WJEjcQ5UcMFSVnxGQtskc_wpco3pErnP9kvCUjtroODE6TMNhK4jzNvnt68R-x9mChh802F0mGDo4z-vGfrOJz3oh0rVpgkOcbmETvGBt_lY-hY4V3BYYWsh3NIlqGdB9xWmCiOp0sXrGApAYvCh-CHQNMEA7c0pwqo5QA_yujBPf8-9wkGHlihE4Zr0q6Gy_D8pxlhv_vtB1G4MjZISvvdE8zaQTSW5gpaFljYGcsTXDhvRuCY_xPuB7aphudftePAoHPIpSPriqugI1WI3rmVhGiEG2EHo58m1vo4YJ6hncUlINisM1TQzmm9tZAbI4gmX0RYyLkaPgSOEfa7p5-VISbe7HdfgLSDhZKxsFgxFtrCdvAcYQlehxq-t6QDg1f3ACnL1q5Ek2Vdu0XrZ9dBYDK29Bs8uTrLvvjguqx7ethk5R21D0E0WazwnkMUr-VzG6-9DBk40QabWzwrP6zw7Ko-vJy9vNQ360vB3FXYkxEdsEGmmHCbv7f3rvW_5FL3PizEIUWs0ImO-RnY2BTz1ZgopLWxKDa3jxixQTN1WKHSlEn_vQCFIWJze7etXgEeq_8r6D9X-z-1vdtm7SZJMUtVDBCx-TYLzTEVTIXGcjm-xc_C7pxDYDE2ZZWtaEEdFvA9W-govizfJOmVhermYGwN196Krpt1sLdmo33i7rhd3x234n32e_DzsPrwsBiwSLJfGb-G6-L3hR6gy24vhXsyDNQnDlDM3K7Vs1CF-CWHQ9DkOmZMIJpjhANcBrazDkATvNWedDit6sc1hkDyRgJBmoOCMoXCsRiwfmnxU-6bJ-MQE5_0gGmOB5IywYW4blVh1gwq4rDWcEkRJJZo4xOlAlwtfyL1tgyZCfQSYiqyVGt9SxHSQYvOL7rmqKfQ1fAxB4DE4xSHfAky2DzDXYX3wgs22SJsRsYKWzIleefgTgH8RnTNehnPyQ0-SLIT65vDrdPzSPaf8K9dyU6lll-a3cxrYH-eA1yxJM5Ou3DPf5iR97unU6CSGY_zbGjIqKdirrjffcHtdvsX)
+            Ben built another program, but Kiko walks into the wall. To delete a block, click it and press Delete, or drag it back into the list. Find the one wrong block and swap it: [open the challenge “Find the bug”](https://lernapps.net/coding/en/app/?c=zVS9buQ2EH6VwbiVdUgZNcE5zl0RIDnABxiw4WJEjcQ5UcMFSVnxGQtskcfwpcozpErnN9knCUjtroODE6SMGhHU_Hzz6ZvvEXsfJkrYfFOhdNjgKKM_79k6Due9aMeKFSZJjrF5xI6xwXf5GjpWeFfisELWwz0ky9DOA24rTBTHU9IFK1hKwKLwIfgh0DTBwC3NqQJqOcCPMnpwz7_PfYKBB1bohOGatKvhMjz_aUbY7377QRSujA2S0n73BLN2EI2luYKWBRZ2xvIEF86bETjmb8L9wDbV8PyrdhwYdA65dGRd4yroSBWid24FIRrhRtjB6KeJtT4OmGdoZ3EJCDbrDBW0c1qzFnJjBNHkCwkLOVfDh8Axwn739LMyxMSb_e4LkHawUDIWFivGQlvQDp4jLMHrUMP3lnRg8OoeIGXa2hVosqxrt2j97DoITMaWfoMnV2faFx9cl3lPD5vMvKP2IYgmixXec4jitfxu47WXIQdOtMHmFs_KgxWeXdWHw9nLob5ZDyXmrsKejOiADTLFhNv8v713rf8ll7r3YSEOKWKFTnTM78DGpphTY6KQ1sai2Nw-YsQGzdRhhUpTBv33AhSGiM3t3bZ6JfBY_V-D_nO1_1Pbu23mbpIUM1VFABGbbzPRHFOJqdBYLte3-FnYnXMILMamzLIVLVGHBXzPFjqKL8s3SXplobo5GFvDtbei62Yd5K1ZaJ-4O27Xd8eteJ_1Hvw8rDo8LAYskuxXwq_huuh9oQfostpL4Z4MA_WJAxQxt2v1TFQBfsnhYDS5jhkTiGYb4QCXge2sA9AEb7UnHU6r-nG1IZC8kUCQ5qCgTKFgLAKsX1r8lPvmyTjExCc-YJrjAaRMcCGuW1mYNQcVclhruKQIEou18QlSCVwlfwL1tgyZAfQSYiq0VGt9SxHSgYvOL7r6qKfQ1fAxG4DE4xQHfwky2DzDXYX3wgs2WSJsRsYKWzLFeefgTgb8RnT1ehnPyQ0-SLIT65tD1ul9BPtP8a-lZKVSyy_NbubVsD_PAa5YEmelHZUnHFiL_C7c8x9mZN3vnk4eS2Y8jrihISc-nRJ1WGW1LsN-9wW32-1f)
       - type: figure
         image: images/kiko-challenge-fehler-finden.svg
         alt:
@@ -185,8 +188,8 @@ blocks:
       - type: single-choice
         id: welcher-block-falsch
         text:
-          de: Bens Programm soll Kiko zum Ziel bringen, aber Kiko läuft gegen eine Wand. Welcher Block ist falsch?
-          en: Ben's program should take Kiko to the goal, but Kiko walks into a wall. Which block is wrong?
+          de: Toms Programm soll Kiko zum Ziel bringen, aber Kiko läuft gegen eine Wand. Welcher Block ist falsch?
+          en: Tom's program should take Kiko to the goal, but Kiko walks into a wall. Which block is wrong?
         material:
           - type: figure
             image: images/kiko-bloecke-fehler.svg
@@ -194,8 +197,8 @@ blocks:
               de: "Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Der Weg führt 2 Felder nach rechts, 2 nach unten und 1 nach rechts zum Ziel in Spalte 5, Zeile 4."
               en: "Kiko stands in column 2, row 2 and faces right on the board. The path leads 2 squares right, 2 down and 1 right to the goal in column 5, row 4."
             caption:
-              de: Das Spielfeld zu Bens Programm
-              en: The board for Ben's program
+              de: Das Spielfeld zu Toms Programm
+              en: The board for Tom's program
             source:
               de: eigene Zeichnung, Kiko nach lernapps.net/coding
               en: own drawing, Kiko after lernapps.net/coding
@@ -205,11 +208,11 @@ blocks:
               de: images/kiko-bloecke-fehler-programm-de.svg
               en: images/kiko-bloecke-fehler-programm-en.svg
             alt:
-              de: "Bens Programm mit Nummern: 1 gehe vorwärts, 2 gehe vorwärts, 3 drehe dich nach links, 4 gehe vorwärts, 5 gehe vorwärts, 6 drehe dich nach links, 7 gehe vorwärts."
-              en: "Ben's program with numbers: 1 move forward, 2 move forward, 3 turn left, 4 move forward, 5 move forward, 6 turn left, 7 move forward."
+              de: "Toms Programm mit Nummern: 1 gehe vorwärts, 2 gehe vorwärts, 3 drehe dich nach links, 4 gehe vorwärts, 5 gehe vorwärts, 6 drehe dich nach links, 7 gehe vorwärts."
+              en: "Tom's program with numbers: 1 move forward, 2 move forward, 3 turn left, 4 move forward, 5 move forward, 6 turn left, 7 move forward."
             caption:
-              de: Bens Programm, jeder Block mit Nummer
-              en: Ben's program, each block numbered
+              de: Toms Programm, jeder Block mit Nummer
+              en: Tom's program, each block numbered
             source:
               de: eigene Zeichnung nach lernapps.net/coding
               en: own drawing after lernapps.net/coding
@@ -244,16 +247,14 @@ blocks:
           de: Wofür ist welcher Teil der Werkstatt da?
           en: What is each part of the workshop for?
         pairs:
-          - left: { de: Werkzeugkiste, en: toolbox }
-            right:
-              de: "Hier liegen die Blöcke, die du benutzen darfst."
-              en: "The blocks you may use are here."
-          - left: { de: Arbeitsfläche, en: workspace }
-            right: { de: Hier steckst du das Programm zusammen., en: This is where you snap the program together. }
-          - left: { de: Start, en: Run }
-            right: { de: Kiko führt das ganze Programm aus., en: Kiko carries out the whole program. }
-          - left: { de: Ein Schritt, en: One step }
-            right: { de: Kiko führt nur den nächsten Block aus., en: Kiko carries out only the next block. }
+          - left: { de: Liste der Blöcke (Werkzeugkiste), en: list of blocks (toolbox) }
+            right: { de: Blöcke zum Auswählen, en: blocks to choose from }
+          - left: { de: Arbeitsfläche unter „Programm“, en: workspace under “Program” }
+            right: { de: Platz für dein Programm, en: room for your program }
+          - left: { de: Knopf „Start“, en: button “Run” }
+            right: { de: alles ausführen, en: run everything }
+          - left: { de: Knopf „Ein Schritt“, en: button “One step” }
+            right: { de: einen Block ausführen, en: run one block }
         explanation:
           de: Mit „Ein Schritt“ siehst du genau, bei welchem Block etwas schiefgeht. Das hilft beim Debuggen.
           en: With “One step” you see exactly at which block something goes wrong. That helps with debugging.

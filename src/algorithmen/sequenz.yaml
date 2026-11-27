@@ -32,7 +32,7 @@ blocks:
 
             **Mia:** Me again!
 
-            **Jona:** Then I'll lay the cards 😄
+            **Jona:** Then I'll lay out the cards 😄
 
             Here you learn to bring Kiko to the goal with three commands.
       - type: single-choice
@@ -102,11 +102,31 @@ blocks:
           de: >-
             Kiko kennt drei Befehle: **gehe vorwärts** (ein Feld
             weiter) sowie **drehe dich nach links** und **drehe dich nach rechts** (eine Vierteldrehung auf der
-            Stelle). Ein Befehl ist eine einfache Anweisung, die Kiko kennt und direkt ausführen kann.
+            Stelle).
           en: >-
             Kiko knows three commands: **move forward** (one square forward) and
-            **turn left** and **turn right** (a quarter turn on the spot). A command is a simple instruction that
-            Kiko knows and can carry out directly.
+            **turn left** and **turn right** (a quarter turn on the spot).
+      - type: definition
+        term:
+          de: Befehl
+          en: command
+        explanation:
+          de: "Ein Befehl ist eine einfache Anweisung, die Kiko kennt und direkt ausführen kann."
+          en: "A command is a simple instruction that Kiko knows and can carry out directly."
+      - type: figure
+        image:
+          de: images/kiko-sequenz-drei-befehle-de.svg
+          en: images/kiko-sequenz-drei-befehle-en.svg
+        alt:
+          de: "Drei Karten: 1 gehe vorwärts, 2 drehe dich nach links, 3 drehe dich nach rechts."
+          en: "Three cards: 1 move forward, 2 turn left, 3 turn right."
+        caption:
+          de: Kikos drei Befehle als Karten
+          en: Kiko's three commands as cards
+        source:
+          de: eigene Zeichnung nach lernapps.net/coding
+          en: own drawing after lernapps.net/coding
+        licence: CC-BY-4.0
       - type: definition
         term:
           de: Sequenz
@@ -146,7 +166,7 @@ blocks:
             4. Ein Kind ist Kiko und folgt den Karten genau, von oben nach unten.
             5. Kommt Kiko nicht ans Ziel, sucht gemeinsam die falsche Karte. Dann tauscht die Rollen.
 
-            **Mit Computer:** In der Werkstatt werden die Karten zu Blöcken mit denselben Wörtern. Das Feld in Spalte 4, Zeile 2 heißt dort kurz (4|2). Bring Kiko zur Fahne: [Challenge „Kiko läuft zur Fahne“ öffnen](https://lernapps.net/coding/app/?c=dVTBctw2DP0VDH3Vyk2PusX17CU9ZOq0nbHHB4qCREQUuQGh3dqZnfGHpD35M3rzn_hLMqC0jn2ILiIl4OEBD8BX0yeerJjmXWWoM40ZaUybjF9mjPeb7PwcfOpNZYQkoGm-mg5NYz7QmCA8Pc69wP3MsLU-oqkMxtPPgw1jBkkgHqEPdjDHyojN4wvGJeHiB_dIg0BnM1wThhp-xwE6QrjAHn1AoFiuTM4LDQh_IHmMfQoDVtDZiQRKzKRgf04HHH6QgjFNk9SLQXbezgJ2gvext3EAmuCCQgfROg-MzkuuT2l8WonDZFlT8QhDsqGGj7OUm0vTZGOXlZ_emQYvkLhDhqyJ25XXgPKmFHAg8UmJQIeSZq7h_QKZxbJUi1dvHeYT6BKhTZa7Wit5SBw6LaXc7bSYwbZ3TFG8qcweOVOKRVOXYk-DGk52Z5obc7Y8pjJnV3W9ns7OXp3q6_VU7G4r01tHcTCNQZvFHFXHlEKb_lG8feKDRZZsKhMojvpeCqmuJR_TxDkE_T2RZOXShuTGbJp3vygYZv16c1sZ57F8vzH3hGGDzKiaK5KnWKzW5tlaz9BhhL9xAOQsoF3Q4QRbigNyUbSG66dHH0rzbDGoLi3l0hvqghE-zLzHF8W3pEDC1mEp986KL1rBXZoZ-oJcw29pjqtcX2bLmGHevchbIFqMRaaV7F-J4TNq-BIPOka_tkYmpXnJ6DFCiwccBMhHiJo37NNUiNdvRktmjhla7BMjoHZuiQefZo4UB-gSZohJYEp7BBJIfQ8keaX7itgl8joJDfy6mWwAlfPpkSXrYMW4zkRhjPHNaBRpG-hVf-5ADuSw0hrEQnBp3NocbyuzJzyYRlVHN-qaaK0re2Dm8LIOzikuu4jGjQ1DYhI_YTx_fV730vmJx898fuZ2rHRQ8EfQ65mf_ndjaYkrJEF4fvjvajF_fvh2inNh3XhSeGcHtfq2WDl8fvjXHI_H7w)
+            **Mit Computer:** In der Programmierwerkstatt, einer Webseite, sind die Karten Blöcke mit denselben Wörtern. Das Feld in Spalte 4, Zeile 2 heißt dort kurz (4|2). Bring Kiko zur Fahne: [Challenge „Kiko läuft zur Fahne“ öffnen](https://lernapps.net/coding/app/?c=dVTBctw2DP0VDH3Vyk2PusX17CU9ZOq0nbHHB4qCREQUuQGh3dqZnfGHpD35M3rzn_hLMqC0jn2ILiIl4OEBD8BX0yeerJjmXWWoM40ZaUybjF9mjPeb7PwcfOpNZYQkoGm-mg5NYz7QmCA8Pc69wP3MsLU-oqkMxtPPgw1jBkkgHqEPdjDHyojN4wvGJeHiB_dIg0BnM1wThhp-xwE6QrjAHn1AoFiuTM4LDQh_IHmMfQoDVtDZiQRKzKRgf04HHH6QgjFNk9SLQXbezgJ2gvext3EAmuCCQgfROg-MzkuuT2l8WonDZFlT8QhDsqGGj7OUm0vTZGOXlZ_emQYvkLhDhqyJ25XXgPKmFHAg8UmJQIeSZq7h_QKZxbJUi1dvHeYT6BKhTZa7Wit5SBw6LaXc7bSYwbZ3TFG8qcweOVOKRVOXYk-DGk52Z5obc7Y8pjJnV3W9ns7OXp3q6_VU7G4r01tHcTCNQZvFHFXHlEKb_lG8feKDRZZsKhMojvpeCqmuJR_TxDkE_T2RZOXShuTGbJp3vygYZv16c1sZ57F8vzH3hGGDzKiaK5KnWKzW5tlaz9BhhL9xAOQsoF3Q4QRbigNyUbSG66dHH0rzbDGoLi3l0hvqghE-zLzHF8W3pEDC1mEp986KL1rBXZoZ-oJcw29pjqtcX2bLmGHevchbIFqMRaaV7F-J4TNq-BIPOka_tkYmpXnJ6DFCiwccBMhHiJo37NNUiNdvRktmjhla7BMjoHZuiQefZo4UB-gSZohJYEp7BBJIfQ8keaX7itgl8joJDfy6mWwAlfPpkSXrYMW4zkRhjPHNaBRpG-hVf-5ADuSw0hrEQnBp3NocbyuzJzyYRlVHN-qaaK0re2Dm8LIOzikuu4jGjQ1DYhI_YTx_fV730vmJx898fuZ2rHRQ8EfQ65mf_ndjaYkrJEF4fvjvajF_fvh2inNh3XhSeGcHtfq2WDl8fvjXHI_H7w)
           en: |-
             **Without a computer, in threes or fours** (on your own: a board on squared paper, a game piece is Kiko):
 
@@ -156,7 +176,7 @@ blocks:
             4. One person is Kiko and follows the cards exactly, from top to bottom.
             5. If Kiko misses the goal, find the wrong card together. Then swap roles.
 
-            **With a computer:** in the workshop, the cards become blocks with the same words. The square in column 4, row 2 is called (4|2) there. Bring Kiko to the flag: [open the challenge “Kiko walks to the flag”](https://lernapps.net/coding/en/app/?c=dVTBctw2DP0VDH3Vyk2PusX17CU9ZOq0nbHHB4qCREQUuQGh3dqZnfGHpD35M3rzn_hLMqC0jn2ILiIl4OEBD8BX0yeerJjmXWWoM40ZaUybjF9mjPeb7PwcfOpNZYQkoGm-mg5NYz7QmCA8Pc69wP3MsLU-oqkMxtPPgw1jBkkgHqEPdjDHyojN4wvGJeHiB_dIg0BnM1wThhp-xwE6QrjAHn1AoFiuTM4LDQh_IHmMfQoDVtDZiQRKzKRgf04HHH6QgjFNk9SLQXbezgJ2gvext3EAmuCCQgfROg-MzkuuT2l8WonDZFlT8QhDsqGGj7OUm0vTZGOXlZ_emQYvkLhDhqyJ25XXgPKmFHAg8UmJQIeSZq7h_QKZxbJUi1dvHeYT6BKhTZa7Wit5SBw6LaXc7bSYwbZ3TFG8qcweOVOKRVOXYk-DGk52Z5obc7Y8pjJnV3W9ns7OXp3q6_VU7G4r01tHcTCNQZvFHFXHlEKb_lG8feKDRZZsKhMojvpeCqmuJR_TxDkE_T2RZOXShuTGbJp3vygYZv16c1sZ57F8vzH3hGGDzKiaK5KnWKzW5tlaz9BhhL9xAOQsoF3Q4QRbigNyUbSG66dHH0rzbDGoLi3l0hvqghE-zLzHF8W3pEDC1mEp986KL1rBXZoZ-oJcw29pjqtcX2bLmGHevchbIFqMRaaV7F-J4TNq-BIPOka_tkYmpXnJ6DFCiwccBMhHiJo37NNUiNdvRktmjhla7BMjoHZuiQefZo4UB-gSZohJYEp7BBJIfQ8keaX7itgl8joJDfy6mWwAlfPpkSXrYMW4zkRhjPHNaBRpG-hVf-5ADuSw0hrEQnBp3NocbyuzJzyYRlVHN-qaaK0re2Dm8LIOzikuu4jGjQ1DYhI_YTx_fV730vmJx898fuZ2rHRQ8EfQ65mf_ndjaYkrJEF4fvjvajF_fvh2inNh3XhSeGcHtfq2WDl8fvjXHI_H7w)
+            **With a computer:** in the programming workshop, a website, the cards are blocks with the same words. The square in column 4, row 2 is called (4|2) there. Bring Kiko to the flag: [open the challenge “Kiko walks to the flag”](https://lernapps.net/coding/en/app/?c=dVTBctw2DP0VDH3Vyk2PusX17CU9ZOq0nbHHB4qCREQUuQGh3dqZnfGHpD35M3rzn_hLMqC0jn2ILiIl4OEBD8BX0yeerJjmXWWoM40ZaUybjF9mjPeb7PwcfOpNZYQkoGm-mg5NYz7QmCA8Pc69wP3MsLU-oqkMxtPPgw1jBkkgHqEPdjDHyojN4wvGJeHiB_dIg0BnM1wThhp-xwE6QrjAHn1AoFiuTM4LDQh_IHmMfQoDVtDZiQRKzKRgf04HHH6QgjFNk9SLQXbezgJ2gvext3EAmuCCQgfROg-MzkuuT2l8WonDZFlT8QhDsqGGj7OUm0vTZGOXlZ_emQYvkLhDhqyJ25XXgPKmFHAg8UmJQIeSZq7h_QKZxbJUi1dvHeYT6BKhTZa7Wit5SBw6LaXc7bSYwbZ3TFG8qcweOVOKRVOXYk-DGk52Z5obc7Y8pjJnV3W9ns7OXp3q6_VU7G4r01tHcTCNQZvFHFXHlEKb_lG8feKDRZZsKhMojvpeCqmuJR_TxDkE_T2RZOXShuTGbJp3vygYZv16c1sZ57F8vzH3hGGDzKiaK5KnWKzW5tlaz9BhhL9xAOQsoF3Q4QRbigNyUbSG66dHH0rzbDGoLi3l0hvqghE-zLzHF8W3pEDC1mEp986KL1rBXZoZ-oJcw29pjqtcX2bLmGHevchbIFqMRaaV7F-J4TNq-BIPOka_tkYmpXnJ6DFCiwccBMhHiJo37NNUiNdvRktmjhla7BMjoHZuiQefZo4UB-gSZohJYEp7BBJIfQ8keaX7itgl8joJDfy6mWwAlfPpkSXrYMW4zkRhjPHNaBRpG-hVf-5ADuSw0hrEQnBp3NocbyuzJzyYRlVHN-qaaK0re2Dm8LIOzikuu4jGjQ1DYhI_YTx_fV730vmJx898fuZ2rHRQ8EfQ65mf_ndjaYkrJEF4fvjvajF_fvh2inNh3XhSeGcHtfq2WDl8fvjXHI_H7w)
       - type: figure
         image: images/kiko-challenge-sequenz-schulhof.svg
         alt:
@@ -289,8 +309,8 @@ blocks:
             en: "After moving forward {{a}} times, Kiko is {{a}} squares from the start."
           - de: "Zwei Vierteldrehungen nach rechts sind eine halbe Drehung. Kiko schaut jetzt zum Start zurück."
             en: "Two quarter turns to the right make a half turn. Kiko now faces back towards the start."
-          - de: "Er geht {{b}} Felder zurück: {{a}} − {{b}} = {{answer}} Felder vom Start."
-            en: "It goes {{b}} squares back: {{a}} − {{b}} = {{answer}} squares from the start."
+          - de: "Er geht {{b}} Felder zurück. Abstand zum Start: {{a}} − {{b}} = {{answer}}."
+            en: "It goes {{b}} squares back. Distance from the start: {{a}} − {{b}} = {{answer}}."
       - type: true-false
         id: drehen-ist-schritt
         text:
@@ -311,8 +331,8 @@ blocks:
           de: >-
             Kiko ist mit deiner ersten Sequenz am Ziel. Damit endet das Kapitel: Algorithmen erkennen, prüfen und als
             Sequenz aufschreiben. **Mia** schreibt: „Bei
-            jeder Wand musste Jona neue Karten legen.“ Im nächsten Kapitel lernt Kiko, Wände selbst zu bemerken.
+            jeder Wand musste Jona neue Karten legen.“ Im nächsten Kapitel führt Kiko die Befehle selbst aus und lernt danach, Wände zu bemerken.
           en: >-
             Your first sequence has taken Kiko to the goal. That ends the chapter: spotting algorithms, checking them
             and writing them down as a sequence. **Mia** writes:
-            “Jona had to lay new cards for every wall.” In the next chapter Kiko learns to notice walls itself.
+            “Jona had to lay new cards for every wall.” In the next chapter Kiko carries out the commands itself and then learns to notice walls.

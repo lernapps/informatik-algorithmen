@@ -99,15 +99,19 @@ blocks:
           - type: text
             text:
               de: >-
-                Geprüft wird nur vor jedem Durchlauf, nicht mitten im Rumpf. „Lauf, bis du am Ziel bist“ schreibst du so:
-                solange nicht am Ziel? tue gehe vorwärts. Wird die
-                Bedingung nie falsch, endet die Schleife nie. Das ist eine Endlosschleife. Ein Programm, das nie endet,
-                löst keine Aufgabe, die enden soll.
+                Geprüft wird nur vor jedem Durchlauf, nicht mitten im Rumpf. Der Block „nicht“ dreht eine Bedingung um.
+                „Lauf, bis du am Ziel bist“ schreibst du darum so: solange nicht am Ziel? tue gehe vorwärts.
               en: >-
-                The condition is only checked before each pass, not in the middle of the body. The task “walk to the goal”
-                is written like this: while not at the goal? do move forward. If the
-                condition never becomes false, the loop never ends. That is an infinite loop. A program that never ends
-                doesn't solve a task that is meant to end.
+                The condition is only checked before each pass, not in the middle of the body. The block “not” turns a
+                condition round. So the task “walk to the goal” is written like this: while not at the goal? do move
+                forward.
+      - type: definition
+        term:
+          de: Endlosschleife
+          en: infinite loop
+        explanation:
+          de: "Eine Endlosschleife hört nie auf, weil ihre Bedingung nie falsch wird. Wie auf der Seite [Eigenschaften](/algorithmen/eigenschaften/): Ein Ablauf, der nie endet, löst keine Aufgabe, die enden soll."
+          en: "An infinite loop never stops because its condition never becomes false. As on the page [Properties](/algorithmen/eigenschaften/): a process that never ends doesn't solve a task that is meant to end."
   - type: section
     id: ausprobieren
     title:
@@ -200,7 +204,7 @@ blocks:
         id: endlosschleife
         text:
           de: Kiko steht nicht am Ziel und führt dieses Programm aus. Stimmt es, dass das Programm nie endet?
-          en: Kiko is not on the goal and carries out this program. Is it true that the program never ends?
+          en: Kiko is not at the goal and carries out this program. Is it true that the program never ends?
         material:
           - type: figure
             image:
@@ -223,22 +227,18 @@ blocks:
       - type: matching
         id: zahl-oder-bedingung
         text:
-          de: Welche Schleife passt zu welcher Aufgabe?
-          en: Which loop fits which task?
+          de: Wie weit geht Kiko mit welchem Programm? Kiko schaut in einen geraden Gang mit 8 freien Feldern, danach kommt eine Wand.
+          en: How far does Kiko go with each program? Kiko faces along a straight corridor with 8 free squares, then a wall.
         pairs:
-          - left: { de: Kiko soll genau 6 Felder gehen., en: Kiko has to move exactly 6 squares. }
-            right: { de: "wiederhole 6 mal: gehe vorwärts", en: "repeat 6 times: move forward" }
-          - left: { de: Kiko soll bis zur Wand gehen., en: Kiko has to move up to the wall. }
-            right: { de: "solange Weg frei? tue gehe vorwärts", en: "while way ahead clear? do move forward" }
-          - left:
-              de: "Kiko soll sich drehen, bis er am Ziel ist."
-              en: "Kiko has to turn until it is at the goal."
-            right:
-              de: "Keine Schleife hilft: Drehen bringt ihn nicht ans Ziel."
-              en: "No loop helps: turning doesn't get it to the goal."
+          - left: { de: "wiederhole 6 mal: gehe vorwärts", en: "repeat 6 times: move forward" }
+            right: { de: genau 6 Felder, en: exactly 6 squares }
+          - left: { de: "solange Weg frei? tue gehe vorwärts", en: "while way ahead clear? do move forward" }
+            right: { de: bis zur Wand, en: up to the wall }
+          - left: { de: "wenn Weg frei? dann gehe vorwärts", en: "if way ahead clear? then move forward" }
+            right: { de: genau 1 Feld, en: exactly 1 square }
         explanation:
-          de: Ist die Anzahl bekannt, passt die Zählschleife. Hängt sie vom Spielfeld ab, passt die bedingte Wiederholung. Ändert der Rumpf nichts an der Bedingung, wird sie nie falsch, und die Schleife endet nie.
-          en: If the number is known, the count-controlled loop fits. If it depends on the board, the condition-controlled loop fits. If the body changes nothing about the condition, it never becomes false, and the loop never ends.
+          de: Die Zählschleife läuft so oft, wie die Zahl sagt. Die bedingte Wiederholung läuft, solange ihre Bedingung wahr ist, egal wie oft. Eine Verzweigung prüft nur einmal.
+          en: The count-controlled loop runs as often as the number says. The condition-controlled loop runs while its condition is true, however often that is. Selection only checks once.
   - type: section
     id: weiter
     title:
@@ -253,5 +253,5 @@ blocks:
             Später, in Klasse 9 und 10, schreibst du dieselben Programme als Struktogramm, als Pseudocode und als Text.
           en: >-
             In this chapter you built and debugged programs from blocks and let Kiko decide with selection and repeat
-            with loops. **Selin** writes: “Kiko now finds its way through my whole maze! 🎉” Later, in grades 9 and 10,
-            you write the same programs as a Nassi-Shneiderman diagram, as pseudocode and as text.
+            with loops. **Selin** writes: “Kiko now finds its way through my whole maze! 🎉” Later on you will write the
+            same programs as diagrams, as pseudocode and as text.

@@ -66,7 +66,9 @@ Keine Recap-Seite und kein `ahead`: Jede Voraussetzung liegt im Strang und kommt
   5. `weiter`: Rückblick und was als Nächstes kommt, mit der nächsten Chat-Nachricht. Die letzte Seite eines
      Kapitels blickt auf das ganze Kapitel zurück.
 - Höchstens 350 Wörter zum Lesen je Seite.
-- Geschichte: Klasse 7b (Jona, Selin, Mia, Tom, Ben, Ali, Lea, Frau Berg) im Klassenchat, keine Szenenbilder. Erst
+- Geschichte: Klasse 7b (Jona, Selin, Mia, Tom, Ben, Ali, Lea; alle 12 oder 13) und Frau Berg, ihre
+  Informatiklehrerin, im Klassenchat, keine Szenenbilder. Eingeführt auf `algorithmus` (Einstieg und Rückblick). Wer
+  zum ersten Mal in einer Aufgabe auftaucht, heißt „Tom aus der 7b“. Erst
   steuern die Kinder sich gegenseitig mit Befehlskarten, ab Kapitel 2 übernimmt Kiko in der Werkstatt.
 
 ## Terminology
@@ -204,7 +206,8 @@ Keine Recap-Seite und kein `ahead`: Jede Voraussetzung liegt im Strang und kommt
    `informatik/datentypen` aus #494 am Anfang, dann variable, unterprogramme, parameter).
 2. Ordner `src/<kapitel>/` mit `chapter.yaml` (`title`, `summary`, `pages`), in `chapters` von `src/app.yaml`
    eintragen.
-3. Je Baustein eine Seite nach „Content structure“, mit Übungen nach „Exercise patterns“; dieselbe Kiko-Aufgabe in
+3. Je Baustein eine Seite nach „Content structure“, mit Übungen nach „Exercise patterns“; 1 bis 3 ihrer Übungen in
+   `selfAssessment` des Kapitels aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt; dieselbe Kiko-Aufgabe in
    allen Ansichten (Blöcke, Struktogramm nach DIN 66261, PAP, Pseudocode) nebeneinander.
 4. Bilder in `scripts/kiko-bilder.json` eintragen, `node scripts/kiko-bilder.ts`.
 5. Challenges in `challenges/`, Links mit `node scripts/challenges.ts --links` holen.
@@ -212,4 +215,15 @@ Keine Recap-Seite und kein `ahead`: Jede Voraussetzung liegt im Strang und kommt
 
 ## Rules learned from mistakes
 
-- None yet.
+- Text mit Komma oder Doppelpunkt in `{ de: …, en: … }` immer in Anführungszeichen; sonst zerlegt YAML ihn, und
+  `vp check --fix` formatiert den Fehler mehrzeilig weiter (passiert auf `eigenschaften`, `bloecke`).
+- Rechte Seiten von `matching` höchstens etwa 24 Zeichen: Bei 360 px schneidet das Auswahlfeld längere ab
+  (Prüfung als Lernende).
+- Eine Challenge mit Sensoren, die die Seite noch nicht hatte, nennt diese Sensoren auf der Seite („Oben oder
+  unten?“ braucht „Wand links?“).
+- Die Werkstatt sagt „Liste“ für die Werkzeugkiste und „Rätsel“ für die Spielfelder einer Challenge; die Seiten nennen
+  beide Wörter.
+- „Programm“ erst ab der Seite `bloecke` (dort definiert); in Kapitel 1 „Ablauf“, „Anleitung“ oder „Sequenz“.
+- Ein Bildtitel (`title` in `scripts/kiko-bilder.json`) verrät keine Antwort; er steht im SVG.
+- Die Startzahl eines Blocks „wiederhole … mal“ in der Werkstatt ist 3: Eine Challenge mit Zählschleife braucht eine
+  andere Zahl.

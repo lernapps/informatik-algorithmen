@@ -48,12 +48,12 @@
       "facing": "east"
     },
     "verzweigung-a": {
-      "title": "Spielfeld A: freier Gang",
+      "title": "Spielfeld 1: freier Gang",
       "map": ["######", "#S...#", "######"],
       "facing": "east"
     },
     "verzweigung-b": {
-      "title": "Spielfeld B: Wand voraus, mit den Feldern A und B",
+      "title": "Spielfeld 2: Wand voraus, mit den Feldern A und B",
       "map": ["######", "#S#..#", "#....#", "#....#", "######"],
       "facing": "east",
       "marks": {
@@ -84,7 +84,7 @@
     },
     "challenge-treppe": {
       "title": "Spielfeld der Challenge „Die breite Treppe“",
-      "map": ["#########", "#######Z#", "#####...#", "###...###", "#S..#####", "#########"],
+      "map": ["###########", "#########Z#", "#######...#", "#####...###", "###...#####", "#S..#######", "###########"],
       "facing": "east"
     },
     "challenge-um-jede-ecke-1": {
@@ -440,6 +440,32 @@
           {
             "s": "cmd",
             "name": "vorwaerts",
+            "args": []
+          }
+        ]
+      }
+    },
+    "sequenz-drei-befehle": {
+      "als": "karten",
+      "title": {
+        "de": "Die drei Befehle von Kiko",
+        "en": "Kiko's three commands"
+      },
+      "program": {
+        "main": [
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "links",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "rechts",
             "args": []
           }
         ]

@@ -16,7 +16,7 @@ blocks:
       - type: text
         text:
           de: |-
-            Im Klassenchat der 7b, am ersten Schultag:
+            Die Klasse 7b, alle 12 oder 13 Jahre alt, hat einen Klassenchat. Am ersten Schultag:
 
             **Ali:** Hi, ich bin neu 👋 Wo ist morgen Informatik?
 
@@ -28,7 +28,7 @@ blocks:
 
             Hier lernst du, was Selins Nachricht besonders macht: Sie ist ein Algorithmus.
           en: |-
-            In class 7b's group chat, on the first day of school:
+            Class 7b, all aged 12 or 13, have a group chat. On the first day of school:
 
             **Ali:** Hi, I'm new 👋 Where is computing tomorrow?
 
@@ -211,7 +211,7 @@ blocks:
           - left: { de: Wegbeschreibung, en: route description }
             right: { de: einen Raum finden, en: find a room }
           - left: { de: schriftliches Addieren, en: column addition }
-            right: { de: zwei große Zahlen zusammenzählen, en: add two big numbers }
+            right: { de: große Zahlen addieren, en: add two big numbers }
         explanation:
           de: Jeder Algorithmus gehört zu einer Aufgabe. Er ist fertig, wenn die Aufgabe gelöst ist.
           en: Every algorithm belongs to a task. It is finished when the task is solved.
@@ -244,8 +244,8 @@ blocks:
       - type: true-false
         id: nur-computer
         text:
-          de: "Tom sagt: „Algorithmen gibt es nur in Computern.“ Stimmt das?"
-          en: "Tom says: “Algorithms only exist in computers.” Is that true?"
+          de: "Tom aus der 7b sagt: „Algorithmen gibt es nur in Computern.“ Stimmt das?"
+          en: "Tom from class 7b says: “Algorithms only exist in computers.” Is that true?"
         answer: false
         explanation:
           de: Auch Menschen führen Algorithmen aus, zum Beispiel beim Kochen nach Rezept oder beim schriftlichen Addieren. Ein Computer braucht sie nur besonders genau.
@@ -259,10 +259,12 @@ blocks:
       - type: text
         text:
           de: >-
-            Du kannst jetzt erklären, was ein Algorithmus ist, und einen Weg als Schritte aufschreiben. **Frau Berg**
-            schreibt in den Chat: „Morgen spielen wir mit Befehlskarten. Ich bin gespannt, welche Karten kaputt sind.“
-            Auf der nächsten Seite prüfst du, wann eine Anleitung wirklich ein Algorithmus ist.
+            Du kannst jetzt erklären, was ein Algorithmus ist, und einen Weg als Schritte aufschreiben. **Frau Berg**,
+            die Informatiklehrerin der 7b, schreibt: „Morgen spielen wir mit Befehlskarten. Eine oder einer von euch ist
+            Kiko, unser Roboter, und folgt den Karten auf einem Spielfeld am Boden.“ Auf der nächsten Seite prüfst du,
+            wann eine Anleitung wirklich ein Algorithmus ist.
           en: >-
-            You can now explain what an algorithm is and write down a route as steps. **Frau Berg** writes in the chat:
-            “Tomorrow we'll play with command cards. I wonder which cards will be broken.” On the next page you check
-            when a set of instructions really is an algorithm.
+            You can now explain what an algorithm is and write down a route as steps. **Frau Berg**, class 7b's
+            computing teacher, writes: “Tomorrow we'll play with command cards. One of you will be Kiko, our robot, and
+            follow the cards on a board on the floor.” On the next page you check when a set of instructions really is
+            an algorithm.
