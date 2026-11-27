@@ -1,0 +1,52 @@
+{
+  "format": 1,
+  "id": "kiko-treppe",
+  "title": {
+    "de": "Die breite Treppe",
+    "en": "The wide staircase"
+  },
+  "task": {
+    "de": "Kiko steigt eine Treppe hoch. Jede Stufe ist 2 Felder breit und 1 Feld hoch. Bau das Programm für eine Stufe und lass es wiederholen. Du hast höchstens 6 Blöcke.",
+    "en": "Kiko climbs a staircase. Each step is 2 squares wide and 1 square high. Build the program for one step and let it repeat. You have at most 6 blocks."
+  },
+  "world": {
+    "type": "labyrinth",
+    "version": 1,
+    "config": {
+      "map": ["###########", "#########Z#", "#######...#", "#####...###", "###...#####", "#S..#######", "###########"],
+      "facing": "east"
+    }
+  },
+  "toolbox": ["vorwaerts", "links", "rechts", "wiederhole"],
+  "start": null,
+  "limits": {
+    "blocks": 6
+  },
+  "tests": [],
+  "checks": ["ziel-erreicht", "benutzt-block:wiederhole"],
+  "hints": [
+    {
+      "de": "Schreib erst die Befehle für die unterste Stufe auf. Danach schaut Kiko wieder im Bild nach rechts.",
+      "en": "First write down the commands for the lowest step. Afterwards Kiko faces right on the board again."
+    },
+    {
+      "de": "Eine Stufe: 2-mal vorwärts, links drehen, vorwärts, rechts drehen.",
+      "en": "One step: forward twice, turn left, forward, turn right."
+    },
+    {
+      "de": "Wie viele Stufen hat die Treppe? So oft wiederholst du.",
+      "en": "How many steps does the staircase have? That is how often you repeat."
+    }
+  ],
+  "view": "bloecke",
+  "back": {
+    "url": {
+      "de": "/informatik-algorithmen/bloecke/zaehlschleife/",
+      "en": "/informatik-algorithmen/en/bloecke/zaehlschleife/"
+    },
+    "label": {
+      "de": "Zurück zur Seite „Zählschleife“",
+      "en": "Back to the page “Count-controlled loop”"
+    }
+  }
+}

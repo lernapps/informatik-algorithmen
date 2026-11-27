@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "id": "kiko-vorhersage-sequenz",
+  "title": {
+    "de": "Wohin läuft Kiko?",
+    "en": "Where does Kiko go?"
+  },
+  "task": {
+    "de": "Lies das Programm, ohne es zu starten. Sag voraus, welchen Weg Kiko nimmt: Feld für Feld. Danach läuft das Programm, und du siehst, ob du recht hattest.",
+    "en": "Read the program without running it. Predict which way Kiko goes, square by square. Then the program runs and you see whether you were right."
+  },
+  "world": {
+    "type": "labyrinth",
+    "version": 1,
+    "config": {
+      "map": ["#######", "#.....#", "#.....#", "#.....#", "#...Z.#", "#S....#", "#######"],
+      "facing": "east"
+    }
+  },
+  "toolbox": ["vorwaerts", "links", "rechts"],
+  "start": {
+    "main": [
+      {
+        "s": "cmd",
+        "name": "vorwaerts",
+        "args": [],
+        "locked": true
+      },
+      {
+        "s": "cmd",
+        "name": "vorwaerts",
+        "args": [],
+        "locked": true
+      },
+      {
+        "s": "cmd",
+        "name": "links",
+        "args": [],
+        "locked": true
+      },
+      {
+        "s": "cmd",
+        "name": "vorwaerts",
+        "args": [],
+        "locked": true
+      },
+      {
+        "s": "cmd",
+        "name": "rechts",
+        "args": [],
+        "locked": true
+      },
+      {
+        "s": "cmd",
+        "name": "vorwaerts",
+        "args": [],
+        "locked": true
+      }
+    ]
+  },
+  "limits": {},
+  "tests": [],
+  "checks": ["vorhersage"],
+  "hints": [
+    {
+      "de": "Geh das Programm Block für Block durch und zeig mit dem Finger mit.",
+      "en": "Go through the program block by block and point along with your finger."
+    },
+    {
+      "de": "Drehen bewegt Kiko nicht vom Feld.",
+      "en": "Turning does not move Kiko off its square."
+    }
+  ],
+  "view": "bloecke",
+  "back": {
+    "url": {
+      "de": "/informatik-algorithmen/algorithmen/sequenz/",
+      "en": "/informatik-algorithmen/en/algorithmen/sequenz/"
+    },
+    "label": {
+      "de": "Zurück zur Seite „Sequenz“",
+      "en": "Back to the page “Sequence”"
+    }
+  }
+}

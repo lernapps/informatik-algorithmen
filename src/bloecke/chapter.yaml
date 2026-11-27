@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Programmieren mit Blöcken
+  en: Programming with blocks
+summary:
+  de: Aus den Karten werden Blöcke. Kiko bekommt Sensoren und damit Verzweigungen, dann Schleifen für lange Wege.
+  en: The cards become blocks. Kiko gets sensors and with them selection, then loops for long paths.
+pages: [bloecke, verzweigung, zaehlschleife, bedingte-wiederholung]
+selfAssessment:
+  pages:
+    - exercises:
+        - /bloecke/bloecke/#was-macht-das-programm
+        - /bloecke/bloecke/#bloecke-zaehlen
+    - exercises:
+        - /bloecke/verzweigung/#spielfeld-a-felder
+        - /bloecke/verzweigung/#welcher-zweig
+    - exercises:
+        - /bloecke/zaehlschleife/#befehle-zaehlen
+        - /bloecke/zaehlschleife/#wie-oft-wiederholen
+    - exercises:
+        - /bloecke/bedingte-wiederholung/#wie-oft-vorwaerts
+        - /bloecke/bedingte-wiederholung/#wie-oft-pruefen

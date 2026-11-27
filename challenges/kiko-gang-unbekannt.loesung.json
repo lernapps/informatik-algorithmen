@@ -1,0 +1,19 @@
+{
+  "main": [
+    {
+      "s": "while",
+      "cond": {
+        "e": "sense",
+        "name": "weg-frei",
+        "args": []
+      },
+      "body": [
+        {
+          "s": "cmd",
+          "name": "vorwaerts",
+          "args": []
+        }
+      ]
+    }
+  ]
+}

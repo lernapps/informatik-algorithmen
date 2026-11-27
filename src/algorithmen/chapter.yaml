@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Was ist ein Algorithmus?
+  en: What is an algorithm?
+summary:
+  de: Du erkennst Algorithmen im Alltag, prüfst ihre Eigenschaften und steuerst Kiko mit Befehlskarten.
+  en: You spot algorithms in everyday life, check their properties and steer Kiko with command cards.
+pages: [algorithmus, eigenschaften, sequenz]
+selfAssessment:
+  pages:
+    - exercises:
+        - /algorithmen/algorithmus/#welche-sind-algorithmen
+        - /algorithmen/algorithmus/#algorithmus-aufgabe
+    - exercises:
+        - /algorithmen/eigenschaften/#was-fehlt
+        - /algorithmen/eigenschaften/#karten-in-ordnung
+    - exercises:
+        - /algorithmen/sequenz/#karten-zaehlen
+        - /algorithmen/sequenz/#hin-und-zurueck
+        - /algorithmen/sequenz/#hin-und-zurueck

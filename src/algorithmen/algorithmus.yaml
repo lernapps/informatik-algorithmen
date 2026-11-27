@@ -1,0 +1,270 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Was ist ein Algorithmus?
+  en: What is an algorithm?
+description:
+  de: "Eine genaue Anleitung aus Schritten, die eine Aufgabe löst: Algorithmen im Alltag erkennen und selbst einen aufschreiben."
+  en: "A precise set of steps that solves a task: spotting algorithms in everyday life and writing one yourself."
+competencies: [algorithmus-begriff]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Ali sucht den Computerraum
+      en: Ali looks for the computer room
+    blocks:
+      - type: text
+        text:
+          de: |-
+            Die Klasse 7b, alle 12 oder 13 Jahre alt, hat einen Klassenchat. Am ersten Schultag:
+
+            **Ali:** Hi, ich bin neu 👋 Wo ist morgen Informatik?
+
+            **Jona:** Raum 112. Einfach rein, dann irgendwo links, ist nicht weit 😅
+
+            **Selin:** 1. Durch den Haupteingang. 2. Links zur Treppe und hoch in den 1. Stock. 3. Oben im Gang nach rechts. 4. Dritte Tür links: Raum 112.
+
+            **Ali:** Danke, Selin! Das schaffe sogar ich.
+
+            Hier lernst du, was Selins Nachricht besonders macht: Sie ist ein Algorithmus.
+          en: |-
+            Class 7b, all aged 12 or 13, have a group chat. On the first day of school:
+
+            **Ali:** Hi, I'm new 👋 Where is computing tomorrow?
+
+            **Jona:** Room 112. Just go in, then left somewhere, it's not far 😅
+
+            **Selin:** 1. Go in through the main entrance. 2. Left to the stairs and up to the first floor. 3. Upstairs, go right along the corridor. 4. Third door on the left: room 112.
+
+            **Ali:** Thanks, Selin! Even I can manage that.
+
+            Here you learn what makes Selin's message special: it is an algorithm.
+      - type: single-choice
+        id: welche-beschreibung
+        text:
+          de: Ali kennt die Schule noch nicht. Mit welcher Beschreibung findet er Raum 112 sicher?
+          en: Ali doesn't know the school yet. With which description is he sure to find room 112?
+        options:
+          - text:
+              de: Selins vier Schritte
+              en: Selin's four steps
+            correct: true
+            info:
+              de: Jeder Schritt sagt genau, was Ali tun soll, und die Reihenfolge ist klar. Er muss nichts raten.
+              en: Each step says exactly what Ali has to do, and the order is clear. He doesn't have to guess anything.
+          - text:
+              de: Jonas „Einfach rein, dann irgendwo links“
+              en: Jona's “Just go in, then left somewhere”
+            correct: false
+            info:
+              de: "„Irgendwo links“ kann vieles heißen: Ali muss raten, wo er abbiegen soll."
+              en: "“Left somewhere” can mean many things: Ali has to guess where to turn."
+          - text:
+              de: „Raum 112 ist im 1. Stock.“
+              en: “Room 112 is on the first floor.”
+            correct: false
+            info:
+              de: Das stimmt, sagt aber nicht, was Ali tun soll. Wo die Treppe ist, weiß er nicht.
+              en: That's true, but it doesn't say what Ali should do. He doesn't know where the stairs are.
+          - text:
+              de: „Frag im Gang einfach jemanden.“
+              en: “Just ask someone in the corridor.”
+            correct: false
+            info:
+              de: Damit wird die Aufgabe nur weitergeschoben. Wie Ali den Raum findet, steht nicht darin.
+              en: That only passes the task on. It doesn't say how Ali finds the room.
+        explanation:
+          de: Selins Nachricht besteht aus Schritten, die Ali nacheinander ausführen kann, bis er am Ziel ist.
+          en: Selin's message is made of steps that Ali can carry out one after another until he reaches the goal.
+  - type: section
+    id: idee
+    title:
+      de: Eine genaue Anleitung aus Schritten
+      en: A precise set of steps
+    blocks:
+      - type: labelled-figure
+        image: images/schulhaus-plan.svg
+        alt:
+          de: "Plan der Schule. Oben das Erdgeschoss mit den Räumen 101 bis 104, unten der 1. Stock mit den Räumen 110 bis 114. Der Haupteingang ist unten in der Mitte des Erdgeschosses, die Treppe links unten in beiden Stockwerken. Im 1. Stock liegen über dem Gang von links nach rechts die Räume 110, 111 und 112."
+          en: "Plan of the school. At the top the ground floor with rooms 101 to 104, at the bottom the first floor with rooms 110 to 114. The main entrance is at the bottom middle of the ground floor, the stairs are bottom left on both floors. On the first floor, rooms 110, 111 and 112 lie above the corridor from left to right."
+        caption:
+          de: Oben das Erdgeschoss, unten der 1. Stock. Fahr Selins Weg mit dem Finger nach.
+          en: At the top the ground floor, at the bottom the first floor. Trace Selin's route with your finger.
+        labels:
+          - x: 50
+            y: 43
+            text: { de: Haupteingang, en: main entrance }
+          - x: 12
+            y: 33
+            text: { de: Treppe, en: stairs }
+          - x: 93
+            y: 54
+            text: { de: "Raum 112, der Computerraum", en: "room 112, the computer room" }
+          - x: 94
+            y: 30
+            text: { de: "Raum 104, das Sekretariat", en: "room 104, the school office" }
+        source:
+          de: eigene Zeichnung
+          en: own drawing
+        licence: CC-BY-4.0
+      - type: text
+        text:
+          de: >-
+            Selin schreibt keine Beschreibung der Schule, sondern eine Anleitung: Schritt für Schritt, in einer festen
+            Reihenfolge. Wer ihr folgt, kommt immer an, egal ob Ali, du oder ein Roboter.
+          en: >-
+            Selin doesn't write a description of the school but a set of instructions: step by step, in a fixed order.
+            Whoever follows them always gets there, whether it's Ali, you or a robot.
+      - type: definition
+        term:
+          de: Algorithmus
+          en: algorithm
+        explanation:
+          de: Ein Algorithmus ist eine genaue Anleitung (Handlungsvorschrift) aus endlich vielen Schritten, die eine Aufgabe löst. Wer ihn ausführt, muss nichts raten.
+          en: An algorithm is a precise set of step-by-step instructions that solves a problem or completes a task. Whoever carries it out doesn't have to guess anything.
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: >-
+                Algorithmen gibt es überall, nicht nur im Computer: ein Rezept, eine Bauanleitung, das schriftliche
+                Addieren. Ein Wetterbericht ist keiner: Er sagt, wie etwas ist, nicht, was man tun soll.
+              en: >-
+                Algorithms are everywhere, not only in computers: a recipe, assembly instructions, column addition. A
+                weather report is not one: it says how something is, not what to do.
+  - type: section
+    id: ausprobieren
+    title:
+      de: Selbst ausprobieren
+      en: Try it yourself
+    blocks:
+      - type: text
+        text:
+          de: |-
+            **Ohne Computer, zu zweit:**
+
+            1. Wählt ein Ziel in eurer Schule, zum Beispiel das Sekretariat.
+            2. Eine oder einer schreibt den Weg vom Klassenraum dorthin in nummerierten Schritten auf.
+            3. Die oder der andere geht los und macht nur, was auf dem Zettel steht, ohne nachzufragen.
+            4. Wo ihr raten musstet, verbessert ihr den Schritt. Dann tauscht ihr.
+          en: |-
+            **Without a computer, in pairs:**
+
+            1. Choose a place in your school, for example the school office.
+            2. One of you writes down the route from your classroom in numbered steps.
+            3. The other one sets off and does only what is on the paper, without asking.
+            4. Wherever you had to guess, improve that step. Then swap.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: multiple-choice
+        id: welche-sind-algorithmen
+        text:
+          de: Welche dieser Texte sind Algorithmen?
+          en: Which of these texts are algorithms?
+        options:
+          - text: { de: ein Rezept für Pfannkuchen, en: a recipe for pancakes }
+            correct: true
+            info:
+              de: Ein Rezept sagt Schritt für Schritt, was du tun sollst, bis die Pfannkuchen fertig sind.
+              en: A recipe tells you step by step what to do until the pancakes are ready.
+          - text: { de: die Bauanleitung für ein Regal, en: the assembly instructions for a shelf }
+            correct: true
+            info:
+              de: Die Bauanleitung führt in nummerierten Schritten zum fertigen Regal.
+              en: The instructions lead to the finished shelf in numbered steps.
+          - text: { de: der Wetterbericht für morgen, en: the weather report for tomorrow }
+            correct: false
+            info:
+              de: Der Wetterbericht beschreibt, wie das Wetter wird. Er sagt nicht, was jemand tun soll, darum ist er keine Handlungsvorschrift.
+              en: The weather report describes what the weather will be like. It doesn't say what anyone should do, so it is not a set of instructions.
+          - text: { de: der Stundenplan der 7b, en: class 7b's timetable }
+            correct: false
+            info:
+              de: Der Stundenplan zeigt, wann welches Fach ist. Schritte, die eine Aufgabe lösen, enthält er nicht.
+              en: The timetable shows when each subject is. It contains no steps that solve a task.
+          - text:
+              { de: die Anleitung zum Anmelden im Schul-WLAN, en: the instructions for logging in to the school Wi-Fi }
+            correct: true
+            info:
+              de: Sie sagt Schritt für Schritt, was du tippen und anklicken sollst, bis du im WLAN bist.
+              en: It tells you step by step what to type and click until you are on the Wi-Fi.
+        explanation:
+          de: Ein Algorithmus sagt, was zu tun ist, in Schritten, bis eine Aufgabe gelöst ist. Eine Beschreibung oder eine Übersicht reicht dafür nicht.
+          en: An algorithm says what to do, in steps, until a task is solved. A description or an overview is not enough.
+      - type: matching
+        id: algorithmus-aufgabe
+        text:
+          de: Welche Aufgabe löst welcher Algorithmus?
+          en: Which task does each algorithm solve?
+        pairs:
+          - left: { de: Rezept, en: recipe }
+            right: { de: einen Kuchen backen, en: bake a cake }
+          - left: { de: Bauanleitung, en: assembly instructions }
+            right: { de: ein Regal aufbauen, en: build a shelf }
+          - left: { de: Wegbeschreibung, en: route description }
+            right: { de: einen Raum finden, en: find a room }
+          - left: { de: schriftliches Addieren, en: column addition }
+            right: { de: große Zahlen addieren, en: add two big numbers }
+        explanation:
+          de: Jeder Algorithmus gehört zu einer Aufgabe. Er ist fertig, wenn die Aufgabe gelöst ist.
+          en: Every algorithm belongs to a task. It is finished when the task is solved.
+      - type: ordering
+        id: weg-sekretariat
+        text:
+          de: Ali soll zum Sekretariat, Raum 104 im Erdgeschoss. Bring die Schritte in die richtige Reihenfolge.
+          en: Ali has to go to the school office, room 104 on the ground floor. Put the steps in the right order.
+        material:
+          - type: figure
+            image: images/schulhaus-plan.svg
+            alt:
+              de: "Plan der Schule. Oben das Erdgeschoss: Der Haupteingang ist unten in der Mitte, von dort geht ein Gang nach links und rechts. Raum 104 liegt rechts unten am Ende des Gangs. Unten der 1. Stock."
+              en: "Plan of the school. At the top the ground floor: the main entrance is at the bottom middle, and a corridor goes left and right from there. Room 104 is at the bottom right, at the end of the corridor. At the bottom the first floor."
+            caption:
+              de: Der Plan der Schule, oben das Erdgeschoss
+              en: The plan of the school, the ground floor at the top
+            source:
+              de: eigene Zeichnung
+              en: own drawing
+            licence: CC-BY-4.0
+        items:
+          - { de: Geh durch den Haupteingang., en: Go in through the main entrance. }
+          - { de: Geh im Gang nach rechts., en: Go right along the corridor. }
+          - { de: Geh bis zur letzten Tür auf der rechten Seite., en: Go to the last door on the right. }
+          - { de: Geh durch die Tür in Raum 104., en: Go through the door into room 104. }
+        explanation:
+          de: Erst hinein, dann nach rechts, dann bis zur Tür. Mit einer anderen Reihenfolge kommt Ali nicht an.
+          en: First in, then right, then on to the door. In any other order Ali won't get there.
+      - type: true-false
+        id: nur-computer
+        text:
+          de: "Tom aus der 7b sagt: „Algorithmen gibt es nur in Computern.“ Stimmt das?"
+          en: "Tom from class 7b says: “Algorithms only exist in computers.” Is that true?"
+        answer: false
+        explanation:
+          de: Auch Menschen führen Algorithmen aus, zum Beispiel beim Kochen nach Rezept oder beim schriftlichen Addieren. Ein Computer braucht sie nur besonders genau.
+          en: People carry out algorithms too, for example when cooking from a recipe or doing column addition. A computer just needs them to be especially precise.
+  - type: section
+    id: weiter
+    title:
+      de: Wie es weitergeht
+      en: What comes next
+    blocks:
+      - type: text
+        text:
+          de: >-
+            Du kannst jetzt erklären, was ein Algorithmus ist, und einen Weg als Schritte aufschreiben. **Frau Berg**,
+            die Informatiklehrerin der 7b, schreibt: „Morgen spielen wir mit Befehlskarten. Eine oder einer von euch ist
+            Kiko, unser Roboter, und folgt den Karten auf einem Spielfeld am Boden.“ Auf der nächsten Seite prüfst du,
+            wann eine Anleitung wirklich ein Algorithmus ist.
+          en: >-
+            You can now explain what an algorithm is and write down a route as steps. **Frau Berg**, class 7b's
+            computing teacher, writes: “Tomorrow we'll play with command cards. One of you will be Kiko, our robot, and
+            follow the cards on a board on the floor.” On the next page you check when a set of instructions really is
+            an algorithm.

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 362" width="360" height="362">
+  <title>Plan der Schule: Erdgeschoss oben, 1. Stock unten, mit Treppe, Gängen und Raumnummern</title>
+  <desc>Eigene Zeichnung für den Explainer „Algorithmen und Programme“ (lernapps.net), © 2026 Oliver Jägle, CC BY 4.0. Ohne Wörter: Die Namen stehen als Marker in der Legende der Seite.</desc>
+  <style>
+    .wall { fill: #f3f1ea; stroke: #3b4252; stroke-width: 3; }
+    .room { fill: #ffffff; stroke: #3b4252; stroke-width: 1.5; }
+    .gang { fill: #e6eef7; stroke: none; }
+    .door { fill: #a0632a; }
+    .num { font: bold 14px sans-serif; fill: #1f2a44; text-anchor: middle; }
+    .step { stroke: #6b7280; stroke-width: 1.5; }
+  </style>
+  <rect width="360" height="362" fill="#ffffff"/>
+  <!-- Erdgeschoss -->
+  <rect x="10" y="10" width="340" height="135" class="wall"/>
+  <rect x="10" y="10" width="110" height="50" class="room"/>
+  <rect x="120" y="10" width="110" height="50" class="room"/>
+  <rect x="230" y="10" width="120" height="50" class="room"/>
+  <rect x="11.5" y="60" width="337" height="35" class="gang"/>
+  <rect x="10" y="95" width="70" height="50" class="room"/>
+  <rect x="260" y="95" width="90" height="50" class="room"/>
+  <text x="65" y="40" class="num">101</text>
+  <text x="175" y="40" class="num">102</text>
+  <text x="290" y="40" class="num">103</text>
+  <text x="305" y="125" class="num">104</text>
+  <g>
+    <line x1="18" y1="103" x2="72" y2="103" class="step"/>
+    <line x1="18" y1="112" x2="72" y2="112" class="step"/>
+    <line x1="18" y1="121" x2="72" y2="121" class="step"/>
+    <line x1="18" y1="130" x2="72" y2="130" class="step"/>
+    <line x1="18" y1="139" x2="72" y2="139" class="step"/>
+  </g>
+  <rect x="55" y="57" width="20" height="6" class="door"/>
+  <rect x="165" y="57" width="20" height="6" class="door"/>
+  <rect x="280" y="57" width="20" height="6" class="door"/>
+  <rect x="290" y="92" width="20" height="6" class="door"/>
+  <rect x="160" y="142" width="40" height="7" fill="#ffffff"/>
+  <path d="M 160 145 L 160 136 M 200 145 L 200 136" stroke="#3b4252" stroke-width="3"/>
+  <!-- 1. Stock -->
+  <rect x="10" y="180" width="340" height="135" class="wall"/>
+  <rect x="10" y="180" width="110" height="50" class="room"/>
+  <rect x="120" y="180" width="110" height="50" class="room"/>
+  <rect x="230" y="180" width="120" height="50" class="room"/>
+  <rect x="11.5" y="230" width="337" height="35" class="gang"/>
+  <rect x="10" y="265" width="70" height="50" class="room"/>
+  <rect x="80" y="265" width="135" height="50" class="room"/>
+  <rect x="215" y="265" width="135" height="50" class="room"/>
+  <text x="65" y="210" class="num">110</text>
+  <text x="175" y="210" class="num">111</text>
+  <text x="290" y="210" class="num">112</text>
+  <text x="147" y="295" class="num">113</text>
+  <text x="282" y="295" class="num">114</text>
+  <g>
+    <line x1="18" y1="273" x2="72" y2="273" class="step"/>
+    <line x1="18" y1="282" x2="72" y2="282" class="step"/>
+    <line x1="18" y1="291" x2="72" y2="291" class="step"/>
+    <line x1="18" y1="300" x2="72" y2="300" class="step"/>
+    <line x1="18" y1="309" x2="72" y2="309" class="step"/>
+  </g>
+  <rect x="85" y="227" width="20" height="6" class="door"/>
+  <rect x="165" y="227" width="20" height="6" class="door"/>
+  <rect x="280" y="227" width="20" height="6" class="door"/>
+  <rect x="137" y="262" width="20" height="6" class="door"/>
+  <rect x="272" y="262" width="20" height="6" class="door"/>
+</svg>

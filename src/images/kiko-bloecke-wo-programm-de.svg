@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217 272" width="217" height="272">
+<title>Ein Programm aus sechs Blöcken</title>
+<desc>Kiko und die Welt nach der Programmierwerkstatt lernapps.net/coding, © 2026 Oliver Jägle, CC BY 4.0. Erzeugt mit scripts/kiko-bilder.ts.</desc>
+<style>.t{font:14px sans-serif;fill:#ffffff}.n{font:bold 13px sans-serif;fill:#1f2a44;text-anchor:middle}</style>
+<rect width="217" height="272" fill="#ffffff"/><rect x="8" y="8" width="90.72" height="30" rx="8" fill="#7a4f24"/><text x="20" y="28" class="t">Programm</text><rect x="8" y="40" width="129.92000000000002" height="30" rx="5" fill="#2f5d8a"/><text x="20" y="60" class="t">gehe vorwärts</text><rect x="8" y="72" width="192.64000000000001" height="30" rx="5" fill="#2f5d8a"/><text x="20" y="92" class="t">drehe dich nach links</text><rect x="8" y="104" width="129.92000000000002" height="30" rx="5" fill="#2f5d8a"/><text x="20" y="124" class="t">gehe vorwärts</text><rect x="8" y="136" width="129.92000000000002" height="30" rx="5" fill="#2f5d8a"/><text x="20" y="156" class="t">gehe vorwärts</text><rect x="8" y="168" width="200.48000000000002" height="30" rx="5" fill="#2f5d8a"/><text x="20" y="188" class="t">drehe dich nach rechts</text><rect x="8" y="200" width="129.92000000000002" height="30" rx="5" fill="#2f5d8a"/><text x="20" y="220" class="t">gehe vorwärts</text>
+</svg>

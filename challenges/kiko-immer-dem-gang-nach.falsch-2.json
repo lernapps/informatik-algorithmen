@@ -1,0 +1,39 @@
+{
+  "main": [
+    {
+      "s": "while",
+      "cond": {
+        "e": "not",
+        "a": {
+          "e": "sense",
+          "name": "am-ziel",
+          "args": []
+        }
+      },
+      "body": [
+        {
+          "s": "if",
+          "cond": {
+            "e": "sense",
+            "name": "weg-frei",
+            "args": []
+          },
+          "then": [
+            {
+              "s": "cmd",
+              "name": "rechts",
+              "args": []
+            }
+          ],
+          "else": [
+            {
+              "s": "cmd",
+              "name": "vorwaerts",
+              "args": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

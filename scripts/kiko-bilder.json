@@ -1,0 +1,475 @@
+{
+  "felder": {
+    "sequenz-einstieg": {
+      "title": "Spielfeld mit Kiko und vier markierten Feldern A bis D",
+      "map": ["#######", "#.....#", "#.....#", "#S....#", "#.....#", "#######"],
+      "facing": "east",
+      "marks": {
+        "A": [3, 2],
+        "B": [3, 3],
+        "C": [2, 2],
+        "D": [3, 5]
+      }
+    },
+    "sequenz-zaehlen": {
+      "title": "Spielfeld mit Kiko und Ziel",
+      "map": ["#######", "##...Z#", "##.####", "##.####", "#S.####", "#######"],
+      "facing": "east"
+    },
+    "sequenz-auswahl": {
+      "title": "Spielfeld mit Kiko und Ziel",
+      "map": ["######", "#...Z#", "#.####", "#S####", "######"],
+      "facing": "north"
+    },
+    "challenge-sequenz-schulhof": {
+      "title": "Spielfeld der Challenge „Kiko läuft zur Fahne“",
+      "map": ["#######", "#S..###", "###.###", "###..Z#", "#######"],
+      "facing": "east"
+    },
+    "bloecke-wo": {
+      "title": "Spielfeld mit Kiko und vier markierten Feldern A bis D",
+      "map": ["#######", "#.....#", "#.....#", "#.....#", "#.....#", "#S....#", "#######"],
+      "facing": "east",
+      "marks": {
+        "A": [5, 3],
+        "B": [4, 4],
+        "C": [3, 4],
+        "D": [4, 5]
+      }
+    },
+    "bloecke-fehler": {
+      "title": "Spielfeld mit Kiko und Ziel",
+      "map": ["######", "#S..##", "###.##", "###.Z#", "######"],
+      "facing": "east"
+    },
+    "challenge-fehler-finden": {
+      "title": "Spielfeld der Challenge „Finde den Fehler“",
+      "map": ["######", "#S.###", "##.###", "##..Z#", "######"],
+      "facing": "east"
+    },
+    "verzweigung-a": {
+      "title": "Spielfeld 1: freier Gang",
+      "map": ["######", "#S...#", "######"],
+      "facing": "east"
+    },
+    "verzweigung-b": {
+      "title": "Spielfeld 2: Wand voraus, mit den Feldern A und B",
+      "map": ["######", "#S#..#", "#....#", "#....#", "######"],
+      "facing": "east",
+      "marks": {
+        "A": [2, 3],
+        "B": [2, 4]
+      }
+    },
+    "challenge-wenn-sonst-1": {
+      "title": "Spielfeld 1 der Challenge „Oben oder unten?“",
+      "map": ["#####", "##Z##", "#S.##", "#####"],
+      "facing": "east"
+    },
+    "challenge-wenn-sonst-2": {
+      "title": "Spielfeld 2 der Challenge „Oben oder unten?“",
+      "map": ["#####", "#S.##", "##Z##", "#####"],
+      "facing": "east"
+    },
+    "zaehlschleife-wo": {
+      "title": "Spielfeld mit Kiko und vier markierten Feldern A bis D",
+      "map": ["#######", "#.....#", "#.....#", "#.....#", "#.....#", "#S....#", "#######"],
+      "facing": "east",
+      "marks": {
+        "A": [2, 4],
+        "B": [4, 6],
+        "C": [4, 4],
+        "D": [6, 6]
+      }
+    },
+    "challenge-treppe": {
+      "title": "Spielfeld der Challenge „Die breite Treppe“",
+      "map": ["###########", "#########Z#", "#######...#", "#####...###", "###...#####", "#S..#######", "###########"],
+      "facing": "east"
+    },
+    "challenge-um-jede-ecke-1": {
+      "title": "Spielfeld 1 der Challenge „Um jede Ecke“",
+      "map": ["########", "#S.....#", "######.#", "#Z.....#", "########"],
+      "facing": "east"
+    }
+  },
+  "programme": {
+    "sequenz-einstieg-karten": {
+      "als": "karten",
+      "program": {
+        "main": [
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "links",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          }
+        ]
+      },
+      "title": {
+        "de": "Drei Befehlskarten",
+        "en": "Three command cards"
+      }
+    },
+    "eigenschaften-toms-karten": {
+      "als": "karten",
+      "title": {
+        "de": "Toms drei eigene Karten",
+        "en": "Tom's three home-made cards"
+      },
+      "texte": {
+        "de": ["gehe ein Stück", "spring über die Wand", "drehe dich immer wieder nach links"],
+        "en": ["move a bit", "jump over the wall", "keep turning left again and again"]
+      }
+    },
+    "bloecke-wo-programm": {
+      "title": {
+        "de": "Ein Programm aus sechs Blöcken",
+        "en": "A program of six blocks"
+      },
+      "program": {
+        "main": [
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "links",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "rechts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          }
+        ]
+      }
+    },
+    "bloecke-fehler-programm": {
+      "title": {
+        "de": "Bens Programm mit nummerierten Blöcken",
+        "en": "Ben's program with numbered blocks"
+      },
+      "numbers": true,
+      "program": {
+        "main": [
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "links",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "links",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          }
+        ]
+      }
+    },
+    "verzweigung-programm": {
+      "title": {
+        "de": "Ein Programm mit Verzweigung",
+        "en": "A program with selection"
+      },
+      "program": {
+        "main": [
+          {
+            "s": "if",
+            "cond": {
+              "e": "sense",
+              "name": "wand-voraus",
+              "args": []
+            },
+            "then": [
+              {
+                "s": "cmd",
+                "name": "rechts",
+                "args": []
+              }
+            ],
+            "else": [
+              {
+                "s": "cmd",
+                "name": "vorwaerts",
+                "args": []
+              }
+            ]
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          }
+        ]
+      }
+    },
+    "zaehlschleife-programm": {
+      "title": {
+        "de": "Ein Programm mit Zählschleife",
+        "en": "A program with a count-controlled loop"
+      },
+      "program": {
+        "main": [
+          {
+            "s": "repeat",
+            "times": {
+              "e": "num",
+              "value": 2
+            },
+            "body": [
+              {
+                "s": "cmd",
+                "name": "vorwaerts",
+                "args": []
+              },
+              {
+                "s": "cmd",
+                "name": "vorwaerts",
+                "args": []
+              },
+              {
+                "s": "cmd",
+                "name": "links",
+                "args": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "zaehlschleife-lang": {
+      "title": {
+        "de": "Neunmal „gehe vorwärts“",
+        "en": "“move forward” nine times"
+      },
+      "program": {
+        "main": [
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          }
+        ]
+      }
+    },
+    "zaehlschleife-kurz": {
+      "title": {
+        "de": "Dasselbe mit „wiederhole 9 mal“",
+        "en": "The same with “repeat 9 times”"
+      },
+      "program": {
+        "main": [
+          {
+            "s": "repeat",
+            "times": {
+              "e": "num",
+              "value": 9
+            },
+            "body": [
+              {
+                "s": "cmd",
+                "name": "vorwaerts",
+                "args": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bedingt-programm": {
+      "title": {
+        "de": "Ein Programm mit bedingter Wiederholung",
+        "en": "A program with a condition-controlled loop"
+      },
+      "program": {
+        "main": [
+          {
+            "s": "while",
+            "cond": {
+              "e": "sense",
+              "name": "weg-frei",
+              "args": []
+            },
+            "body": [
+              {
+                "s": "cmd",
+                "name": "vorwaerts",
+                "args": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bedingt-endlos": {
+      "title": {
+        "de": "Ein Programm mit „solange … tue“",
+        "en": "A program with “while … do”"
+      },
+      "program": {
+        "main": [
+          {
+            "s": "while",
+            "cond": {
+              "e": "not",
+              "a": {
+                "e": "sense",
+                "name": "am-ziel",
+                "args": []
+              }
+            },
+            "body": [
+              {
+                "s": "cmd",
+                "name": "links",
+                "args": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bloecke-karten-als-bloecke": {
+      "title": {
+        "de": "Jonas drei Karten als Blöcke",
+        "en": "Jona's three cards as blocks"
+      },
+      "program": {
+        "main": [
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "links",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          }
+        ]
+      }
+    },
+    "sequenz-drei-befehle": {
+      "als": "karten",
+      "title": {
+        "de": "Die drei Befehle von Kiko",
+        "en": "Kiko's three commands"
+      },
+      "program": {
+        "main": [
+          {
+            "s": "cmd",
+            "name": "vorwaerts",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "links",
+            "args": []
+          },
+          {
+            "s": "cmd",
+            "name": "rechts",
+            "args": []
+          }
+        ]
+      }
+    }
+  }
+}

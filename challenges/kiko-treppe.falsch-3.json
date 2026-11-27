@@ -1,0 +1,38 @@
+{
+  "main": [
+    {
+      "s": "repeat",
+      "times": {
+        "e": "num",
+        "value": 3
+      },
+      "body": [
+        {
+          "s": "cmd",
+          "name": "vorwaerts",
+          "args": []
+        },
+        {
+          "s": "cmd",
+          "name": "vorwaerts",
+          "args": []
+        },
+        {
+          "s": "cmd",
+          "name": "links",
+          "args": []
+        },
+        {
+          "s": "cmd",
+          "name": "vorwaerts",
+          "args": []
+        },
+        {
+          "s": "cmd",
+          "name": "rechts",
+          "args": []
+        }
+      ]
+    }
+  ]
+}

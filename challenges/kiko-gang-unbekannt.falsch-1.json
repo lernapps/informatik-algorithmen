@@ -1,0 +1,19 @@
+{
+  "main": [
+    {
+      "s": "cmd",
+      "name": "vorwaerts",
+      "args": []
+    },
+    {
+      "s": "cmd",
+      "name": "vorwaerts",
+      "args": []
+    },
+    {
+      "s": "cmd",
+      "name": "vorwaerts",
+      "args": []
+    }
+  ]
+}

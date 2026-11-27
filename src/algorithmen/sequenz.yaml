@@ -1,0 +1,340 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Sequenz
+  en: Sequence
+description:
+  de: "Befehle nacheinander in fester Reihenfolge: Mit drei Befehlskarten steuerst du Kiko über das Spielfeld."
+  en: "Commands one after another in a fixed order: with three command cards you steer Kiko across the board."
+competencies: [sequenz]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Mia ist Kiko
+      en: Mia is Kiko
+    blocks:
+      - type: text
+        text:
+          de: |-
+            Im Klassenchat der 7b, am Abend vor Informatik:
+
+            **Frau Berg:** Morgen spielen wir weiter, diesmal nur mit drei Karten: vorwärts, links drehen, rechts drehen. Wer ist Kiko?
+
+            **Mia:** Wieder ich!
+
+            **Jona:** Dann lege ich die Karten 😄
+
+            Hier lernst du, Kiko mit drei Befehlen ans Ziel zu bringen.
+          en: |-
+            In class 7b's group chat, the evening before computing:
+
+            **Frau Berg:** Tomorrow we'll play again, this time with just three cards: forward, turn left, turn right. Who's Kiko?
+
+            **Mia:** Me again!
+
+            **Jona:** Then I'll lay out the cards 😄
+
+            Here you learn to bring Kiko to the goal with three commands.
+      - type: single-choice
+        id: wo-steht-kiko
+        text:
+          de: Kiko schaut im Bild nach rechts, das gelbe Dreieck zeigt seine Blickrichtung. Jona legt die drei Karten. Auf welchem Feld steht Kiko danach?
+          en: Kiko faces right on the board; the yellow triangle shows which way it is facing. Jona lays the three cards. Which square is Kiko on afterwards?
+        material:
+          - type: figure
+            image: images/kiko-sequenz-einstieg.svg
+            alt:
+              de: "Ein Spielfeld mit Spalten 1 bis 7 und Zeilen 1 bis 6. Kiko steht in Spalte 2, Zeile 4 und schaut im Bild nach rechts. Markiert sind A in Spalte 3, Zeile 2; B in Spalte 3, Zeile 3; C in Spalte 2, Zeile 2; D in Spalte 3, Zeile 5."
+              en: "A board with columns 1 to 7 and rows 1 to 6. Kiko stands in column 2, row 4 and faces right on the board. Marked are A in column 3, row 2; B in column 3, row 3; C in column 2, row 2; D in column 3, row 5."
+            caption:
+              de: Das Spielfeld. Dunkle Felder sind Wände.
+              en: The board. Dark squares are walls.
+            source:
+              de: eigene Zeichnung, Kiko nach lernapps.net/coding
+              en: own drawing, Kiko after lernapps.net/coding
+            licence: CC-BY-4.0
+          - type: figure
+            image:
+              de: images/kiko-sequenz-einstieg-karten-de.svg
+              en: images/kiko-sequenz-einstieg-karten-en.svg
+            alt:
+              de: "Drei Karten untereinander: 1 gehe vorwärts, 2 drehe dich nach links, 3 gehe vorwärts."
+              en: "Three cards, one below the other: 1 move forward, 2 turn left, 3 move forward."
+            caption:
+              de: Jonas Karten, von oben nach unten
+              en: Jona's cards, from top to bottom
+            source:
+              de: eigene Zeichnung
+              en: own drawing
+            licence: CC-BY-4.0
+        options:
+          - text: { de: Feld A, en: Square A }
+            correct: false
+            info:
+              de: Du hast „drehe dich nach links“ wie „drehe dich und geh ein Feld“ gezählt. Beim Drehen bleibt Kiko auf seinem Feld.
+              en: You counted “turn left” as “turn and move one square”. When Kiko turns, it stays on its square.
+          - text: { de: Feld B, en: Square B }
+            correct: true
+            info:
+              de: "Richtig: vorwärts, links drehen, vorwärts."
+              en: "Right: forward, turn left, forward."
+          - text: { de: Feld C, en: Square C }
+            correct: false
+            info:
+              de: So wäre es, wenn Kiko sich zuerst dreht. Die erste Karte ist aber „gehe vorwärts“.
+              en: That would happen if Kiko turned first. But the first card is “move forward”.
+          - text: { de: Feld D, en: Square D }
+            correct: false
+            info:
+              de: Du hast links und rechts verwechselt. Kiko schaut im Bild nach rechts. Dreht er sich nach links, schaut er im Bild nach oben.
+              en: You mixed up left and right. Kiko faces right on the board. If it turns left, it faces up the board.
+        explanation:
+          de: "Vorwärts auf Spalte 3, Zeile 4. Links drehen: Kiko schaut im Bild nach oben. Vorwärts auf Spalte 3, Zeile 3."
+          en: "Forward to column 3, row 4. Turn left: Kiko faces up the board. Forward to column 3, row 3."
+  - type: section
+    id: idee
+    title:
+      de: Drei Befehle in fester Reihenfolge
+      en: Three commands in a fixed order
+    blocks:
+      - type: text
+        text:
+          de: >-
+            Kiko kennt drei Befehle: **gehe vorwärts** (ein Feld
+            weiter) sowie **drehe dich nach links** und **drehe dich nach rechts** (eine Vierteldrehung auf der
+            Stelle).
+          en: >-
+            Kiko knows three commands: **move forward** (one square forward) and
+            **turn left** and **turn right** (a quarter turn on the spot).
+      - type: definition
+        term:
+          de: Befehl
+          en: command
+        explanation:
+          de: "Ein Befehl ist eine einfache Anweisung, die Kiko kennt und direkt ausführen kann."
+          en: "A command is a simple instruction that Kiko knows and can carry out directly."
+      - type: figure
+        image:
+          de: images/kiko-sequenz-drei-befehle-de.svg
+          en: images/kiko-sequenz-drei-befehle-en.svg
+        alt:
+          de: "Drei Karten: 1 gehe vorwärts, 2 drehe dich nach links, 3 drehe dich nach rechts."
+          en: "Three cards: 1 move forward, 2 turn left, 3 turn right."
+        caption:
+          de: Kikos drei Befehle als Karten
+          en: Kiko's three commands as cards
+        source:
+          de: eigene Zeichnung nach lernapps.net/coding
+          en: own drawing after lernapps.net/coding
+        licence: CC-BY-4.0
+      - type: definition
+        term:
+          de: Sequenz
+          en: sequence
+        explanation:
+          de: Eine Sequenz ist eine Folge von Anweisungen, die nacheinander ausgeführt werden, jede genau einmal, in der Reihenfolge, in der sie aufgeschrieben sind.
+          en: A sequence is a series of instructions that are carried out one after another, each exactly once, in the order in which they are written.
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: >-
+                Drehen ändert nur die Blickrichtung, Kiko bleibt auf dem Feld. Links und rechts gelten aus Kikos
+                Sicht. Zweimal in dieselbe Richtung drehen ist eine halbe Drehung: Kiko schaut dann zurück. Und die
+                Reihenfolge zählt.
+              en: >-
+                Turning only changes the direction Kiko faces; it stays on its square. Left and right are from
+                Kiko's point of view. Turning the same way twice is a half turn: Kiko then faces back. And the order
+                matters.
+  - type: section
+    id: ausprobieren
+    title:
+      de: Selbst ausprobieren
+      en: Try it yourself
+    blocks:
+      - type: text
+        text:
+          de: |-
+            **Ohne Computer, zu dritt oder zu viert** (allein: Spielfeld auf Kästchenpapier, eine Spielfigur ist Kiko):
+
+            1. Druckt das [Spielfeld](https://lernapps.net/coding/karten/de/spielfeld.svg) und die [Befehlskarten](https://lernapps.net/coding/karten/de/befehlskarten-1.svg) aus oder klebt ein Spielfeld mit Klebeband auf den Boden.
+            2. Schneidet Kiko, Ziel und Wände aus.
+            3. Ein Kind legt die Karten untereinander.
+            4. Ein Kind ist Kiko und folgt den Karten genau, von oben nach unten.
+            5. Falsch gelandet? Sucht die falsche Karte, dann tauscht.
+
+            **Mit Computer:** In der Programmierwerkstatt (einer Webseite) sind die Karten Blöcke. Ein Feld heißt dort kurz (Spalte|Zeile). Bring Kiko zur Fahne: [Challenge „Kiko läuft zur Fahne“ öffnen](https://lernapps.net/coding/app/?c=dVTBctw2DP0VDH3Vyk2PusX17CU9ZOq0nbHHB4qCREQUuQGh3dqZnfGHpD35M3rzn_hLMqC0jn2ILiIl4OEBD8BX0yeerJjmXWWoM40ZaUybjF9mjPeb7PwcfOpNZYQkoGm-mg5NYz7QmCA8Pc69wP3MsLU-oqkMxtPPgw1jBkkgHqEPdjDHyojN4wvGJeHiB_dIg0BnM1wThhp-xwE6QrjAHn1AoFiuTM4LDQh_IHmMfQoDVtDZiQRKzKRgf04HHH6QgjFNk9SLQXbezgJ2gvext3EAmuCCQgfROg-MzkuuT2l8WonDZFlT8QhDsqGGj7OUm0vTZGOXlZ_emQYvkLhDhqyJ25XXgPKmFHAg8UmJQIeSZq7h_QKZxbJUi1dvHeYT6BKhTZa7Wit5SBw6LaXc7bSYwbZ3TFG8qcweOVOKRVOXYk-DGk52Z5obc7Y8pjJnV3W9ns7OXp3q6_VU7G4r01tHcTCNQZvFHFXHlEKb_lG8feKDRZZsKhMojvpeCqmuJR_TxDkE_T2RZOXShuTGbJp3vygYZv16c1sZ57F8vzH3hGGDzKiaK5KnWKzW5tlaz9BhhL9xAOQsoF3Q4QRbigNyUbSG66dHH0rzbDGoLi3l0hvqghE-zLzHF8W3pEDC1mEp986KL1rBXZoZ-oJcw29pjqtcX2bLmGHevchbIFqMRaaV7F-J4TNq-BIPOka_tkYmpXnJ6DFCiwccBMhHiJo37NNUiNdvRktmjhla7BMjoHZuiQefZo4UB-gSZohJYEp7BBJIfQ8keaX7itgl8joJDfy6mWwAlfPpkSXrYMW4zkRhjPHNaBRpG-hVf-5ADuSw0hrEQnBp3NocbyuzJzyYRlVHN-qaaK0re2Dm8LIOzikuu4jGjQ1DYhI_YTx_fV730vmJx898fuZ2rHRQ8EfQ65mf_ndjaYkrJEF4fvjvajF_fvh2inNh3XhSeGcHtfq2WDl8fvjXHI_H7w)
+
+            **Erst lesen, dann laufen lassen:** Sag nur den Weg voraus: [Challenge „Wohin läuft Kiko?“ öffnen](https://lernapps.net/coding/app/?c=tVTNThwxDH4Vy1zDol7ngoQQHNpDVSohgThkMt4kmplk6zg7XdBKPAjtqY_BjTfhSarMD4UDPbW5jJPxZzuf8_kO15F7LVh9UOgbrLD1bTzcRnbESVs6TPQtU7hFheKlI6zusCGs8DI6H6B7-pXXAh99G49RIYXyxxETNJHSeA42HuNeoejUvqA_eUrQ6ASfOVrWfa8gukBACW4zJNEsFFZwoS1sI-ucFAzUGUcBLslOcYPve6ngjLoG1k-PPForONVBG7dU9jZHDg00GZInl0RBrMuOyTgBp0UoyWq5xRfSDYgj2ExoGLy4mAU4h-CDBS8r-MzUeCMwOG8cDHq33JiSgvQtayaod7O1gq-l_tcxOYcEOjSwixkSEQyOxBGP-6HQyN46WRX-hshdUwiU3aZQ2Ol6xz6IQ4Vb4uRjGLtoYlh7Wxx7vcHqGg-mhQoPVmX9zbqarIuXsxl7o3CtjQ8WKySdBPelozF2dfxecmwjD5pYEirsfGjLd-Q1FejYz6kiH7C6vsOEFZq-QYVB9-U2rwNotgmr6xuFXTQtNVgJZ9qrfwdbSvz_mWYS_nWqm33hufeSsLorraAks59xZNo0N2VWcWmC82F0mRV4Tu6NOOCkJJiENJlNZuNGydySt9B7gYZ6OPPBEpfti1bOI4jjmK1787rrMUy9m43yzjfRBwHdxWBHQZWHzrAeQ5ZXPhd3ylSkUtNAVha1F5VuYz_JfEn9NfOoxnHchCjQxy1NiLheg5e0qA_3Nwq3ngassO4imZZQYa3NOJUydy_D6ciHaSr69lB3NrIX11M4em3PY_FoqeM9zHuw0j9d05-kV5mfHk0Lt5nhgrwQPN__vJjcn-8fljwn2rQgceJZ2-L1MHkZer7_gfv9_jc)
+          en: |-
+            **Without a computer, in threes or fours** (on your own: a board on squared paper, a game piece is Kiko):
+
+            1. Print the [board](https://lernapps.net/coding/karten/en/spielfeld.svg) and the [command cards](https://lernapps.net/coding/karten/en/befehlskarten-1.svg), or tape a board on the floor.
+            2. Cut out Kiko, the goal and the walls.
+            3. One person lays the cards one below the other.
+            4. One person is Kiko and follows the cards exactly, from top to bottom.
+            5. Wrong square? Find the wrong card, then swap.
+
+            **With a computer:** in the programming workshop (a website) the cards are blocks. A square is called (column|row) there. Bring Kiko to the flag: [open the challenge “Kiko walks to the flag”](https://lernapps.net/coding/en/app/?c=dVTBctw2DP0VDH3Vyk2PusX17CU9ZOq0nbHHB4qCREQUuQGh3dqZnfGHpD35M3rzn_hLMqC0jn2ILiIl4OEBD8BX0yeerJjmXWWoM40ZaUybjF9mjPeb7PwcfOpNZYQkoGm-mg5NYz7QmCA8Pc69wP3MsLU-oqkMxtPPgw1jBkkgHqEPdjDHyojN4wvGJeHiB_dIg0BnM1wThhp-xwE6QrjAHn1AoFiuTM4LDQh_IHmMfQoDVtDZiQRKzKRgf04HHH6QgjFNk9SLQXbezgJ2gvext3EAmuCCQgfROg-MzkuuT2l8WonDZFlT8QhDsqGGj7OUm0vTZGOXlZ_emQYvkLhDhqyJ25XXgPKmFHAg8UmJQIeSZq7h_QKZxbJUi1dvHeYT6BKhTZa7Wit5SBw6LaXc7bSYwbZ3TFG8qcweOVOKRVOXYk-DGk52Z5obc7Y8pjJnV3W9ns7OXp3q6_VU7G4r01tHcTCNQZvFHFXHlEKb_lG8feKDRZZsKhMojvpeCqmuJR_TxDkE_T2RZOXShuTGbJp3vygYZv16c1sZ57F8vzH3hGGDzKiaK5KnWKzW5tlaz9BhhL9xAOQsoF3Q4QRbigNyUbSG66dHH0rzbDGoLi3l0hvqghE-zLzHF8W3pEDC1mEp986KL1rBXZoZ-oJcw29pjqtcX2bLmGHevchbIFqMRaaV7F-J4TNq-BIPOka_tkYmpXnJ6DFCiwccBMhHiJo37NNUiNdvRktmjhla7BMjoHZuiQefZo4UB-gSZohJYEp7BBJIfQ8keaX7itgl8joJDfy6mWwAlfPpkSXrYMW4zkRhjPHNaBRpG-hVf-5ADuSw0hrEQnBp3NocbyuzJzyYRlVHN-qaaK0re2Dm8LIOzikuu4jGjQ1DYhI_YTx_fV730vmJx898fuZ2rHRQ8EfQ65mf_ndjaYkrJEF4fvjvajF_fvh2inNh3XhSeGcHtfq2WDl8fvjXHI_H7w)
+
+            **Read first, then run:** just predict the path: [open the challenge “Where does Kiko go?”](https://lernapps.net/coding/en/app/?c=tVTNThwxDH4Vy1zDol7ngoQQHNpDVSohgThkMt4kmplk6zg7XdBKPAjtqY_BjTfhSarMD4UDPbW5jJPxZzuf8_kO15F7LVh9UOgbrLD1bTzcRnbESVs6TPQtU7hFheKlI6zusCGs8DI6H6B7-pXXAh99G49RIYXyxxETNJHSeA42HuNeoejUvqA_eUrQ6ASfOVrWfa8gukBACW4zJNEsFFZwoS1sI-ucFAzUGUcBLslOcYPve6ngjLoG1k-PPForONVBG7dU9jZHDg00GZInl0RBrMuOyTgBp0UoyWq5xRfSDYgj2ExoGLy4mAU4h-CDBS8r-MzUeCMwOG8cDHq33JiSgvQtayaod7O1gq-l_tcxOYcEOjSwixkSEQyOxBGP-6HQyN46WRX-hshdUwiU3aZQ2Ol6xz6IQ4Vb4uRjGLtoYlh7Wxx7vcHqGg-mhQoPVmX9zbqarIuXsxl7o3CtjQ8WKySdBPelozF2dfxecmwjD5pYEirsfGjLd-Q1FejYz6kiH7C6vsOEFZq-QYVB9-U2rwNotgmr6xuFXTQtNVgJZ9qrfwdbSvz_mWYS_nWqm33hufeSsLorraAks59xZNo0N2VWcWmC82F0mRV4Tu6NOOCkJJiENJlNZuNGydySt9B7gYZ6OPPBEpfti1bOI4jjmK1787rrMUy9m43yzjfRBwHdxWBHQZWHzrAeQ5ZXPhd3ylSkUtNAVha1F5VuYz_JfEn9NfOoxnHchCjQxy1NiLheg5e0qA_3Nwq3ngassO4imZZQYa3NOJUydy_D6ciHaSr69lB3NrIX11M4em3PY_FoqeM9zHuw0j9d05-kV5mfHk0Lt5nhgrwQPN__vJjcn-8fljwn2rQgceJZ2-L1MHkZer7_gfv9_jc)
+      - type: figure
+        image: images/kiko-challenge-sequenz-schulhof.svg
+        alt:
+          de: "Das Spielfeld der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Ein Weg führt 2 Felder nach rechts, 2 nach unten und 2 nach rechts zum Ziel in Spalte 6, Zeile 4."
+          en: "The board of the challenge: Kiko stands in column 2, row 2 and faces right on the board. A path leads 2 squares right, 2 down and 2 right to the goal in column 6, row 4."
+        caption:
+          de: So sieht die Challenge in der Werkstatt aus.
+          en: This is what the challenge looks like in the workshop.
+        source:
+          de: eigene Zeichnung, Kiko nach lernapps.net/coding
+          en: own drawing, Kiko after lernapps.net/coding
+        licence: CC-BY-4.0
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: number
+        id: karten-zaehlen
+        text:
+          de: Wie viele Karten braucht Kiko auf diesem Spielfeld mindestens, um ins Ziel zu kommen?
+          en: What is the smallest number of cards Kiko needs on this board to reach the goal?
+        material:
+          - type: figure
+            image: images/kiko-sequenz-zaehlen.svg
+            alt:
+              de: "Kiko steht in Spalte 2, Zeile 5 und schaut im Bild nach rechts. Der Weg führt 1 Feld nach rechts, 3 nach oben und 3 nach rechts zum Ziel in Spalte 6, Zeile 2."
+              en: "Kiko stands in column 2, row 5 and faces right on the board. The path leads 1 square right, 3 up and 3 right to the goal in column 6, row 2."
+            caption:
+              de: Jedes Feld vorwärts und jede Drehung ist eine Karte.
+              en: Every square forward and every turn is one card.
+            source:
+              de: eigene Zeichnung, Kiko nach lernapps.net/coding
+              en: own drawing, Kiko after lernapps.net/coding
+            licence: CC-BY-4.0
+        answer: 9
+        tolerance: 0
+        mistakes:
+          - answer: 7
+            message:
+              de: Du hast nur die Felder gezählt. Drehungen sind auch Karten.
+              en: You only counted the squares. Turns are cards too.
+          - answer: 8
+            message:
+              de: "Zähl die Drehungen noch einmal: An jeder der zwei Kurven dreht Kiko sich."
+              en: "Count the turns again: Kiko turns at each of the two bends."
+        explanation:
+          de: "7 Karten „gehe vorwärts“ und 2 Drehungen: links, dann rechts."
+          en: "7 “move forward” cards and 2 turns: left, then right."
+      - type: single-choice
+        id: welche-folge
+        text:
+          de: "Kiko schaut im Bild nach oben. Welche Folge bringt ihn ins Ziel? (Kurz: vorwärts, links, rechts.)"
+          en: "Kiko faces up the board. Which sequence takes it to the goal? (For short: forward, left, right.)"
+        material:
+          - type: figure
+            image: images/kiko-sequenz-auswahl.svg
+            alt:
+              de: "Kiko steht in Spalte 2, Zeile 4 und schaut im Bild nach oben. Der Weg führt 2 Felder nach oben und dann 3 Felder nach rechts zum Ziel in Spalte 5, Zeile 2."
+              en: "Kiko stands in column 2, row 4 and faces up the board. The path leads 2 squares up and then 3 squares right to the goal in column 5, row 2."
+            caption:
+              de: Ein Weg mit einer Kurve
+              en: A path with one bend
+            source:
+              de: eigene Zeichnung, Kiko nach lernapps.net/coding
+              en: own drawing, Kiko after lernapps.net/coding
+            licence: CC-BY-4.0
+        options:
+          - text:
+              de: vorwärts, vorwärts, rechts, vorwärts, vorwärts, vorwärts
+              en: forward, forward, right, forward, forward, forward
+            correct: true
+            info:
+              de: "Richtig: 2 Felder hoch, rechts drehen, 3 Felder bis zum Ziel."
+              en: "Right: 2 squares up, turn right, 3 squares to the goal."
+          - text:
+              de: vorwärts, vorwärts, links, vorwärts, vorwärts, vorwärts
+              en: forward, forward, left, forward, forward, forward
+            correct: false
+            info:
+              de: Nach links schaut Kiko gegen die Wand. Aus seiner Sicht liegt das Ziel rechts.
+              en: Turning left makes Kiko face the wall. From its point of view the goal is on the right.
+          - text:
+              de: vorwärts, vorwärts, vorwärts, rechts, vorwärts, vorwärts
+              en: forward, forward, forward, right, forward, forward
+            correct: false
+            info:
+              de: Beim dritten „vorwärts“ läuft Kiko gegen die Wand. Die Kurve kommt schon nach 2 Feldern.
+              en: On the third “forward” Kiko walks into the wall. The bend comes after 2 squares.
+          - text:
+              de: rechts, vorwärts, vorwärts, vorwärts, vorwärts, vorwärts
+              en: right, forward, forward, forward, forward, forward
+            correct: false
+            info:
+              de: "Die Karten stimmen, die Reihenfolge nicht: Kiko läuft gegen die Wand."
+              en: "The cards are right, the order is not: Kiko walks into the wall."
+        explanation:
+          de: Erst geradeaus bis zur Kurve, dann drehen, dann weiter.
+          en: First go straight to the bend, then turn, then go on to the goal.
+      - type: generated
+        id: hin-und-zurueck
+        given:
+          a: { int: [3, 9] }
+          b: { int: [2, 8] }
+        where: ["b < a", "a != 2 * b"]
+        task:
+          text:
+            de: "Kiko steht in einem langen, geraden Gang. Er geht {{a}}-mal vorwärts, dreht sich zweimal nach rechts und geht {{b}}-mal vorwärts. Wie viele Felder ist Kiko jetzt von seinem Startfeld entfernt?"
+            en: "Kiko is in a long, straight corridor. It moves forward {{a}} times, turns right twice and moves forward {{b}} times. How many squares is Kiko away from its starting square now?"
+        answer: { value: "a - b", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "a + b"
+            message:
+              de: "Zweimal rechts drehen ist eine halbe Drehung. Die {{b}} Schritte gehen zurück zum Start."
+              en: "Turning right twice is a half turn. So the {{b}} steps go back towards the start."
+          - value: "a"
+            message:
+              de: Du hast nur bis zum Drehen gezählt. Danach geht Kiko {{b}} Felder zurück.
+              en: You only counted up to the turn. After that, Kiko goes {{b}} squares back.
+          - value: "b"
+            message:
+              de: Das sind nur die Schritte nach dem Drehen. Vorher ging Kiko {{a}} Felder.
+              en: Those are only the steps after turning. Before that, Kiko went {{a}} squares.
+        hint:
+          de: Wohin schaut Kiko nach zwei Rechtsdrehungen?
+          en: Which way does Kiko face after two right turns?
+        steps:
+          - de: "Nach {{a}}-mal vorwärts ist Kiko {{a}} Felder vom Start entfernt."
+            en: "After moving forward {{a}} times, Kiko is {{a}} squares from the start."
+          - de: "Zwei Vierteldrehungen nach rechts sind eine halbe Drehung. Kiko schaut jetzt zum Start zurück."
+            en: "Two quarter turns to the right make a half turn. Kiko now faces back towards the start."
+          - de: "Er geht {{b}} Felder zurück. Abstand zum Start: {{a}} − {{b}} = {{answer}}."
+            en: "It goes {{b}} squares back. Distance from the start: {{a}} − {{b}} = {{answer}}."
+      - type: true-false
+        id: drehen-ist-schritt
+        text:
+          de: "Selin sagt: „Die Karte ‚drehe dich nach links‘ bringt Kiko ein Feld nach links.“ Stimmt das?"
+          en: "Selin says: “The card ‘turn left’ takes Kiko one square to the left.” Is that true?"
+        answer: false
+        explanation:
+          de: Drehen bewegt Kiko nicht vom Feld. Erst danach bringt „gehe vorwärts“ ihn auf das Feld, das vorher links von ihm lag.
+          en: Turning does not move Kiko off its square. Only after that does “move forward” take it to the square that was on its left before.
+  - type: section
+    id: weiter
+    title:
+      de: Rückblick und wie es weitergeht
+      en: Looking back and what comes next
+    blocks:
+      - type: text
+        text:
+          de: >-
+            Kiko ist mit deiner ersten Sequenz am Ziel. Damit endet das Kapitel. **Mia** schreibt: „Bei
+            jeder Wand musste Jona neue Karten legen.“ Im nächsten Kapitel führt Kiko die Befehle selbst aus und lernt danach, Wände zu bemerken.
+          en: >-
+            Your first sequence has taken Kiko to the goal. That ends the chapter. **Mia** writes:
+            “Jona had to lay new cards for every wall.” In the next chapter Kiko carries out the commands itself and then learns to notice walls.
