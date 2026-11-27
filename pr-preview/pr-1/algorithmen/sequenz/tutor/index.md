@@ -45,37 +45,37 @@ Befehle nacheinander in fester Reihenfolge: Mit drei Befehlskarten steuerst du K
 
 Im Klassenchat der 7b, am Abend vor Informatik:
 
-**Frau Berg:** Morgen kleben wir ein Spielfeld auf den Boden. Eine oder einer von euch ist Kiko. Es gibt nur noch drei Karten: vorwärts, links drehen, rechts drehen.
+**Frau Berg:** Morgen kleben wir ein Spielfeld auf den Boden. Eine oder einer von euch ist Kiko. Wir nehmen nur drei Karten: vorwärts, links drehen, rechts drehen.
 
 **Mia:** Ich bin Kiko!
 
-**Jona:** Dann lege ich die Karten. Mia, du machst genau, was draufsteht 😄
+**Jona:** Dann lege ich die Karten 😄
 
-Hier lernst du, Kiko mit drei Befehlen ans Ziel zu bringen, erst mit Karten, dann in der Werkstatt.
+Hier lernst du, Kiko mit drei Befehlen ans Ziel zu bringen.
 
 - Aufgabe `wo-steht-kiko` (unten)
 
 ### Drei Befehle in fester Reihenfolge
 
-Kiko steht auf einem Feld und schaut in eine Richtung. Er kennt drei Befehle: **gehe vorwärts** (ein Feld weiter) sowie **drehe dich nach links** und **drehe dich nach rechts** (eine Vierteldrehung auf der Stelle). Ein Befehl ist eine einfache Anweisung, die Kiko kennt und direkt ausführen kann.
+Kiko kennt drei Befehle: **gehe vorwärts** (ein Feld weiter) sowie **drehe dich nach links** und **drehe dich nach rechts** (eine Vierteldrehung auf der Stelle). Ein Befehl ist eine einfache Anweisung, die Kiko kennt und direkt ausführen kann.
 
 - **Sequenz**: Eine Sequenz ist eine Folge von Anweisungen, die nacheinander ausgeführt werden, jede genau einmal, in der Reihenfolge, in der sie aufgeschrieben sind.
 
 **Merke: Merke**
 
-Drehen ändert nur die Blickrichtung, Kiko bleibt auf dem Feld. Links und rechts gelten aus Kikos Sicht. Und die Reihenfolge zählt: Erst drehen, dann gehen führt woandershin als erst gehen, dann drehen.
+Drehen ändert nur die Blickrichtung, Kiko bleibt auf dem Feld. Links und rechts gelten aus Kikos Sicht. Zweimal in dieselbe Richtung drehen ist eine halbe Drehung: Kiko schaut dann zurück. Und die Reihenfolge zählt.
 
 ### Selbst ausprobieren
 
-**Ohne Computer, zu dritt oder zu viert:**
+**Ohne Computer, zu dritt oder zu viert** (allein: Spielfeld auf Kästchenpapier, eine Spielfigur ist Kiko):
 
 1. Druckt das [Spielfeld](https://lernapps.net/coding/karten/de/spielfeld.svg) und die [Befehlskarten](https://lernapps.net/coding/karten/de/befehlskarten-1.svg) aus oder klebt ein Spielfeld mit Klebeband auf den Boden.
-2. Legt Kiko, das Ziel und ein paar Wände aus.
+2. Schneidet Kiko, das Ziel und Wände vom Spielfeld-Blatt aus und legt sie hin.
 3. Ein Kind legt die Karten untereinander.
-4. Ein Kind ist Kiko und folgt den Karten von oben nach unten, genau wie sie daliegen.
+4. Ein Kind ist Kiko und folgt den Karten genau, von oben nach unten.
 5. Kommt Kiko nicht ans Ziel, sucht gemeinsam die falsche Karte. Dann tauscht die Rollen.
 
-**Mit Computer:** In der Werkstatt werden die Karten zu Blöcken mit denselben Wörtern. Bring Kiko zum Ball: [Challenge „Kiko holt den Ball“ öffnen](https://lernapps.net/coding/app/?c=dVTBctw2DP0VDPeqlSc56hY39SU9ZNK0nbHHB4qCRFQkuAGh3diZ_Zt8Rm_-sQ4p7cY5RBeBBPHwiAfwmxmTRKume9MYGkxnZprTPuOXBfl5n51fgk-jaYySBjTdNzOg6cwHmhP4FBQGZLi1IZjGIF88I6rzmEE9Ql-c58aozfM1_j1KjYJAOClQhHvC0MIfOMFACLc4og8IxHUp5LzShPAJySOPKUzYwGAjKdSEyTPCX_GEEzwvcYWeU4zarv7svF0UbIR3PFqegK3zIOi85vZC_fPGFiiD1Up-Sja08HFZVy7FaHnIhVZZC01eIcmAAjmBervRmVAzaLreH06kPhUCMKCmRVp4t0JmtaLNGjVah3kFbUvFTknCUEqmT4dStGD7JyFWbxpzRMmUuOrmEo80lYPRHkz3YHbrZxqz-7NtN2u3e2W17WbtdvdXa7czj40ZrSOeTGfQZjXnolxKoU9fC_IxycmiaDaNCcRz-a9VLKH1MqbjJYTijqS5sOpDcnM23Zu3BQxz2X14bIzzWPcfzDNh2KMIFp0Lkieup7Z2ubNeaqf9gxOgZIWi_IAR7ognlCpnC_cv332oDXOHoYjSU4bnRWoIMnxY5IhXue-oAKlYh1WKg1VfhYKntAiMFbmF39LCm1ZfFiuYYTlctB0rRI88FME2sn8ngX-xpK_5YBD0W19kKjTfC3pk6PFUe98zcLk3HFOsxNufZkkX4Qw9jkkQsLRtzQefF2HiCYaEGTgpxHREIIU0jkCaN7qviJWhW9u_g7f7aAMUOV--i-YyTMzbQFTGyD_NRZW2g7HoLwPoiRw2pQZcCV679rExR8KT6Yrq6GY0jemtq5O_SLg-ADfE68tD896GKQmpj8g3r-3tFbq58PhVzK_Czk0ZGfyR9H6Rl__cXJ-I378egiVGuaDfWjdfdMWr83w-_w8)
+**Mit Computer:** In der Werkstatt werden die Karten zu Blöcken mit denselben Wörtern. Das Feld in Spalte 4, Zeile 2 heißt dort kurz (4|2). Bring Kiko zur Fahne: [Challenge „Kiko läuft zur Fahne“ öffnen](https://lernapps.net/coding/app/?c=dVTBbtw4DP0VQnP1OGiPvjUbzKV7KJruLpAgB41NS1zL0pSiZzYpBsiHdPeUz9hb_iRfUlD2TJNDfbFkk4-PfCS_mT7xaMU07ypDnWnMQENaZ_w6YXxY59ZPwafeVEZIAprmm-nQNOYjDQnC89PUCzxMDBvrI5rKYDz9PNgwZJAE4hH6YJ05VkZsHs4YV4SzHzwgOYHOZrghDDX8jg46QrjEHn1AoFiuTK0XcgifkTzGPgWHFXR2JIESMynYH-MB3U9SMKRxlHo2yK23k4Ad4UPsbXRAI1xS6CDa1gNj6yXXpzS-LMRhtKypeASXbKjh0yTl1qZxtLHLyk_vTM4LJO6QIWviduHlUN6UAg4kPikR6FDSxDV8mCGzWJZq9upti_kEOkfYJstdrZU8JA6dllLud1rMYLf3TFG8qcweOVOKRdM2xZ6cGo52Z5pbs5ofU5nVdV0vp9Xq1amul9NqdXM-rVbmrjK9bSk60xi0WcxRFU0pbNM_irxPfLDIkk1lAsVB33NJ1bVkZpo4haC_R5KsrLYhtUM2zbv3CoZZv97eVab1WL7fmgfCsEZmVPUVyVMsVksbbaxn6DDCX-gAOQtoP3Q4woaiQy7a1nDz_ORDaaMNBlVoS7l0ibpghI8T7_Gs_YYUSNi2WAq_s-KLanCfJoa-INfwW5riItzXyTJmmHZnoQvEFmMRbCH7Z2L4GzV8iQcdo1-aJJPSvGL0GGGLB3QC5CNEzRv2aSzE6zdDJhPHDFvsEyOg9nCJB18mjhQddAkzxCQwpj0CCaS-B5K80H1F7Ap5mYkG3q9HG0DlfH5iyTpiMS7TURhjfDMkRdoGetWfO5ADtVhpDWIhOLdwbY53ldkTHkyjqmM76MLY2rZshInDeTFcUJy3Eg1rG1xiEj9ivHh9XjbUxYnHr3x-5XasdGTwZ9CbiZ__b4fSEtdIgvDy-N_1bP7y-P0U59K2w0nhnXVq9X22avHl8V9zPB5_AA)
 
 Bild: Das Spielfeld der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut nach rechts. Ein Weg führt 2 Felder nach rechts, 2 nach unten, 2 nach rechts und 1 nach unten zum Ziel in Spalte 6, Zeile 5. Bildunterschrift: So sieht die Challenge in der Werkstatt aus.
 
@@ -91,7 +91,7 @@ Bild: Das Spielfeld der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut na
 
 ### Rückblick und wie es weitergeht
 
-In diesem Kapitel hast du Algorithmen im Alltag gefunden, ihre Eigenschaften geprüft und Kiko mit einer Sequenz ans Ziel gebracht. **Mia** schreibt nach der Stunde: „Mir ist schwindelig. Kann das nicht Kiko machen?“ Im nächsten Kapitel werden aus den Karten Blöcke, und Kiko führt das Programm selbst aus.
+Kiko ist mit deinem ersten Programm am Ziel. Damit endet das Kapitel: Algorithmen erkennen, prüfen und als Sequenz aufschreiben. **Mia** schreibt: „Bei jeder Wand musste Jona neue Karten legen.“ Im nächsten Kapitel lernt Kiko, Wände selbst zu bemerken.
 
 ### Aufgabe wo-steht-kiko
 
@@ -99,7 +99,7 @@ In diesem Kapitel hast du Algorithmen im Alltag gefunden, ihre Eigenschaften gep
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✗ Feld A – Du hast „drehe dich nach links“ wie „drehe dich und geh ein Feld“ gezählt. Beim Drehen bleibt Kiko auf seinem Feld.
-  - ✓ Feld B – Richtig: ein Feld nach rechts, dann nach oben drehen, dann ein Feld nach oben.
+  - ✓ Feld B – Richtig: vorwärts, links drehen, vorwärts.
   - ✗ Feld C – So wäre es, wenn Kiko sich zuerst dreht. Die erste Karte ist aber „gehe vorwärts“.
   - ✗ Feld D – Du hast links und rechts verwechselt. Kiko schaut im Bild nach rechts. Dreht er sich nach links, schaut er im Bild nach oben.
 - Lösung: Feld B
@@ -110,22 +110,22 @@ In diesem Kapitel hast du Algorithmen im Alltag gefunden, ihre Eigenschaften gep
 
 - Aufgabe: Wie viele Karten braucht Kiko auf diesem Spielfeld mindestens, um ins Ziel zu kommen?
 - Antwortformat: eine Zahl eintippen
-- Lösung: 10
-- Erklärung: 7 Karten „gehe vorwärts“ und 3 Drehungen: rechts, links, rechts.
+- Lösung: 9
+- Erklärung: 7 Karten „gehe vorwärts“ und 2 Drehungen: links, dann rechts.
 - Typische Fehler und was die App sagt:
-  - 7: Du hast nur die Felder gezählt. Jede Drehung ist auch eine Karte.
-  - 9: Zähl die Drehungen noch einmal: An jeder der drei Kurven dreht Kiko sich.
+  - 7: Du hast nur die Felder gezählt. Drehungen sind auch Karten.
+  - 8: Zähl die Drehungen noch einmal: An jeder der zwei Kurven dreht Kiko sich.
 - Link: [../?via=tutor#karten-zaehlen](../?via=tutor#karten-zaehlen)
 
 ### Aufgabe welche-folge
 
-- Aufgabe: Kiko schaut im Bild nach oben. Welche Folge bringt ihn ins Ziel?
+- Aufgabe: Kiko schaut im Bild nach oben. Welche Folge bringt ihn ins Ziel? (Kurz: vorwärts, links, rechts.)
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ vorwärts, vorwärts, rechts, vorwärts, vorwärts, vorwärts – Richtig: 2 Felder hoch, an der Kurve nach rechts drehen, 3 Felder bis zum Ziel.
+  - ✓ vorwärts, vorwärts, rechts, vorwärts, vorwärts, vorwärts – Richtig: 2 Felder hoch, rechts drehen, 3 Felder bis zum Ziel.
   - ✗ vorwärts, vorwärts, links, vorwärts, vorwärts, vorwärts – Nach links schaut Kiko gegen die Wand. Aus seiner Sicht liegt das Ziel rechts.
   - ✗ vorwärts, vorwärts, vorwärts, rechts, vorwärts, vorwärts – Beim dritten „vorwärts“ läuft Kiko gegen die Wand. Die Kurve kommt schon nach 2 Feldern.
-  - ✗ rechts, vorwärts, vorwärts, vorwärts, vorwärts, vorwärts – Die Karten stimmen, die Reihenfolge nicht. Dreht Kiko sich zuerst, läuft er gegen die Wand.
+  - ✗ rechts, vorwärts, vorwärts, vorwärts, vorwärts, vorwärts – Die Karten stimmen, die Reihenfolge nicht: Kiko läuft gegen die Wand.
 - Lösung: vorwärts, vorwärts, rechts, vorwärts, vorwärts, vorwärts
 - Erklärung: Erst geradeaus bis zur Kurve, dann drehen, dann weiter.
 - Link: [../?via=tutor#welche-folge](../?via=tutor#welche-folge)
@@ -134,51 +134,45 @@ In diesem Kapitel hast du Algorithmen im Alltag gefunden, ihre Eigenschaften gep
 
 - Aufgabe: „Kiko steht in einem langen, geraden Gang. Er geht {a}-mal vorwärts, dreht sich zweimal nach rechts und geht {b}-mal vorwärts. Wie viele Felder ist Kiko jetzt von seinem Startfeld entfernt?“
 - Antwortformat: eine Zahl eintippen
-- Tipp der App: „Zeichne den Gang auf und setz Kiko Schritt für Schritt weiter. Wohin schaut er nach zwei Rechtsdrehungen?“
+- Tipp der App: „Wohin schaut Kiko nach zwei Rechtsdrehungen?“
 - Lösungsweg:
   - Nach {a}-mal vorwärts ist Kiko {a} Felder vom Start entfernt.
   - Zwei Vierteldrehungen nach rechts sind eine halbe Drehung. Kiko schaut jetzt zum Start zurück.
   - Er geht {b} Felder zurück: {a} − {b} = {answer} Felder vom Start.
 - Typische Fehler und was die App sagt:
-  - F1: „Zweimal rechts drehen ist eine halbe Drehung: Danach schaut Kiko zurück. Die {b} Schritte gehen also zurück zum Start.“
-  - F2: „Das sind nur die Schritte nach dem Drehen. Kiko war vorher schon {a} Felder weit gegangen.“
+  - F1: „Zweimal rechts drehen ist eine halbe Drehung. Die {b} Schritte gehen zurück zum Start.“
+  - F2: „Du hast nur bis zum Drehen gezählt. Danach geht Kiko {b} Felder zurück.“
+  - F3: „Das sind nur die Schritte nach dem Drehen. Vorher ging Kiko {a} Felder.“
 - Link zu Nummer n: `../?hin-und-zurueck=n&via=tutor#hin-und-zurueck`
 - Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
-Nr. | a | b | Lösung | F1 | F2
-1 | 6 | 2 | 4 | 8 | 2
-2 | 8 | 5 | 3 | 13 | 5
-3 | 3 | 2 | 1 | 5 | 2
-4 | 8 | 7 | 1 | 15 | 7
-5 | 9 | 3 | 6 | 12 | 3
-6 | 9 | 6 | 3 | 15 | 6
-7 | 5 | 4 | 1 | 9 | 4
-8 | 8 | 6 | 2 | 14 | 6
-9 | 7 | 3 | 4 | 10 | 3
-10 | 7 | 4 | 3 | 11 | 4
-11 | 9 | 4 | 5 | 13 | 4
-12 | 8 | 1 | 7 | 9 | 1
-13 | 5 | 2 | 3 | 7 | 2
-14 | 9 | 2 | 7 | 11 | 2
-15 | 9 | 1 | 8 | 10 | 1
-16 | 6 | 1 | 5 | 7 | 1
-17 | 5 | 3 | 2 | 8 | 3
-18 | 8 | 2 | 6 | 10 | 2
-19 | 7 | 5 | 2 | 12 | 5
-20 | 7 | 2 | 5 | 9 | 2
-21 | 6 | 4 | 2 | 10 | 4
-22 | 4 | 3 | 1 | 7 | 3
-23 | 6 | 5 | 1 | 11 | 5
-24 | 9 | 8 | 1 | 17 | 8
-25 | 3 | 1 | 2 | 4 | 1
-26 | 4 | 1 | 3 | 5 | 1
-27 | 5 | 1 | 4 | 6 | 1
-28 | 7 | 1 | 6 | 8 | 1
-29 | 8 | 3 | 5 | 11 | 3
-30 | 9 | 5 | 4 | 14 | 5
-31 | 9 | 7 | 2 | 16 | 7
-32 | 7 | 6 | 1 | 13 | 6
+Nr. | a | b | Lösung | F1 | F2 | F3
+1 | 3 | 2 | 1 | 5 | 3 | 2
+2 | 8 | 5 | 3 | 13 | 8 | 5
+3 | 7 | 4 | 3 | 11 | 7 | 4
+4 | 8 | 7 | 1 | 15 | 8 | 7
+5 | 9 | 3 | 6 | 12 | 9 | 3
+6 | 9 | 7 | 2 | 16 | 9 | 7
+7 | 5 | 4 | 1 | 9 | 5 | 4
+8 | 8 | 6 | 2 | 14 | 8 | 6
+9 | 7 | 5 | 2 | 12 | 7 | 5
+10 | 9 | 4 | 5 | 13 | 9 | 4
+11 | 8 | 2 | 6 | 10 | 8 | 2
+12 | 5 | 3 | 2 | 8 | 5 | 3
+13 | 9 | 2 | 7 | 11 | 9 | 2
+14 | 6 | 2 | 4 | 8 | 6 | 2
+15 | 6 | 4 | 2 | 10 | 6 | 4
+16 | 9 | 6 | 3 | 15 | 9 | 6
+17 | 8 | 3 | 5 | 11 | 8 | 3
+18 | 7 | 3 | 4 | 10 | 7 | 3
+19 | 6 | 5 | 1 | 11 | 6 | 5
+20 | 9 | 8 | 1 | 17 | 9 | 8
+21 | 9 | 5 | 4 | 14 | 9 | 5
+22 | 5 | 2 | 3 | 7 | 5 | 2
+23 | 4 | 3 | 1 | 7 | 4 | 3
+24 | 7 | 6 | 1 | 13 | 7 | 6
+25 | 7 | 2 | 5 | 9 | 7 | 2
 ```
 
 ### Aufgabe drehen-ist-schritt

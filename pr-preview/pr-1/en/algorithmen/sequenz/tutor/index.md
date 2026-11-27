@@ -45,37 +45,37 @@ Commands one after another in a fixed order: with three command cards you steer 
 
 In class 7b's group chat, the evening before computing:
 
-**Frau Berg:** Tomorrow we'll tape a board on the floor. One of you will be Kiko. There are only three cards left: forward, turn left, turn right.
+**Frau Berg:** Tomorrow we'll tape a board on the floor. One of you will be Kiko. We'll use just three cards: forward, turn left, turn right.
 
 **Mia:** I'll be Kiko!
 
-**Jona:** Then I'll lay the cards. Mia, you do exactly what they say 😄
+**Jona:** Then I'll lay the cards 😄
 
-Here you learn to bring Kiko to the goal with three commands, first with cards, then in the workshop.
+Here you learn to bring Kiko to the goal with three commands.
 
 - Exercise `wo-steht-kiko` (below)
 
 ### Three commands in a fixed order
 
-Kiko stands on a square and faces one way. It knows three commands: **move forward** (one square forward) and **turn left** and **turn right** (a quarter turn on the spot). A command is a simple instruction that Kiko knows and can carry out directly.
+Kiko knows three commands: **move forward** (one square forward) and **turn left** and **turn right** (a quarter turn on the spot). A command is a simple instruction that Kiko knows and can carry out directly.
 
 - **sequence**: A sequence is a series of instructions that are carried out one after another, each exactly once, in the order in which they are written.
 
 **Remember: Remember**
 
-Turning only changes the direction Kiko faces; it stays on its square. Left and right are from Kiko's point of view. And the order matters: turning first, then moving leads somewhere different from moving first, then turning.
+Turning only changes the direction Kiko faces; it stays on its square. Left and right are from Kiko's point of view. Turning the same way twice is a half turn: Kiko then faces back. And the order matters.
 
 ### Try it yourself
 
-**Without a computer, in threes or fours:**
+**Without a computer, in threes or fours** (on your own: a board on squared paper, a game piece is Kiko):
 
 1. Print the [board](https://lernapps.net/coding/karten/en/spielfeld.svg) and the [command cards](https://lernapps.net/coding/karten/en/befehlskarten-1.svg), or tape a board on the floor.
-2. Put out Kiko, the goal and a few walls.
+2. Cut Kiko, the goal and walls out of the board sheet and lay them out.
 3. One person lays the cards one below the other.
-4. One person is Kiko and follows the cards from top to bottom, exactly as they lie.
+4. One person is Kiko and follows the cards exactly, from top to bottom.
 5. If Kiko misses the goal, find the wrong card together. Then swap roles.
 
-**With a computer:** in the workshop, the cards become blocks with the same words. Bring Kiko to the ball: [open the challenge “Kiko fetches the ball”](https://lernapps.net/coding/en/app/?c=dVTBctw2DP0VDPeqlSc56hY39SU9ZNK0nbHHB4qCRFQkuAGh3diZ_Zt8Rm_-sQ4p7cY5RBeBBPHwiAfwmxmTRKume9MYGkxnZprTPuOXBfl5n51fgk-jaYySBjTdNzOg6cwHmhP4FBQGZLi1IZjGIF88I6rzmEE9Ql-c58aozfM1_j1KjYJAOClQhHvC0MIfOMFACLc4og8IxHUp5LzShPAJySOPKUzYwGAjKdSEyTPCX_GEEzwvcYWeU4zarv7svF0UbIR3PFqegK3zIOi85vZC_fPGFiiD1Up-Sja08HFZVy7FaHnIhVZZC01eIcmAAjmBervRmVAzaLreH06kPhUCMKCmRVp4t0JmtaLNGjVah3kFbUvFTknCUEqmT4dStGD7JyFWbxpzRMmUuOrmEo80lYPRHkz3YHbrZxqz-7NtN2u3e2W17WbtdvdXa7czj40ZrSOeTGfQZjXnolxKoU9fC_IxycmiaDaNCcRz-a9VLKH1MqbjJYTijqS5sOpDcnM23Zu3BQxz2X14bIzzWPcfzDNh2KMIFp0Lkieup7Z2ubNeaqf9gxOgZIWi_IAR7ognlCpnC_cv332oDXOHoYjSU4bnRWoIMnxY5IhXue-oAKlYh1WKg1VfhYKntAiMFbmF39LCm1ZfFiuYYTlctB0rRI88FME2sn8ngX-xpK_5YBD0W19kKjTfC3pk6PFUe98zcLk3HFOsxNufZkkX4Qw9jkkQsLRtzQefF2HiCYaEGTgpxHREIIU0jkCaN7qviJWhW9u_g7f7aAMUOV--i-YyTMzbQFTGyD_NRZW2g7HoLwPoiRw2pQZcCV679rExR8KT6Yrq6GY0jemtq5O_SLg-ADfE68tD896GKQmpj8g3r-3tFbq58PhVzK_Czk0ZGfyR9H6Rl__cXJ-I378egiVGuaDfWjdfdMWr83w-_w8)
+**With a computer:** in the workshop, the cards become blocks with the same words. The square in column 4, row 2 is called (4|2) there. Bring Kiko to the flag: [open the challenge “Kiko walks to the flag”](https://lernapps.net/coding/en/app/?c=dVTBbtw4DP0VQnP1OGiPvjUbzKV7KJruLpAgB41NS1zL0pSiZzYpBsiHdPeUz9hb_iRfUlD2TJNDfbFkk4-PfCS_mT7xaMU07ypDnWnMQENaZ_w6YXxY59ZPwafeVEZIAprmm-nQNOYjDQnC89PUCzxMDBvrI5rKYDz9PNgwZJAE4hH6YJ05VkZsHs4YV4SzHzwgOYHOZrghDDX8jg46QrjEHn1AoFiuTK0XcgifkTzGPgWHFXR2JIESMynYH-MB3U9SMKRxlHo2yK23k4Ad4UPsbXRAI1xS6CDa1gNj6yXXpzS-LMRhtKypeASXbKjh0yTl1qZxtLHLyk_vTM4LJO6QIWviduHlUN6UAg4kPikR6FDSxDV8mCGzWJZq9upti_kEOkfYJstdrZU8JA6dllLud1rMYLf3TFG8qcweOVOKRdM2xZ6cGo52Z5pbs5ofU5nVdV0vp9Xq1amul9NqdXM-rVbmrjK9bSk60xi0WcxRFU0pbNM_irxPfLDIkk1lAsVB33NJ1bVkZpo4haC_R5KsrLYhtUM2zbv3CoZZv97eVab1WL7fmgfCsEZmVPUVyVMsVksbbaxn6DDCX-gAOQtoP3Q4woaiQy7a1nDz_ORDaaMNBlVoS7l0ibpghI8T7_Gs_YYUSNi2WAq_s-KLanCfJoa-INfwW5riItzXyTJmmHZnoQvEFmMRbCH7Z2L4GzV8iQcdo1-aJJPSvGL0GGGLB3QC5CNEzRv2aSzE6zdDJhPHDFvsEyOg9nCJB18mjhQddAkzxCQwpj0CCaS-B5K80H1F7Ap5mYkG3q9HG0DlfH5iyTpiMS7TURhjfDMkRdoGetWfO5ADtVhpDWIhOLdwbY53ldkTHkyjqmM76MLY2rZshInDeTFcUJy3Eg1rG1xiEj9ivHh9XjbUxYnHr3x-5XasdGTwZ9CbiZ__b4fSEtdIgvDy-N_1bP7y-P0U59K2w0nhnXVq9X22avHl8V9zPB5_AA)
 
 Picture: The board of the challenge: Kiko stands in column 2, row 2 and faces right. A path leads 2 squares right, 2 down, 2 right and 1 down to the goal in column 6, row 5. Caption: This is what the challenge looks like in the workshop.
 
@@ -91,7 +91,7 @@ Picture: The board of the challenge: Kiko stands in column 2, row 2 and faces ri
 
 ### Looking back and what comes next
 
-In this chapter you found algorithms in everyday life, checked their properties and brought Kiko to the goal with a sequence. After the lesson **Mia** writes: “I'm dizzy. Can't Kiko do that?” In the next chapter the cards become blocks, and Kiko carries out the program itself.
+Your first program has taken Kiko to the goal. That ends the chapter: spotting algorithms, checking them and writing them down as a sequence. **Mia** writes: “Jona had to lay new cards for every wall.” In the next chapter Kiko learns to notice walls itself.
 
 ### Exercise wo-steht-kiko
 
@@ -99,7 +99,7 @@ In this chapter you found algorithms in everyday life, checked their properties 
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✗ Square A – You counted “turn left” as “turn and move one square”. When Kiko turns, it stays on its square.
-  - ✓ Square B – Right: one square to the right, then turn to face up, then one square up.
+  - ✓ Square B – Right: forward, turn left, forward.
   - ✗ Square C – That would happen if Kiko turned first. But the first card is “move forward”.
   - ✗ Square D – You mixed up left and right. Kiko faces right on the board. If it turns left, it faces up the board.
 - Solution: Square B
@@ -110,75 +110,69 @@ In this chapter you found algorithms in everyday life, checked their properties 
 
 - Task: What is the smallest number of cards Kiko needs on this board to reach the goal?
 - Answer format: type a number
-- Solution: 10
-- Explanation: 7 “move forward” cards and 3 turns: right, left, right.
+- Solution: 9
+- Explanation: 7 “move forward” cards and 2 turns: left, then right.
 - Typical mistakes and what the app says:
-  - 7: You only counted the squares. Every turn is a card too.
-  - 9: Count the turns again: Kiko turns at each of the three bends.
+  - 7: You only counted the squares. Turns are cards too.
+  - 8: Count the turns again: Kiko turns at each of the two bends.
 - Link: [../?via=tutor#karten-zaehlen](../?via=tutor#karten-zaehlen)
 
 ### Exercise welche-folge
 
-- Task: Kiko faces up the board. Which sequence takes it to the goal?
+- Task: Kiko faces up the board. Which sequence takes it to the goal? (For short: forward, left, right.)
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
-  - ✓ forward, forward, right, forward, forward, forward – Right: 2 squares up, turn right at the bend, 3 squares to the goal.
+  - ✓ forward, forward, right, forward, forward, forward – Right: 2 squares up, turn right, 3 squares to the goal.
   - ✗ forward, forward, left, forward, forward, forward – Turning left makes Kiko face the wall. From its point of view the goal is on the right.
   - ✗ forward, forward, forward, right, forward, forward – On the third “forward” Kiko walks into the wall. The bend comes after 2 squares.
-  - ✗ right, forward, forward, forward, forward, forward – The cards are right, the order is not. If Kiko turns first, it walks into the wall.
+  - ✗ right, forward, forward, forward, forward, forward – The cards are right, the order is not: Kiko walks into the wall.
 - Solution: forward, forward, right, forward, forward, forward
-- Explanation: First straight on to the bend, then turn, then on.
+- Explanation: First go straight to the bend, then turn, then go on to the goal.
 - Link: [../?via=tutor#welche-folge](../?via=tutor#welche-folge)
 
 ### Exercise hin-und-zurueck
 
 - Task: „Kiko is in a long, straight corridor. It moves forward {a} times, turns right twice and moves forward {b} times. How many squares is Kiko away from its starting square now?“
 - Answer format: type a number
-- The app's hint: „Draw the corridor and move Kiko step by step. Which way does it face after two right turns?“
+- The app's hint: „Which way does Kiko face after two right turns?“
 - Steps of the solution:
   - After moving forward {a} times, Kiko is {a} squares from the start.
   - Two quarter turns to the right make a half turn. Kiko now faces back towards the start.
   - It goes {b} squares back: {a} − {b} = {answer} squares from the start.
 - Typical mistakes and what the app says:
-  - F1: „Turning right twice is a half turn: afterwards Kiko faces back. So the {b} steps go back towards the start.“
-  - F2: „Those are only the steps after turning. Before that, Kiko had already gone {a} squares.“
+  - F1: „Turning right twice is a half turn. So the {b} steps go back towards the start.“
+  - F2: „You only counted up to the turn. After that, Kiko goes {b} squares back.“
+  - F3: „Those are only the steps after turning. Before that, Kiko went {a} squares.“
 - Link to number n: `../?hin-und-zurueck=n&via=tutor#hin-und-zurueck`
 - Tasks by number: the values for `{…}`, the solution and what the mistakes give. A mistake without a column has no fixed value; the app's message says whether it is there. `{answer}` is the solution.
 
 ```
-No. | a | b | Solution | F1 | F2
-1 | 6 | 2 | 4 | 8 | 2
-2 | 8 | 5 | 3 | 13 | 5
-3 | 3 | 2 | 1 | 5 | 2
-4 | 8 | 7 | 1 | 15 | 7
-5 | 9 | 3 | 6 | 12 | 3
-6 | 9 | 6 | 3 | 15 | 6
-7 | 5 | 4 | 1 | 9 | 4
-8 | 8 | 6 | 2 | 14 | 6
-9 | 7 | 3 | 4 | 10 | 3
-10 | 7 | 4 | 3 | 11 | 4
-11 | 9 | 4 | 5 | 13 | 4
-12 | 8 | 1 | 7 | 9 | 1
-13 | 5 | 2 | 3 | 7 | 2
-14 | 9 | 2 | 7 | 11 | 2
-15 | 9 | 1 | 8 | 10 | 1
-16 | 6 | 1 | 5 | 7 | 1
-17 | 5 | 3 | 2 | 8 | 3
-18 | 8 | 2 | 6 | 10 | 2
-19 | 7 | 5 | 2 | 12 | 5
-20 | 7 | 2 | 5 | 9 | 2
-21 | 6 | 4 | 2 | 10 | 4
-22 | 4 | 3 | 1 | 7 | 3
-23 | 6 | 5 | 1 | 11 | 5
-24 | 9 | 8 | 1 | 17 | 8
-25 | 3 | 1 | 2 | 4 | 1
-26 | 4 | 1 | 3 | 5 | 1
-27 | 5 | 1 | 4 | 6 | 1
-28 | 7 | 1 | 6 | 8 | 1
-29 | 8 | 3 | 5 | 11 | 3
-30 | 9 | 5 | 4 | 14 | 5
-31 | 9 | 7 | 2 | 16 | 7
-32 | 7 | 6 | 1 | 13 | 6
+No. | a | b | Solution | F1 | F2 | F3
+1 | 3 | 2 | 1 | 5 | 3 | 2
+2 | 8 | 5 | 3 | 13 | 8 | 5
+3 | 7 | 4 | 3 | 11 | 7 | 4
+4 | 8 | 7 | 1 | 15 | 8 | 7
+5 | 9 | 3 | 6 | 12 | 9 | 3
+6 | 9 | 7 | 2 | 16 | 9 | 7
+7 | 5 | 4 | 1 | 9 | 5 | 4
+8 | 8 | 6 | 2 | 14 | 8 | 6
+9 | 7 | 5 | 2 | 12 | 7 | 5
+10 | 9 | 4 | 5 | 13 | 9 | 4
+11 | 8 | 2 | 6 | 10 | 8 | 2
+12 | 5 | 3 | 2 | 8 | 5 | 3
+13 | 9 | 2 | 7 | 11 | 9 | 2
+14 | 6 | 2 | 4 | 8 | 6 | 2
+15 | 6 | 4 | 2 | 10 | 6 | 4
+16 | 9 | 6 | 3 | 15 | 9 | 6
+17 | 8 | 3 | 5 | 11 | 8 | 3
+18 | 7 | 3 | 4 | 10 | 7 | 3
+19 | 6 | 5 | 1 | 11 | 6 | 5
+20 | 9 | 8 | 1 | 17 | 9 | 8
+21 | 9 | 5 | 4 | 14 | 9 | 5
+22 | 5 | 2 | 3 | 7 | 5 | 2
+23 | 4 | 3 | 1 | 7 | 4 | 3
+24 | 7 | 6 | 1 | 13 | 7 | 6
+25 | 7 | 2 | 5 | 9 | 7 | 2
 ```
 
 ### Exercise drehen-ist-schritt
