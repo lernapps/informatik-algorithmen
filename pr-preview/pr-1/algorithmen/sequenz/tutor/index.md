@@ -45,7 +45,7 @@ Befehle nacheinander in fester Reihenfolge: Mit drei Befehlskarten steuerst du K
 
 Im Klassenchat der 7b, am Abend vor Informatik:
 
-**Frau Berg:** Morgen spielen wir weiter, auf dem Spielfeld am Boden. Diesmal nur mit drei Karten: vorwärts, links drehen, rechts drehen. Wer ist Kiko?
+**Frau Berg:** Morgen spielen wir weiter, diesmal nur mit drei Karten: vorwärts, links drehen, rechts drehen. Wer ist Kiko?
 
 **Mia:** Wieder ich!
 
@@ -74,12 +74,14 @@ Drehen ändert nur die Blickrichtung, Kiko bleibt auf dem Feld. Links und rechts
 **Ohne Computer, zu dritt oder zu viert** (allein: Spielfeld auf Kästchenpapier, eine Spielfigur ist Kiko):
 
 1. Druckt das [Spielfeld](https://lernapps.net/coding/karten/de/spielfeld.svg) und die [Befehlskarten](https://lernapps.net/coding/karten/de/befehlskarten-1.svg) aus oder klebt ein Spielfeld mit Klebeband auf den Boden.
-2. Schneidet Kiko, das Ziel und Wände vom Spielfeld-Blatt aus und legt sie hin.
+2. Schneidet Kiko, Ziel und Wände aus.
 3. Ein Kind legt die Karten untereinander.
 4. Ein Kind ist Kiko und folgt den Karten genau, von oben nach unten.
-5. Kommt Kiko nicht ans Ziel, sucht gemeinsam die falsche Karte. Dann tauscht die Rollen.
+5. Falsch gelandet? Sucht die falsche Karte, dann tauscht.
 
-**Mit Computer:** In der Programmierwerkstatt, einer Webseite, sind die Karten Blöcke mit denselben Wörtern. Das Feld in Spalte 4, Zeile 2 heißt dort kurz (4|2). Bring Kiko zur Fahne: [Challenge „Kiko läuft zur Fahne“ öffnen](https://lernapps.net/coding/app/?c=dVTBctw2DP0VDH3Vyk2PusX17CU9ZOq0nbHHB4qCREQUuQGh3dqZnfGHpD35M3rzn_hLMqC0jn2ILiIl4OEBD8BX0yeerJjmXWWoM40ZaUybjF9mjPeb7PwcfOpNZYQkoGm-mg5NYz7QmCA8Pc69wP3MsLU-oqkMxtPPgw1jBkkgHqEPdjDHyojN4wvGJeHiB_dIg0BnM1wThhp-xwE6QrjAHn1AoFiuTM4LDQh_IHmMfQoDVtDZiQRKzKRgf04HHH6QgjFNk9SLQXbezgJ2gvext3EAmuCCQgfROg-MzkuuT2l8WonDZFlT8QhDsqGGj7OUm0vTZGOXlZ_emQYvkLhDhqyJ25XXgPKmFHAg8UmJQIeSZq7h_QKZxbJUi1dvHeYT6BKhTZa7Wit5SBw6LaXc7bSYwbZ3TFG8qcweOVOKRVOXYk-DGk52Z5obc7Y8pjJnV3W9ns7OXp3q6_VU7G4r01tHcTCNQZvFHFXHlEKb_lG8feKDRZZsKhMojvpeCqmuJR_TxDkE_T2RZOXShuTGbJp3vygYZv16c1sZ57F8vzH3hGGDzKiaK5KnWKzW5tlaz9BhhL9xAOQsoF3Q4QRbigNyUbSG66dHH0rzbDGoLi3l0hvqghE-zLzHF8W3pEDC1mEp986KL1rBXZoZ-oJcw29pjqtcX2bLmGHevchbIFqMRaaV7F-J4TNq-BIPOka_tkYmpXnJ6DFCiwccBMhHiJo37NNUiNdvRktmjhla7BMjoHZuiQefZo4UB-gSZohJYEp7BBJIfQ8keaX7itgl8joJDfy6mWwAlfPpkSXrYMW4zkRhjPHNaBRpG-hVf-5ADuSw0hrEQnBp3NocbyuzJzyYRlVHN-qaaK0re2Dm8LIOzikuu4jGjQ1DYhI_YTx_fV730vmJx898fuZ2rHRQ8EfQ65mf_ndjaYkrJEF4fvjvajF_fvh2inNh3XhSeGcHtfq2WDl8fvjXHI_H7w)
+**Mit Computer:** In der Programmierwerkstatt (einer Webseite) sind die Karten Blöcke. Ein Feld heißt dort kurz (Spalte|Zeile). Bring Kiko zur Fahne: [Challenge „Kiko läuft zur Fahne“ öffnen](https://lernapps.net/coding/app/?c=dVTBctw2DP0VDH3Vyk2PusX17CU9ZOq0nbHHB4qCREQUuQGh3dqZnfGHpD35M3rzn_hLMqC0jn2ILiIl4OEBD8BX0yeerJjmXWWoM40ZaUybjF9mjPeb7PwcfOpNZYQkoGm-mg5NYz7QmCA8Pc69wP3MsLU-oqkMxtPPgw1jBkkgHqEPdjDHyojN4wvGJeHiB_dIg0BnM1wThhp-xwE6QrjAHn1AoFiuTM4LDQh_IHmMfQoDVtDZiQRKzKRgf04HHH6QgjFNk9SLQXbezgJ2gvext3EAmuCCQgfROg-MzkuuT2l8WonDZFlT8QhDsqGGj7OUm0vTZGOXlZ_emQYvkLhDhqyJ25XXgPKmFHAg8UmJQIeSZq7h_QKZxbJUi1dvHeYT6BKhTZa7Wit5SBw6LaXc7bSYwbZ3TFG8qcweOVOKRVOXYk-DGk52Z5obc7Y8pjJnV3W9ns7OXp3q6_VU7G4r01tHcTCNQZvFHFXHlEKb_lG8feKDRZZsKhMojvpeCqmuJR_TxDkE_T2RZOXShuTGbJp3vygYZv16c1sZ57F8vzH3hGGDzKiaK5KnWKzW5tlaz9BhhL9xAOQsoF3Q4QRbigNyUbSG66dHH0rzbDGoLi3l0hvqghE-zLzHF8W3pEDC1mEp986KL1rBXZoZ-oJcw29pjqtcX2bLmGHevchbIFqMRaaV7F-J4TNq-BIPOka_tkYmpXnJ6DFCiwccBMhHiJo37NNUiNdvRktmjhla7BMjoHZuiQefZo4UB-gSZohJYEp7BBJIfQ8keaX7itgl8joJDfy6mWwAlfPpkSXrYMW4zkRhjPHNaBRpG-hVf-5ADuSw0hrEQnBp3NocbyuzJzyYRlVHN-qaaK0re2Dm8LIOzikuu4jGjQ1DYhI_YTx_fV730vmJx898fuZ2rHRQ8EfQ65mf_ndjaYkrJEF4fvjvajF_fvh2inNh3XhSeGcHtfq2WDl8fvjXHI_H7w)
+
+**Erst lesen, dann laufen lassen:** Sag nur den Weg voraus: [Challenge „Wohin läuft Kiko?“ öffnen](https://lernapps.net/coding/app/?c=tVTNThwxDH4Vy1zDol7ngoQQHNpDVSohgThkMt4kmplk6zg7XdBKPAjtqY_BjTfhSarMD4UDPbW5jJPxZzuf8_kO15F7LVh9UOgbrLD1bTzcRnbESVs6TPQtU7hFheKlI6zusCGs8DI6H6B7-pXXAh99G49RIYXyxxETNJHSeA42HuNeoejUvqA_eUrQ6ASfOVrWfa8gukBACW4zJNEsFFZwoS1sI-ucFAzUGUcBLslOcYPve6ngjLoG1k-PPForONVBG7dU9jZHDg00GZInl0RBrMuOyTgBp0UoyWq5xRfSDYgj2ExoGLy4mAU4h-CDBS8r-MzUeCMwOG8cDHq33JiSgvQtayaod7O1gq-l_tcxOYcEOjSwixkSEQyOxBGP-6HQyN46WRX-hshdUwiU3aZQ2Ol6xz6IQ4Vb4uRjGLtoYlh7Wxx7vcHqGg-mhQoPVmX9zbqarIuXsxl7o3CtjQ8WKySdBPelozF2dfxecmwjD5pYEirsfGjLd-Q1FejYz6kiH7C6vsOEFZq-QYVB9-U2rwNotgmr6xuFXTQtNVgJZ9qrfwdbSvz_mWYS_nWqm33hufeSsLorraAks59xZNo0N2VWcWmC82F0mRV4Tu6NOOCkJJiENJlNZuNGydySt9B7gYZ6OPPBEpfti1bOI4jjmK1787rrMUy9m43yzjfRBwHdxWBHQZWHzrAeQ5ZXPhd3ylSkUtNAVha1F5VuYz_JfEn9NfOoxnHchCjQxy1NiLheg5e0qA_3Nwq3ngassO4imZZQYa3NOJUydy_D6ciHaSr69lB3NrIX11M4em3PY_FoqeM9zHuw0j9d05-kV5mfHk0Lt5nhgrwQPN__vJjcn-8fljwn2rQgceJZ2-L1MHkZer7_gfv9_jc)
 
 Bild: Das Spielfeld der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Ein Weg führt 2 Felder nach rechts, 2 nach unten und 2 nach rechts zum Ziel in Spalte 6, Zeile 4. Bildunterschrift: So sieht die Challenge in der Werkstatt aus.
 
@@ -95,7 +97,7 @@ Bild: Das Spielfeld der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut im
 
 ### Rückblick und wie es weitergeht
 
-Kiko ist mit deiner ersten Sequenz am Ziel. Damit endet das Kapitel: Algorithmen erkennen, prüfen und als Sequenz aufschreiben. **Mia** schreibt: „Bei jeder Wand musste Jona neue Karten legen.“ Im nächsten Kapitel führt Kiko die Befehle selbst aus und lernt danach, Wände zu bemerken.
+Kiko ist mit deiner ersten Sequenz am Ziel. Damit endet das Kapitel. **Mia** schreibt: „Bei jeder Wand musste Jona neue Karten legen.“ Im nächsten Kapitel führt Kiko die Befehle selbst aus und lernt danach, Wände zu bemerken.
 
 ### Aufgabe wo-steht-kiko
 
