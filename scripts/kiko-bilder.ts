@@ -103,6 +103,8 @@ function kiko(angle: number): string {
 const ANGLE: Record<Facing, number> = { north: -90, east: 0, south: 90, west: 180 };
 const CELL = 40;
 const PAD = 22;
+/** Weißer Streifen unten: Dort liegt das Lizenzschild der Seite, ohne etwas zu verdecken. */
+const FOOT = 34;
 
 function svg(w: number, h: number, title: string, body: string, style: string): string {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}">
@@ -118,7 +120,7 @@ ${body}
 export function feld({ map, facing, marks = {}, kiko: showKiko = true, title }: Feld): string {
   const cols = map[0]?.length ?? 1;
   const w = cols * CELL + PAD + 8;
-  const h = map.length * CELL + PAD + 8;
+  const h = map.length * CELL + PAD + 8 + FOOT;
   const parts: string[] = [];
   for (let x = 0; x < cols; x++)
     parts.push(`<text x="${PAD + x * CELL + CELL / 2}" y="15" class="num">${x + 1}</text>`);
@@ -237,7 +239,7 @@ export function bloecke(program: Program, lang: Lang, title: string, numbers = f
     y += LINE + 2;
   }
   const w = Math.ceil(x0 + maxW + 8);
-  const h = y + 6;
+  const h = y + 6 + FOOT;
   const style = `.t{font:${FONT}px sans-serif;fill:#ffffff}.n{font:bold 13px sans-serif;fill:#1f2a44;text-anchor:middle}`;
   return svg(w, h, title, `<rect width="${w}" height="${h}" fill="#ffffff"/>` + bars.join("") + parts.join(""), style);
 }
@@ -263,7 +265,8 @@ export function karten(program: Program, lang: Lang, title: string): string {
   });
   const w = Math.ceil(36 + cw + 8);
   const style = `.t{font:${FONT}px sans-serif;fill:#111111}.n{font:bold 14px sans-serif;fill:#1f2a44;text-anchor:middle}`;
-  return svg(w, y + 2, title, `<rect width="${w}" height="${y + 2}" fill="#ffffff"/>` + parts.join(""), style);
+  const h = y + 2 + FOOT;
+  return svg(w, h, title, `<rect width="${w}" height="${h}" fill="#ffffff"/>` + parts.join(""), style);
 }
 
 // Alles aus der Quelle --------------------------------------------------------------------------------------------
