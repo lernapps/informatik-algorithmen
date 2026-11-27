@@ -79,10 +79,38 @@ Keine Recap-Seite und kein `ahead`: Jede Voraussetzung liegt im Strang und kommt
   Englisch (Computing curriculum England): algorithm, instruction, command, sequence, program, programming language,
   block-based programming language, selection, condition, sensor, count-controlled loop, condition-controlled loop,
   loop body, infinite loop, test, bug.
-- Eigenschaften eines Algorithmus, immer diese vier Wörter: endlich beschrieben, eindeutig, ausführbar, endet (nach
-  endlich vielen Schritten fertig). Englisch: finite description, unambiguous, executable, terminates. Eine
-  Endlosschleife nur so beurteilen: „Ein Programm, das nie endet, löst keine Aufgabe, die enden soll. Darum muss ein
-  Algorithmus enden.“ Programme, die absichtlich weiterlaufen (Ampel aus #500), sind kein Fehler.
+- Algorithmus: „eine genaue Anleitung (Handlungsvorschrift) aus endlich vielen Schritten, die eine Aufgabe löst. Wer
+  sie ausführt, muss nichts raten.“ Englisch: “a precise set of step-by-step instructions that solves a problem or
+  completes a task”.
+- Eigenschaften eines Algorithmus, immer diese vier, und die Seite sagt, dass es vier sind (das „Ich kann …“ der
+  Karte nennt drei; es bleibt Zitat): endlich beschrieben, eindeutig, ausführbar (jeder Schritt ist für den, der ihn
+  ausführt, machbar, z. B. für Kiko), endet (nach endlich vielen Schritten fertig). Englisch, parallel: finite
+  (finitely described), unambiguous, can be carried out (executable), terminates (finishes after a finite number of
+  steps).
+- Endlosschleife: „Ein Programm, das nie endet, löst keine Aufgabe, die enden soll. Darum muss ein Algorithmus enden.“
+  Ursache konkret nennen: Die Bedingung wird nie falsch. Programme, die absichtlich weiterlaufen (Ampel aus #500),
+  sind kein Fehler.
+- Befehl: „eine einfache Anweisung, die Kiko kennt und direkt ausführen kann“. Anweisung ist das allgemeinere Wort:
+  Auch „wiederhole … mal“ und „wenn … dann … sonst“ sind Anweisungen.
+- Programm: „ein Algorithmus, aufgeschrieben in einer Programmiersprache, damit ein Computer ihn ausführen kann“.
+- Sequenz: „eine Folge von Anweisungen, die nacheinander ausgeführt werden, jede genau einmal, in der aufgeschriebenen
+  Reihenfolge“. Auf `zaehlschleife` sagen: „Der Schleifenrumpf ist eine Sequenz, die mehrmals ausgeführt wird.“
+- Bedingung: „eine Frage, auf die es nur die Antworten wahr oder falsch gibt (ja oder nein)“. Sensor: der Teil von
+  Kiko, der etwas prüft; der Block „Wand voraus?“ ist die Bedingung, die der Sensor beantwortet. Den Block in
+  Definitionen nicht „Sensor“ nennen.
+- Verzweigung: „wenn … dann … sonst“ (zweiseitig); „wenn … dann“ ohne „sonst“ ist einseitig. Englisch: selection,
+  “if statement”.
+- Wiederholung (Schleife) als Oberbegriff; Englisch iteration (loop), einmal mit „repetition“ erklärt.
+- Bedingte Wiederholung: „führt den Schleifenrumpf aus, solange die Bedingung wahr ist. Kiko prüft die Bedingung vor
+  jedem Durchlauf. Ist sie falsch, hört die Wiederholung auf, auch schon vor dem ersten Durchlauf.“ Englisch: “runs
+  the loop body while the condition is true. Kiko checks the condition before each pass; if it is false, the loop
+  stops, even before the first pass.” Das „bis“ der Karte als Merke: „Kiko soll laufen, bis er am Ziel ist. Das
+  schreibst du: solange nicht am Ziel? tue gehe vorwärts.“ (bis X = solange nicht X); „bis“ nie in der Definition,
+  englisch nie “until”. Dazu: Geprüft wird nur zwischen den Durchläufen, nicht mitten im Rumpf; der Rumpf kann
+  null-mal laufen.
+- Fehler finden und beheben (debuggen); Englisch debug, debugging, bug.
+- Richtungen: In Aufgaben und `alt` Bildrichtungen mit „im Bild“: „Kiko schaut im Bild nach rechts / nach oben“,
+  englisch “faces right on the board / up the board”. Nacktes „links/rechts“ nur für Drehungen, aus Kikos Sicht.
 - Felder auf dem Spielfeld: „Spalte 3, Zeile 2“ / “column 3, row 2” (die Nummern stehen am Rand des Bildes, die
   Wand am Rand zählt mit).
 - Pseudocode-Schlüsselwörter (für später): `wiederhole … mal`/`repeat … times`, `solange … tue`/`while … do`,

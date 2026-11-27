@@ -38,8 +38,8 @@ blocks:
       - type: single-choice
         id: wo-steht-kiko
         text:
-          de: Kiko schaut nach rechts, das gelbe Dreieck zeigt die Blickrichtung. Jona legt die drei Karten. Auf welchem Feld steht Kiko danach?
-          en: Kiko faces right; the yellow triangle shows which way it is facing. Jona lays the three cards. Which square is Kiko on afterwards?
+          de: Kiko schaut im Bild nach rechts, das gelbe Dreieck zeigt seine Blickrichtung. Jona legt die drei Karten. Auf welchem Feld steht Kiko danach?
+          en: Kiko faces right on the board; the yellow triangle shows which way it is facing. Jona lays the three cards. Which square is Kiko on afterwards?
         material:
           - type: figure
             image: images/kiko-sequenz-einstieg.svg
@@ -71,8 +71,8 @@ blocks:
           - text: { de: Feld A, en: Square A }
             correct: false
             info:
-              de: Du hast das Drehen als Schritt gezählt. Beim Drehen bleibt Kiko auf seinem Feld.
-              en: You counted the turn as a step. When Kiko turns, it stays on its square.
+              de: Du hast „drehe dich nach links“ wie „drehe dich und geh ein Feld“ gezählt. Beim Drehen bleibt Kiko auf seinem Feld.
+              en: You counted “turn left” as “turn and move one square”. When Kiko turns, it stays on its square.
           - text: { de: Feld B, en: Square B }
             correct: true
             info:
@@ -86,11 +86,11 @@ blocks:
           - text: { de: Feld D, en: Square D }
             correct: false
             info:
-              de: Du hast links und rechts verwechselt. Kiko schaut nach rechts. Dreht er sich nach links, schaut er nach oben.
-              en: You mixed up left and right. Kiko faces right. If it turns left, it faces up.
+              de: Du hast links und rechts verwechselt. Kiko schaut im Bild nach rechts. Dreht er sich nach links, schaut er im Bild nach oben.
+              en: You mixed up left and right. Kiko faces right on the board. If it turns left, it faces up the board.
         explanation:
-          de: "Vorwärts auf Spalte 3, Zeile 4. Links drehen: Kiko schaut nach oben. Vorwärts auf Spalte 3, Zeile 3."
-          en: "Forward to column 3, row 4. Turn left: Kiko faces up. Forward to column 3, row 3."
+          de: "Vorwärts auf Spalte 3, Zeile 4. Links drehen: Kiko schaut im Bild nach oben. Vorwärts auf Spalte 3, Zeile 3."
+          en: "Forward to column 3, row 4. Turn left: Kiko faces up the board. Forward to column 3, row 3."
   - type: section
     id: idee
     title:
@@ -102,11 +102,11 @@ blocks:
           de: >-
             Kiko steht auf einem Feld und schaut in eine Richtung. Er kennt drei Befehle: **gehe vorwärts** (ein Feld
             weiter) sowie **drehe dich nach links** und **drehe dich nach rechts** (eine Vierteldrehung auf der
-            Stelle). Ein Befehl ist eine Anweisung, die Kiko ohne Nachfragen ausführt.
+            Stelle). Ein Befehl ist eine einfache Anweisung, die Kiko kennt und direkt ausführen kann.
           en: >-
-            Kiko stands on a square and faces one way. It knows three commands: **move forward** (one square on) and
-            **turn left** and **turn right** (a quarter turn on the spot). A command is an instruction that Kiko
-            carries out without asking.
+            Kiko stands on a square and faces one way. It knows three commands: **move forward** (one square forward) and
+            **turn left** and **turn right** (a quarter turn on the spot). A command is a simple instruction that
+            Kiko knows and can carry out directly.
       - type: definition
         term:
           de: Sequenz
@@ -127,7 +127,7 @@ blocks:
                 drehen.
               en: >-
                 Turning only changes the direction Kiko faces; it stays on its square. Left and right are from
-                Kiko's point of view. And the order matters: turning first, then moving leads somewhere else than
+                Kiko's point of view. And the order matters: turning first, then moving leads somewhere different from
                 moving first, then turning.
   - type: section
     id: ausprobieren
@@ -210,8 +210,8 @@ blocks:
       - type: single-choice
         id: welche-folge
         text:
-          de: Kiko schaut nach oben. Welche Folge bringt ihn ins Ziel?
-          en: Kiko faces up. Which sequence takes it to the goal?
+          de: Kiko schaut im Bild nach oben. Welche Folge bringt ihn ins Ziel?
+          en: Kiko faces up the board. Which sequence takes it to the goal?
         material:
           - type: figure
             image: images/kiko-sequenz-auswahl.svg
@@ -294,8 +294,8 @@ blocks:
           en: "Selin says: “The card ‘turn left’ takes Kiko one square to the left.” Is that true?"
         answer: false
         explanation:
-          de: Drehen bewegt Kiko nicht vom Feld. Erst „gehe vorwärts“ bringt ihn auf das Feld links von ihm.
-          en: Turning does not move Kiko off its square. Only “move forward” takes it to the square on its left.
+          de: Drehen bewegt Kiko nicht vom Feld. Erst danach bringt „gehe vorwärts“ ihn auf das Feld, das vorher links von ihm lag.
+          en: Turning does not move Kiko off its square. Only after that does “move forward” take it to the square that was on its left before.
   - type: section
     id: weiter
     title:
