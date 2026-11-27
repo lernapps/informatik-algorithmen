@@ -3,6 +3,16 @@
   "strand": "informatik/algorithmen",
   "pages": [
     {
+      "path": "algorithmen/algorithmus/",
+      "title": {
+        "de": "Was ist ein Algorithmus?",
+        "en": "What is an algorithm?"
+      },
+      "competencies": [
+        "algorithmus-begriff"
+      ]
+    },
+    {
       "path": "algorithmen/sequenz/",
       "title": {
         "de": "Sequenz",

@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="../../assets/index-DVOapkED.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/index-CtncCkFd.css">
+    <title>Was ist ein Algorithmus? – Algorithmen und Programme</title>
+    <meta name="description" content="Eine genaue Anleitung aus Schritten, die eine Aufgabe löst: Algorithmen im Alltag erkennen und selbst einen aufschreiben." />
+    <meta name="lernapps-archetype" content="explainer" />
+    <link rel="alternate" hreflang="de" href="../../algorithmen/algorithmus/" />
+    <link rel="alternate" hreflang="en" href="../../en/algorithmen/algorithmus/" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="page-header"><nav class="page-languages" aria-label="Sprache"><ul><li><a href="../../algorithmen/algorithmus/" hreflang="de" lang="de" aria-current="page">Deutsch</a></li><li><a href="../../en/algorithmen/algorithmus/" hreflang="en" lang="en">English</a></li></ul></nav></header>
+<nav class="explainer-breadcrumbs" aria-label="Du bist hier"><ol><li><a href="../../">Start</a></li><li aria-current="page">Was ist ein Algorithmus?</li></ol></nav>
+<main class="explainer" id="inhalt-der-seite">
+<div class="explainer-title-row">
+<h1>Was ist ein Algorithmus?</h1>
+<div class="explainer-tutor explainer-tutor-page">
+<details class="explainer-tutor-off">
+<summary>Mit einem KI-Tutor lernen</summary>
+<p>Ein KI-Tutor erklärt dir diese Seite und hilft dir bei den Aufgaben. Wähl deinen Assistenten:</p>
+<p class="explainer-tutor-actions"><span class="explainer-tutor-way" hidden><select class="explainer-tutor-select" aria-label="Assistent"><option value="Claude">Claude</option><option value="ChatGPT">ChatGPT</option><option value="Mistral Vibe" data-hint="Mistral Vibe lädt keine Webseiten, wenn der Link aus einem Knopf kommt. Darum kopieren wir den Satz mit dem Link für dich. Ein Klick auf „Mit Mistral Vibe lernen“ öffnet Mistral Vibe mit einer kurzen Nachricht. Füg danach den kopierten Satz ein (Strg+V, am Mac ⌘+V) und schick ihn ab.">Mistral Vibe</option><option value="copy">Ein anderer: Text kopieren</option></select> <button type="button" class="explainer-tutor-on">Einschalten</button></span> <span class="explainer-tutor-plain"><a class="explainer-tutor-provider" href="https://claude.ai/new" rel="noopener" target="_blank">Mit Claude öffnen</a> <a class="explainer-tutor-provider" href="https://chatgpt.com/" rel="noopener" target="_blank">Mit ChatGPT öffnen</a> <a class="explainer-tutor-provider" href="https://chat.mistral.ai/chat" rel="noopener" target="_blank">Mit Mistral Vibe öffnen</a></span></p>
+<p class="explainer-tutor-hint" role="status" aria-live="polite" hidden></p>
+<p class="explainer-tutor-note">Du nutzt dein eigenes Konto beim Anbieter. Der Assistent ist kein Angebot von lernapps.net: lernapps liefert nur Inhalte und Aufgaben. Die Wahl gilt für alle Seiten, nur auf diesem Gerät.</p>
+<p><a class="explainer-tutor-guide" href="../../algorithmen/algorithmus/tutor/">Ansehen, was dein Tutor zu dieser Seite bekommt</a></p>
+</details>
+<p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
+<p class="explainer-tutor-status" role="status" aria-live="polite"></p>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧algorithmen/algorithmus/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"informatik-algorithmen","page":{"id":"algorithmus","title":"Was ist ein Algorithmus?","exercises":[{"id":"welche-beschreibung","section":"einstieg","numbered":false},{"id":"welche-sind-algorithmen","section":"uebung","numbered":false},{"id":"algorithmus-aufgabe","section":"uebung","numbered":false},{"id":"weg-sekretariat","section":"uebung","numbered":false},{"id":"nur-computer","section":"uebung","numbered":false}],"sections":["einstieg","idee","ausprobieren","uebung","weiter"]},"tutor":"algorithmen/algorithmus/tutor/","markdown":"algorithmen/algorithmus/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
+</div>
+</div>
+
+<nav class="explainer-toc" aria-label="Auf dieser Seite"><p class="explainer-toc-title">Auf dieser Seite</p><ol><li><a href="#einstieg">Ali sucht den Computerraum</a></li><li><a href="#idee">Eine genaue Anleitung aus Schritten</a></li><li><a href="#ausprobieren">Selbst ausprobieren</a></li><li><a href="#uebung">Übung</a></li><li><a href="#weiter">Wie es weitergeht</a></li></ol></nav>
+<section class="explainer-section">
+<h2 id="einstieg">Ali sucht den Computerraum</h2>
+<div class="explainer-block" data-block="einstieg/1" data-block-id="c3c4beea" data-block-type="text" data-block-order="1">
+<div class="block-text"><p>Im Klassenchat der 7b, am ersten Schultag:</p>
+<p><strong>Ali:</strong> Hi, ich bin neu 👋 Wo ist morgen Informatik?</p>
+<p><strong>Jona:</strong> Raum 112. Einfach rein, dann irgendwo links, ist nicht weit 😅</p>
+<p><strong>Selin:</strong> 1. Durch den Haupteingang. 2. Links zur Treppe und hoch in den 1. Stock. 3. Oben im Gang nach rechts. 4. Dritte Tür links: Raum 112.</p>
+<p><strong>Ali:</strong> Danke, Selin! Das schaffe sogar ich.</p>
+<p>Hier lernst du, was Selins Nachricht besonders macht: Sie ist ein Algorithmus.</p></div>
+</div>
+<div class="explainer-block" data-block="einstieg/2" data-block-id="ca839060" data-block-type="single-choice" data-block-order="2">
+<div class="explainer-exercise explainer-question" id="welche-beschreibung">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-welche-beschreibung" data-id="welche-beschreibung" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Ali kennt die Schule noch nicht. Mit welcher Beschreibung findet er Raum 112 sicher?</legend>
+<label class="question-option"><input type="radio" name="frage-welche-beschreibung" value="0"> <span>Selins vier Schritte</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-beschreibung" value="1"> <span>Jonas „Einfach rein, dann irgendwo links“</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-beschreibung" value="2"> <span>„Raum 112 ist im 1. Stock.“</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-beschreibung" value="3"> <span>„Frag im Gang einfach jemanden.“</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Selins vier Schritte</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Jeder Schritt sagt genau, was Ali tun soll, und die Reihenfolge ist klar. Er muss nichts raten.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Jonas „Einfach rein, dann irgendwo links“</strong></p><p>„Irgendwo links“ kann vieles heißen: Ali muss raten, wo er abbiegen soll.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>„Raum 112 ist im 1. Stock.“</strong></p><p>Das stimmt, sagt aber nicht, was Ali tun soll. Wo die Treppe ist, weiß er nicht.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>„Frag im Gang einfach jemanden.“</strong></p><p>Damit schiebt Jona die Aufgabe nur weiter. Wie Ali den Raum findet, steht nicht darin.</p></li>
+</ul>
+<p class="question-explanation">Selins Nachricht besteht aus Schritten, die Ali nacheinander ausführen kann, bis er am Ziel ist.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Selins vier Schritte</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Jeder Schritt sagt genau, was Ali tun soll, und die Reihenfolge ist klar. Er muss nichts raten.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Jonas „Einfach rein, dann irgendwo links“</strong></p><p>„Irgendwo links“ kann vieles heißen: Ali muss raten, wo er abbiegen soll.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>„Raum 112 ist im 1. Stock.“</strong></p><p>Das stimmt, sagt aber nicht, was Ali tun soll. Wo die Treppe ist, weiß er nicht.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>„Frag im Gang einfach jemanden.“</strong></p><p>Damit schiebt Jona die Aufgabe nur weiter. Wie Ali den Raum findet, steht nicht darin.</p></li>
+</ul>
+<p class="question-explanation">Selins Nachricht besteht aus Schritten, die Ali nacheinander ausführen kann, bis er am Ziel ist.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"welche-beschreibung","text":"Ali kennt die Schule noch nicht. Mit welcher Beschreibung findet er Raum 112 sicher?","explanation":"Selins Nachricht besteht aus Schritten, die Ali nacheinander ausführen kann, bis er am Ziel ist.","links":[],"type":"single-choice","options":[{"text":"Selins vier Schritte","correct":true,"info":"Jeder Schritt sagt genau, was Ali tun soll, und die Reihenfolge ist klar. Er muss nichts raten."},{"text":"Jonas „Einfach rein, dann irgendwo links“","correct":false,"info":"„Irgendwo links“ kann vieles heißen: Ali muss raten, wo er abbiegen soll."},{"text":"„Raum 112 ist im 1. Stock.“","correct":false,"info":"Das stimmt, sagt aber nicht, was Ali tun soll. Wo die Treppe ist, weiß er nicht."},{"text":"„Frag im Gang einfach jemanden.“","correct":false,"info":"Damit schiebt Jona die Aufgabe nur weiter. Wie Ali den Raum findet, steht nicht darin."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="idee">Eine genaue Anleitung aus Schritten</h2>
+<div class="explainer-block" data-block="idee/1" data-block-id="96c5e7f7" data-block-type="labelled-figure" data-block-order="3">
+<figure class="block-figure block-labelled"><div class="block-labelled-image"><img src="../../images/schulhaus-plan.svg" alt="Plan der Schule. Oben das Erdgeschoss mit den Räumen 101 bis 104, unten der 1. Stock mit den Räumen 110 bis 114. Der Haupteingang ist unten in der Mitte des Erdgeschosses, die Treppe links unten in beiden Stockwerken. Im 1. Stock liegen über dem Gang von links nach rechts die Räume 110, 111 und 112." loading="lazy" decoding="async"><span class="block-marker" style="left: 50%; top: 43%" aria-hidden="true">1</span><span class="block-marker" style="left: 12%; top: 33%" aria-hidden="true">2</span><span class="block-marker" style="left: 93%; top: 54%" aria-hidden="true">3</span><span class="block-marker" style="left: 94%; top: 30%" aria-hidden="true">4</span><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><ol class="block-legend"><li>Haupteingang</li><li>Treppe</li><li>Raum 112, der Computerraum</li><li>Raum 104, das Sekretariat</li></ol><figcaption><p>Oben das Erdgeschoss, unten der 1. Stock. Fahr Selins Weg mit dem Finger nach.</p></figcaption></figure>
+</div>
+<div class="explainer-block" data-block="idee/2" data-block-id="5526fdcc" data-block-type="text" data-block-order="4">
+<div class="block-text"><p>Selin schreibt keine Beschreibung der Schule, sondern eine Anleitung: Schritt für Schritt, in einer festen Reihenfolge. Wer ihr folgt, kommt immer an, egal ob Ali, du oder ein Roboter.</p></div>
+</div>
+<div class="explainer-block" data-block="idee/3" data-block-id="3eb36b0a" data-block-type="definition" data-block-order="5">
+<dl class="explainer-definition"><dt><dfn id="begriff-algorithmus"><a href="../../glossar/#algorithmus">Algorithmus</a></dfn></dt><dd><p>Ein Algorithmus ist eine genaue Anleitung (Handlungsvorschrift) aus endlich vielen Schritten, die eine Aufgabe löst. Wer ihn ausführt, muss nichts raten.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/4" data-block-id="d7ba6201" data-block-type="note" data-block-order="6">
+<div class="explainer-box explainer-note">
+<h3 class="explainer-box-title">Merke</h3>
+<div class="explainer-block" data-block="idee/4/1" data-block-id="a56b351a" data-block-type="text" data-block-order="7">
+<div class="block-text"><p>Algorithmen gibt es überall, nicht nur im Computer: ein Rezept, eine Bauanleitung, das schriftliche Addieren. Ein Wetterbericht ist keiner: Er sagt, wie etwas ist, nicht, was man tun soll.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="ausprobieren">Selbst ausprobieren</h2>
+<div class="explainer-block" data-block="ausprobieren/1" data-block-id="5c0a25db" data-block-type="text" data-block-order="8">
+<div class="block-text"><p><strong>Ohne Computer, zu zweit:</strong></p>
+<ol>
+<li>Wählt ein Ziel in eurer Schule, zum Beispiel das Sekretariat.</li>
+<li>Eine oder einer schreibt den Weg vom Klassenraum dorthin in nummerierten Schritten auf.</li>
+<li>Die oder der andere geht los und macht nur, was auf dem Zettel steht, ohne nachzufragen.</li>
+<li>Wo ihr raten musstet, verbessert ihr den Schritt. Dann tauscht ihr.</li>
+</ol></div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="uebung">Übung</h2>
+<div class="explainer-block" data-block="uebung/1" data-block-id="b0be2200" data-block-type="multiple-choice" data-block-order="9">
+<div class="explainer-exercise explainer-question" id="welche-sind-algorithmen">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-welche-sind-algorithmen" data-id="welche-sind-algorithmen" data-type="multiple-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Welche dieser Texte sind Algorithmen?</legend>
+<label class="question-option"><input type="checkbox" name="frage-welche-sind-algorithmen" value="0"> <span>ein Rezept für Pfannkuchen</span></label>
+<label class="question-option"><input type="checkbox" name="frage-welche-sind-algorithmen" value="1"> <span>die Bauanleitung für ein Regal</span></label>
+<label class="question-option"><input type="checkbox" name="frage-welche-sind-algorithmen" value="2"> <span>der Wetterbericht für morgen</span></label>
+<label class="question-option"><input type="checkbox" name="frage-welche-sind-algorithmen" value="3"> <span>der Stundenplan der 7b</span></label>
+<label class="question-option"><input type="checkbox" name="frage-welche-sind-algorithmen" value="4"> <span>die Anleitung zum Anmelden im Schul-WLAN</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>ein Rezept für Pfannkuchen</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Ein Rezept sagt Schritt für Schritt, was du tun sollst, bis die Pfannkuchen fertig sind.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>die Bauanleitung für ein Regal</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Die Bauanleitung führt in nummerierten Schritten zum fertigen Regal.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>der Wetterbericht für morgen</strong></p><p>Der Wetterbericht beschreibt, wie das Wetter wird. Er sagt nicht, was jemand tun soll, darum ist er keine Handlungsvorschrift.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>der Stundenplan der 7b</strong></p><p>Der Stundenplan zeigt, wann welches Fach ist. Schritte, die eine Aufgabe lösen, enthält er nicht.</p></li>
+<li class="question-info question-info-right" data-option="4"><p class="question-info-head"><strong>die Anleitung zum Anmelden im Schul-WLAN</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Sie sagt Schritt für Schritt, was du tippen und anklicken sollst, bis du im WLAN bist.</p></li>
+</ul>
+<p class="question-explanation">Ein Algorithmus sagt, was zu tun ist, in Schritten, bis eine Aufgabe gelöst ist. Eine Beschreibung oder eine Übersicht reicht dafür nicht.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>ein Rezept für Pfannkuchen</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Ein Rezept sagt Schritt für Schritt, was du tun sollst, bis die Pfannkuchen fertig sind.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>die Bauanleitung für ein Regal</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Die Bauanleitung führt in nummerierten Schritten zum fertigen Regal.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>der Wetterbericht für morgen</strong></p><p>Der Wetterbericht beschreibt, wie das Wetter wird. Er sagt nicht, was jemand tun soll, darum ist er keine Handlungsvorschrift.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>der Stundenplan der 7b</strong></p><p>Der Stundenplan zeigt, wann welches Fach ist. Schritte, die eine Aufgabe lösen, enthält er nicht.</p></li>
+<li class="question-info question-info-right" data-option="4"><p class="question-info-head"><strong>die Anleitung zum Anmelden im Schul-WLAN</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Sie sagt Schritt für Schritt, was du tippen und anklicken sollst, bis du im WLAN bist.</p></li>
+</ul>
+<p class="question-explanation">Ein Algorithmus sagt, was zu tun ist, in Schritten, bis eine Aufgabe gelöst ist. Eine Beschreibung oder eine Übersicht reicht dafür nicht.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"welche-sind-algorithmen","text":"Welche dieser Texte sind Algorithmen?","explanation":"Ein Algorithmus sagt, was zu tun ist, in Schritten, bis eine Aufgabe gelöst ist. Eine Beschreibung oder eine Übersicht reicht dafür nicht.","links":[],"type":"multiple-choice","options":[{"text":"ein Rezept für Pfannkuchen","correct":true,"info":"Ein Rezept sagt Schritt für Schritt, was du tun sollst, bis die Pfannkuchen fertig sind."},{"text":"die Bauanleitung für ein Regal","correct":true,"info":"Die Bauanleitung führt in nummerierten Schritten zum fertigen Regal."},{"text":"der Wetterbericht für morgen","correct":false,"info":"Der Wetterbericht beschreibt, wie das Wetter wird. Er sagt nicht, was jemand tun soll, darum ist er keine Handlungsvorschrift."},{"text":"der Stundenplan der 7b","correct":false,"info":"Der Stundenplan zeigt, wann welches Fach ist. Schritte, die eine Aufgabe lösen, enthält er nicht."},{"text":"die Anleitung zum Anmelden im Schul-WLAN","correct":true,"info":"Sie sagt Schritt für Schritt, was du tippen und anklicken sollst, bis du im WLAN bist."}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/2" data-block-id="1ed8eaae" data-block-type="matching" data-block-order="10">
+<div class="explainer-exercise explainer-question" id="algorithmus-aufgabe">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-algorithmus-aufgabe" data-id="algorithmus-aufgabe" data-type="matching">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Welche Aufgabe löst welcher Algorithmus?</legend>
+<p class="question-hint">Wähle zu jedem Eintrag das Passende.</p>
+<ul class="question-pairs">
+<li><label><span>Rezept</span> <select name="frage-algorithmus-aufgabe-0" data-left="0"><option value="">bitte wählen</option><option value="0">einen Kuchen backen</option><option value="1">ein Regal aufbauen</option><option value="3">zwei große Zahlen zusammenzählen</option><option value="2">einen Raum finden</option></select></label></li>
+<li><label><span>Bauanleitung</span> <select name="frage-algorithmus-aufgabe-1" data-left="1"><option value="">bitte wählen</option><option value="0">einen Kuchen backen</option><option value="1">ein Regal aufbauen</option><option value="3">zwei große Zahlen zusammenzählen</option><option value="2">einen Raum finden</option></select></label></li>
+<li><label><span>Wegbeschreibung</span> <select name="frage-algorithmus-aufgabe-2" data-left="2"><option value="">bitte wählen</option><option value="0">einen Kuchen backen</option><option value="1">ein Regal aufbauen</option><option value="3">zwei große Zahlen zusammenzählen</option><option value="2">einen Raum finden</option></select></label></li>
+<li><label><span>schriftliches Addieren</span> <select name="frage-algorithmus-aufgabe-3" data-left="3"><option value="">bitte wählen</option><option value="0">einen Kuchen backen</option><option value="1">ein Regal aufbauen</option><option value="3">zwei große Zahlen zusammenzählen</option><option value="2">einen Raum finden</option></select></label></li>
+</ul>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> Rezept – einen Kuchen backen; Bauanleitung – ein Regal aufbauen; Wegbeschreibung – einen Raum finden; schriftliches Addieren – zwei große Zahlen zusammenzählen</p>
+<p class="question-explanation">Jeder Algorithmus gehört zu einer Aufgabe. Er ist fertig, wenn die Aufgabe gelöst ist.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> Rezept – einen Kuchen backen; Bauanleitung – ein Regal aufbauen; Wegbeschreibung – einen Raum finden; schriftliches Addieren – zwei große Zahlen zusammenzählen</p>
+<p class="question-explanation">Jeder Algorithmus gehört zu einer Aufgabe. Er ist fertig, wenn die Aufgabe gelöst ist.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"algorithmus-aufgabe","text":"Welche Aufgabe löst welcher Algorithmus?","explanation":"Jeder Algorithmus gehört zu einer Aufgabe. Er ist fertig, wenn die Aufgabe gelöst ist.","links":[],"type":"matching","pairs":[{"left":"Rezept","right":"einen Kuchen backen"},{"left":"Bauanleitung","right":"ein Regal aufbauen"},{"left":"Wegbeschreibung","right":"einen Raum finden"},{"left":"schriftliches Addieren","right":"zwei große Zahlen zusammenzählen"}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/3" data-block-id="c8057165" data-block-type="ordering" data-block-order="11">
+<div class="explainer-exercise explainer-question" id="weg-sekretariat">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-weg-sekretariat" data-id="weg-sekretariat" data-type="ordering">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Ali soll zum Sekretariat, Raum 104 im Erdgeschoss. Bring die Schritte in die richtige Reihenfolge.</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../images/schulhaus-plan.svg" alt="Plan der Schule. Oben das Erdgeschoss: Der Haupteingang ist unten in der Mitte, von dort geht ein Gang nach links und rechts. Raum 104 liegt rechts unten am Ende des Gangs. Unten der 1. Stock." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Der Plan der Schule, oben das Erdgeschoss</p></figcaption></figure></div>
+<p class="question-hint">Gib jedem Eintrag seinen Platz: 1 für den ersten.</p>
+<ul class="question-pairs">
+<li><label><span>Geh bis zur letzten Tür auf der rechten Seite.</span> <select name="frage-weg-sekretariat-2" data-item="2"><option value="">bitte wählen</option><option value="0">Platz 1</option><option value="1">Platz 2</option><option value="2">Platz 3</option><option value="3">Platz 4</option></select></label></li>
+<li><label><span>Geh durch die Tür in Raum 104.</span> <select name="frage-weg-sekretariat-3" data-item="3"><option value="">bitte wählen</option><option value="0">Platz 1</option><option value="1">Platz 2</option><option value="2">Platz 3</option><option value="3">Platz 4</option></select></label></li>
+<li><label><span>Geh durch den Haupteingang.</span> <select name="frage-weg-sekretariat-0" data-item="0"><option value="">bitte wählen</option><option value="0">Platz 1</option><option value="1">Platz 2</option><option value="2">Platz 3</option><option value="3">Platz 4</option></select></label></li>
+<li><label><span>Geh im Gang nach rechts.</span> <select name="frage-weg-sekretariat-1" data-item="1"><option value="">bitte wählen</option><option value="0">Platz 1</option><option value="1">Platz 2</option><option value="2">Platz 3</option><option value="3">Platz 4</option></select></label></li>
+</ul>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> 1. Geh durch den Haupteingang., 2. Geh im Gang nach rechts., 3. Geh bis zur letzten Tür auf der rechten Seite., 4. Geh durch die Tür in Raum 104.</p>
+<p class="question-explanation">Erst hinein, dann nach rechts, dann bis zur Tür. Mit einer anderen Reihenfolge kommt Ali nicht an.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> 1. Geh durch den Haupteingang., 2. Geh im Gang nach rechts., 3. Geh bis zur letzten Tür auf der rechten Seite., 4. Geh durch die Tür in Raum 104.</p>
+<p class="question-explanation">Erst hinein, dann nach rechts, dann bis zur Tür. Mit einer anderen Reihenfolge kommt Ali nicht an.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"weg-sekretariat","text":"Ali soll zum Sekretariat, Raum 104 im Erdgeschoss. Bring die Schritte in die richtige Reihenfolge.","explanation":"Erst hinein, dann nach rechts, dann bis zur Tür. Mit einer anderen Reihenfolge kommt Ali nicht an.","links":[],"material":[{"type":"figure","image":"images/schulhaus-plan.svg","alt":"Plan der Schule. Oben das Erdgeschoss: Der Haupteingang ist unten in der Mitte, von dort geht ein Gang nach links und rechts. Raum 104 liegt rechts unten am Ende des Gangs. Unten der 1. Stock.","caption":"Der Plan der Schule, oben das Erdgeschoss","source":"eigene Zeichnung","licence":"CC-BY-4.0"}],"type":"ordering","items":["Geh durch den Haupteingang.","Geh im Gang nach rechts.","Geh bis zur letzten Tür auf der rechten Seite.","Geh durch die Tür in Raum 104."]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/4" data-block-id="cf3e5c01" data-block-type="true-false" data-block-order="12">
+<div class="explainer-exercise explainer-question" id="nur-computer">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-nur-computer" data-id="nur-computer" data-type="true-false">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Tom sagt: „Algorithmen gibt es nur in Computern.“ Stimmt das?</legend>
+<label class="question-option"><input type="radio" name="frage-nur-computer" value="true"> <span>Stimmt</span></label>
+<label class="question-option"><input type="radio" name="frage-nur-computer" value="false"> <span>Stimmt nicht</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
+<p class="question-explanation">Auch Menschen führen Algorithmen aus, zum Beispiel beim Kochen nach Rezept oder beim schriftlichen Addieren. Ein Computer braucht sie nur besonders genau.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
+<p class="question-explanation">Auch Menschen führen Algorithmen aus, zum Beispiel beim Kochen nach Rezept oder beim schriftlichen Addieren. Ein Computer braucht sie nur besonders genau.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"nur-computer","text":"Tom sagt: „Algorithmen gibt es nur in Computern.“ Stimmt das?","explanation":"Auch Menschen führen Algorithmen aus, zum Beispiel beim Kochen nach Rezept oder beim schriftlichen Addieren. Ein Computer braucht sie nur besonders genau.","links":[],"type":"true-false","answer":false},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="weiter">Wie es weitergeht</h2>
+<div class="explainer-block" data-block="weiter/1" data-block-id="776a0b6c" data-block-type="text" data-block-order="13">
+<div class="block-text"><p>Du kannst jetzt erklären, was ein Algorithmus ist, und einen Weg als Schritte aufschreiben. <strong>Frau Berg</strong> schreibt in den Chat: „Morgen spielen wir mit Befehlskarten. Ich bin gespannt, welche Karten kaputt sind.“ Auf der nächsten Seite prüfst du, wann eine Anleitung wirklich ein Algorithmus ist.</p></div>
+</div>
+</section>
+<p class="explainer-feedback-invite" hidden><span>Fehler gefunden oder eine Idee für diese App?</span> <button type="button" class="explainer-feedback-switch">Feedback zu „Algorithmen und Programme“ geben</button></p>
+</main>
+<template class="explainer-feedback-template">
+<aside class="explainer-feedback" aria-labelledby="feedback-titel" hidden>
+<div class="explainer-feedback-head">
+<h2 id="feedback-titel">Feedback</h2>
+<button type="button" class="explainer-feedback-help-open" aria-expanded="false" aria-controls="feedback-hilfe">Hilfe</button>
+<button type="button" class="explainer-feedback-collapse" aria-expanded="true" aria-controls="feedback-inhalt" aria-label="Leiste einklappen" title="Leiste einklappen"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<button type="button" class="explainer-feedback-expand" hidden><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Feedback-Leiste ausklappen</span></button>
+<div class="explainer-feedback-body" id="feedback-inhalt">
+<section class="explainer-feedback-help" id="feedback-hilfe" aria-labelledby="feedback-hilfe-titel" hidden>
+<h3 id="feedback-hilfe-titel">So gibst du Feedback</h3>
+<ol><li>Geh die Seiten durch. Bei jedem Absatz, jeder Abbildung und jeder Aufgabe erscheint „Notiz“.</li><li>Markierst du vorher Text im Block, steht er als Zitat in der Notiz.</li><li>Bist du fertig, wähl „Issue auf GitHub öffnen“. Die App kopiert dabei deine Notizen, und du fügst sie im Issue ein. Dafür brauchst du ein GitHub-Konto.</li></ol>
+<p class="explainer-feedback-privacy">Deine Notizen bleiben nur in diesem Browser, auf diesem Gerät. Die App sendet nichts. Wenn du die Browserdaten löschst, sind die Notizen weg.</p>
+<p><button type="button" class="explainer-feedback-help-done">Verstanden</button></p>
+</section>
+<form class="explainer-feedback-form" hidden>
+<p class="explainer-feedback-new">Neue Notiz zu</p>
+<p class="explainer-feedback-where"></p>
+<blockquote class="explainer-feedback-quote" hidden></blockquote>
+<label for="feedback-text">Deine Notiz</label>
+<textarea id="feedback-text" class="explainer-feedback-text" rows="5" required></textarea>
+<p class="explainer-feedback-buttons"><button type="submit" class="explainer-feedback-save">Speichern</button> <button type="button" class="explainer-feedback-cancel">Abbrechen</button></p>
+</form>
+<p class="explainer-feedback-status" role="status" aria-live="polite"></p>
+<section class="explainer-feedback-notes" aria-labelledby="feedback-notizen">
+<h3 id="feedback-notizen" class="explainer-feedback-count"></h3>
+<p class="explainer-feedback-actions"><button type="button" class="explainer-feedback-copy">Kopieren</button> <a class="explainer-feedback-issue" href="#" target="_blank" rel="noopener">Issue auf GitHub öffnen</a></p>
+<textarea class="explainer-feedback-export" readonly rows="6" aria-label="Text zum Kopieren" hidden></textarea>
+<div class="explainer-feedback-list"></div>
+</section>
+</div>
+<div class="explainer-feedback-foot">
+<button type="button" class="explainer-feedback-delete-all">Alle löschen …</button>
+<span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
+<button type="button" class="explainer-feedback-off">Beenden</button>
+</div>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-algorithmen","app":"Algorithmen und Programme","root":"../../","repository":"lernapps/informatik-algorithmen","revision":"22f66be","page":{"title":"Was ist ein Algorithmus?","order":0}}</script>
+</aside>
+</template>
+<nav class="explainer-pager" aria-label="Weiterblättern"><a rel="next" href="../../algorithmen/sequenz/">Weiter: Sequenz</a></nav>
+<footer class="page-footer"><p>Eine Erklär-App auf lernapps.net · <a href="https://lernapps.net/imprint/">Impressum</a> · <a href="https://lernapps.net/privacy/">Datenschutz</a></p></footer>
+  </body>
+</html>
