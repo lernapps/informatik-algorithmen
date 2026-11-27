@@ -43,7 +43,7 @@ Eine genaue Anleitung aus Schritten, die eine Aufgabe löst: Algorithmen im Allt
 
 ### Ali sucht den Computerraum
 
-Im Klassenchat der 7b, am ersten Schultag:
+Die Klasse 7b, alle 12 oder 13 Jahre alt, hat einen Klassenchat. Am ersten Schultag:
 
 **Ali:** Hi, ich bin neu 👋 Wo ist morgen Informatik?
 
@@ -90,7 +90,7 @@ Algorithmen gibt es überall, nicht nur im Computer: ein Rezept, eine Bauanleitu
 
 ### Wie es weitergeht
 
-Du kannst jetzt erklären, was ein Algorithmus ist, und einen Weg als Schritte aufschreiben. **Frau Berg** schreibt in den Chat: „Morgen spielen wir mit Befehlskarten. Ich bin gespannt, welche Karten kaputt sind.“ Auf der nächsten Seite prüfst du, wann eine Anleitung wirklich ein Algorithmus ist.
+Du kannst jetzt erklären, was ein Algorithmus ist, und einen Weg als Schritte aufschreiben. **Frau Berg**, die Informatiklehrerin der 7b, schreibt: „Morgen spielen wir mit Befehlskarten. Eine oder einer von euch ist Kiko, unser Roboter, und folgt den Karten auf einem Spielfeld am Boden.“ Auf der nächsten Seite prüfst du, wann eine Anleitung wirklich ein Algorithmus ist.
 
 ### Aufgabe welche-beschreibung
 
@@ -123,7 +123,7 @@ Du kannst jetzt erklären, was ein Algorithmus ist, und einen Weg als Schritte a
 
 - Aufgabe: Welche Aufgabe löst welcher Algorithmus?
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Rezept – einen Kuchen backen; Bauanleitung – ein Regal aufbauen; Wegbeschreibung – einen Raum finden; schriftliches Addieren – zwei große Zahlen zusammenzählen
+- Lösung: Rezept – einen Kuchen backen; Bauanleitung – ein Regal aufbauen; Wegbeschreibung – einen Raum finden; schriftliches Addieren – große Zahlen addieren
 - Erklärung: Jeder Algorithmus gehört zu einer Aufgabe. Er ist fertig, wenn die Aufgabe gelöst ist.
 - Link: [../?via=tutor#algorithmus-aufgabe](../?via=tutor#algorithmus-aufgabe)
 
@@ -137,7 +137,7 @@ Du kannst jetzt erklären, was ein Algorithmus ist, und einen Weg als Schritte a
 
 ### Aufgabe nur-computer
 
-- Aufgabe: Tom sagt: „Algorithmen gibt es nur in Computern.“ Stimmt das?
+- Aufgabe: Tom aus der 7b sagt: „Algorithmen gibt es nur in Computern.“ Stimmt das?
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
 - Erklärung: Auch Menschen führen Algorithmen aus, zum Beispiel beim Kochen nach Rezept oder beim schriftlichen Addieren. Ein Computer braucht sie nur besonders genau.

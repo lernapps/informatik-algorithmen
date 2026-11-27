@@ -57,7 +57,11 @@ Hier lernst du, Kiko mit drei Befehlen ans Ziel zu bringen.
 
 ### Drei Befehle in fester Reihenfolge
 
-Kiko kennt drei Befehle: **gehe vorwärts** (ein Feld weiter) sowie **drehe dich nach links** und **drehe dich nach rechts** (eine Vierteldrehung auf der Stelle). Ein Befehl ist eine einfache Anweisung, die Kiko kennt und direkt ausführen kann.
+Kiko kennt drei Befehle: **gehe vorwärts** (ein Feld weiter) sowie **drehe dich nach links** und **drehe dich nach rechts** (eine Vierteldrehung auf der Stelle).
+
+- **Befehl**: Ein Befehl ist eine einfache Anweisung, die Kiko kennt und direkt ausführen kann.
+
+Bild: Drei Karten: 1 gehe vorwärts, 2 drehe dich nach links, 3 drehe dich nach rechts. Bildunterschrift: Kikos drei Befehle als Karten
 
 - **Sequenz**: Eine Sequenz ist eine Folge von Anweisungen, die nacheinander ausgeführt werden, jede genau einmal, in der Reihenfolge, in der sie aufgeschrieben sind.
 
@@ -75,7 +79,7 @@ Drehen ändert nur die Blickrichtung, Kiko bleibt auf dem Feld. Links und rechts
 4. Ein Kind ist Kiko und folgt den Karten genau, von oben nach unten.
 5. Kommt Kiko nicht ans Ziel, sucht gemeinsam die falsche Karte. Dann tauscht die Rollen.
 
-**Mit Computer:** In der Werkstatt werden die Karten zu Blöcken mit denselben Wörtern. Das Feld in Spalte 4, Zeile 2 heißt dort kurz (4|2). Bring Kiko zur Fahne: [Challenge „Kiko läuft zur Fahne“ öffnen](https://lernapps.net/coding/app/?c=dVTBctw2DP0VDH3Vyk2PusX17CU9ZOq0nbHHB4qCREQUuQGh3dqZnfGHpD35M3rzn_hLMqC0jn2ILiIl4OEBD8BX0yeerJjmXWWoM40ZaUybjF9mjPeb7PwcfOpNZYQkoGm-mg5NYz7QmCA8Pc69wP3MsLU-oqkMxtPPgw1jBkkgHqEPdjDHyojN4wvGJeHiB_dIg0BnM1wThhp-xwE6QrjAHn1AoFiuTM4LDQh_IHmMfQoDVtDZiQRKzKRgf04HHH6QgjFNk9SLQXbezgJ2gvext3EAmuCCQgfROg-MzkuuT2l8WonDZFlT8QhDsqGGj7OUm0vTZGOXlZ_emQYvkLhDhqyJ25XXgPKmFHAg8UmJQIeSZq7h_QKZxbJUi1dvHeYT6BKhTZa7Wit5SBw6LaXc7bSYwbZ3TFG8qcweOVOKRVOXYk-DGk52Z5obc7Y8pjJnV3W9ns7OXp3q6_VU7G4r01tHcTCNQZvFHFXHlEKb_lG8feKDRZZsKhMojvpeCqmuJR_TxDkE_T2RZOXShuTGbJp3vygYZv16c1sZ57F8vzH3hGGDzKiaK5KnWKzW5tlaz9BhhL9xAOQsoF3Q4QRbigNyUbSG66dHH0rzbDGoLi3l0hvqghE-zLzHF8W3pEDC1mEp986KL1rBXZoZ-oJcw29pjqtcX2bLmGHevchbIFqMRaaV7F-J4TNq-BIPOka_tkYmpXnJ6DFCiwccBMhHiJo37NNUiNdvRktmjhla7BMjoHZuiQefZo4UB-gSZohJYEp7BBJIfQ8keaX7itgl8joJDfy6mWwAlfPpkSXrYMW4zkRhjPHNaBRpG-hVf-5ADuSw0hrEQnBp3NocbyuzJzyYRlVHN-qaaK0re2Dm8LIOzikuu4jGjQ1DYhI_YTx_fV730vmJx898fuZ2rHRQ8EfQ65mf_ndjaYkrJEF4fvjvajF_fvh2inNh3XhSeGcHtfq2WDl8fvjXHI_H7w)
+**Mit Computer:** In der Programmierwerkstatt, einer Webseite, sind die Karten Blöcke mit denselben Wörtern. Das Feld in Spalte 4, Zeile 2 heißt dort kurz (4|2). Bring Kiko zur Fahne: [Challenge „Kiko läuft zur Fahne“ öffnen](https://lernapps.net/coding/app/?c=dVTBctw2DP0VDH3Vyk2PusX17CU9ZOq0nbHHB4qCREQUuQGh3dqZnfGHpD35M3rzn_hLMqC0jn2ILiIl4OEBD8BX0yeerJjmXWWoM40ZaUybjF9mjPeb7PwcfOpNZYQkoGm-mg5NYz7QmCA8Pc69wP3MsLU-oqkMxtPPgw1jBkkgHqEPdjDHyojN4wvGJeHiB_dIg0BnM1wThhp-xwE6QrjAHn1AoFiuTM4LDQh_IHmMfQoDVtDZiQRKzKRgf04HHH6QgjFNk9SLQXbezgJ2gvext3EAmuCCQgfROg-MzkuuT2l8WonDZFlT8QhDsqGGj7OUm0vTZGOXlZ_emQYvkLhDhqyJ25XXgPKmFHAg8UmJQIeSZq7h_QKZxbJUi1dvHeYT6BKhTZa7Wit5SBw6LaXc7bSYwbZ3TFG8qcweOVOKRVOXYk-DGk52Z5obc7Y8pjJnV3W9ns7OXp3q6_VU7G4r01tHcTCNQZvFHFXHlEKb_lG8feKDRZZsKhMojvpeCqmuJR_TxDkE_T2RZOXShuTGbJp3vygYZv16c1sZ57F8vzH3hGGDzKiaK5KnWKzW5tlaz9BhhL9xAOQsoF3Q4QRbigNyUbSG66dHH0rzbDGoLi3l0hvqghE-zLzHF8W3pEDC1mEp986KL1rBXZoZ-oJcw29pjqtcX2bLmGHevchbIFqMRaaV7F-J4TNq-BIPOka_tkYmpXnJ6DFCiwccBMhHiJo37NNUiNdvRktmjhla7BMjoHZuiQefZo4UB-gSZohJYEp7BBJIfQ8keaX7itgl8joJDfy6mWwAlfPpkSXrYMW4zkRhjPHNaBRpG-hVf-5ADuSw0hrEQnBp3NocbyuzJzyYRlVHN-qaaK0re2Dm8LIOzikuu4jGjQ1DYhI_YTx_fV730vmJx898fuZ2rHRQ8EfQ65mf_ndjaYkrJEF4fvjvajF_fvh2inNh3XhSeGcHtfq2WDl8fvjXHI_H7w)
 
 Bild: Das Spielfeld der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Ein Weg führt 2 Felder nach rechts, 2 nach unten und 2 nach rechts zum Ziel in Spalte 6, Zeile 4. Bildunterschrift: So sieht die Challenge in der Werkstatt aus.
 
@@ -91,7 +95,7 @@ Bild: Das Spielfeld der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut im
 
 ### Rückblick und wie es weitergeht
 
-Kiko ist mit deiner ersten Sequenz am Ziel. Damit endet das Kapitel: Algorithmen erkennen, prüfen und als Sequenz aufschreiben. **Mia** schreibt: „Bei jeder Wand musste Jona neue Karten legen.“ Im nächsten Kapitel lernt Kiko, Wände selbst zu bemerken.
+Kiko ist mit deiner ersten Sequenz am Ziel. Damit endet das Kapitel: Algorithmen erkennen, prüfen und als Sequenz aufschreiben. **Mia** schreibt: „Bei jeder Wand musste Jona neue Karten legen.“ Im nächsten Kapitel führt Kiko die Befehle selbst aus und lernt danach, Wände zu bemerken.
 
 ### Aufgabe wo-steht-kiko
 
@@ -138,7 +142,7 @@ Kiko ist mit deiner ersten Sequenz am Ziel. Damit endet das Kapitel: Algorithmen
 - Lösungsweg:
   - Nach {a}-mal vorwärts ist Kiko {a} Felder vom Start entfernt.
   - Zwei Vierteldrehungen nach rechts sind eine halbe Drehung. Kiko schaut jetzt zum Start zurück.
-  - Er geht {b} Felder zurück: {a} − {b} = {answer} Felder vom Start.
+  - Er geht {b} Felder zurück. Abstand zum Start: {a} − {b} = {answer}.
 - Typische Fehler und was die App sagt:
   - F1: „Zweimal rechts drehen ist eine halbe Drehung. Die {b} Schritte gehen zurück zum Start.“
   - F2: „Du hast nur bis zum Drehen gezählt. Danach geht Kiko {b} Felder zurück.“

@@ -57,13 +57,15 @@ Here you learn how a program takes different paths depending on a condition.
 
 ### One question, two paths
 
-A sensor is the part of Kiko that checks something. The block “wall ahead?” is a condition: the sensor answers true or false. If true, Kiko carries out the blocks after “then”, if false, those after “else”. After that it carries on with the next block.
+The block “wall ahead?” is a condition: Kiko's sensor answers true or false. If true, Kiko carries out the blocks after “then”, if false, those after “else”. After that it carries on with the next block. Kiko can also ask: “way ahead clear?” (the opposite of “wall ahead?”), “at the goal?”, “wall on the left?” and “wall on the right?”.
+
+- **sensor**: A sensor is the part of Kiko that checks something, for example whether there is a wall in front of it.
 
 - **condition**: A condition is a question that can only be answered with true or false (yes or no).
 
 - **selection**: Selection (if … then … else) means that an algorithm carries out different instructions depending on a condition.
 
-Picture: Board A: Kiko stands in column 2, row 2 and faces right on the board. In front of it is a free corridor up to column 5. Caption: Board A. The same program, but here there is no wall ahead.
+Picture: Board 1: Kiko stands in column 2, row 2 and faces right on the board. In front of it is a free corridor up to column 5. Caption: Board 1. The same program, but here there is no wall ahead.
 
 **Remember: Remember**
 
@@ -73,7 +75,7 @@ Kiko only ever carries out one branch. So test a program with selection on sever
 
 **Without a computer:** use the [cards for choices](https://lernapps.net/coding/karten/en/befehlskarten-2.svg) “if ___ then”, “else” and “wall ahead?” to lay out a program. Kiko plays it twice: once with a wall in front, once without.
 
-**With a computer:** the goal is sometimes up the board, sometimes down. Build a program that works on both boards: [open the challenge “Up or down?”](https://lernapps.net/coding/en/app/?c=fVRBbus2EL3KgNnKTttFF9oEDYoCRYu2gNsGSJAFJY4kQtRQHY6s_gQGfBD_LnuKv-tNfJJ2KNtxFr_aSBxxZt7jvMdX00QerJjyy8J4Z0rT-z6uZiRapUhJTGHES0BTvhqHpjQ_V0gQHTJMJEh3pjBIpjS_jRAZXJzpzuwKIzb1l5wffB-hxU4APcF3GBxsoxZwkETDzhLlEHpChgdLbg3f2gSPHgP4JDDYAH6Aex8cxAqpeBfJUNZwb6fc4ReOLdthgMELHPd_KR047v9e-uhH5nbcHwpwNoEnqNA7JNiMHkODwSET9MGOo6zPDDOLIW4xQSSE9MdkGaGJPFt2YMmBdEiQxJLLNRuOJBAbsDDbENbwa4fQRsWdIMUBxQ-YYBo1Eapo2RVXcT3Ltz9ruJ-UqoVxYQezlw6O-4NvMqXcXD8wJDzuP4J0VmCO3CteqOJ_u3OltNYBzZGD0wnJh1FnFGz1gT1JZwqzRU4-UhZFHanxrW4c7GjKJ3OjjynMzc3j8t6sT2uNPxemsbWn1pQGbRKzUzHEGKr4p2Zv9biQJZnCBE-9vhnrLgfeyW625FbnLXlx2vdcmCSWxZQ0haBlBi9JEVYh1n0y5de6A8dkyq--0PaY9P_T6_-QuZB4vCaz2z0Xpu4wV30yLx7DCpnR151CrJAmeZFV7lteoX8uTOfp1DRbYFN3dgLneVHatdDA0hoeVIZJVNEvM3pBUkUhp4vBfoyxByvvBgkPOmOfwPmmQUaV26KZhHUkp0JVO55A_GTrDhwOgJy0w6bu2ItAw7YVUH2Xahe1H-STvzvuD-f-3zSCnGs3npOoc8ciJ4FNfdLMg8r8jCBgI3fH_ce39g9qw1w3-zzbXEkX4FhvgVwr-boDUqDLuIvFq0soJ-vNkFcU6y77_cTj4tTvG0XAqCezeO8a1Am0TEwJ2LedFNkz-Wc2KWWDD5Exs1wblcHW42xK1RjWPer0bZ2vuInD5aa79bRcqL5f2dBG9tINSLenrNstso63nai9PaP9XM7n0naFmhXfmj5O_M-nuoeXiWGj2tEh_v6WcjXEe1v3IDGfxWhb3XnYYMBafKQ8rN3uXw)
+**With a computer:** the goal is sometimes up the board, sometimes down. Build a program that works on both boards; the workshop calls them “puzzles”. You need “wall on the left?” for it: [open the challenge “Up or down?”](https://lernapps.net/coding/en/app/?c=fVRBbus2EL3KgNnKTttFF9oEDYoCRYu2gNsGSJAFJY4kQtRQHY6s_gQGfBD_LnuKv-tNfJJ2KNtxFr_aSBxxZt7jvMdX00QerJjyy8J4Z0rT-z6uZiRapUhJTGHES0BTvhqHpjQ_V0gQHTJMJEh3pjBIpjS_jRAZXJzpzuwKIzb1l5wffB-hxU4APcF3GBxsoxZwkETDzhLlEHpChgdLbg3f2gSPHgP4JDDYAH6Aex8cxAqpeBfJUNZwb6fc4ReOLdthgMELHPd_KR047v9e-uhH5nbcHwpwNoEnqNA7JNiMHkODwSET9MGOo6zPDDOLIW4xQSSE9MdkGaGJPFt2YMmBdEiQxJLLNRuOJBAbsDDbENbwa4fQRsWdIMUBxQ-YYBo1Eapo2RVXcT3Ltz9ruJ-UqoVxYQezlw6O-4NvMqXcXD8wJDzuP4J0VmCO3CteqOJ_u3OltNYBzZGD0wnJh1FnFGz1gT1JZwqzRU4-UhZFHanxrW4c7GjKJ3OjjynMzc3j8t6sT2uNPxemsbWn1pQGbRKzUzHEGKr4p2Zv9biQJZnCBE-9vhnrLgfeyW625FbnLXlx2vdcmCSWxZQ0haBlBi9JEVYh1n0y5de6A8dkyq--0PaY9P_T6_-QuZB4vCaz2z0Xpu4wV30yLx7DCpnR151CrJAmeZFV7lteoX8uTOfp1DRbYFN3dgLneVHatdDA0hoeVIZJVNEvM3pBUkUhp4vBfoyxByvvBgkPOmOfwPmmQUaV26KZhHUkp0JVO55A_GTrDhwOgJy0w6bu2ItAw7YVUH2Xahe1H-STvzvuD-f-3zSCnGs3npOoc8ciJ4FNfdLMg8r8jCBgI3fH_ce39g9qw1w3-zzbXEkX4FhvgVwr-boDUqDLuIvFq0soJ-vNkFcU6y77_cTj4tTvG0XAqCezeO8a1Am0TEwJ2LedFNkz-Wc2KWWDD5Exs1wblcHW42xK1RjWPer0bZ2vuInD5aa79bRcqL5f2dBG9tINSLenrNstso63nai9PaP9XM7n0naFmhXfmj5O_M-nuoeXiWGj2tEh_v6WcjXEe1v3IDGfxWhb3XnYYMBafKQ8rN3uXw)
 
 Picture: Board 1 of the challenge: Kiko stands in column 2, row 3 and faces right on the board. After one square there is a wall; the goal is above, in column 3, row 2. Caption: Board 1 of the challenge, goal at the top
 
@@ -95,7 +97,7 @@ You can now build a program with “if … then … else” that works on differ
 
 ### Exercise spielfeld-b
 
-- Task: Kiko faces right on the board and carries out the program on board B. What happens?
+- Task: Kiko faces right on the board and carries out the program on board 2. What happens?
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ Kiko ends on square A. – Wall ahead? Yes: Kiko turns right and faces down the board. Then the block after the selection: one square forward.
@@ -121,7 +123,7 @@ You can now build a program with “if … then … else” that works on differ
 
 - Task: Program: if way ahead clear? then move forward, else turn left. What does Kiko do?
 - Answer format: match each item on the left with one on the right
-- Solution: The way ahead of Kiko is clear. – It moves one square forward.; There is a wall in front of Kiko. – It turns left.
+- Solution: The way ahead of Kiko is clear. – one square forward; There is a wall in front of Kiko. – turn left
 - Explanation: If the way is clear, “then” applies, otherwise “else”. Both branches together never happen.
 - Link: [../?via=tutor#welcher-zweig](../?via=tutor#welcher-zweig)
 

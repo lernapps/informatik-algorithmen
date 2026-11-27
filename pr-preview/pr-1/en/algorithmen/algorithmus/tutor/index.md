@@ -43,7 +43,7 @@ A precise set of steps that solves a task: spotting algorithms in everyday life 
 
 ### Ali looks for the computer room
 
-In class 7b's group chat, on the first day of school:
+Class 7b, all aged 12 or 13, have a group chat. On the first day of school:
 
 **Ali:** Hi, I'm new 👋 Where is computing tomorrow?
 
@@ -90,7 +90,7 @@ Algorithms are everywhere, not only in computers: a recipe, assembly instruction
 
 ### What comes next
 
-You can now explain what an algorithm is and write down a route as steps. **Frau Berg** writes in the chat: “Tomorrow we'll play with command cards. I wonder which cards will be broken.” On the next page you check when a set of instructions really is an algorithm.
+You can now explain what an algorithm is and write down a route as steps. **Frau Berg**, class 7b's computing teacher, writes: “Tomorrow we'll play with command cards. One of you will be Kiko, our robot, and follow the cards on a board on the floor.” On the next page you check when a set of instructions really is an algorithm.
 
 ### Exercise welche-beschreibung
 
@@ -137,7 +137,7 @@ You can now explain what an algorithm is and write down a route as steps. **Frau
 
 ### Exercise nur-computer
 
-- Task: Tom says: “Algorithms only exist in computers.” Is that true?
+- Task: Tom from class 7b says: “Algorithms only exist in computers.” Is that true?
 - Answer format: choose “true” or “false”
 - Solution: The statement is false.
 - Explanation: People carry out algorithms too, for example when cooking from a recipe or doing column addition. A computer just needs them to be especially precise.

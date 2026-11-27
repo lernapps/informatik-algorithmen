@@ -57,23 +57,25 @@ Here you learn how cards become a program and how to find bugs in it.
 
 ### From algorithm to program
 
-The blocks have the same words and colours as the cards. What is new: a computer carries them out, and it never guesses. So you write the algorithm down in a language it understands.
-
-Picture: Three blue blocks hang under the brown head “Program”: move forward, turn left, move forward. Caption: Jona's three cards from chapter 1, now as blocks
+What is new: a computer carries out the blocks, and it never guesses. So you write the algorithm down in a language it understands.
 
 - **program**: A program is an algorithm written down in a programming language so that a computer can carry it out.
 
+Picture: Three blue blocks hang under the brown head “Program”: move forward, turn left, move forward. Caption: Jona's three cards from chapter 1, now as blocks
+
 - **block-based programming language**: In a block-based (visual) programming language you build programs from blocks that you snap together instead of typing them.
+
+- **debugging**: Debugging means finding and fixing bugs (mistakes) in a program. To do it, you go through the program step by step.
 
 **Remember: Remember**
 
-A block that is not attached to the head “Program” is not carried out. If Kiko goes the wrong way, that is a bug in the program. Finding and fixing bugs is called debugging: go through the program step by step.
+A block that is not attached to the head “Program” is not carried out. If Kiko goes the wrong way, the bug is in the program, not in Kiko.
 
 ### Try it yourself
 
-**In the workshop:** the blocks are on the left (the toolbox), and you build your program under the head “Program” on the right (the workspace). “Run” lets Kiko run the whole program, “One step” carries out one block after another.
+**In the workshop:** the blocks are in a list on the left (the toolbox), and you build your program under the head “Program” on the right (the workspace). “Run” lets Kiko run the whole program, “One step” carries out one block after another.
 
-Ben built a program, but Kiko walks into the wall. Find the one wrong block and swap it: [open the challenge “Find the bug”](https://lernapps.net/coding/en/app/?c=zVSxbuQ2EP2VwbiVdUgZNcE5zl0RIDnABxiw4WJEjcQ5UcMFSVnxGQtskc_wpco3pErnP9kvCUjtroODE6TMNhK4jzNvnt68R-x9mChh802F0mGDo4z-vGfrOJz3oh0rVpgkOcbmETvGBt_lY-hY4V3BYYWsh3NIlqGdB9xWmCiOp0sXrGApAYvCh-CHQNMEA7c0pwqo5QA_yujBPf8-9wkGHlihE4Zr0q6Gy_D8pxlhv_vtB1G4MjZISvvdE8zaQTSW5gpaFljYGcsTXDhvRuCY_xPuB7aphudftePAoHPIpSPriqugI1WI3rmVhGiEG2EHo58m1vo4YJ6hncUlINisM1TQzmm9tZAbI4gmX0RYyLkaPgSOEfa7p5-VISbe7HdfgLSDhZKxsFgxFtrCdvAcYQlehxq-t6QDg1f3ACnL1q5Ek2Vdu0XrZ9dBYDK29Bs8uTrLvvjguqx7ethk5R21D0E0WazwnkMUr-VzG6-9DBk40QabWzwrP6zw7Ko-vJy9vNQ360vB3FXYkxEdsEGmmHCbv7f3rvW_5FL3PizEIUWs0ImO-RnY2BTz1ZgopLWxKDa3jxixQTN1WKHSlEn_vQCFIWJze7etXgEeq_8r6D9X-z-1vdtm7SZJMUtVDBCx-TYLzTEVTIXGcjm-xc_C7pxDYDE2ZZWtaEEdFvA9W-govizfJOmVhermYGwN196Krpt1sLdmo33i7rhd3x234n32e_DzsPrwsBiwSLJfGb-G6-L3hR6gy24vhXsyDNQnDlDM3K7Vs1CF-CWHQ9DkOmZMIJpjhANcBrazDkATvNWedDit6sc1hkDyRgJBmoOCMoXCsRiwfmnxU-6bJ-MQE5_0gGmOB5IywYW4blVh1gwq4rDWcEkRJJZo4xOlAlwtfyL1tgyZCfQSYiqyVGt9SxHSQYvOL7rmqKfQ1fAxB4DE4xSHfAky2DzDXYX3wgs22SJsRsYKWzIleefgTgH8RnTNehnPyQ0-SLIT65vDrdPzSPaf8K9dyU6lll-a3cxrYH-eA1yxJM5Ou3DPf5iR97unU6CSGY_zbGjIqKdirrjffcHtdvsX)
+Ben built another program, but Kiko walks into the wall. To delete a block, click it and press Delete, or drag it back into the list. Find the one wrong block and swap it: [open the challenge “Find the bug”](https://lernapps.net/coding/en/app/?c=zVS9buQ2EH6VwbiVdUgZNcE5zl0RIDnABxiw4WJEjcQ5UcMFSVnxGQtskcfwpcozpErnN9knCUjtroODE6SMGhHU_Hzz6ZvvEXsfJkrYfFOhdNjgKKM_79k6Due9aMeKFSZJjrF5xI6xwXf5GjpWeFfisELWwz0ky9DOA24rTBTHU9IFK1hKwKLwIfgh0DTBwC3NqQJqOcCPMnpwz7_PfYKBB1bohOGatKvhMjz_aUbY7377QRSujA2S0n73BLN2EI2luYKWBRZ2xvIEF86bETjmb8L9wDbV8PyrdhwYdA65dGRd4yroSBWid24FIRrhRtjB6KeJtT4OmGdoZ3EJCDbrDBW0c1qzFnJjBNHkCwkLOVfDh8Axwn739LMyxMSb_e4LkHawUDIWFivGQlvQDp4jLMHrUMP3lnRg8OoeIGXa2hVosqxrt2j97DoITMaWfoMnV2faFx9cl3lPD5vMvKP2IYgmixXec4jitfxu47WXIQdOtMHmFs_KgxWeXdWHw9nLob5ZDyXmrsKejOiADTLFhNv8v713rf8ll7r3YSEOKWKFTnTM78DGpphTY6KQ1sai2Nw-YsQGzdRhhUpTBv33AhSGiM3t3bZ6JfBY_V-D_nO1_1Pbu23mbpIUM1VFABGbbzPRHFOJqdBYLte3-FnYnXMILMamzLIVLVGHBXzPFjqKL8s3SXplobo5GFvDtbei62Yd5K1ZaJ-4O27Xd8eteJ_1Hvw8rDo8LAYskuxXwq_huuh9oQfostpL4Z4MA_WJAxQxt2v1TFQBfsnhYDS5jhkTiGYb4QCXge2sA9AEb7UnHU6r-nG1IZC8kUCQ5qCgTKFgLAKsX1r8lPvmyTjExCc-YJrjAaRMcCGuW1mYNQcVclhruKQIEou18QlSCVwlfwL1tgyZAfQSYiq0VGt9SxHSgYvOL7r6qKfQ1fAxG4DE4xQHfwky2DzDXYX3wgs2WSJsRsYKWzLFeefgTgb8RnT1ehnPyQ0-SLIT65tD1ul9BPtP8a-lZKVSyy_NbubVsD_PAa5YEmelHZUnHFiL_C7c8x9mZN3vnk4eS2Y8jrihISc-nRJ1WGW1LsN-9wW32-1f)
 
 Picture: The board of the challenge: Kiko stands in column 2, row 2 and faces right on the board. A path leads 1 square right, 2 down and 2 right to the goal in column 5, row 4. Caption: This is what the challenge looks like in the workshop.
 
@@ -106,7 +108,7 @@ You can now build a program from blocks, run it and debug it. **Lea** writes: �
 
 ### Exercise welcher-block-falsch
 
-- Task: Ben's program should take Kiko to the goal, but Kiko walks into a wall. Which block is wrong?
+- Task: Tom's program should take Kiko to the goal, but Kiko walks into a wall. Which block is wrong?
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ Block 3 – After two steps Kiko has to go down the board. For that it turns right, not left.
@@ -121,7 +123,7 @@ You can now build a program from blocks, run it and debug it. **Lea** writes: �
 
 - Task: What is each part of the workshop for?
 - Answer format: match each item on the left with one on the right
-- Solution: toolbox – The blocks you may use are here.; workspace – This is where you snap the program together.; Run – Kiko carries out the whole program.; One step – Kiko carries out only the next block.
+- Solution: list of blocks (toolbox) – blocks to choose from; workspace under “Program” – room for your program; button “Run” – run everything; button “One step” – run one block
 - Explanation: With “One step” you see exactly at which block something goes wrong. That helps with debugging.
 - Link: [../?via=tutor#werkstatt-teile](../?via=tutor#werkstatt-teile)
 

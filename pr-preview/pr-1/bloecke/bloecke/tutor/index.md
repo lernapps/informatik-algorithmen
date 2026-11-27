@@ -57,23 +57,25 @@ Hier lernst du, wie aus Karten ein Programm wird und wie du Fehler darin findest
 
 ### Vom Algorithmus zum Programm
 
-Die Blöcke haben dieselben Wörter und Farben wie die Karten. Neu ist: Ein Computer führt sie aus, und der rät nie. Darum schreibst du den Algorithmus in einer Sprache auf, die er versteht.
-
-Bild: Unter dem braunen Kopf „Programm“ hängen drei blaue Blöcke: gehe vorwärts, drehe dich nach links, gehe vorwärts. Bildunterschrift: Jonas drei Karten aus Kapitel 1, jetzt als Blöcke
+Neu ist: Ein Computer führt die Blöcke aus, und der rät nie. Darum schreibst du den Algorithmus in einer Sprache auf, die er versteht.
 
 - **Programm**: Ein Programm ist ein Algorithmus, aufgeschrieben in einer Programmiersprache, damit ein Computer ihn ausführen kann.
 
+Bild: Unter dem braunen Kopf „Programm“ hängen drei blaue Blöcke: gehe vorwärts, drehe dich nach links, gehe vorwärts. Bildunterschrift: Jonas drei Karten aus Kapitel 1, jetzt als Blöcke
+
 - **blockbasierte Programmiersprache**: In einer blockbasierten (visuellen) Programmiersprache baust du Programme aus Blöcken, die du zusammensteckst, statt sie zu tippen.
+
+- **debuggen**: Debuggen heißt, Fehler im Programm finden und beheben. Dazu gehst du das Programm Schritt für Schritt durch.
 
 **Merke: Merke**
 
-Ein Block, der nicht am Kopf „Programm“ hängt, wird nicht ausgeführt. Läuft Kiko falsch, ist das ein Fehler im Programm. Fehler finden und beheben heißt debuggen: Geh das Programm Schritt für Schritt durch.
+Ein Block, der nicht am Kopf „Programm“ hängt, wird nicht ausgeführt. Läuft Kiko falsch, steckt ein Fehler im Programm, nicht in Kiko.
 
 ### Selbst ausprobieren
 
-**In der Werkstatt:** Links liegen die Blöcke (die Werkzeugkiste), rechts baust du dein Programm unter den Kopf „Programm“ (die Arbeitsfläche). „Start“ lässt Kiko das ganze Programm laufen, „Ein Schritt“ führt einen Block nach dem anderen aus.
+**In der Werkstatt:** Links liegen die Blöcke in einer Liste (der Werkzeugkiste), rechts baust du dein Programm unter den Kopf „Programm“ (die Arbeitsfläche). „Start“ lässt Kiko das ganze Programm laufen, „Ein Schritt“ führt einen Block nach dem anderen aus.
 
-Ben hat ein Programm gebaut, aber Kiko läuft gegen die Wand. Finde den einen falschen Block und tausch ihn aus: [Challenge „Finde den Fehler“ öffnen](https://lernapps.net/coding/app/?c=zVSxbuQ2EP2VwbiVdUgZNcE5zl0RIDnABxiw4WJEjcQ5UcMFSVnxGQtskc_wpco3pErnP9kvCUjtroODE6TMNhK4jzNvnt68R-x9mChh802F0mGDo4z-vGfrOJz3oh0rVpgkOcbmETvGBt_lY-hY4V3BYYWsh3NIlqGdB9xWmCiOp0sXrGApAYvCh-CHQNMEA7c0pwqo5QA_yujBPf8-9wkGHlihE4Zr0q6Gy_D8pxlhv_vtB1G4MjZISvvdE8zaQTSW5gpaFljYGcsTXDhvRuCY_xPuB7aphudftePAoHPIpSPriqugI1WI3rmVhGiEG2EHo58m1vo4YJ6hncUlINisM1TQzmm9tZAbI4gmX0RYyLkaPgSOEfa7p5-VISbe7HdfgLSDhZKxsFgxFtrCdvAcYQlehxq-t6QDg1f3ACnL1q5Ek2Vdu0XrZ9dBYDK29Bs8uTrLvvjguqx7ethk5R21D0E0WazwnkMUr-VzG6-9DBk40QabWzwrP6zw7Ko-vJy9vNQ360vB3FXYkxEdsEGmmHCbv7f3rvW_5FL3PizEIUWs0ImO-RnY2BTz1ZgopLWxKDa3jxixQTN1WKHSlEn_vQCFIWJze7etXgEeq_8r6D9X-z-1vdtm7SZJMUtVDBCx-TYLzTEVTIXGcjm-xc_C7pxDYDE2ZZWtaEEdFvA9W-govizfJOmVhermYGwN196Krpt1sLdmo33i7rhd3x234n32e_DzsPrwsBiwSLJfGb-G6-L3hR6gy24vhXsyDNQnDlDM3K7Vs1CF-CWHQ9DkOmZMIJpjhANcBrazDkATvNWedDit6sc1hkDyRgJBmoOCMoXCsRiwfmnxU-6bJ-MQE5_0gGmOB5IywYW4blVh1gwq4rDWcEkRJJZo4xOlAlwtfyL1tgyZCfQSYiqyVGt9SxHSQYvOL7rmqKfQ1fAxB4DE4xSHfAky2DzDXYX3wgs22SJsRsYKWzIleefgTgH8RnTNehnPyQ0-SLIT65vDrdPzSPaf8K9dyU6lll-a3cxrYH-eA1yxJM5Ou3DPf5iR97unU6CSGY_zbGjIqKdirrjffcHtdvsX)
+Ben hat noch ein Programm gebaut, aber Kiko läuft gegen die Wand. Einen Block löschst du, indem du ihn anklickst und Entf drückst oder ihn zurück in die Liste ziehst. Finde den einen falschen Block und tausch ihn aus: [Challenge „Finde den Fehler“ öffnen](https://lernapps.net/coding/app/?c=zVS9buQ2EH6VwbiVdUgZNcE5zl0RIDnABxiw4WJEjcQ5UcMFSVnxGQtskcfwpcozpErnN9knCUjtroODE6SMGhHU_Hzz6ZvvEXsfJkrYfFOhdNjgKKM_79k6Due9aMeKFSZJjrF5xI6xwXf5GjpWeFfisELWwz0ky9DOA24rTBTHU9IFK1hKwKLwIfgh0DTBwC3NqQJqOcCPMnpwz7_PfYKBB1bohOGatKvhMjz_aUbY7377QRSujA2S0n73BLN2EI2luYKWBRZ2xvIEF86bETjmb8L9wDbV8PyrdhwYdA65dGRd4yroSBWid24FIRrhRtjB6KeJtT4OmGdoZ3EJCDbrDBW0c1qzFnJjBNHkCwkLOVfDh8Axwn739LMyxMSb_e4LkHawUDIWFivGQlvQDp4jLMHrUMP3lnRg8OoeIGXa2hVosqxrt2j97DoITMaWfoMnV2faFx9cl3lPD5vMvKP2IYgmixXec4jitfxu47WXIQdOtMHmFs_KgxWeXdWHw9nLob5ZDyXmrsKejOiADTLFhNv8v713rf8ll7r3YSEOKWKFTnTM78DGpphTY6KQ1sai2Nw-YsQGzdRhhUpTBv33AhSGiM3t3bZ6JfBY_V-D_nO1_1Pbu23mbpIUM1VFABGbbzPRHFOJqdBYLte3-FnYnXMILMamzLIVLVGHBXzPFjqKL8s3SXplobo5GFvDtbei62Yd5K1ZaJ-4O27Xd8eteJ_1Hvw8rDo8LAYskuxXwq_huuh9oQfostpL4Z4MA_WJAxQxt2v1TFQBfsnhYDS5jhkTiGYb4QCXge2sA9AEb7UnHU6r-nG1IZC8kUCQ5qCgTKFgLAKsX1r8lPvmyTjExCc-YJrjAaRMcCGuW1mYNQcVclhruKQIEou18QlSCVwlfwL1tgyZAfQSYiq0VGt9SxHSgYvOL7r6qKfQ1fAxG4DE4xQHfwky2DzDXYX3wgs2WSJsRsYKWzLFeefgTgb8RnT1ehnPyQ0-SLIT65tD1ul9BPtP8a-lZKVSyy_NbubVsD_PAa5YEmelHZUnHFiL_C7c8x9mZN3vnk4eS2Y8jrihISc-nRJ1WGW1LsN-9wW32-1f)
 
 Bild: Das Spielfeld der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Ein Weg führt 1 Feld nach rechts, 2 nach unten und 2 nach rechts zum Ziel in Spalte 5, Zeile 4. Bildunterschrift: So sieht die Challenge in der Werkstatt aus.
 
@@ -106,7 +108,7 @@ Du kannst jetzt ein Programm aus Blöcken bauen, laufen lassen und debuggen. **L
 
 ### Aufgabe welcher-block-falsch
 
-- Aufgabe: Bens Programm soll Kiko zum Ziel bringen, aber Kiko läuft gegen eine Wand. Welcher Block ist falsch?
+- Aufgabe: Toms Programm soll Kiko zum Ziel bringen, aber Kiko läuft gegen eine Wand. Welcher Block ist falsch?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ Block 3 – Nach zwei Schritten muss Kiko im Bild nach unten. Dafür dreht er sich nach rechts, nicht nach links.
@@ -121,7 +123,7 @@ Du kannst jetzt ein Programm aus Blöcken bauen, laufen lassen und debuggen. **L
 
 - Aufgabe: Wofür ist welcher Teil der Werkstatt da?
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Werkzeugkiste – Hier liegen die Blöcke, die du benutzen darfst.; Arbeitsfläche – Hier steckst du das Programm zusammen.; Start – Kiko führt das ganze Programm aus.; Ein Schritt – Kiko führt nur den nächsten Block aus.
+- Lösung: Liste der Blöcke (Werkzeugkiste) – Blöcke zum Auswählen; Arbeitsfläche unter „Programm“ – Platz für dein Programm; Knopf „Start“ – alles ausführen; Knopf „Ein Schritt“ – einen Block ausführen
 - Erklärung: Mit „Ein Schritt“ siehst du genau, bei welchem Block etwas schiefgeht. Das hilft beim Debuggen.
 - Link: [../?via=tutor#werkstatt-teile](../?via=tutor#werkstatt-teile)
 

@@ -49,7 +49,7 @@ In class 7b's group chat, the evening before computing:
 
 **Mia:** Me again!
 
-**Jona:** Then I'll lay the cards 😄
+**Jona:** Then I'll lay out the cards 😄
 
 Here you learn to bring Kiko to the goal with three commands.
 
@@ -57,7 +57,11 @@ Here you learn to bring Kiko to the goal with three commands.
 
 ### Three commands in a fixed order
 
-Kiko knows three commands: **move forward** (one square forward) and **turn left** and **turn right** (a quarter turn on the spot). A command is a simple instruction that Kiko knows and can carry out directly.
+Kiko knows three commands: **move forward** (one square forward) and **turn left** and **turn right** (a quarter turn on the spot).
+
+- **command**: A command is a simple instruction that Kiko knows and can carry out directly.
+
+Picture: Three cards: 1 move forward, 2 turn left, 3 turn right. Caption: Kiko's three commands as cards
 
 - **sequence**: A sequence is a series of instructions that are carried out one after another, each exactly once, in the order in which they are written.
 
@@ -75,7 +79,7 @@ Turning only changes the direction Kiko faces; it stays on its square. Left and 
 4. One person is Kiko and follows the cards exactly, from top to bottom.
 5. If Kiko misses the goal, find the wrong card together. Then swap roles.
 
-**With a computer:** in the workshop, the cards become blocks with the same words. The square in column 4, row 2 is called (4|2) there. Bring Kiko to the flag: [open the challenge “Kiko walks to the flag”](https://lernapps.net/coding/en/app/?c=dVTBctw2DP0VDH3Vyk2PusX17CU9ZOq0nbHHB4qCREQUuQGh3dqZnfGHpD35M3rzn_hLMqC0jn2ILiIl4OEBD8BX0yeerJjmXWWoM40ZaUybjF9mjPeb7PwcfOpNZYQkoGm-mg5NYz7QmCA8Pc69wP3MsLU-oqkMxtPPgw1jBkkgHqEPdjDHyojN4wvGJeHiB_dIg0BnM1wThhp-xwE6QrjAHn1AoFiuTM4LDQh_IHmMfQoDVtDZiQRKzKRgf04HHH6QgjFNk9SLQXbezgJ2gvext3EAmuCCQgfROg-MzkuuT2l8WonDZFlT8QhDsqGGj7OUm0vTZGOXlZ_emQYvkLhDhqyJ25XXgPKmFHAg8UmJQIeSZq7h_QKZxbJUi1dvHeYT6BKhTZa7Wit5SBw6LaXc7bSYwbZ3TFG8qcweOVOKRVOXYk-DGk52Z5obc7Y8pjJnV3W9ns7OXp3q6_VU7G4r01tHcTCNQZvFHFXHlEKb_lG8feKDRZZsKhMojvpeCqmuJR_TxDkE_T2RZOXShuTGbJp3vygYZv16c1sZ57F8vzH3hGGDzKiaK5KnWKzW5tlaz9BhhL9xAOQsoF3Q4QRbigNyUbSG66dHH0rzbDGoLi3l0hvqghE-zLzHF8W3pEDC1mEp986KL1rBXZoZ-oJcw29pjqtcX2bLmGHevchbIFqMRaaV7F-J4TNq-BIPOka_tkYmpXnJ6DFCiwccBMhHiJo37NNUiNdvRktmjhla7BMjoHZuiQefZo4UB-gSZohJYEp7BBJIfQ8keaX7itgl8joJDfy6mWwAlfPpkSXrYMW4zkRhjPHNaBRpG-hVf-5ADuSw0hrEQnBp3NocbyuzJzyYRlVHN-qaaK0re2Dm8LIOzikuu4jGjQ1DYhI_YTx_fV730vmJx898fuZ2rHRQ8EfQ65mf_ndjaYkrJEF4fvjvajF_fvh2inNh3XhSeGcHtfq2WDl8fvjXHI_H7w)
+**With a computer:** in the programming workshop, a website, the cards are blocks with the same words. The square in column 4, row 2 is called (4|2) there. Bring Kiko to the flag: [open the challenge “Kiko walks to the flag”](https://lernapps.net/coding/en/app/?c=dVTBctw2DP0VDH3Vyk2PusX17CU9ZOq0nbHHB4qCREQUuQGh3dqZnfGHpD35M3rzn_hLMqC0jn2ILiIl4OEBD8BX0yeerJjmXWWoM40ZaUybjF9mjPeb7PwcfOpNZYQkoGm-mg5NYz7QmCA8Pc69wP3MsLU-oqkMxtPPgw1jBkkgHqEPdjDHyojN4wvGJeHiB_dIg0BnM1wThhp-xwE6QrjAHn1AoFiuTM4LDQh_IHmMfQoDVtDZiQRKzKRgf04HHH6QgjFNk9SLQXbezgJ2gvext3EAmuCCQgfROg-MzkuuT2l8WonDZFlT8QhDsqGGj7OUm0vTZGOXlZ_emQYvkLhDhqyJ25XXgPKmFHAg8UmJQIeSZq7h_QKZxbJUi1dvHeYT6BKhTZa7Wit5SBw6LaXc7bSYwbZ3TFG8qcweOVOKRVOXYk-DGk52Z5obc7Y8pjJnV3W9ns7OXp3q6_VU7G4r01tHcTCNQZvFHFXHlEKb_lG8feKDRZZsKhMojvpeCqmuJR_TxDkE_T2RZOXShuTGbJp3vygYZv16c1sZ57F8vzH3hGGDzKiaK5KnWKzW5tlaz9BhhL9xAOQsoF3Q4QRbigNyUbSG66dHH0rzbDGoLi3l0hvqghE-zLzHF8W3pEDC1mEp986KL1rBXZoZ-oJcw29pjqtcX2bLmGHevchbIFqMRaaV7F-J4TNq-BIPOka_tkYmpXnJ6DFCiwccBMhHiJo37NNUiNdvRktmjhla7BMjoHZuiQefZo4UB-gSZohJYEp7BBJIfQ8keaX7itgl8joJDfy6mWwAlfPpkSXrYMW4zkRhjPHNaBRpG-hVf-5ADuSw0hrEQnBp3NocbyuzJzyYRlVHN-qaaK0re2Dm8LIOzikuu4jGjQ1DYhI_YTx_fV730vmJx898fuZ2rHRQ8EfQ65mf_ndjaYkrJEF4fvjvajF_fvh2inNh3XhSeGcHtfq2WDl8fvjXHI_H7w)
 
 Picture: The board of the challenge: Kiko stands in column 2, row 2 and faces right on the board. A path leads 2 squares right, 2 down and 2 right to the goal in column 6, row 4. Caption: This is what the challenge looks like in the workshop.
 
@@ -91,7 +95,7 @@ Picture: The board of the challenge: Kiko stands in column 2, row 2 and faces ri
 
 ### Looking back and what comes next
 
-Your first sequence has taken Kiko to the goal. That ends the chapter: spotting algorithms, checking them and writing them down as a sequence. **Mia** writes: “Jona had to lay new cards for every wall.” In the next chapter Kiko learns to notice walls itself.
+Your first sequence has taken Kiko to the goal. That ends the chapter: spotting algorithms, checking them and writing them down as a sequence. **Mia** writes: “Jona had to lay new cards for every wall.” In the next chapter Kiko carries out the commands itself and then learns to notice walls.
 
 ### Exercise wo-steht-kiko
 
@@ -138,7 +142,7 @@ Your first sequence has taken Kiko to the goal. That ends the chapter: spotting 
 - Steps of the solution:
   - After moving forward {a} times, Kiko is {a} squares from the start.
   - Two quarter turns to the right make a half turn. Kiko now faces back towards the start.
-  - It goes {b} squares back: {a} − {b} = {answer} squares from the start.
+  - It goes {b} squares back. Distance from the start: {a} − {b} = {answer}.
 - Typical mistakes and what the app says:
   - F1: „Turning right twice is a half turn. So the {b} steps go back towards the start.“
   - F2: „You only counted up to the turn. After that, Kiko goes {b} squares back.“

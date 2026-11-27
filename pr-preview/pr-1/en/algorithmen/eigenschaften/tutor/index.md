@@ -45,7 +45,7 @@ Checking with four questions whether a set of instructions is an algorithm: fini
 
 In class 7b's group chat, after the computing lesson:
 
-**Frau Berg:** Thanks for playing! Every card was one step, and Mia did exactly what it said.
+**Frau Berg:** Thanks for playing! Mia was Kiko and did exactly what the cards said on the board: “move forward” (one square forward), “turn left” or “turn right”.
 
 **Tom:** I drew some cards of my own 😎
 
@@ -68,7 +68,7 @@ The four properties of an algorithm, each with a broken card as a counterexample
 
 **Remember: Remember**
 
-“Finite” is not the same as “terminates”. Tom's third card is short, but whoever carries it out keeps turning forever. A program that never ends doesn't solve a task that is meant to end. That is why an algorithm has to terminate.
+“Finite” is not the same as “terminates”. Tom's third card is short, but whoever carries it out keeps turning forever. A process that never ends doesn't solve a task that is meant to end. That is why an algorithm has to terminate.
 
 ### Try it yourself
 
@@ -118,8 +118,8 @@ You can now check with four questions whether a set of instructions is an algori
 
 - Task: Mia fixes Tom's cards. Which card becomes which?
 - Answer format: match each item on the left with one on the right
-- Solution: “move a bit” – “move forward” (exactly one square); “jump over the wall” – Cards that lead around the wall: turning and moving forward; “keep turning left again and again” – two “turn left” cards
-- Explanation: The fixed cards only use Kiko's three commands. They are unambiguous, can be carried out, and Kiko is finished after a few steps.
+- Solution: “move a bit” – “move forward”; “jump over the wall” – cards around the wall; “keep turning left again and again” – two left turns
+- Explanation: The fixed cards only use Kiko's three commands: “move forward” instead of “a bit”, turns and steps around the wall, two left turns instead of endless ones. So they are unambiguous, can be carried out and terminate.
 - Link: [../?via=tutor#karten-reparieren](../?via=tutor#karten-reparieren)
 
 ### Exercise karten-in-ordnung

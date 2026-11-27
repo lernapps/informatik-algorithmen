@@ -63,7 +63,9 @@ Picture: A program: while way ahead clear? do, inside it move forward. Caption: 
 
 **Remember: Remember**
 
-The condition is only checked before each pass, not in the middle of the body. The task “walk to the goal” is written like this: while not at the goal? do move forward. If the condition never becomes false, the loop never ends. That is an infinite loop. A program that never ends doesn't solve a task that is meant to end.
+The condition is only checked before each pass, not in the middle of the body. The block “not” turns a condition round. So the task “walk to the goal” is written like this: while not at the goal? do move forward.
+
+- **infinite loop**: An infinite loop never stops because its condition never becomes false. As on the page Properties: a process that never ends doesn't solve a task that is meant to end.
 
 ### Try it yourself
 
@@ -88,7 +90,7 @@ Picture: Board 1 of the challenge “Around every corner”: Kiko stands in colu
 
 ### Looking back and what comes next
 
-In this chapter you built and debugged programs from blocks and let Kiko decide with selection and repeat with loops. **Selin** writes: “Kiko now finds its way through my whole maze! 🎉” Later, in grades 9 and 10, you write the same programs as a Nassi-Shneiderman diagram, as pseudocode and as text.
+In this chapter you built and debugged programs from blocks and let Kiko decide with selection and repeat with loops. **Selin** writes: “Kiko now finds its way through my whole maze! 🎉” Later on you will write the same programs as diagrams, as pseudocode and as text.
 
 ### Exercise welche-schleife
 
@@ -158,7 +160,7 @@ No. | d | Solution | F1
 
 ### Exercise endlosschleife
 
-- Task: Kiko is not on the goal and carries out this program. Is it true that the program never ends?
+- Task: Kiko is not at the goal and carries out this program. Is it true that the program never ends?
 - Answer format: choose “true” or “false”
 - Solution: The statement is true.
 - Explanation: When turning, Kiko stays on its square and never reaches the goal. The condition stays true; that is an infinite loop.
@@ -166,8 +168,8 @@ No. | d | Solution | F1
 
 ### Exercise zahl-oder-bedingung
 
-- Task: Which loop fits which task?
+- Task: How far does Kiko go with each program? Kiko faces along a straight corridor with 8 free squares, then a wall.
 - Answer format: match each item on the left with one on the right
-- Solution: Kiko has to move exactly 6 squares. – repeat 6 times: move forward; Kiko has to move up to the wall. – while way ahead clear? do move forward; Kiko has to turn until it is at the goal. – No loop helps: turning doesn't get it to the goal.
-- Explanation: If the number is known, the count-controlled loop fits. If it depends on the board, the condition-controlled loop fits. If the body changes nothing about the condition, it never becomes false, and the loop never ends.
+- Solution: repeat 6 times: move forward – exactly 6 squares; while way ahead clear? do move forward – up to the wall; if way ahead clear? then move forward – exactly 1 square
+- Explanation: The count-controlled loop runs as often as the number says. The condition-controlled loop runs while its condition is true, however often that is. Selection only checks once.
 - Link: [../?via=tutor#zahl-oder-bedingung](../?via=tutor#zahl-oder-bedingung)

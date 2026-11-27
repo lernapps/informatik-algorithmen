@@ -45,7 +45,7 @@ Mit vier Fragen prüfen, ob eine Anleitung ein Algorithmus ist: endlich beschrie
 
 Im Klassenchat der 7b, nach der Informatikstunde:
 
-**Frau Berg:** Danke fürs Mitspielen! Jede Karte war ein Schritt, und Mia hat genau gemacht, was draufstand.
+**Frau Berg:** Danke fürs Mitspielen! Mia war Kiko und hat auf dem Spielfeld genau gemacht, was auf den Karten stand: „gehe vorwärts“ (ein Feld weiter), „drehe dich nach links“ oder „drehe dich nach rechts“.
 
 **Tom:** Ich hab noch eigene Karten gemalt 😎
 
@@ -68,7 +68,7 @@ Die vier Eigenschaften eines Algorithmus, jede mit einer kaputten Karte als Gege
 
 **Merke: Merke**
 
-„Endlich beschrieben“ ist nicht dasselbe wie „endet“. Toms dritte Karte ist kurz, aber wer sie ausführt, dreht sich für immer. Ein Programm, das nie endet, löst keine Aufgabe, die enden soll. Darum muss ein Algorithmus enden.
+„Endlich beschrieben“ ist nicht dasselbe wie „endet“. Toms dritte Karte ist kurz, aber wer sie ausführt, dreht sich für immer. Ein Ablauf, der nie endet, löst keine Aufgabe, die enden soll. Darum muss ein Algorithmus enden.
 
 ### Selbst ausprobieren
 
@@ -118,8 +118,8 @@ Du kannst jetzt mit vier Fragen prüfen, ob eine Anleitung ein Algorithmus ist. 
 
 - Aufgabe: Mia repariert Toms Karten. Welche Karte wird zu welcher?
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: „gehe ein Stück“ – „gehe vorwärts“ (genau ein Feld); „spring über die Wand“ – Karten, die um die Wand herumführen: drehen und vorwärts gehen; „drehe dich immer wieder nach links“ – zwei Karten „drehe dich nach links“
-- Erklärung: Die reparierten Karten benutzen nur Kikos drei Befehle. Sie sind eindeutig, ausführbar, und Kiko ist nach wenigen Schritten fertig.
+- Lösung: „gehe ein Stück“ – „gehe vorwärts“; „spring über die Wand“ – Karten um die Wand herum; „drehe dich immer wieder nach links“ – zwei Linksdrehungen
+- Erklärung: Die reparierten Karten benutzen nur Kikos drei Befehle: „gehe vorwärts“ statt „ein Stück“, Drehungen und Schritte um die Wand herum, zwei Linksdrehungen statt endlos vieler. So sind sie eindeutig, ausführbar und enden.
 - Link: [../?via=tutor#karten-reparieren](../?via=tutor#karten-reparieren)
 
 ### Aufgabe karten-in-ordnung

@@ -63,7 +63,9 @@ Bild: Ein Programm: solange Weg frei? tue, darin gehe vorwärts. Bildunterschrif
 
 **Merke: Merke**
 
-Geprüft wird nur vor jedem Durchlauf, nicht mitten im Rumpf. „Lauf, bis du am Ziel bist“ schreibst du so: solange nicht am Ziel? tue gehe vorwärts. Wird die Bedingung nie falsch, endet die Schleife nie. Das ist eine Endlosschleife. Ein Programm, das nie endet, löst keine Aufgabe, die enden soll.
+Geprüft wird nur vor jedem Durchlauf, nicht mitten im Rumpf. Der Block „nicht“ dreht eine Bedingung um. „Lauf, bis du am Ziel bist“ schreibst du darum so: solange nicht am Ziel? tue gehe vorwärts.
+
+- **Endlosschleife**: Eine Endlosschleife hört nie auf, weil ihre Bedingung nie falsch wird. Wie auf der Seite Eigenschaften: Ein Ablauf, der nie endet, löst keine Aufgabe, die enden soll.
 
 ### Selbst ausprobieren
 
@@ -166,8 +168,8 @@ Nr. | d | Lösung | F1
 
 ### Aufgabe zahl-oder-bedingung
 
-- Aufgabe: Welche Schleife passt zu welcher Aufgabe?
+- Aufgabe: Wie weit geht Kiko mit welchem Programm? Kiko schaut in einen geraden Gang mit 8 freien Feldern, danach kommt eine Wand.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Kiko soll genau 6 Felder gehen. – wiederhole 6 mal: gehe vorwärts; Kiko soll bis zur Wand gehen. – solange Weg frei? tue gehe vorwärts; Kiko soll sich drehen, bis er am Ziel ist. – Keine Schleife hilft: Drehen bringt ihn nicht ans Ziel.
-- Erklärung: Ist die Anzahl bekannt, passt die Zählschleife. Hängt sie vom Spielfeld ab, passt die bedingte Wiederholung. Ändert der Rumpf nichts an der Bedingung, wird sie nie falsch, und die Schleife endet nie.
+- Lösung: wiederhole 6 mal: gehe vorwärts – genau 6 Felder; solange Weg frei? tue gehe vorwärts – bis zur Wand; wenn Weg frei? dann gehe vorwärts – genau 1 Feld
+- Erklärung: Die Zählschleife läuft so oft, wie die Zahl sagt. Die bedingte Wiederholung läuft, solange ihre Bedingung wahr ist, egal wie oft. Eine Verzweigung prüft nur einmal.
 - Link: [../?via=tutor#zahl-oder-bedingung](../?via=tutor#zahl-oder-bedingung)

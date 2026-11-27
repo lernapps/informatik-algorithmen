@@ -45,7 +45,7 @@ With “repeat … times” Kiko carries out blocks several times: shorter progr
 
 In class 7b's group chat:
 
-**Jona:** My corridor is 9 squares long. I dragged “move forward” 9 times 😩
+**Jona:** I've started: “move forward” 9 times for my corridor 😩
 
 **Selin:** Use “repeat … times”. Then one “move forward” is enough.
 
@@ -59,6 +59,8 @@ Here you learn how Kiko carries out blocks several times with a count-controlled
 
 Picture: A program of nine “move forward” blocks one below the other. Caption: Jona's program with 9 blocks
 
+- **loop**: A loop carries out instructions several times. Repeating instructions is called iteration (repetition).
+
 Picture: A program of two blocks: repeat 9 times, inside it move forward. Caption: Selin's program with 2 blocks. Kiko goes just as far.
 
 - **count-controlled loop**: A count-controlled loop runs its loop body as many times as the number says.
@@ -67,7 +69,7 @@ Picture: A program of two blocks: repeat 9 times, inside it move forward. Captio
 
 **Remember: Remember**
 
-Repeating instructions is called iteration (repetition); a loop does it. “repeat … times” is an instruction itself, but not a simple command: it controls the instructions in its body. Count the squares Kiko has to move. Its own square doesn't count. In one pass Kiko carries out the whole body, from top to bottom; only then does the next pass begin.
+“repeat … times” is an instruction itself, but not a simple command: it controls the instructions in its body. Count the squares Kiko has to move. Its own square doesn't count. In one pass Kiko carries out the whole body, from top to bottom; only then does the next pass begin.
 
 ### Try it yourself
 
@@ -76,9 +78,9 @@ Repeating instructions is called iteration (repetition); a loop does it. “repe
 **With a computer, two challenges:**
 
 - 9 squares to the goal, with at most 3 blocks: [open the challenge “The long corridor”](https://lernapps.net/coding/en/app/?c=dVTBbttIDP0Vgr3KCoqcomM22D1sDwWSHtZBDrSG1gw0GrozlLNxYMAfkvRU7Cf0tDf_ib-kmLHlpkCriyAO-R75HkfPuJQ4kGLzvkJnsMHe9TLzFDqOs45ChxWqU8_YPKNhbPCGI5Rz-Ot4zAEbvLMMXkIHrcTojETcVqiU-nPd364XSOI9XMGf7A1H6DiSYRoTdGw51HAzgqWkYPffWpuUQ4JLuPb7b23PNVxzGHUDh92XR8eGoxXPcNj9BwP5w-6lnnopTJYSqEAncAXp80iREySN5DqrQJbJ1PCPZL41AykMkhQuYeGl7VMNn1KGfom8YtJCom7gdNi91nmyR4ne5NH0aZWH87R4ii6oxQrXHJOTUCRtJSxdlxMHWmFzj-_ePFjhu9v69MzL59vThwqX1LrQYYNMSXGbJRXxC_k3Q60lPhJHTVihd6HP78itLYEfCmWcpBQVmzB6n3MHpyn3dBwWm8sMzCkH7x8qbC2X8D1uHPsZx8iutYoVLooDOiuFzc8c1oUCcLL7ajaQz15layH3uv8aNR12L5BcMLAZYe3Y89neyb2ro9JZ_UHWDMs8ZjSH3Su4bKnAQOFpMgq31YnwA3e_pnMBjGO4ba1nt2QYg4Gk7H0Jz8l6YBfO_B9H_SV3SM4waNlzWQFlFNYSCOOw4Piml_n-qz3CnzZ9LQHKWi5cgs04wNyxr-GGUsmogMYlGB6OSUnZagWbjKIQsvgwOD23-IeM4cg8bfYyyqlWpRx0Qr6Gu3PKBEzBJJAARjhBEIU2Y9W4fahw7fgRm7wV3Pac7aa23N8x-vM1vnDh-Mtw_Yx8J9GpHThcnKouNsTWp5PWF1PHv6v6feG2ypeKfxDPx7j_v-1hM0a4Zaf5fn4pQk9Fh93LxHdNbT9JsaKu3OWi2qyVoFG8Z1N8POxecbvdfgc)
-- A staircase with steps 2 squares wide: [open the challenge “The wide staircase”](https://lernapps.net/coding/en/app/?c=dVTNbts4EH6VAXOVFTSHHHQp1psWi91DCzjAYhPkMCZH5kAU6ZIjq0lhIA_S3VOfoafe_CZ5koKUZWcP1UWD-f2G8818UW2IPYpq3lSKjWpUx11YSKTtllSlhMWRar4oQ6pRN0ywjsRCcDt7kFeNurUEIxuCJMhRYyK1r5Rg6k6xf3EXIAnxRoDYzxnABm1r-JMMwUqGloCTwBW8J2coTtVg8AbeFNXRfYkDGEzwMYZNxL6H9vAjTmmnJDnCYUpACUYmQ9EGR76GmwEsJgF7-K5tEvIJrmHpDt91R_XcTsGqHffrBHjuqYZ3qG1uYguc4ArSpwFjqWAIsICcVGB5k2EO7AyIJdhOQKENEYKnKUeOcCTAApG2hFLDPyHj2xGgQB-SwDWsXdBdqvODjiE6k19UHrf5TR2uHyN7sapSO4qJgy-D1MG3vMmOPW5Vc68u5k9Vs3x3kuu6PspZmnxWRXrtf3GhHirVoma_UY0iTKL2ecghuHX4nKvsQhyRoiRVKce-y_9I2hbFeQo5TxKMoho_OJd9e5aU4U69quY6J6aUlfcPldKWivpePTG5BcVIrK2oSq3JD_IkixLY_L-GZV8SHAm40jYSr4FiEjBMsKSWrKOJO1kxeMnGmUM4tDXcoC8z1xYHgUKMqQpwD8s83mKf2jwR6D3nImPMm2LC6AsHdOh79CYVEmSFCyMlKVyo4bdWKI4YTZqqtKgpQeSNFQhTgnXAaAA3yD7T4djXuxPrG7ha9Oggz-HwLUqqoIwBTCRLvnptmAAfLSfcH47UbDLGDAZkZE0VyBA9OGqlmi1HXQH4Cs3fTLBjckdIHixOrz2t-1tYBQitnJcyD2M4AfgjjNCjfywoEphAqbR-2sGyHW_hNqflBDaMOR15eAzDvEVq_1CpHdOomswo0l0-VGvU5RoN0Z2O0iX76f5xt0C3CZHF9uQvj1GXT0jWJW0dcUuXM8hfRf06cF_lXaVz4bshHn7oDp6GCKtyUF-e_7s7fDsHvTx_nestUXcgYTokuMm-X38Pg5eFDl5icI4MuBC2L8__qv1-_xM)
+- A staircase with steps 2 squares wide: [open the challenge “The wide staircase”](https://lernapps.net/coding/en/app/?c=dVTNbhw3DH4VQr7OjhEffJhLUNcJivbQAmugqA0fuBJnRYxG2kqcndrBAn6QtKc8Q0657Zv4SQpJ--McspcdUeTHj-JHflJ9iCOK6t41io3q1MBDWEikzYZUo4TFkeo-KUOqU7dMsIrEQnB39CCvOnVnCWY2BEmQo8ZEatcowTScYn_jIUAS4rUAsT8igA3atvArGYKlTD0BJ4Er-EjOUKzZYPIG3hXTwf0GJzCY4I8Y1hHHEfr9t1hhK0iOcJgSUIKZyVC0wZFv4XYCi0nA7r9qm4R8gmu4cfuveqD2WE7hqh2PqwR4rqmFD6htLmIDnOAK0t8TxpLBEGAhWU1geZ1pTuwMiCXYVKLQhwjBU8XIEY4EWCDShlBa-CtkflsCFBhDEriGlQt6SG1-0DlEZ_KLytMmv6nD1VNkL1Y1aksxcfClkTr4ntfZccSN6h7UxfmnmvPp_s2pbdvTKX8fPet3PS0P39-jXFyox0b1qNmvVacIk6hdbn8IbhX-yfm3Ic5IUZJqlGM_5P9I2hbDuT8ZJwlGUZ2fnMu-I0vKhdRXUN11BqaUjQ-PjdKWivlBPTO5BcVIrK2oRq3IT_IsixLYfZ_Dsi8AB2kutY3EK6CYBAwT3FBP1lFVVTZMXvLlUV049S3coi9q0BYngSKZmgV4hJvc-HJfyzxJ6yPnJHPMM2TC7Is6dBhH9CYVeWSDCzMlKSpp4adeKM4YTapZetSUIPLaCoQKsAoYDeAa2WehHOr6cJqHDq4WIzrIfdh_iZIaKG0AE8mSb95eVMKHmxPv3w-i7TLHTAZkZk0NyBQ9OOqlOd4cbIXgGzZ_MsGWyR0oebBYX7sugvewDBB6OY9rbsZ0IvBLmGFE_1RYJDCBUin9NJ1lbt7DXYblBDbMGY48PIXpOF9q99ioLdOsuqwo0kNeYSvUZU9N0Z3W1SX7uhl5WKBbh8hiR_KXh6jLZyTrkraOuKfLI8kfRf04cNfkKaZz4vsp7r_pAZ6nCMuyal9f_rvffzkHvb58Pua7QT2AhLpicJ19P_8cJi8LHbzE4BwZcCFsXl_-Vbvd7n8)
 
-Picture: The board of the challenge “The wide staircase”: Kiko stands in column 2, row 5 and faces right on the board. Three steps lead up, each 2 squares wide and 1 square high, to the goal in column 8, row 2. Caption: The staircase. Every step needs the same blocks.
+Picture: The board of the challenge “The wide staircase”: Kiko stands in column 2, row 6 and faces right on the board. Four steps lead up, each 2 squares wide and 1 square high, to the goal in column 10, row 2. Caption: The staircase. Every step needs the same blocks.
 
 ### Practice
 
@@ -177,9 +179,9 @@ No. | d | Solution | F1 | F2
 
 ### Exercise sequenz-zu-schleife
 
-- Task: Which count-controlled loop does the same as the sequence of commands?
+- Task: Which count-controlled loop does the same as the sequence of commands? “3 times: …” is short for “repeat 3 times: …”.
 - Answer format: match each item on the left with one on the right
-- Solution: forward, forward, forward – repeat 3 times: forward; right, right – repeat 2 times: right; forward, left, forward, left – repeat 2 times: forward, left; forward, forward, left, forward, forward, left – repeat 2 times: forward, forward, left
+- Solution: forward, forward, forward – 3 times: forward; right, right – 2 times: right; forward, left, forward, left – 2 times: forward, left; forward, right, forward, right, forward, right – 3 times: forward, right
 - Explanation: Look for the part that repeats. That becomes the loop body, and the number says how often it occurs.
 - Link: [../?via=tutor#sequenz-zu-schleife](../?via=tutor#sequenz-zu-schleife)
 
