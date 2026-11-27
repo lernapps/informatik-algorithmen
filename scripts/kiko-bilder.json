@@ -23,7 +23,7 @@
     },
     "challenge-sequenz-schulhof": {
       "title": "Spielfeld der Challenge „Kiko holt den Ball“",
-      "map": ["#######", "#S..###", "###.###", "###...#", "#####Z#", "#######"],
+      "map": ["#######", "#S..###", "###.###", "###..Z#", "#######"],
       "facing": "east"
     }
   },

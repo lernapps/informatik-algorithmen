@@ -206,12 +206,13 @@ Die Antworten stehen im Auftrag des Orchestrators (Epic lernapps/apps#509, Issue
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Musterseite algorithmen/sequenz (Baustein sequenz) in de und en: Chat, Frage A–D mit Spielfeld- und Kartenbild, Merke, Unplugged-Anleitung, Challenge C1, Übungen number, single-choice, generated, true-false; dazu scripts/kiko-bilder.mjs, scripts/challenges.mjs mit Prüfskript v1 in npm test, LICENSE auf Oliver Jägle.
+- [x] Musterseite algorithmen/sequenz (Baustein sequenz) in de und en: Chat, Frage A–D mit Spielfeld- und Kartenbild, Merke, Unplugged-Anleitung, Challenge C1, Übungen number, single-choice, generated, true-false; dazu scripts/kiko-bilder.mjs, scripts/challenges.mjs mit Prüfskript v1 in npm test, LICENSE auf Oliver Jägle.
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
-- [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
+- [x] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-- [ ] Seite algorithmen/algorithmus (algorithmus-begriff): Ali sucht den Computerraum, Definition Algorithmus, Schulhausplan, Wegbeschreibung zu zweit, Übungen.
+      Creator: Ja, die übrigen 6 Seiten folgen diesem Muster. tasks.start: random ja. „Frau Berg“ bleibt auf Englisch. Bis coding die Arbeitsfläche behebt: Challenges kurz halten, höchstens 8 Blöcke, wo es geht.
+- [x] Seite algorithmen/algorithmus (algorithmus-begriff): Ali sucht den Computerraum, Definition Algorithmus, Schulhausplan, Wegbeschreibung zu zweit, Übungen.
 - [ ] Seite algorithmen/eigenschaften (algorithmische-eigenschaften): Toms kaputte Karten, vier Prüffragen, Merke endlich beschrieben ≠ endet, Kartenspiel, Übungen.
 - [ ] Seite bloecke/bloecke (visuelle-programmierung): Karten werden Blöcke, Programm und Programmiersprache, Werkstatt, Fehler finden, Challenge C2, Übungen.
 - [ ] Seite bloecke/verzweigung (verzweigung): Sensor, Bedingung, wenn … dann … sonst, zwei Spielfelder, Challenge C3, Übungen.

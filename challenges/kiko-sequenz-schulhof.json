@@ -13,14 +13,14 @@
     "type": "labyrinth",
     "version": 1,
     "config": {
-      "map": ["#######", "#S..###", "###.###", "###...#", "#####Z#", "#######"],
+      "map": ["#######", "#S..###", "###.###", "###..Z#", "#######"],
       "facing": "east"
     }
   },
   "toolbox": ["vorwaerts", "links", "rechts"],
   "start": null,
   "limits": {
-    "blocks": 12
+    "blocks": 10
   },
   "tests": [],
   "checks": ["ziel-erreicht"],
