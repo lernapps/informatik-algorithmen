@@ -143,13 +143,13 @@ export function feld({ map, facing, marks = {}, kiko: showKiko = true, title }: 
     const px = PAD + (cx - 1) * CELL;
     const py = PAD + (cy - 1) * CELL;
     parts.push(
-      `<g><circle cx="${px + CELL - 11}" cy="${py + CELL - 11}" r="9" class="mark"/><text x="${px + CELL - 11}" y="${py + CELL - 7}" class="mark-text">${esc(letter)}</text></g>`,
+      `<g><circle cx="${px + CELL / 2}" cy="${py + CELL / 2}" r="11" class="mark"/><text x="${px + CELL / 2}" y="${py + CELL / 2 + 5}" class="mark-text">${esc(letter)}</text></g>`,
     );
   }
   if (showKiko && start !== undefined)
     parts.push(`<g transform="translate(${start.px + CELL / 2} ${start.py + CELL / 2})">${kiko(ANGLE[facing])}</g>`);
   const style =
-    ".num{font:11px sans-serif;text-anchor:middle;fill:#3b4252}.wall{fill:#3b4252}.floor{fill:#f3f1ea;stroke:#d8d4c8}.goal{fill:#a6dba0;stroke:#1e5a20;stroke-width:3}.pole{stroke:#1f2a44;stroke-width:2}.flag{fill:#2f7d32}.mark{fill:#ffffff;stroke:#1f2a44;stroke-width:1.5}.mark-text{font:bold 12px sans-serif;text-anchor:middle;fill:#1f2a44}";
+    ".num{font:11px sans-serif;text-anchor:middle;fill:#3b4252}.wall{fill:#3b4252}.floor{fill:#f3f1ea;stroke:#d8d4c8}.goal{fill:#a6dba0;stroke:#1e5a20;stroke-width:3}.pole{stroke:#1f2a44;stroke-width:2}.flag{fill:#2f7d32}.mark{fill:#ffffff;stroke:#1f2a44;stroke-width:1.5}.mark-text{font:bold 14px sans-serif;text-anchor:middle;fill:#1f2a44}";
   return svg(w, h, title, `<rect width="${w}" height="${h}" fill="#ffffff"/>` + parts.join(""), style);
 }
 

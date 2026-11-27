@@ -13,7 +13,7 @@
     },
     "sequenz-zaehlen": {
       "title": "Spielfeld mit Kiko und Ziel",
-      "map": ["#######", "#S...##", "####.##", "####..#", "#####Z#", "#######"],
+      "map": ["#######", "##...Z#", "##.####", "##.####", "#S.####", "#######"],
       "facing": "east"
     },
     "sequenz-auswahl": {

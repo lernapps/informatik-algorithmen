@@ -2,12 +2,12 @@
   "format": 1,
   "id": "kiko-sequenz-schulhof",
   "title": {
-    "de": "Kiko holt den Ball",
-    "en": "Kiko fetches the ball"
+    "de": "Kiko läuft zur Fahne",
+    "en": "Kiko walks to the flag"
   },
   "task": {
-    "de": "Der Ball liegt im Ziel. Leg die Befehle in die richtige Reihenfolge, damit Kiko ohne Umweg zum Ball kommt. Kiko schaut am Anfang nach rechts.",
-    "en": "The ball is at the goal. Put the commands in the right order so that Kiko gets to the ball without a detour. At the start, Kiko faces right."
+    "de": "Die Fahne zeigt das Ziel. Leg die Befehle in die richtige Reihenfolge, damit Kiko ohne Umweg zur Fahne kommt. Kiko schaut am Anfang im Bild nach rechts.",
+    "en": "The flag marks the goal. Put the commands in the right order so that Kiko gets to the flag without a detour. At the start, Kiko faces right on the board."
   },
   "world": {
     "type": "labyrinth",
@@ -45,8 +45,8 @@
       "en": "/informatik-algorithmen/en/algorithmen/sequenz/"
     },
     "label": {
-      "de": "Zurück zum Explainer",
-      "en": "Back to the explainer"
+      "de": "Zurück zur Seite „Sequenz“",
+      "en": "Back to the page “Sequence”"
     }
   }
 }
