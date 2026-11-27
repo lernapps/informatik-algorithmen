@@ -1,0 +1,52 @@
+{
+  "format": 1,
+  "id": "kiko-langer-gang",
+  "title": {
+    "de": "Der lange Gang",
+    "en": "The long corridor"
+  },
+  "task": {
+    "de": "Kiko soll 9 Felder geradeaus gehen. Du hast nur 3 Blöcke. Benutz „wiederhole … mal“.",
+    "en": "Kiko has to go 9 squares straight ahead. You only have 3 blocks. Use “repeat … times”."
+  },
+  "world": {
+    "type": "labyrinth",
+    "version": 1,
+    "config": {
+      "map": ["############", "#S........Z#", "############"],
+      "facing": "east"
+    }
+  },
+  "toolbox": ["vorwaerts", "links", "rechts", "wiederhole"],
+  "start": null,
+  "limits": {
+    "blocks": 3
+  },
+  "tests": [],
+  "checks": ["ziel-erreicht", "benutzt-block:wiederhole"],
+  "hints": [
+    {
+      "de": "9-mal „gehe vorwärts“ sind zu viele Blöcke.",
+      "en": "9 times “move forward” is too many blocks."
+    },
+    {
+      "de": "Leg „gehe vorwärts“ in die Schleife und stell die Zahl ein.",
+      "en": "Put “move forward” inside the loop and set the number."
+    },
+    {
+      "de": "Zähl die Felder von Kiko bis zum Ziel. Das Feld, auf dem Kiko steht, zählt nicht mit.",
+      "en": "Count the squares from Kiko to the goal. The square Kiko stands on does not count."
+    }
+  ],
+  "view": "bloecke",
+  "back": {
+    "url": {
+      "de": "/informatik-algorithmen/bloecke/zaehlschleife/",
+      "en": "/informatik-algorithmen/en/bloecke/zaehlschleife/"
+    },
+    "label": {
+      "de": "Zurück zur Seite „Zählschleife“",
+      "en": "Back to the page “Count-controlled loop”"
+    }
+  }
+}

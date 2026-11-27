@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 184" width="310" height="184">
+<title>Spielfeld 1 der Challenge „Wie lang ist der Gang?“</title>
+<desc>Kiko und die Welt nach der Programmierwerkstatt lernapps.net/coding, © 2026 Oliver Jägle, CC BY 4.0. Erzeugt mit scripts/kiko-bilder.ts.</desc>
+<style>.num{font:11px sans-serif;text-anchor:middle;fill:#3b4252}.wall{fill:#3b4252}.floor{fill:#f3f1ea;stroke:#d8d4c8}.goal{fill:#a6dba0;stroke:#1e5a20;stroke-width:3}.pole{stroke:#1f2a44;stroke-width:2}.flag{fill:#2f7d32}.mark{fill:#ffffff;stroke:#1f2a44;stroke-width:1.5}.mark-text{font:bold 14px sans-serif;text-anchor:middle;fill:#1f2a44}</style>
+<rect width="310" height="184" fill="#ffffff"/><text x="42" y="15" class="num">1</text><text x="82" y="15" class="num">2</text><text x="122" y="15" class="num">3</text><text x="162" y="15" class="num">4</text><text x="202" y="15" class="num">5</text><text x="242" y="15" class="num">6</text><text x="282" y="15" class="num">7</text><text x="11" y="46" class="num">1</text><text x="11" y="86" class="num">2</text><text x="11" y="126" class="num">3</text><rect x="22" y="22" width="40" height="40" class="wall"/><rect x="62" y="22" width="40" height="40" class="wall"/><rect x="102" y="22" width="40" height="40" class="wall"/><rect x="142" y="22" width="40" height="40" class="wall"/><rect x="182" y="22" width="40" height="40" class="wall"/><rect x="222" y="22" width="40" height="40" class="wall"/><rect x="262" y="22" width="40" height="40" class="wall"/><rect x="22" y="62" width="40" height="40" class="wall"/><rect x="62" y="62" width="40" height="40" class="floor"/><rect x="102" y="62" width="40" height="40" class="floor"/><rect x="142" y="62" width="40" height="40" class="floor"/><rect x="182" y="62" width="40" height="40" class="floor"/><rect x="222" y="62" width="40" height="40" class="goal"/><g transform="translate(234 70)"><line x1="2" y1="0" x2="2" y2="25" class="pole"/><path d="M 2 1 L 18 6 L 2 11 Z" class="flag"/></g><rect x="262" y="62" width="40" height="40" class="wall"/><rect x="22" y="102" width="40" height="40" class="wall"/><rect x="62" y="102" width="40" height="40" class="wall"/><rect x="102" y="102" width="40" height="40" class="wall"/><rect x="142" y="102" width="40" height="40" class="wall"/><rect x="182" y="102" width="40" height="40" class="wall"/><rect x="222" y="102" width="40" height="40" class="wall"/><rect x="262" y="102" width="40" height="40" class="wall"/><g transform="translate(82 82)"><g>
+  <circle r="19" fill="#ffffff" fill-opacity="0.55" stroke="#1f2a44" stroke-width="1"/>
+  <line x1="0" y1="-11" x2="0" y2="-16" stroke="#5c2400" stroke-width="1.5"/>
+  <circle cx="0" cy="-16.5" r="2" fill="#ffc300" stroke="#5c2400" stroke-width="0.8"/>
+  <rect x="-10" y="-11" width="20" height="13" rx="5" fill="#e8590c" stroke="#5c2400" stroke-width="1.2"/>
+  <rect x="-7" y="-8.5" width="14" height="7.5" rx="3" fill="#1f2a44"/>
+  <circle cx="-3.2" cy="-4.8" r="1.7" fill="#ffffff"/>
+  <circle cx="3.2" cy="-4.8" r="1.7" fill="#ffffff"/>
+  <rect x="-7.5" y="3" width="15" height="8" rx="3" fill="#e8590c" stroke="#5c2400" stroke-width="1.2"/>
+  <rect x="-8.5" y="11" width="6" height="3.5" rx="1.5" fill="#1f2a44"/>
+  <rect x="2.5" y="11" width="6" height="3.5" rx="1.5" fill="#1f2a44"/>
+  <path transform="rotate(0)" d="M 17 -7 L 26 0 L 17 7 Z" fill="#ffc300" stroke="#1f2a44" stroke-width="1.5" stroke-linejoin="round"/>
+</g></g>
+</svg>

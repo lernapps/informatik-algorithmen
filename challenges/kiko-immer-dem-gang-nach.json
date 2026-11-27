@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "id": "kiko-immer-dem-gang-nach",
+  "title": {
+    "de": "Um jede Ecke",
+    "en": "Around every corner"
+  },
+  "task": {
+    "de": "Der Block „solange nicht am Ziel? tue“ liegt schon da und ist fest. Füll ihn so, dass Kiko durch beide Gänge ins Ziel kommt: Ist der Weg frei, geht Kiko vorwärts, sonst dreht er sich nach rechts.",
+    "en": "The block “while not at the goal? do” is already there and fixed. Fill it so that Kiko gets through both corridors to the goal: if the way ahead is clear, Kiko moves forward, else it turns right."
+  },
+  "world": {
+    "type": "labyrinth",
+    "version": 1,
+    "config": {
+      "map": ["########", "#S.....#", "######.#", "#Z.....#", "########"],
+      "facing": "east"
+    }
+  },
+  "toolbox": ["vorwaerts", "links", "rechts", "solange", "wenn-sonst", "nicht", "weg-frei", "am-ziel"],
+  "start": {
+    "main": [
+      {
+        "s": "while",
+        "cond": {
+          "e": "not",
+          "a": {
+            "e": "sense",
+            "name": "am-ziel",
+            "args": []
+          }
+        },
+        "body": [],
+        "locked": true
+      }
+    ]
+  },
+  "limits": {
+    "blocks": 8,
+    "steps": 300
+  },
+  "tests": [
+    {
+      "config": {
+        "map": ["########", "#...Z###", "#.######", "#.######", "#.....S#", "########"],
+        "facing": "west"
+      }
+    }
+  ],
+  "checks": ["ziel-erreicht", "benutzt-block:wenn-sonst"],
+  "hints": [
+    {
+      "de": "In der Schleife entscheidet Kiko bei jedem Durchlauf neu.",
+      "en": "Inside the loop, Kiko decides again on every pass."
+    },
+    {
+      "de": "Leg „wenn … dann … sonst“ in die Schleife. Frag: „Weg frei?“",
+      "en": "Put “if … then … else” inside the loop. Ask: “way ahead clear?”"
+    },
+    {
+      "de": "Dann: „gehe vorwärts“. Sonst: „drehe dich nach rechts“.",
+      "en": "Then: “move forward”. Else: “turn right”."
+    }
+  ],
+  "view": "bloecke",
+  "back": {
+    "url": {
+      "de": "/informatik-algorithmen/bloecke/bedingte-wiederholung/",
+      "en": "/informatik-algorithmen/en/bloecke/bedingte-wiederholung/"
+    },
+    "label": {
+      "de": "Zurück zur Seite „Bedingte Wiederholung“",
+      "en": "Back to the page “Condition-controlled loop”"
+    }
+  }
+}

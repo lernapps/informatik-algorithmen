@@ -1,0 +1,294 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Zählschleife
+  en: Count-controlled loop
+description:
+  de: "Mit „wiederhole … mal“ führt Kiko Blöcke mehrmals aus: kürzere Programme für lange Wege und Muster."
+  en: "With “repeat … times” Kiko carries out blocks several times: shorter programs for long paths and patterns."
+competencies: [wiederholung-feste-anzahl]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Neunmal derselbe Block
+      en: The same block nine times
+    blocks:
+      - type: text
+        text:
+          de: |-
+            Im Klassenchat der 7b:
+
+            **Jona:** Mein Gang ist 9 Felder lang. Ich hab 9-mal „gehe vorwärts“ gezogen 😩
+
+            **Selin:** Nimm „wiederhole … mal“. Dann reicht ein „gehe vorwärts“.
+
+            **Jona:** Und wie oft wiederholt Kiko?
+
+            Hier lernst du, wie Kiko Blöcke mit einer Zählschleife mehrmals ausführt.
+          en: |-
+            In class 7b's group chat:
+
+            **Jona:** My corridor is 9 squares long. I dragged “move forward” 9 times 😩
+
+            **Selin:** Use “repeat … times”. Then one “move forward” is enough.
+
+            **Jona:** And how often does Kiko repeat?
+
+            Here you learn how Kiko carries out blocks several times with a count-controlled loop.
+      - type: single-choice
+        id: wo-nach-schleife
+        text:
+          de: Kiko schaut im Bild nach rechts und führt das Programm mit der Schleife aus. Auf welchem Feld endet er?
+          en: Kiko faces right on the board and carries out the program with the loop. Which square does it end on?
+        material:
+          - type: figure
+            image:
+              de: images/kiko-zaehlschleife-programm-de.svg
+              en: images/kiko-zaehlschleife-programm-en.svg
+            alt:
+              de: "Ein Programm: wiederhole 2 mal, darin: gehe vorwärts, gehe vorwärts, drehe dich nach links."
+              en: "A program: repeat 2 times, inside: move forward, move forward, turn left."
+            caption:
+              de: Das Programm. Die drei Blöcke stehen in der Schleife.
+              en: The program. The three blocks are inside the loop.
+            source:
+              de: eigene Zeichnung nach lernapps.net/coding
+              en: own drawing after lernapps.net/coding
+            licence: CC-BY-4.0
+          - type: figure
+            image: images/kiko-zaehlschleife-wo.svg
+            alt:
+              de: "Ein Spielfeld mit Spalten 1 bis 7 und Zeilen 1 bis 7. Kiko steht in Spalte 2, Zeile 6 und schaut im Bild nach rechts. Markiert sind A in Spalte 2, Zeile 4; B in Spalte 4, Zeile 6; C in Spalte 4, Zeile 4; D in Spalte 6, Zeile 6."
+              en: "A board with columns 1 to 7 and rows 1 to 7. Kiko stands in column 2, row 6 and faces right on the board. Marked are A in column 2, row 4; B in column 4, row 6; C in column 4, row 4; D in column 6, row 6."
+            caption:
+              de: Das Spielfeld
+              en: The board
+            source:
+              de: eigene Zeichnung, Kiko nach lernapps.net/coding
+              en: own drawing, Kiko after lernapps.net/coding
+            licence: CC-BY-4.0
+        options:
+          - text: { de: Feld A, en: Square A }
+            correct: false
+            info:
+              de: So wäre es nach drei Durchläufen. Die Schleife läuft aber nur 2-mal.
+              en: That would be after three passes. But the loop only runs 2 times.
+          - text: { de: Feld B, en: Square B }
+            correct: false
+            info:
+              de: Das ist das Ende des ersten Durchlaufs. Danach läuft die Schleife noch ein zweites Mal.
+              en: That is the end of the first pass. After it the loop runs a second time.
+          - text: { de: Feld C, en: Square C }
+            correct: true
+            info:
+              de: "Richtig: Erster Durchlauf 2 Felder nach rechts, links drehen. Zweiter Durchlauf 2 Felder hoch, links drehen."
+              en: "Right: first pass 2 squares to the right, turn left. Second pass 2 squares up, turn left."
+          - text: { de: Feld D, en: Square D }
+            correct: false
+            info:
+              de: Du hast die Drehungen übersehen. Nach jedem Durchlauf dreht Kiko sich nach links.
+              en: You overlooked the turns. After every pass Kiko turns left.
+        explanation:
+          de: Kiko führt den ganzen Inhalt der Schleife aus, dann noch einmal. Nach 2 Durchläufen steht er in Spalte 4, Zeile 4.
+          en: Kiko carries out everything inside the loop, then once more. After 2 passes it is in column 4, row 4.
+  - type: section
+    id: idee
+    title:
+      de: Wiederholen mit fester Anzahl
+      en: Repeating a fixed number of times
+    blocks:
+      - type: figure
+        image:
+          de: images/kiko-zaehlschleife-lang-de.svg
+          en: images/kiko-zaehlschleife-lang-en.svg
+        alt:
+          de: Ein Programm aus neun Blöcken „gehe vorwärts“ untereinander.
+          en: A program of nine “move forward” blocks one below the other.
+        caption:
+          de: Jonas Programm mit 9 Blöcken
+          en: Jona's program with 9 blocks
+        source:
+          de: eigene Zeichnung nach lernapps.net/coding
+          en: own drawing after lernapps.net/coding
+        licence: CC-BY-4.0
+      - type: figure
+        image:
+          de: images/kiko-zaehlschleife-kurz-de.svg
+          en: images/kiko-zaehlschleife-kurz-en.svg
+        alt:
+          de: "Ein Programm aus zwei Blöcken: wiederhole 9 mal, darin gehe vorwärts."
+          en: "A program of two blocks: repeat 9 times, inside it move forward."
+        caption:
+          de: Selins Programm mit 2 Blöcken. Kiko läuft genauso weit.
+          en: Selin's program with 2 blocks. Kiko goes just as far.
+        source:
+          de: eigene Zeichnung nach lernapps.net/coding
+          en: own drawing after lernapps.net/coding
+        licence: CC-BY-4.0
+      - type: definition
+        term:
+          de: Zählschleife
+          en: count-controlled loop
+        explanation:
+          de: Eine Zählschleife (Wiederholung mit fester Anzahl) führt ihren Schleifenrumpf so oft aus, wie die Zahl sagt.
+          en: A count-controlled loop runs its loop body as many times as the number says.
+      - type: definition
+        term:
+          de: Schleifenrumpf
+          en: loop body
+        explanation:
+          de: Der Schleifenrumpf sind die Blöcke in der Schleife. Er ist eine Sequenz, die mehrmals ausgeführt wird.
+          en: The loop body is the blocks inside the loop. It is a sequence that is carried out several times.
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: >-
+                Zähl die Felder, die Kiko gehen soll. Sein eigenes Feld zählt nicht mit. In einem Durchlauf führt Kiko
+                den ganzen Rumpf aus, von oben nach unten, erst dann beginnt der nächste.
+              en: >-
+                Count the squares Kiko has to move. Its own square doesn't count. In one pass Kiko carries out the
+                whole body, from top to bottom; only then does the next pass begin.
+  - type: section
+    id: ausprobieren
+    title:
+      de: Selbst ausprobieren
+      en: Try it yourself
+    blocks:
+      - type: text
+        text:
+          de: |-
+            **Ohne Computer:** Legt die Karte [„wiederhole ___ mal“](https://lernapps.net/coding/karten/de/befehlskarten-2.svg) mit einer Zahl und Karten darin. Kiko sagt bei jedem Durchlauf laut, der wievielte es ist.
+
+            **Mit Computer, zwei Challenges:**
+
+            - Ein Gang von 9 Feldern mit nur 3 Blöcken: [Challenge „Der lange Gang“ öffnen](https://lernapps.net/coding/app/?c=dVTNbuNGDH4VgnuVFRQ5Rcc0aA_toUC2hzrIgdbQmoFGQ3eG4zReGPCDJHta9BF66i1v4icpZmx5U2BXF0H8-T7yI6lPuJY4kWL3Q4POYIejG2XhKQwcFwOFARtUp56x-4SGscM7jlD98PPJzQE7_GgZvIQBeonRGYm4b1ApjZe8X9wokMR7uIGf2BuOMHAkw5QTDGw5tHCXwVJSCDnCNdz6t3_6kVu45ZB1B8fD5yfHhqMVz3A8_A0T-ePhpZ2LqBSWEqjAIHAD6c9MkRMkjeQGq0CWybTwh2SQ4J_B0pbhGlZe-jG18HsquC-RN0xaGdRNnI6H17b08yTRm9KQPm9KS55Wz9EFtdjglmNyEqqQvYS1G0rgRBvsHvDDuwcb_HDfnp9l_XzvfWxwTb0LA3bIlBT3RUgRv5K_CtRW4hNx1IQNehfG8o7c22r4Kk_BSUpRsQvZ-xI7OU2lplOz2F0XYE7F-PDYYG-5mh9w59gvOEZ2vVVscFXl10VN7P7PYV2oAOch3ywm8mVQZaBQan37EjUdDy-QXDCwy7B17Pky23l0Nyeli_qTbBnWpc1ojodXcGWeAhOF53lQuG_OhL_y8G06F8A4hvveenZrhhwMJGXvq3lJ1gO7cOH_Les3uUNyhkHrdssGqKCwVkPI04rju1qWb1_sCf6831sJUHdy5RLs8gRLx76FO0o1ogHKazA8nYKSstUGdgVFIRTxYXJ6KfFHyeHEPK_1Oso5V6U6BiHfwsdLyAxMwSSQAEY4QRCFvmC1uH9scOv4CbuyFdyPXMZNfb3aHP3leK9cOP0o3LggP0h0aicOV-esqx2x9ems9dVc8feyvp-4b8pR8VfiZY5v__Yj7HKEe3Za7vNzFXpOOh5eZr5b6sdZig0N9Zaraotegkbxnk2d4_Hwivv9_j8)
+            - Eine Treppe mit Stufen aus 2 Feldern: [Challenge „Die breite Treppe“ öffnen](https://lernapps.net/coding/app/?c=dVTNbtw2EH6VAX3VyogPPugS1HWCoj20wBooasOHWXK0HIgit-RoVTtYwA-S9pRnyCm3fRM_SUBK2nUP0UWD4cw33_x-Um2IPYpq3lWKjWpUx11YSaTdjlSlhMWRaj4pQ6pRt0ywicRCcLdYkFeNurMEIxuCJMhRYyJ1qJRg6k6-v3EXIAnxVoDYLwhgg7Y1_EqGYC1DS8BJ4Ao-kjMUp2gweAPvimo2v8EBDCb4I4ZtxL6H9vgtTrATSPZwmBJQgpHJULTBka_hdgCLScAev2qbhHyCa7hxx6-6o3pJp3DVjvtNAjznVMMH1DYnsQNOcAXp7wFjiWAIsJCcVGB5m2kO7AyIJdhNRKENEYKnCSN7OBJggUg7Qqnhr5D57QlQoA9J4Bo2Lugu1bmgY4jO5IrK0y7X1OHmKbIXqyq1p5g4-NJIHXzL22zY4041D-pi-VS1yPcnua7rWc7SZLMu0lv7iwv1WKkWNfutahRhEnXITQ7BbcI_Oco-xBEpSlKVcuy7_I-kbVGcu5BxkmAU1fjBuWzbs6RMd8pVNdcZmFJWPjxWSlsq6gf1zORWFCOxtqIqtSE_yLOsimPz_xiWfQGYB3CtbSTeAMUkYJjghlqyjqbZyYrBS35cZgiHtoZb9KXn2uIgUAZjigJFP6V3GpyPnMHHmDfEhNGX3uvQ9-hNKs3PChdGSlJmoIafWqE4YjRpQm9RU4LIWyuAW2SfOz-n8OE04A1crXp0kEt-_BIlVVAqDiaSJV-9fZg4zi8nqr_PU9hkWjk-yMiaKpAhenDUSrW8zLrC6Q2bP5lgz-RmSh4sToWdNvs9rAOEVs77l-s-nAj8Ekbo0T8VFglMoFSqc1q3sgjv4S7DcgIbxgxHHp7CsCyMOjxWas80qiYPD-ku36QN6nJ4huhO9-eS_XTquFuh24bIYnvyl7PX5TOSdUlbR9zS5ULyR14_djxUeS3pHPh-iMdvuoPnIcK63M7Xl__uj1_OTq8vn5d4N6g7kDDdDNxm288_h8HLSgcvMThHBlwIu9eXf9XhcPgO)
+          en: |-
+            **Without a computer:** lay the [“repeat ___ times”](https://lernapps.net/coding/karten/en/befehlskarten-2.svg) card with a number and cards inside it. Kiko says out loud which pass it is on each time.
+
+            **With a computer, two challenges:**
+
+            - A corridor of 9 squares with only 3 blocks: [open the challenge “The long corridor”](https://lernapps.net/coding/en/app/?c=dVTNbuNGDH4VgnuVFRQ5Rcc0aA_toUC2hzrIgdbQmoFGQ3eG4zReGPCDJHta9BF66i1v4icpZmx5U2BXF0H8-T7yI6lPuJY4kWL3Q4POYIejG2XhKQwcFwOFARtUp56x-4SGscM7jlD98PPJzQE7_GgZvIQBeonRGYm4b1ApjZe8X9wokMR7uIGf2BuOMHAkw5QTDGw5tHCXwVJSCDnCNdz6t3_6kVu45ZB1B8fD5yfHhqMVz3A8_A0T-ePhpZ2LqBSWEqjAIHAD6c9MkRMkjeQGq0CWybTwh2SQ4J_B0pbhGlZe-jG18HsquC-RN0xaGdRNnI6H17b08yTRm9KQPm9KS55Wz9EFtdjglmNyEqqQvYS1G0rgRBvsHvDDuwcb_HDfnp9l_XzvfWxwTb0LA3bIlBT3RUgRv5K_CtRW4hNx1IQNehfG8o7c22r4Kk_BSUpRsQvZ-xI7OU2lplOz2F0XYE7F-PDYYG-5mh9w59gvOEZ2vVVscFXl10VN7P7PYV2oAOch3ywm8mVQZaBQan37EjUdDy-QXDCwy7B17Pky23l0Nyeli_qTbBnWpc1ojodXcGWeAhOF53lQuG_OhL_y8G06F8A4hvveenZrhhwMJGXvq3lJ1gO7cOH_Les3uUNyhkHrdssGqKCwVkPI04rju1qWb1_sCf6831sJUHdy5RLs8gRLx76FO0o1ogHKazA8nYKSstUGdgVFIRTxYXJ6KfFHyeHEPK_1Oso5V6U6BiHfwsdLyAxMwSSQAEY4QRCFvmC1uH9scOv4CbuyFdyPXMZNfb3aHP3leK9cOP0o3LggP0h0aicOV-esqx2x9ems9dVc8feyvp-4b8pR8VfiZY5v__Yj7HKEe3Za7vNzFXpOOh5eZr5b6sdZig0N9Zaraotegkbxnk2d4_Hwivv9_j8)
+            - A staircase with steps 2 squares wide: [open the challenge “The wide staircase”](https://lernapps.net/coding/en/app/?c=dVTNbtw2EH6VAX3VyogPPugS1HWCoj20wBooasOHWXK0HIgit-RoVTtYwA-S9pRnyCm3fRM_SUBK2nUP0UWD4cw33_x-Um2IPYpq3lWKjWpUx11YSaTdjlSlhMWRaj4pQ6pRt0ywicRCcLdYkFeNurMEIxuCJMhRYyJ1qJRg6k6-v3EXIAnxVoDYLwhgg7Y1_EqGYC1DS8BJ4Ao-kjMUp2gweAPvimo2v8EBDCb4I4ZtxL6H9vgtTrATSPZwmBJQgpHJULTBka_hdgCLScAev2qbhHyCa7hxx6-6o3pJp3DVjvtNAjznVMMH1DYnsQNOcAXp7wFjiWAIsJCcVGB5m2kO7AyIJdhNRKENEYKnCSN7OBJggUg7Qqnhr5D57QlQoA9J4Bo2Lugu1bmgY4jO5IrK0y7X1OHmKbIXqyq1p5g4-NJIHXzL22zY4041D-pi-VS1yPcnua7rWc7SZLMu0lv7iwv1WKkWNfutahRhEnXITQ7BbcI_Oco-xBEpSlKVcuy7_I-kbVGcu5BxkmAU1fjBuWzbs6RMd8pVNdcZmFJWPjxWSlsq6gf1zORWFCOxtqIqtSE_yLOsimPz_xiWfQGYB3CtbSTeAMUkYJjghlqyjqbZyYrBS35cZgiHtoZb9KXn2uIgUAZjigJFP6V3GpyPnMHHmDfEhNGX3uvQ9-hNKs3PChdGSlJmoIafWqE4YjRpQm9RU4LIWyuAW2SfOz-n8OE04A1crXp0kEt-_BIlVVAqDiaSJV-9fZg4zi8nqr_PU9hkWjk-yMiaKpAhenDUSrW8zLrC6Q2bP5lgz-RmSh4sToWdNvs9rAOEVs77l-s-nAj8Ekbo0T8VFglMoFSqc1q3sgjv4S7DcgIbxgxHHp7CsCyMOjxWas80qiYPD-ku36QN6nJ4huhO9-eS_XTquFuh24bIYnvyl7PX5TOSdUlbR9zS5ULyR14_djxUeS3pHPh-iMdvuoPnIcK63M7Xl__uj1_OTq8vn5d4N6g7kDDdDNxm288_h8HLSgcvMThHBlwIu9eXf9XhcPgO)
+      - type: figure
+        image: images/kiko-challenge-treppe.svg
+        alt:
+          de: "Das Spielfeld der Challenge „Die breite Treppe“: Kiko steht in Spalte 2, Zeile 5 und schaut im Bild nach rechts. Drei Stufen führen nach oben, jede 2 Felder breit und 1 Feld hoch, bis zum Ziel in Spalte 8, Zeile 2."
+          en: "The board of the challenge “The wide staircase”: Kiko stands in column 2, row 5 and faces right on the board. Three steps lead up, each 2 squares wide and 1 square high, to the goal in column 8, row 2."
+        caption:
+          de: Die Treppe. Jede Stufe braucht dieselben Blöcke.
+          en: The staircase. Every step needs the same blocks.
+        source:
+          de: eigene Zeichnung, Kiko nach lernapps.net/coding
+          en: own drawing, Kiko after lernapps.net/coding
+        licence: CC-BY-4.0
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: generated
+        id: befehle-zaehlen
+        given:
+          n: { int: [2, 9] }
+          k: { int: [2, 4] }
+        where: ["n * k != n + k"]
+        task:
+          text:
+            de: "Im Schleifenrumpf von „wiederhole {{n}} mal“ stehen {{k}} Befehle. Wie viele Befehle führt Kiko insgesamt aus?"
+            en: "The loop body of “repeat {{n}} times” holds {{k}} commands. How many commands does Kiko carry out in total?"
+        answer: { value: "n * k", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "n + k"
+            message:
+              de: Du hast addiert. In jedem der {{n}} Durchläufe führt Kiko alle {{k}} Befehle aus, also malnehmen.
+              en: You added. In each of the {{n}} passes Kiko carries out all {{k}} commands, so multiply.
+          - value: "k"
+            message:
+              de: Das ist nur ein Durchlauf. Die Schleife läuft {{n}}-mal.
+              en: That is only one pass. The loop runs {{n}} times.
+        hint:
+          de: Wie viele Befehle sind es in einem Durchlauf? Und wie viele Durchläufe gibt es?
+          en: How many commands are there in one pass? And how many passes are there?
+        steps:
+          - de: "Ein Durchlauf: {{k}} Befehle."
+            en: "One pass: {{k}} commands."
+          - de: "{{n}} Durchläufe: {{n}} · {{k}} = {{answer}} Befehle."
+            en: "{{n}} passes: {{n}} · {{k}} = {{answer}} commands."
+      - type: generated
+        id: wie-oft-wiederholen
+        given:
+          d: { int: [3, 11] }
+        task:
+          text:
+            de: "Kiko steht am Anfang eines geraden Gangs und schaut zum Ziel. Zählst du die Felder von Kiko bis zum Ziel, das Ziel mit, aber Kikos Feld nicht, sind es {{d}}. Welche Zahl gehört in „wiederhole … mal: gehe vorwärts“?"
+            en: "Kiko stands at the start of a straight corridor, facing the goal. If you count the squares from Kiko to the goal, including the goal but not Kiko's square, there are {{d}}. Which number goes into “repeat … times: move forward”?"
+        answer: { value: "d", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "d + 1"
+            message:
+              de: Du hast Kikos eigenes Feld mitgezählt. Dorthin muss er nicht gehen.
+              en: You counted Kiko's own square. It doesn't have to move there.
+          - value: "d - 1"
+            message:
+              de: Das Ziel zählt mit. Kiko muss auch auf das Zielfeld gehen.
+              en: The goal counts. Kiko also has to move onto the goal square.
+        hint:
+          de: Jedes „gehe vorwärts“ bringt Kiko genau ein Feld weiter.
+          en: Each “move forward” takes Kiko exactly one square further.
+        steps:
+          - de: "Kiko muss {{d}} Felder gehen, jedes mit einem „gehe vorwärts“."
+            en: "Kiko has to move {{d}} squares, each with one “move forward”."
+          - de: "Also: wiederhole {{answer}} mal gehe vorwärts."
+            en: "So: repeat {{answer}} times move forward."
+      - type: matching
+        id: sequenz-zu-schleife
+        text:
+          de: Welche Zählschleife macht dasselbe wie die Befehlsfolge?
+          en: Which count-controlled loop does the same as the sequence of commands?
+        pairs:
+          - left: { de: "vorwärts, vorwärts, vorwärts", en: "forward, forward, forward" }
+            right: { de: "wiederhole 3 mal: vorwärts", en: "repeat 3 times: forward" }
+          - left: { de: "rechts, rechts", en: "right, right" }
+            right: { de: "wiederhole 2 mal: rechts", en: "repeat 2 times: right" }
+          - left: { de: "vorwärts, links, vorwärts, links", en: "forward, left, forward, left" }
+            right: { de: "wiederhole 2 mal: vorwärts, links", en: "repeat 2 times: forward, left" }
+          - left:
+              de: "vorwärts, vorwärts, links, vorwärts, vorwärts, links"
+              en: "forward, forward, left, forward, forward, left"
+            right: { de: "wiederhole 2 mal: vorwärts, vorwärts, links", en: "repeat 2 times: forward, forward, left" }
+        distractors:
+          - { de: "wiederhole 3 mal: vorwärts, links", en: "repeat 3 times: forward, left" }
+        explanation:
+          de: Such das Stück, das sich wiederholt. Das wird der Schleifenrumpf, und die Zahl sagt, wie oft es vorkommt.
+          en: Look for the part that repeats. That becomes the loop body, and the number says how often it occurs.
+      - type: true-false
+        id: rumpf-reihenfolge
+        text:
+          de: "Selin sagt: „Bei ‚wiederhole 3 mal: vorwärts, links‘ geht Kiko erst 3-mal vorwärts und dreht sich dann 3-mal.“ Stimmt das?"
+          en: "Selin says: “With ‘repeat 3 times: forward, left’ Kiko first moves forward 3 times and then turns 3 times.” Is that true?"
+        answer: false
+        explanation:
+          de: "In jedem Durchlauf führt Kiko den ganzen Rumpf aus: vorwärts, links, vorwärts, links, vorwärts, links."
+          en: "In every pass Kiko carries out the whole body: forward, left, forward, left, forward, left."
+  - type: section
+    id: weiter
+    title:
+      de: Wie es weitergeht
+      en: What comes next
+    blocks:
+      - type: text
+        text:
+          de: >-
+            Du kannst jetzt mit einer Zählschleife Blöcke mehrmals ausführen lassen. **Selin** schreibt: „Mein
+            Labyrinth hat Gänge, die jedes Mal anders lang sind. Welche Zahl soll ich da eintragen?“ Auf der nächsten
+            Seite wiederholt Kiko, ohne vorher zu zählen.
+          en: >-
+            You can now make blocks run several times with a count-controlled loop. **Selin** writes: “My maze has
+            corridors that are a different length each time. Which number should I put in?” On the next page Kiko
+            repeats without counting first.

@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "id": "kiko-gang-unbekannt",
+  "title": {
+    "de": "Wie lang ist der Gang?",
+    "en": "How long is the corridor?"
+  },
+  "task": {
+    "de": "Der Gang ist in jedem Spielfeld anders lang. Das Ziel ist immer am Ende vor der Wand. Bau ein Programm, das in allen drei Spielfeldern klappt. Du hast nur 3 Blöcke.",
+    "en": "The corridor has a different length on each board. The goal is always at the end, in front of the wall. Build a program that works on all three boards. You only have 3 blocks."
+  },
+  "world": {
+    "type": "labyrinth",
+    "version": 1,
+    "config": {
+      "map": ["#######", "#S...Z#", "#######"],
+      "facing": "east"
+    }
+  },
+  "toolbox": ["vorwaerts", "links", "rechts", "solange", "weg-frei"],
+  "start": null,
+  "limits": {
+    "blocks": 3,
+    "steps": 100
+  },
+  "tests": [
+    {
+      "config": {
+        "map": ["##########", "#S......Z#", "##########"]
+      }
+    },
+    {
+      "config": {
+        "map": ["#####", "#S.Z#", "#####"]
+      }
+    }
+  ],
+  "checks": ["ziel-erreicht", "benutzt-block:solange"],
+  "hints": [
+    {
+      "de": "„wiederhole … mal“ hilft hier nicht: Die Zahl wäre in jedem Spielfeld anders.",
+      "en": "“repeat … times” does not help here: the number would be different on each board."
+    },
+    {
+      "de": "Kiko soll vorwärts gehen, solange vor ihm frei ist.",
+      "en": "Kiko should move forward as long as the way ahead is clear."
+    },
+    {
+      "de": "Steck „Weg frei?“ in „solange … tue“ und „gehe vorwärts“ hinein.",
+      "en": "Put “way ahead clear?” into “while … do” and “move forward” inside it."
+    }
+  ],
+  "view": "bloecke",
+  "back": {
+    "url": {
+      "de": "/informatik-algorithmen/bloecke/bedingte-wiederholung/",
+      "en": "/informatik-algorithmen/en/bloecke/bedingte-wiederholung/"
+    },
+    "label": {
+      "de": "Zurück zur Seite „Bedingte Wiederholung“",
+      "en": "Back to the page “Condition-controlled loop”"
+    }
+  }
+}

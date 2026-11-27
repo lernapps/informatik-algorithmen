@@ -1,0 +1,289 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Verzweigung
+  en: Selection
+description:
+  de: "Mit „wenn … dann … sonst“ entscheidet Kiko je nach Bedingung, was er tut: ein Programm für verschiedene Spielfelder."
+  en: "With “if … then … else” Kiko decides what to do depending on a condition: one program for different boards."
+competencies: [verzweigung]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Wand oder keine Wand?
+      en: Wall or no wall?
+    blocks:
+      - type: text
+        text:
+          de: |-
+            Im Klassenchat der 7b:
+
+            **Lea:** Woher soll Kiko wissen, ob vor ihm eine Wand ist?
+
+            **Frau Berg:** Kiko hat Sensoren. Er kann fragen: „Wand voraus?“ Je nach Antwort macht er etwas anderes.
+
+            **Jona:** Dann reicht ein Programm für alle Spielfelder? 😮
+
+            Hier lernst du, wie ein Programm abhängig von einer Bedingung verschiedene Wege nimmt.
+          en: |-
+            In class 7b's group chat:
+
+            **Lea:** How is Kiko supposed to know if there's a wall in front of it?
+
+            **Frau Berg:** Kiko has sensors. It can ask: “wall ahead?” Depending on the answer, it does something different.
+
+            **Jona:** So one program is enough for all the boards? 😮
+
+            Here you learn how a program takes different paths depending on a condition.
+      - type: single-choice
+        id: spielfeld-b
+        text:
+          de: Kiko schaut im Bild nach rechts und führt das Programm auf Spielfeld B aus. Was passiert?
+          en: Kiko faces right on the board and carries out the program on board B. What happens?
+        material:
+          - type: figure
+            image:
+              de: images/kiko-verzweigung-programm-de.svg
+              en: images/kiko-verzweigung-programm-en.svg
+            alt:
+              de: "Ein Programm: wenn Wand voraus? dann drehe dich nach rechts, sonst gehe vorwärts. Danach, außerhalb der Verzweigung: gehe vorwärts."
+              en: "A program: if wall ahead? then turn right, else move forward. After that, outside the selection: move forward."
+            caption:
+              de: Das Programm. Der letzte Block steht nach der Verzweigung.
+              en: The program. The last block comes after the selection.
+            source:
+              de: eigene Zeichnung nach lernapps.net/coding
+              en: own drawing after lernapps.net/coding
+            licence: CC-BY-4.0
+          - type: figure
+            image: images/kiko-verzweigung-b.svg
+            alt:
+              de: "Spielfeld B: Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Direkt vor ihm ist eine Wand. Unter ihm ist frei. Markiert sind A in Spalte 2, Zeile 3 und B in Spalte 2, Zeile 4."
+              en: "Board B: Kiko stands in column 2, row 2 and faces right on the board. Directly in front of it is a wall. Below it is free. Marked are A in column 2, row 3 and B in column 2, row 4."
+            caption:
+              de: Spielfeld B
+              en: Board B
+            source:
+              de: eigene Zeichnung, Kiko nach lernapps.net/coding
+              en: own drawing, Kiko after lernapps.net/coding
+            licence: CC-BY-4.0
+        options:
+          - text: { de: Kiko endet auf Feld A., en: Kiko ends on square A. }
+            correct: true
+            info:
+              de: "Wand voraus? Ja: Kiko dreht sich nach rechts und schaut im Bild nach unten. Dann der Block nach der Verzweigung: ein Feld vorwärts."
+              en: "Wall ahead? Yes: Kiko turns right and faces down the board. Then the block after the selection: one square forward."
+          - text: { de: Kiko endet auf Feld B., en: Kiko ends on square B. }
+            correct: false
+            info:
+              de: Du hast beide Zweige ausgeführt. Kiko macht entweder „dann“ oder „sonst“, nie beides.
+              en: You carried out both branches. Kiko does either “then” or “else”, never both.
+          - text: { de: Kiko läuft gegen die Wand., en: Kiko walks into the wall. }
+            correct: false
+            info:
+              de: Das wäre der „sonst“-Zweig. Die Bedingung stimmt aber, also gilt der „dann“-Zweig.
+              en: That would be the “else” branch. But the condition is true, so the “then” branch applies.
+          - text: { de: Kiko dreht sich und bleibt auf seinem Feld., en: Kiko turns and stays on its square. }
+            correct: false
+            info:
+              de: Du hast den letzten Block vergessen. Er steht nach der Verzweigung und wird immer ausgeführt.
+              en: You forgot the last block. It comes after the selection and is always carried out.
+        explanation:
+          de: Die Bedingung „Wand voraus?“ stimmt, also führt Kiko den „dann“-Zweig aus. Der Block danach gilt in jedem Fall.
+          en: The condition “wall ahead?” is true, so Kiko carries out the “then” branch. The block after it applies in every case.
+  - type: section
+    id: idee
+    title:
+      de: Eine Frage, zwei Wege
+      en: One question, two paths
+    blocks:
+      - type: text
+        text:
+          de: >-
+            Ein Sensor ist der Teil von Kiko, der etwas prüft. Der Block „Wand voraus?“ ist eine Bedingung: Der
+            Sensor antwortet mit wahr oder falsch. Bei wahr führt Kiko die Blöcke nach „dann“ aus, bei falsch die
+            nach „sonst“. Danach geht es mit dem nächsten Block weiter.
+          en: >-
+            A sensor is the part of Kiko that checks something. The block “wall ahead?” is a condition: the sensor
+            answers true or false. If true, Kiko carries out the blocks after “then”, if false, those after “else”.
+            After that it carries on with the next block.
+      - type: definition
+        term:
+          de: Bedingung
+          en: condition
+        explanation:
+          de: Eine Bedingung ist eine Frage, auf die es nur die Antworten wahr oder falsch gibt (ja oder nein).
+          en: A condition is a question that can only be answered with true or false (yes or no).
+      - type: definition
+        term:
+          de: Verzweigung
+          en: selection
+        explanation:
+          de: Eine Verzweigung (wenn … dann … sonst) legt fest, dass ein Algorithmus je nach Bedingung verschiedene Anweisungen ausführt.
+          en: Selection (if … then … else) means that an algorithm carries out different instructions depending on a condition.
+      - type: figure
+        image: images/kiko-verzweigung-a.svg
+        alt:
+          de: "Spielfeld A: Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Vor ihm ist ein freier Gang bis Spalte 5."
+          en: "Board A: Kiko stands in column 2, row 2 and faces right on the board. In front of it is a free corridor up to column 5."
+        caption:
+          de: Spielfeld A. Dasselbe Programm, aber hier ist keine Wand voraus.
+          en: Board A. The same program, but here there is no wall ahead.
+        source:
+          de: eigene Zeichnung, Kiko nach lernapps.net/coding
+          en: own drawing, Kiko after lernapps.net/coding
+        licence: CC-BY-4.0
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: >-
+                Kiko führt immer nur einen Zweig aus. Teste ein Programm mit Verzweigung darum auf mehreren
+                Spielfeldern, damit jeder Zweig einmal drankommt. Fehlt „sonst“, macht Kiko bei falsch einfach
+                nichts.
+              en: >-
+                Kiko only ever carries out one branch. So test a program with selection on several boards, so that
+                every branch gets its turn. If there is no “else”, Kiko simply does nothing when the answer is false.
+  - type: section
+    id: ausprobieren
+    title:
+      de: Selbst ausprobieren
+      en: Try it yourself
+    blocks:
+      - type: text
+        text:
+          de: |-
+            **Ohne Computer:** Legt mit den [Karten für Entscheidungen](https://lernapps.net/coding/karten/de/befehlskarten-2.svg) „wenn ___ dann“, „sonst“ und „Wand voraus?“ ein Programm. Kiko spielt es zweimal: einmal mit einer Wand vor sich, einmal ohne.
+
+            **Mit Computer:** Das Ziel ist mal im Bild oben, mal unten. Bau ein Programm, das auf beiden Spielfeldern klappt: [Challenge „Oben oder unten?“ öffnen](https://lernapps.net/coding/app/?c=fVRLjuM2EL1Kgb2l3ZMsstCmkUYwQJAgCeAkDXSjF7RYkghRRaVYsjLdMOCDeLLMKWaXm_gkSdGf9iwm2vCj-ryqeo-vpkk8ODHVV9YEbyrThz4tZiRa5ERZjDUSJKKpXo1HU5mf10iQPDJMJEh3xhokU5nfRkgMPs10Z7bWiMv9xeeH0CdosRPAQPAeo4dN0gAesui1d0TlCgMhw4Mjv4TvXIbHgBFCFhhchLRGsmVXUi_h3k0l4i-cWnbDAEMQOOz-Uvhw2P19jKubUstht7fgXYZAsMbgkWA1BowNRo9M0Ec3jrI8V1RQD2mDGRIh5D8mxwhN4tmxB0cepEOCLI58idlwIoHUgIPZxbiEXzuENjmtAHIaUMKAGabRXp20Y0u4n0L04GA8VgJzkA4Ou31oCvySSDcYMx52H0E6JzAn7hUbrNN_1uvk2OelNn9OHL12Xz6M2v_o1h84kHTGmg1yDonKwOtETWjVcHCjqZ7MjX7Gmpubx-O6Wp7Oev9sTePqQK2pDLosZquDTimu05_qvdHWIEs21sRAva6MdVcuPqPU7MgvziblcLJ7tiaLYzEVTTFqmCFIVoTrmOo-m-obtcAxm-rrd5oes_5_ev2fYi5FPF4Xs90-W1N3WKI-mZeAcYHMGOpOIa6RJnmRRclbXaF_tqYLdEpa6L2qOzeBD3xk1TWpwNESHpRyWSAM8DJjECRlD3K-iOfHlHpw8tkg4UFnHDL40DTIqNQiZQJkrBN5JaVK7QTiJ1d34HEA5KwZVnXHQQQadq2AcrlSaai0oHT-7rDbn_N_2whyid0EzqKqHG1xApf7rJ57pfQZQcRG7g67j2_pH1RyJW7RcJGwFm3Bsyq8xMqh7oAU6HHc9qjL41VxVtWXE6W6K9o-1XFR5feNImDUzhx1dg3qBFompgwc2k5s0Uz5WQRJRcxDYixVLo3SYBNwNpVyDOsedfquLs_XxPHyit0GOj6WoV-42CYO0g1Ityev2w2yjredqL09o_2Sz5fctlbFim9JHyf-51Pdw8vEsFLu6BB_f3O5GuK9q3uQVHoxulYt9yuMWEtIVIa13f4L)
+          en: |-
+            **Without a computer:** use the [cards for choices](https://lernapps.net/coding/karten/en/befehlskarten-2.svg) “if ___ then”, “else” and “wall ahead?” to lay out a program. Kiko plays it twice: once with a wall in front, once without.
+
+            **With a computer:** the goal is sometimes up the board, sometimes down. Build a program that works on both boards: [open the challenge “Up or down?”](https://lernapps.net/coding/en/app/?c=fVRLjuM2EL1Kgb2l3ZMsstCmkUYwQJAgCeAkDXSjF7RYkghRRaVYsjLdMOCDeLLMKWaXm_gkSdGf9iwm2vCj-ryqeo-vpkk8ODHVV9YEbyrThz4tZiRa5ERZjDUSJKKpXo1HU5mf10iQPDJMJEh3xhokU5nfRkgMPs10Z7bWiMv9xeeH0CdosRPAQPAeo4dN0gAesui1d0TlCgMhw4Mjv4TvXIbHgBFCFhhchLRGsmVXUi_h3k0l4i-cWnbDAEMQOOz-Uvhw2P19jKubUstht7fgXYZAsMbgkWA1BowNRo9M0Ec3jrI8V1RQD2mDGRIh5D8mxwhN4tmxB0cepEOCLI58idlwIoHUgIPZxbiEXzuENjmtAHIaUMKAGabRXp20Y0u4n0L04GA8VgJzkA4Ou31oCvySSDcYMx52H0E6JzAn7hUbrNN_1uvk2OelNn9OHL12Xz6M2v_o1h84kHTGmg1yDonKwOtETWjVcHCjqZ7MjX7Gmpubx-O6Wp7Oev9sTePqQK2pDLosZquDTimu05_qvdHWIEs21sRAva6MdVcuPqPU7MgvziblcLJ7tiaLYzEVTTFqmCFIVoTrmOo-m-obtcAxm-rrd5oes_5_ev2fYi5FPF4Xs90-W1N3WKI-mZeAcYHMGOpOIa6RJnmRRclbXaF_tqYLdEpa6L2qOzeBD3xk1TWpwNESHpRyWSAM8DJjECRlD3K-iOfHlHpw8tkg4UFnHDL40DTIqNQiZQJkrBN5JaVK7QTiJ1d34HEA5KwZVnXHQQQadq2AcrlSaai0oHT-7rDbn_N_2whyid0EzqKqHG1xApf7rJ57pfQZQcRG7g67j2_pH1RyJW7RcJGwFm3Bsyq8xMqh7oAU6HHc9qjL41VxVtWXE6W6K9o-1XFR5feNImDUzhx1dg3qBFompgwc2k5s0Uz5WQRJRcxDYixVLo3SYBNwNpVyDOsedfquLs_XxPHyit0GOj6WoV-42CYO0g1Ityev2w2yjredqL09o_2Sz5fctlbFim9JHyf-51Pdw8vEsFLu6BB_f3O5GuK9q3uQVHoxulYt9yuMWEtIVIa13f4L)
+      - type: figure
+        image: images/kiko-challenge-wenn-sonst-1.svg
+        alt:
+          de: "Spielfeld 1 der Challenge: Kiko steht in Spalte 2, Zeile 3 und schaut im Bild nach rechts. Nach einem Feld ist eine Wand, das Ziel liegt darüber in Spalte 3, Zeile 2."
+          en: "Board 1 of the challenge: Kiko stands in column 2, row 3 and faces right on the board. After one square there is a wall; the goal is above, in column 3, row 2."
+        caption:
+          de: Spielfeld 1 der Challenge, Ziel oben
+          en: Board 1 of the challenge, goal at the top
+        source:
+          de: eigene Zeichnung, Kiko nach lernapps.net/coding
+          en: own drawing, Kiko after lernapps.net/coding
+        licence: CC-BY-4.0
+      - type: figure
+        image: images/kiko-challenge-wenn-sonst-2.svg
+        alt:
+          de: "Spielfeld 2 der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Nach einem Feld ist eine Wand, das Ziel liegt darunter in Spalte 3, Zeile 3."
+          en: "Board 2 of the challenge: Kiko stands in column 2, row 2 and faces right on the board. After one square there is a wall; the goal is below, in column 3, row 3."
+        caption:
+          de: Spielfeld 2 der Challenge, Ziel unten
+          en: Board 2 of the challenge, goal at the bottom
+        source:
+          de: eigene Zeichnung, Kiko nach lernapps.net/coding
+          en: own drawing, Kiko after lernapps.net/coding
+        licence: CC-BY-4.0
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: number
+        id: spielfeld-a-felder
+        text:
+          de: "Kiko führt dieses Programm auf einem freien Gang aus, vor ihm ist keine Wand: wenn Wand voraus? dann drehe dich nach rechts, sonst gehe vorwärts. Danach: gehe vorwärts. Wie viele Felder geht Kiko?"
+          en: "Kiko carries out this program in a free corridor with no wall in front of it: if wall ahead? then turn right, else move forward. After that: move forward. How many squares does Kiko move?"
+        answer: 2
+        tolerance: 0
+        mistakes:
+          - answer: 1
+            message:
+              de: Der „sonst“-Zweig bringt ein Feld, der Block nach der Verzweigung noch eins.
+              en: The “else” branch gives one square, the block after the selection one more.
+          - answer: 0
+            message:
+              de: Ohne Wand ist die Bedingung falsch. Dann dreht Kiko sich nicht, sondern geht vorwärts.
+              en: Without a wall the condition is false. Then Kiko doesn't turn but moves forward.
+        explanation:
+          de: "Keine Wand voraus: Kiko nimmt den „sonst“-Zweig und geht ein Feld. Der Block nach der Verzweigung bringt ihn ein zweites Feld weiter."
+          en: "No wall ahead: Kiko takes the “else” branch and moves one square. The block after the selection takes it one more square."
+      - type: matching
+        id: welcher-zweig
+        text:
+          de: "Programm: wenn Weg frei? dann gehe vorwärts, sonst drehe dich nach links. Was tut Kiko?"
+          en: "Program: if way ahead clear? then move forward, else turn left. What does Kiko do?"
+        pairs:
+          - left: { de: Vor Kiko ist frei., en: The way ahead of Kiko is clear. }
+            right: { de: Er geht ein Feld vorwärts., en: It moves one square forward. }
+          - left: { de: Vor Kiko ist eine Wand., en: There is a wall in front of Kiko. }
+            right: { de: Er dreht sich nach links., en: It turns left. }
+        distractors:
+          - { de: Er geht vorwärts und dreht sich dann nach links., en: It moves forward and then turns left. }
+          - { de: Er bleibt stehen und macht nichts., en: It stands still and does nothing. }
+        explanation:
+          de: Ist der Weg frei, gilt „dann“, sonst gilt „sonst“. Beide Zweige zusammen kommen nie vor.
+          en: If the way is clear, “then” applies, otherwise “else”. Both branches together never happen.
+      - type: multiple-choice
+        id: was-ist-bedingung
+        text:
+          de: Welche dieser Blöcke sind Bedingungen, auf die es nur wahr oder falsch gibt?
+          en: Which of these blocks are conditions that can only be true or false?
+        options:
+          - text: { de: „Wand voraus?“, en: “wall ahead?” }
+            correct: true
+            info:
+              de: Entweder ist eine Wand vor Kiko oder nicht.
+              en: Either there is a wall in front of Kiko or there isn't.
+          - text: { de: „am Ziel?“, en: “at the goal?” }
+            correct: true
+            info:
+              de: Kiko steht auf dem Ziel oder nicht. Auch das ist wahr oder falsch.
+              en: Kiko is on the goal or not. That is true or false too.
+          - text: { de: „gehe vorwärts“, en: “move forward” }
+            correct: false
+            info:
+              de: Das ist ein Befehl. Kiko tut etwas, er fragt nichts.
+              en: That is a command. Kiko does something; it doesn't ask anything.
+          - text: { de: „Weg frei?“, en: “way ahead clear?” }
+            correct: true
+            info:
+              de: Der Weg vor Kiko ist frei oder nicht. Es ist das Gegenteil von „Wand voraus?“.
+              en: The way ahead of Kiko is clear or not. It is the opposite of “wall ahead?”.
+          - text: { de: „Wie weit ist die Wand?“, en: “How far is the wall?” }
+            correct: false
+            info:
+              de: Darauf ist die Antwort eine Zahl, nicht wahr oder falsch. So einen Block hat Kiko nicht.
+              en: The answer to that is a number, not true or false. Kiko has no such block.
+        explanation:
+          de: Eine Bedingung ist eine Frage mit der Antwort wahr oder falsch. Befehle und Fragen nach Zahlen sind keine Bedingungen.
+          en: A condition is a question with the answer true or false. Commands and questions about numbers are not conditions.
+      - type: true-false
+        id: ohne-sonst
+        text:
+          de: "Programm: wenn Wand voraus? dann drehe dich nach rechts. Es gibt kein „sonst“. Vor Kiko ist frei. Stimmt es, dass Kiko dann nichts tut?"
+          en: "Program: if wall ahead? then turn right. There is no “else”. The way ahead of Kiko is clear. Is it true that Kiko then does nothing?"
+        answer: true
+        explanation:
+          de: Die Bedingung ist falsch, und ohne „sonst“ gibt es nichts zu tun. Das ist eine einseitige Verzweigung.
+          en: The condition is false, and without “else” there is nothing to do. That is a one-sided selection.
+  - type: section
+    id: weiter
+    title:
+      de: Wie es weitergeht
+      en: What comes next
+    blocks:
+      - type: text
+        text:
+          de: >-
+            Du kannst jetzt mit „wenn … dann … sonst“ ein Programm bauen, das auf verschiedenen Spielfeldern klappt.
+            **Jona** schreibt: „Mein Gang ist 9 Felder lang. Muss ich wirklich 9 Blöcke ziehen? 😩“ Auf der nächsten
+            Seite lernst du, wie es kürzer geht.
+          en: >-
+            You can now build a program with “if … then … else” that works on different boards. **Jona** writes: “My
+            corridor is 9 squares long. Do I really have to drag 9 blocks? 😩” On the next page you learn a shorter
+            way.

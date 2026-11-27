@@ -14,7 +14,7 @@ intro:
     blocks in the programming workshop. You learn what an algorithm is and write programs with sequence, selection
     and loops.
 languages: [de, en]
-chapters: [algorithmen]
+chapters: [algorithmen, bloecke]
 sources:
   - title:
       de: "Gesellschaft für Informatik: Bildungsstandards Informatik für die Sekundarstufe I (2025), Abschnitt 5.2 Algorithmen"

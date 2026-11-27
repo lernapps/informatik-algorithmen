@@ -1,0 +1,18 @@
+{
+  "main": [
+    {
+      "s": "repeat",
+      "times": {
+        "e": "num",
+        "value": 9
+      },
+      "body": [
+        {
+          "s": "cmd",
+          "name": "vorwaerts",
+          "args": []
+        }
+      ]
+    }
+  ]
+}

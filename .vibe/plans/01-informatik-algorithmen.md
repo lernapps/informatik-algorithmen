@@ -214,10 +214,10 @@ Die Antworten stehen im Auftrag des Orchestrators (Epic lernapps/apps#509, Issue
       Creator: Ja, die übrigen 6 Seiten folgen diesem Muster. tasks.start: random ja. „Frau Berg“ bleibt auf Englisch. Bis coding die Arbeitsfläche behebt: Challenges kurz halten, höchstens 8 Blöcke, wo es geht.
 - [x] Seite algorithmen/algorithmus (algorithmus-begriff): Ali sucht den Computerraum, Definition Algorithmus, Schulhausplan, Wegbeschreibung zu zweit, Übungen.
 - [x] Seite algorithmen/eigenschaften (algorithmische-eigenschaften): Toms kaputte Karten, vier Prüffragen, Merke endlich beschrieben ≠ endet, Kartenspiel, Übungen.
-- [ ] Seite bloecke/bloecke (visuelle-programmierung): Karten werden Blöcke, Programm und Programmiersprache, Werkstatt, Fehler finden, Challenge C2, Übungen.
-- [ ] Seite bloecke/verzweigung (verzweigung): Sensor, Bedingung, wenn … dann … sonst, zwei Spielfelder, Challenge C3, Übungen.
-- [ ] Seite bloecke/zaehlschleife (wiederholung-feste-anzahl): wiederhole … mal, Schleifenrumpf, Challenges C4 und C5, Übungen mit generated.
-- [ ] Seite bloecke/bedingte-wiederholung (wiederholung-mit-bedingung): solange … tue, Endlosschleife, Challenges C6 und C7, Übungen mit generated, Rückblick auf Kapitel 2.
+- [x] Seite bloecke/bloecke (visuelle-programmierung): Karten werden Blöcke, Programm und Programmiersprache, Werkstatt, Fehler finden, Challenge C2, Übungen.
+- [x] Seite bloecke/verzweigung (verzweigung): Sensor, Bedingung, wenn … dann … sonst, zwei Spielfelder, Challenge C3, Übungen.
+- [x] Seite bloecke/zaehlschleife (wiederholung-feste-anzahl): wiederhole … mal, Schleifenrumpf, Challenges C4 und C5, Übungen mit generated.
+- [x] Seite bloecke/bedingte-wiederholung (wiederholung-mit-bedingung): solange … tue, Endlosschleife, Challenges C6 und C7, Übungen mit generated, Rückblick auf Kapitel 2.
 <!-- tasks: pages (6 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.

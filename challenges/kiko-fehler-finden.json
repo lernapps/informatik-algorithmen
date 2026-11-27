@@ -1,0 +1,90 @@
+{
+  "format": 1,
+  "id": "kiko-fehler-finden",
+  "title": {
+    "de": "Finde den Fehler",
+    "en": "Find the bug"
+  },
+  "task": {
+    "de": "Ben hat ein Programm gebaut, aber Kiko läuft gegen die Wand. Drück „Ein Schritt“ und schau, bei welchem Block es schiefgeht. Ändere nur diesen Block, dann soll Kiko ins Ziel kommen.",
+    "en": "Ben built a program, but Kiko walks into the wall. Press “One step” and watch which block goes wrong. Change only that block, then Kiko should reach the goal."
+  },
+  "world": {
+    "type": "labyrinth",
+    "version": 1,
+    "config": {
+      "map": ["######", "#S.###", "##.###", "##..Z#", "######"],
+      "facing": "east"
+    }
+  },
+  "toolbox": ["vorwaerts", "links", "rechts"],
+  "start": {
+    "main": [
+      {
+        "s": "cmd",
+        "name": "vorwaerts",
+        "args": []
+      },
+      {
+        "s": "cmd",
+        "name": "links",
+        "args": []
+      },
+      {
+        "s": "cmd",
+        "name": "vorwaerts",
+        "args": []
+      },
+      {
+        "s": "cmd",
+        "name": "vorwaerts",
+        "args": []
+      },
+      {
+        "s": "cmd",
+        "name": "links",
+        "args": []
+      },
+      {
+        "s": "cmd",
+        "name": "vorwaerts",
+        "args": []
+      },
+      {
+        "s": "cmd",
+        "name": "vorwaerts",
+        "args": []
+      }
+    ]
+  },
+  "limits": {
+    "blocks": 9
+  },
+  "tests": [],
+  "checks": ["ziel-erreicht"],
+  "hints": [
+    {
+      "de": "Geh das Programm mit „Ein Schritt“ durch. Wohin schaut Kiko nach jedem Block?",
+      "en": "Go through the program with “One step”. Which way does Kiko face after each block?"
+    },
+    {
+      "de": "Der Fehler steckt in einer Drehung am Anfang.",
+      "en": "The bug is in a turn near the start."
+    },
+    {
+      "de": "Nach dem ersten Schritt muss Kiko im Bild nach unten schauen. Das ist eine Drehung nach rechts.",
+      "en": "After the first step, Kiko has to face down the board. That is a turn to the right."
+    }
+  ],
+  "view": "bloecke",
+  "back": {
+    "url": {
+      "de": "/informatik-algorithmen/bloecke/bloecke/",
+      "en": "/informatik-algorithmen/en/bloecke/bloecke/"
+    },
+    "label": {
+      "de": "Zurück zur Seite „Blöcke“",
+      "en": "Back to the page “Blocks”"
+    }
+  }
+}

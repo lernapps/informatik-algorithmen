@@ -1,0 +1,307 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Programmieren mit Blöcken
+  en: Programming with blocks
+description:
+  de: "Aus Befehlskarten werden Blöcke: ein Programm in einer blockbasierten Programmiersprache bauen, testen und Fehler finden."
+  en: "Command cards become blocks: building, testing and debugging a program in a block-based programming language."
+competencies: [visuelle-programmierung]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Kiko liest keine Karten
+      en: Kiko can't read cards
+    blocks:
+      - type: text
+        text:
+          de: |-
+            Im Klassenchat der 7b:
+
+            **Mia:** Ich will nicht mehr Kiko sein. Kann der echte Kiko nicht selbst laufen?
+
+            **Frau Berg:** Kann er! Aber Karten kann er nicht lesen. Er braucht ein Programm. In der Werkstatt steckt ihr dafür Blöcke zusammen.
+
+            **Ben:** Ich hab schon eins gebaut. Was macht es?
+
+            Hier lernst du, wie aus Karten ein Programm wird und wie du Fehler darin findest.
+          en: |-
+            In class 7b's group chat:
+
+            **Mia:** I don't want to be Kiko any more. Can't the real Kiko walk by itself?
+
+            **Frau Berg:** It can! But it can't read cards. It needs a program. In the workshop you snap blocks together for that.
+
+            **Ben:** I've already built one. What does it do?
+
+            Here you learn how cards become a program and how to find bugs in it.
+      - type: single-choice
+        id: was-macht-das-programm
+        text:
+          de: Kiko schaut im Bild nach rechts. Auf welchem Feld steht er, wenn das Programm fertig ist?
+          en: Kiko faces right on the board. Which square is it on when the program has finished?
+        material:
+          - type: figure
+            image: images/kiko-bloecke-wo.svg
+            alt:
+              de: "Ein Spielfeld mit Spalten 1 bis 7 und Zeilen 1 bis 7. Kiko steht in Spalte 2, Zeile 6 und schaut im Bild nach rechts. Markiert sind A in Spalte 5, Zeile 3; B in Spalte 4, Zeile 4; C in Spalte 3, Zeile 4; D in Spalte 4, Zeile 5."
+              en: "A board with columns 1 to 7 and rows 1 to 7. Kiko stands in column 2, row 6 and faces right on the board. Marked are A in column 5, row 3; B in column 4, row 4; C in column 3, row 4; D in column 4, row 5."
+            caption:
+              de: Das Spielfeld. Dunkle Felder sind Wände.
+              en: The board. Dark squares are walls.
+            source:
+              de: eigene Zeichnung, Kiko nach lernapps.net/coding
+              en: own drawing, Kiko after lernapps.net/coding
+            licence: CC-BY-4.0
+          - type: figure
+            image:
+              de: images/kiko-bloecke-wo-programm-de.svg
+              en: images/kiko-bloecke-wo-programm-en.svg
+            alt:
+              de: "Ein Programm aus Blöcken unter dem Kopf „Programm“: gehe vorwärts, drehe dich nach links, gehe vorwärts, gehe vorwärts, drehe dich nach rechts, gehe vorwärts."
+              en: "A program of blocks under the head “Program”: move forward, turn left, move forward, move forward, turn right, move forward."
+            caption:
+              de: Bens Programm. Kiko führt die Blöcke von oben nach unten aus.
+              en: Ben's program. Kiko carries out the blocks from top to bottom.
+            source:
+              de: eigene Zeichnung nach lernapps.net/coding
+              en: own drawing after lernapps.net/coding
+            licence: CC-BY-4.0
+        options:
+          - text: { de: Feld A, en: Square A }
+            correct: false
+            info:
+              de: Du hast jede Drehung wie einen Schritt gezählt. Beim Drehen bleibt Kiko auf seinem Feld.
+              en: You counted every turn as a step. When Kiko turns, it stays on its square.
+          - text: { de: Feld B, en: Square B }
+            correct: true
+            info:
+              de: "Richtig: ein Feld nach rechts, zwei Felder hoch, dann wieder ein Feld nach rechts."
+              en: "Right: one square to the right, two squares up, then one more square to the right."
+          - text: { de: Feld C, en: Square C }
+            correct: false
+            info:
+              de: Du hast beim letzten Block aufgehört zu zählen. Nach „drehe dich nach rechts“ kommt noch „gehe vorwärts“.
+              en: You stopped counting at the last block. After “turn right” there is one more “move forward”.
+          - text: { de: Feld D, en: Square D }
+            correct: false
+            info:
+              de: Du hast einen Block übersprungen. Nach dem Linksdrehen geht Kiko zweimal vorwärts.
+              en: You skipped a block. After turning left, Kiko moves forward twice.
+        explanation:
+          de: Ein Programm wird Block für Block ausgeführt, genau wie die Karten. Kiko endet in Spalte 4, Zeile 4.
+          en: A program is carried out block by block, just like the cards. Kiko ends in column 4, row 4.
+  - type: section
+    id: idee
+    title:
+      de: Vom Algorithmus zum Programm
+      en: From algorithm to program
+    blocks:
+      - type: text
+        text:
+          de: >-
+            Die Blöcke haben dieselben Wörter und Farben wie die Karten. Neu ist: Ein Computer führt sie aus, und
+            der rät nie. Darum schreibst du den Algorithmus in einer Sprache auf, die er versteht.
+          en: >-
+            The blocks have the same words and colours as the cards. What is new: a computer carries them out, and it
+            never guesses. So you write the algorithm down in a language it understands.
+      - type: figure
+        image:
+          de: images/kiko-bloecke-karten-als-bloecke-de.svg
+          en: images/kiko-bloecke-karten-als-bloecke-en.svg
+        alt:
+          de: "Unter dem braunen Kopf „Programm“ hängen drei blaue Blöcke: gehe vorwärts, drehe dich nach links, gehe vorwärts."
+          en: "Three blue blocks hang under the brown head “Program”: move forward, turn left, move forward."
+        caption:
+          de: Jonas drei Karten aus Kapitel 1, jetzt als Blöcke
+          en: Jona's three cards from chapter 1, now as blocks
+        source:
+          de: eigene Zeichnung nach lernapps.net/coding
+          en: own drawing after lernapps.net/coding
+        licence: CC-BY-4.0
+      - type: definition
+        term:
+          de: Programm
+          en: program
+        explanation:
+          de: Ein Programm ist ein Algorithmus, aufgeschrieben in einer Programmiersprache, damit ein Computer ihn ausführen kann.
+          en: A program is an algorithm written down in a programming language so that a computer can carry it out.
+      - type: definition
+        term:
+          de: blockbasierte Programmiersprache
+          en: block-based programming language
+        explanation:
+          de: In einer blockbasierten (visuellen) Programmiersprache baust du Programme aus Blöcken, die du zusammensteckst, statt sie zu tippen.
+          en: In a block-based (visual) programming language you build programs from blocks that you snap together instead of typing them.
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: >-
+                Ein Block, der nicht am Kopf „Programm“ hängt, wird nicht ausgeführt. Läuft Kiko falsch, ist das ein
+                Fehler im Programm. Fehler finden und beheben heißt debuggen: Geh das Programm Schritt für Schritt
+                durch.
+              en: >-
+                A block that is not attached to the head “Program” is not carried out. If Kiko goes the wrong way, that
+                is a bug in the program. Finding and fixing bugs is called debugging: go through the program step by
+                step.
+  - type: section
+    id: ausprobieren
+    title:
+      de: Selbst ausprobieren
+      en: Try it yourself
+    blocks:
+      - type: text
+        text:
+          de: |-
+            **In der Werkstatt:** Links liegen die Blöcke (die Werkzeugkiste), rechts baust du dein Programm unter den Kopf „Programm“ (die Arbeitsfläche). „Start“ lässt Kiko das ganze Programm laufen, „Ein Schritt“ führt einen Block nach dem anderen aus.
+
+            Ben hat ein Programm gebaut, aber Kiko läuft gegen die Wand. Finde den einen falschen Block und tausch ihn aus: [Challenge „Finde den Fehler“ öffnen](https://lernapps.net/coding/app/?c=zVSxbuQ2EP2VwbiVdUgZNcE5zl0RIDnABxiw4WJEjcQ5UcMFSVnxGQtskc_wpco3pErnP9kvCUjtroODE6TMNhK4jzNvnt68R-x9mChh802F0mGDo4z-vGfrOJz3oh0rVpgkOcbmETvGBt_lY-hY4V3BYYWsh3NIlqGdB9xWmCiOp0sXrGApAYvCh-CHQNMEA7c0pwqo5QA_yujBPf8-9wkGHlihE4Zr0q6Gy_D8pxlhv_vtB1G4MjZISvvdE8zaQTSW5gpaFljYGcsTXDhvRuCY_xPuB7aphudftePAoHPIpSPriqugI1WI3rmVhGiEG2EHo58m1vo4YJ6hncUlINisM1TQzmm9tZAbI4gmX0RYyLkaPgSOEfa7p5-VISbe7HdfgLSDhZKxsFgxFtrCdvAcYQlehxq-t6QDg1f3ACnL1q5Ek2Vdu0XrZ9dBYDK29Bs8uTrLvvjguqx7ethk5R21D0E0WazwnkMUr-VzG6-9DBk40QabWzwrP6zw7Ko-vJy9vNQ360vB3FXYkxEdsEGmmHCbv7f3rvW_5FL3PizEIUWs0ImO-RnY2BTz1ZgopLWxKDa3jxixQTN1WKHSlEn_vQCFIWJze7etXgEeq_8r6D9X-z-1vdtm7SZJMUtVDBCx-TYLzTEVTIXGcjm-xc_C7pxDYDE2ZZWtaEEdFvA9W-govizfJOmVhermYGwN196Krpt1sLdmo33i7rhd3x234n32e_DzsPrwsBiwSLJfGb-G6-L3hR6gy24vhXsyDNQnDlDM3K7Vs1CF-CWHQ9DkOmZMIJpjhANcBrazDkATvNWedDit6sc1hkDyRgJBmoOCMoXCsRiwfmnxU-6bJ-MQE5_0gGmOB5IywYW4blVh1gwq4rDWcEkRJJZo4xOlAlwtfyL1tgyZCfQSYiqyVGt9SxHSQYvOL7rmqKfQ1fAxB4DE4xSHfAky2DzDXYX3wgs22SJsRsYKWzIleefgTgH8RnTNehnPyQ0-SLIT65vDrdPzSPaf8K9dyU6lll-a3cxrYH-eA1yxJM5Ou3DPf5iR97unU6CSGY_zbGjIqKdirrjffcHtdvsX)
+          en: |-
+            **In the workshop:** the blocks are on the left (the toolbox), and you build your program under the head “Program” on the right (the workspace). “Run” lets Kiko run the whole program, “One step” carries out one block after another.
+
+            Ben built a program, but Kiko walks into the wall. Find the one wrong block and swap it: [open the challenge “Find the bug”](https://lernapps.net/coding/en/app/?c=zVSxbuQ2EP2VwbiVdUgZNcE5zl0RIDnABxiw4WJEjcQ5UcMFSVnxGQtskc_wpco3pErnP9kvCUjtroODE6TMNhK4jzNvnt68R-x9mChh802F0mGDo4z-vGfrOJz3oh0rVpgkOcbmETvGBt_lY-hY4V3BYYWsh3NIlqGdB9xWmCiOp0sXrGApAYvCh-CHQNMEA7c0pwqo5QA_yujBPf8-9wkGHlihE4Zr0q6Gy_D8pxlhv_vtB1G4MjZISvvdE8zaQTSW5gpaFljYGcsTXDhvRuCY_xPuB7aphudftePAoHPIpSPriqugI1WI3rmVhGiEG2EHo58m1vo4YJ6hncUlINisM1TQzmm9tZAbI4gmX0RYyLkaPgSOEfa7p5-VISbe7HdfgLSDhZKxsFgxFtrCdvAcYQlehxq-t6QDg1f3ACnL1q5Ek2Vdu0XrZ9dBYDK29Bs8uTrLvvjguqx7ethk5R21D0E0WazwnkMUr-VzG6-9DBk40QabWzwrP6zw7Ko-vJy9vNQ360vB3FXYkxEdsEGmmHCbv7f3rvW_5FL3PizEIUWs0ImO-RnY2BTz1ZgopLWxKDa3jxixQTN1WKHSlEn_vQCFIWJze7etXgEeq_8r6D9X-z-1vdtm7SZJMUtVDBCx-TYLzTEVTIXGcjm-xc_C7pxDYDE2ZZWtaEEdFvA9W-govizfJOmVhermYGwN196Krpt1sLdmo33i7rhd3x234n32e_DzsPrwsBiwSLJfGb-G6-L3hR6gy24vhXsyDNQnDlDM3K7Vs1CF-CWHQ9DkOmZMIJpjhANcBrazDkATvNWedDit6sc1hkDyRgJBmoOCMoXCsRiwfmnxU-6bJ-MQE5_0gGmOB5IywYW4blVh1gwq4rDWcEkRJJZo4xOlAlwtfyL1tgyZCfQSYiqyVGt9SxHSQYvOL7rmqKfQ1fAxB4DE4xSHfAky2DzDXYX3wgs22SJsRsYKWzIleefgTgH8RnTNehnPyQ0-SLIT65vDrdPzSPaf8K9dyU6lll-a3cxrYH-eA1yxJM5Ou3DPf5iR97unU6CSGY_zbGjIqKdirrjffcHtdvsX)
+      - type: figure
+        image: images/kiko-challenge-fehler-finden.svg
+        alt:
+          de: "Das Spielfeld der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Ein Weg führt 1 Feld nach rechts, 2 nach unten und 2 nach rechts zum Ziel in Spalte 5, Zeile 4."
+          en: "The board of the challenge: Kiko stands in column 2, row 2 and faces right on the board. A path leads 1 square right, 2 down and 2 right to the goal in column 5, row 4."
+        caption:
+          de: So sieht die Challenge in der Werkstatt aus.
+          en: This is what the challenge looks like in the workshop.
+        source:
+          de: eigene Zeichnung, Kiko nach lernapps.net/coding
+          en: own drawing, Kiko after lernapps.net/coding
+        licence: CC-BY-4.0
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: single-choice
+        id: welcher-block-falsch
+        text:
+          de: Bens Programm soll Kiko zum Ziel bringen, aber Kiko läuft gegen eine Wand. Welcher Block ist falsch?
+          en: Ben's program should take Kiko to the goal, but Kiko walks into a wall. Which block is wrong?
+        material:
+          - type: figure
+            image: images/kiko-bloecke-fehler.svg
+            alt:
+              de: "Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Der Weg führt 2 Felder nach rechts, 2 nach unten und 1 nach rechts zum Ziel in Spalte 5, Zeile 4."
+              en: "Kiko stands in column 2, row 2 and faces right on the board. The path leads 2 squares right, 2 down and 1 right to the goal in column 5, row 4."
+            caption:
+              de: Das Spielfeld zu Bens Programm
+              en: The board for Ben's program
+            source:
+              de: eigene Zeichnung, Kiko nach lernapps.net/coding
+              en: own drawing, Kiko after lernapps.net/coding
+            licence: CC-BY-4.0
+          - type: figure
+            image:
+              de: images/kiko-bloecke-fehler-programm-de.svg
+              en: images/kiko-bloecke-fehler-programm-en.svg
+            alt:
+              de: "Bens Programm mit Nummern: 1 gehe vorwärts, 2 gehe vorwärts, 3 drehe dich nach links, 4 gehe vorwärts, 5 gehe vorwärts, 6 drehe dich nach links, 7 gehe vorwärts."
+              en: "Ben's program with numbers: 1 move forward, 2 move forward, 3 turn left, 4 move forward, 5 move forward, 6 turn left, 7 move forward."
+            caption:
+              de: Bens Programm, jeder Block mit Nummer
+              en: Ben's program, each block numbered
+            source:
+              de: eigene Zeichnung nach lernapps.net/coding
+              en: own drawing after lernapps.net/coding
+            licence: CC-BY-4.0
+        options:
+          - text: { de: Block 3, en: Block 3 }
+            correct: true
+            info:
+              de: Nach zwei Schritten muss Kiko im Bild nach unten. Dafür dreht er sich nach rechts, nicht nach links.
+              en: After two steps Kiko has to go down the board. For that it turns right, not left.
+          - text: { de: Block 6, en: Block 6 }
+            correct: false
+            info:
+              de: Dieser Block stimmt. Kiko schaut dann im Bild nach unten, und nach links gedreht schaut er zum Ziel.
+              en: This block is right. Kiko is facing down the board then, and after turning left it faces the goal.
+          - text: { de: Block 2, en: Block 2 }
+            correct: false
+            info:
+              de: Zwei Schritte geradeaus passen, die Kurve kommt nach dem zweiten Feld.
+              en: Two steps straight on are right; the bend comes after the second square.
+          - text: { de: Block 7, en: Block 7 }
+            correct: false
+            info:
+              de: Bis Block 7 kommt Kiko gar nicht. Er läuft schon vorher gegen die Wand.
+              en: Kiko never gets to block 7. It walks into the wall before that.
+        explanation:
+          de: Geh das Programm Block für Block durch. Bei Block 3 schaut Kiko nach links gedreht im Bild nach oben, und bei Block 4 läuft er gegen die Wand.
+          en: Go through the program block by block. At block 3, after turning left, Kiko faces up the board, and at block 4 it walks into the wall.
+      - type: matching
+        id: werkstatt-teile
+        text:
+          de: Wofür ist welcher Teil der Werkstatt da?
+          en: What is each part of the workshop for?
+        pairs:
+          - left: { de: Werkzeugkiste, en: toolbox }
+            right:
+              de: "Hier liegen die Blöcke, die du benutzen darfst."
+              en: "The blocks you may use are here."
+          - left: { de: Arbeitsfläche, en: workspace }
+            right: { de: Hier steckst du das Programm zusammen., en: This is where you snap the program together. }
+          - left: { de: Start, en: Run }
+            right: { de: Kiko führt das ganze Programm aus., en: Kiko carries out the whole program. }
+          - left: { de: Ein Schritt, en: One step }
+            right: { de: Kiko führt nur den nächsten Block aus., en: Kiko carries out only the next block. }
+        explanation:
+          de: Mit „Ein Schritt“ siehst du genau, bei welchem Block etwas schiefgeht. Das hilft beim Debuggen.
+          en: With “One step” you see exactly at which block something goes wrong. That helps with debugging.
+      - type: true-false
+        id: computer-raet
+        text:
+          de: "Ben sagt: „Wenn ich einen Block vergesse, merkt der Computer schon, was ich gemeint habe.“ Stimmt das?"
+          en: "Ben says: “If I forget a block, the computer will work out what I meant.” Is that true?"
+        answer: false
+        explanation:
+          de: Ein Computer führt genau die Blöcke aus, die im Programm stehen, nicht mehr und nicht weniger. Er rät nie, was gemeint war.
+          en: A computer carries out exactly the blocks that are in the program, no more and no less. It never guesses what was meant.
+      - type: number
+        id: bloecke-zaehlen
+        text:
+          de: Kiko schaut im Bild nach rechts und soll 3 Felder vorwärts, sich nach links drehen und 2 Felder vorwärts gehen. Aus wie vielen Blöcken besteht das Programm, ohne den Kopf „Programm“?
+          en: Kiko faces right on the board and has to move 3 squares forward, turn left and move 2 squares forward. How many blocks does the program have, not counting the head “Program”?
+        answer: 6
+        tolerance: 0
+        mistakes:
+          - answer: 3
+            message:
+              de: Du hast für jede Strecke einen Block gezählt. Jeder Block „gehe vorwärts“ geht aber nur ein Feld.
+              en: You counted one block for each stretch. But each “move forward” block moves only one square.
+          - answer: 5
+            message:
+              de: Die Drehung ist auch ein Block.
+              en: The turn is a block too.
+          - answer: 7
+            message:
+              de: Den Kopf „Programm“ zählst du nicht mit. Er ist kein Befehl.
+              en: Don't count the head “Program”. It is not a command.
+        explanation:
+          de: "3-mal „gehe vorwärts“, 1-mal „drehe dich nach links“ und 2-mal „gehe vorwärts“: zusammen 6 Blöcke."
+          en: "3 times “move forward”, once “turn left” and 2 times “move forward”: 6 blocks in all."
+  - type: section
+    id: weiter
+    title:
+      de: Wie es weitergeht
+      en: What comes next
+    blocks:
+      - type: text
+        text:
+          de: >-
+            Du kannst jetzt ein Programm aus Blöcken bauen, laufen lassen und debuggen. **Lea** schreibt: „Bens
+            Programm klappt nur auf diesem einen Spielfeld. Steht woanders eine Wand, läuft Kiko dagegen.“ Auf der
+            nächsten Seite lernt Kiko, vorher nachzusehen.
+          en: >-
+            You can now build a program from blocks, run it and debug it. **Lea** writes: “Ben's program only works on
+            this one board. If there's a wall somewhere else, Kiko walks into it.” On the next page Kiko learns to
+            check first.

@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "id": "kiko-wenn-sonst",
+  "title": {
+    "de": "Oben oder unten?",
+    "en": "Up or down?"
+  },
+  "task": {
+    "de": "Kiko geht ein Feld vor und steht dann vor einer Wand. Das Ziel ist mal oben, mal unten. Bau ein Programm mit „wenn … dann … sonst“, das in beiden Spielfeldern klappt.",
+    "en": "Kiko moves one square forward and then stands in front of a wall. The goal is sometimes up, sometimes down. Build a program with “if … then … else” that works on both boards."
+  },
+  "world": {
+    "type": "labyrinth",
+    "version": 1,
+    "config": {
+      "map": ["#####", "##Z##", "#S.##", "#####"],
+      "facing": "east"
+    }
+  },
+  "toolbox": ["vorwaerts", "links", "rechts", "wenn-sonst", "wand-links", "wand-rechts"],
+  "start": null,
+  "limits": {
+    "blocks": 6,
+    "steps": 20
+  },
+  "tests": [
+    {
+      "config": {
+        "map": ["#####", "#S.##", "##Z##", "#####"]
+      }
+    }
+  ],
+  "checks": ["ziel-erreicht", "benutzt-block:wenn-sonst"],
+  "hints": [
+    {
+      "de": "Schau dir beide Spielfelder an. Was ist im zweiten anders?",
+      "en": "Look at both boards. What is different on the second one?"
+    },
+    {
+      "de": "Nach dem ersten Schritt fragt Kiko: „Wand links?“",
+      "en": "After the first step, Kiko asks: “wall on the left?”"
+    },
+    {
+      "de": "Wenn links eine Wand ist, dreht Kiko sich nach rechts, sonst nach links. Danach noch ein Schritt.",
+      "en": "If there is a wall on the left, Kiko turns right, else left. Then one more step."
+    }
+  ],
+  "view": "bloecke",
+  "back": {
+    "url": {
+      "de": "/informatik-algorithmen/bloecke/verzweigung/",
+      "en": "/informatik-algorithmen/en/bloecke/verzweigung/"
+    },
+    "label": {
+      "de": "Zurück zur Seite „Verzweigung“",
+      "en": "Back to the page “Selection”"
+    }
+  }
+}
