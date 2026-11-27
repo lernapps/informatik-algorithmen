@@ -45,9 +45,9 @@ Commands one after another in a fixed order: with three command cards you steer 
 
 In class 7b's group chat, the evening before computing:
 
-**Frau Berg:** Tomorrow we'll tape a board on the floor. One of you will be Kiko. We'll use just three cards: forward, turn left, turn right.
+**Frau Berg:** Tomorrow we'll play again, on the board on the floor. This time with just three cards: forward, turn left, turn right. Who's Kiko?
 
-**Mia:** I'll be Kiko!
+**Mia:** Me again!
 
 **Jona:** Then I'll lay the cards 😄
 

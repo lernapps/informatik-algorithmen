@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="../../../assets/index-DVOapkED.js"></script>
+    <link rel="stylesheet" crossorigin href="../../../assets/index-CtncCkFd.css">
+    <title>Properties of algorithms – Algorithms and programs</title>
+    <meta name="description" content="Checking with four questions whether a set of instructions is an algorithm: finite, unambiguous, can be carried out, terminates." />
+    <meta name="lernapps-archetype" content="explainer" />
+    <link rel="alternate" hreflang="de" href="../../../algorithmen/eigenschaften/" />
+    <link rel="alternate" hreflang="en" href="../../../en/algorithmen/eigenschaften/" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="page-header"><nav class="page-languages" aria-label="Language"><ul><li><a href="../../../algorithmen/eigenschaften/" hreflang="de" lang="de">Deutsch</a></li><li><a href="../../../en/algorithmen/eigenschaften/" hreflang="en" lang="en" aria-current="page">English</a></li></ul></nav></header>
+<nav class="explainer-breadcrumbs" aria-label="You are here"><ol><li><a href="../../../en/">Start</a></li><li aria-current="page">Properties of algorithms</li></ol></nav>
+<main class="explainer" id="inhalt-der-seite">
+<div class="explainer-title-row">
+<h1>Properties of algorithms</h1>
+<div class="explainer-tutor explainer-tutor-page">
+<details class="explainer-tutor-off">
+<summary>Learn with an AI tutor</summary>
+<p>An AI tutor explains this page to you and helps you with the exercises. Choose your assistant:</p>
+<p class="explainer-tutor-actions"><span class="explainer-tutor-way" hidden><select class="explainer-tutor-select" aria-label="Assistant"><option value="Claude">Claude</option><option value="ChatGPT">ChatGPT</option><option value="Mistral Vibe" data-hint="Mistral Vibe does not load web pages when the link comes from a button. So we copy the sentence with the link for you. A click on “Learn with Mistral Vibe” opens Mistral Vibe with a short message. Then paste the copied sentence (Ctrl+V, ⌘+V on a Mac) and send it.">Mistral Vibe</option><option value="copy">Another one: copy the text</option></select> <button type="button" class="explainer-tutor-on">Switch on</button></span> <span class="explainer-tutor-plain"><a class="explainer-tutor-provider" href="https://claude.ai/new" rel="noopener" target="_blank">Open with Claude</a> <a class="explainer-tutor-provider" href="https://chatgpt.com/" rel="noopener" target="_blank">Open with ChatGPT</a> <a class="explainer-tutor-provider" href="https://chat.mistral.ai/chat" rel="noopener" target="_blank">Open with Mistral Vibe</a></span></p>
+<p class="explainer-tutor-hint" role="status" aria-live="polite" hidden></p>
+<p class="explainer-tutor-note">You use your own account with the provider. The assistant is not offered by lernapps.net: lernapps only provides the content and the exercises. The choice holds for all pages, on this device only.</p>
+<p><a class="explainer-tutor-guide" href="../../../en/algorithmen/eigenschaften/tutor/">See what your tutor gets for this page</a></p>
+</details>
+<p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
+<p class="explainer-tutor-status" role="status" aria-live="polite"></p>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Load ⟦base⟧algorithmen/eigenschaften/tutor/⟦query⟧ and be my tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../../en/","storage":"informatik-algorithmen","page":{"id":"eigenschaften","title":"Properties of algorithms","exercises":[{"id":"ein-stueck","section":"einstieg","numbered":false},{"id":"was-fehlt","section":"uebung","numbered":false},{"id":"karten-reparieren","section":"uebung","numbered":false},{"id":"karten-in-ordnung","section":"uebung","numbered":false},{"id":"kurz-endet","section":"uebung","numbered":false}],"sections":["einstieg","idee","ausprobieren","uebung","weiter"]},"tutor":"algorithmen/eigenschaften/tutor/","markdown":"algorithmen/eigenschaften/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"I need help with a learning unit. I will tell you in a moment what it is about.","go":"Learn with {name}","done":"✓ Copied – now paste it into {name}","copy":"Copy the text","copied":"The prompt is copied. Paste it into the chat of your AI assistant.","failed":"Copying did not work. Try again."}</script>
+</div>
+</div>
+
+<nav class="explainer-toc" aria-label="On this page"><p class="explainer-toc-title">On this page</p><ol><li><a href="#einstieg">Tom's broken cards</a></li><li><a href="#idee">Four questions for a set of instructions</a></li><li><a href="#ausprobieren">Try it yourself</a></li><li><a href="#uebung">Practice</a></li><li><a href="#weiter">What comes next</a></li></ol></nav>
+<section class="explainer-section">
+<h2 id="einstieg">Tom's broken cards</h2>
+<div class="explainer-block" data-block="einstieg/1" data-block-id="d7dea2a8" data-block-type="text" data-block-order="1">
+<div class="block-text"><p>In class 7b&#39;s group chat, after the computing lesson:</p>
+<p><strong>Frau Berg:</strong> Thanks for playing! Every card was one step, and Mia did exactly what it said.</p>
+<p><strong>Tom:</strong> I drew some cards of my own 😎</p>
+<p><strong>Mia:</strong> With “move a bit” I didn&#39;t know how far. And Kiko can&#39;t jump at all!</p>
+<p>Here you learn four questions to check whether a set of instructions is an algorithm.</p></div>
+</div>
+<div class="explainer-block" data-block="einstieg/2" data-block-id="eb998053" data-block-type="single-choice" data-block-order="2">
+<div class="explainer-exercise explainer-question" id="ein-stueck">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-ein-stueck" data-id="ein-stueck" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">What is the problem with Tom's card “move a bit”?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../../images/kiko-eigenschaften-toms-karten-en.svg" alt="Three cards, one below the other: 1 move a bit, 2 jump over the wall, 3 keep turning left again and again." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Source: own drawing. Licence: CC-BY-4.0." aria-label="Source: own drawing. Licence: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Tom&#39;s home-made cards</p></figcaption></figure></div>
+<label class="question-option"><input type="radio" name="frage-ein-stueck" value="0"> <span>Everyone understands something different by it.</span></label>
+<label class="question-option"><input type="radio" name="frage-ein-stueck" value="1"> <span>Kiko can't do that at all.</span></label>
+<label class="question-option"><input type="radio" name="frage-ein-stueck" value="2"> <span>Kiko then never stops.</span></label>
+<label class="question-option"><input type="radio" name="frage-ein-stueck" value="3"> <span>The card has too many words.</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Everyone understands something different by it.</strong> <span class="question-badge question-badge-right">right answer</span></p><p>One square? Three squares? Up to the wall? Whoever carries out the card has to guess.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Kiko can't do that at all.</strong></p><p>Kiko can move. It's only unclear how far. That applies to “jump over the wall”.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Kiko then never stops.</strong></p><p>A bit is walked at some point. Kiko would never stop with Tom's third card.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>The card has too many words.</strong></p><p>The card is short. Length doesn't matter; what matters is whether it is clear.</p></li>
+</ul>
+<p class="question-explanation">With “move a bit” there are several possibilities. Instructions for Kiko have to be unambiguous.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Everyone understands something different by it.</strong> <span class="question-badge question-badge-right">right answer</span></p><p>One square? Three squares? Up to the wall? Whoever carries out the card has to guess.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Kiko can't do that at all.</strong></p><p>Kiko can move. It's only unclear how far. That applies to “jump over the wall”.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Kiko then never stops.</strong></p><p>A bit is walked at some point. Kiko would never stop with Tom's third card.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>The card has too many words.</strong></p><p>The card is short. Length doesn't matter; what matters is whether it is clear.</p></li>
+</ul>
+<p class="question-explanation">With “move a bit” there are several possibilities. Instructions for Kiko have to be unambiguous.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"ein-stueck","text":"What is the problem with Tom's card “move a bit”?","explanation":"With “move a bit” there are several possibilities. Instructions for Kiko have to be unambiguous.","links":[],"material":[{"type":"figure","image":"images/kiko-eigenschaften-toms-karten-en.svg","alt":"Three cards, one below the other: 1 move a bit, 2 jump over the wall, 3 keep turning left again and again.","caption":"Tom's home-made cards","source":"own drawing","licence":"CC-BY-4.0"}],"type":"single-choice","options":[{"text":"Everyone understands something different by it.","correct":true,"info":"One square? Three squares? Up to the wall? Whoever carries out the card has to guess."},{"text":"Kiko can't do that at all.","correct":false,"info":"Kiko can move. It's only unclear how far. That applies to “jump over the wall”."},{"text":"Kiko then never stops.","correct":false,"info":"A bit is walked at some point. Kiko would never stop with Tom's third card."},{"text":"The card has too many words.","correct":false,"info":"The card is short. Length doesn't matter; what matters is whether it is clear."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="idee">Four questions for a set of instructions</h2>
+<div class="explainer-block" data-block="idee/1" data-block-id="e02ef178" data-block-type="table" data-block-order="3">
+<div class="block-table" role="region" aria-label="The four properties of an algorithm, each with a broken card as a counterexample" tabindex="0"><table><caption>The four properties of an algorithm, each with a broken card as a counterexample</caption><thead><tr><th scope="col">Property</th><th scope="col">Question to check</th><th scope="col">Broken card</th></tr></thead><tbody><tr><td>finite (finitely described)</td><td>Does the list of steps come to an end?</td><td>step 1, step 2, … with no end</td></tr><tr><td>unambiguous</td><td>Is it clear at every step what to do and what comes next?</td><td>“move a bit”</td></tr><tr><td>can be carried out (executable)</td><td>Can whoever carries it out do every step, here Kiko?</td><td>“jump over the wall”</td></tr><tr><td>terminates</td><td>Is it finished after a finite number of steps?</td><td>“keep turning left again and again”</td></tr></tbody></table></div>
+</div>
+<div class="explainer-block" data-block="idee/2" data-block-id="faa48ea7" data-block-type="definition" data-block-order="4">
+<dl class="explainer-definition"><dt><dfn id="begriff-eigenschaften-eines-algorithmus"><a href="../../../en/glossar/#eigenschaften-eines-algorithmus">properties of an algorithm</a></dfn></dt><dd><p>An algorithm has four properties: it is finite (finitely described), unambiguous, can be carried out, and it terminates after a finite number of steps.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/3" data-block-id="82e962ce" data-block-type="note" data-block-order="5">
+<div class="explainer-box explainer-note">
+<h3 class="explainer-box-title">Remember</h3>
+<div class="explainer-block" data-block="idee/3/1" data-block-id="1ca81f7e" data-block-type="text" data-block-order="6">
+<div class="block-text"><p>“Finite” is not the same as “terminates”. Tom&#39;s third card is short, but whoever carries it out keeps turning forever. A program that never ends doesn&#39;t solve a task that is meant to end. That is why an algorithm has to terminate.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="ausprobieren">Try it yourself</h2>
+<div class="explainer-block" data-block="ausprobieren/1" data-block-id="f99e4c9a" data-block-type="text" data-block-order="7">
+<div class="block-text"><p><strong>Card game “Broken cards”, without a computer, in two groups:</strong></p>
+<ol>
+<li>Print the <a href="https://lernapps.net/coding/karten/en/spielfeld.svg" rel="noopener">board</a> and the <a href="https://lernapps.net/coding/karten/en/befehlskarten-1.svg" rel="noopener">command cards</a>.</li>
+<li>Each group secretly draws a broken card and mixes it in with the proper cards.</li>
+<li>The other group plays Kiko. At the broken card they call “Stop!” and say which of the four questions fails.</li>
+<li>Fix the card together. Then swap.</li>
+</ol></div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="uebung">Practice</h2>
+<div class="explainer-block" data-block="uebung/1" data-block-id="bd6b5b9f" data-block-type="matching" data-block-order="8">
+<div class="explainer-exercise explainer-question" id="was-fehlt">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-was-fehlt" data-id="was-fehlt" data-type="matching">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Which property is the set of instructions missing?</legend>
+<p class="question-hint">Choose the match for each entry.</p>
+<ul class="question-pairs">
+<li><label><span>“Stir until it looks good.”</span> <select name="frage-was-fehlt-0" data-left="0"><option value="">please choose</option><option value="2">does not terminate</option><option value="1">cannot be carried out</option><option value="0">ambiguous</option><option value="3">not finite</option></select></label></li>
+<li><label><span>“Fly out of the window to the playground.”</span> <select name="frage-was-fehlt-1" data-left="1"><option value="">please choose</option><option value="2">does not terminate</option><option value="1">cannot be carried out</option><option value="0">ambiguous</option><option value="3">not finite</option></select></label></li>
+<li><label><span>“Count 1, 2, 3 and so on and never stop.”</span> <select name="frage-was-fehlt-2" data-left="2"><option value="">please choose</option><option value="2">does not terminate</option><option value="1">cannot be carried out</option><option value="0">ambiguous</option><option value="3">not finite</option></select></label></li>
+<li><label><span>A sheet on which the steps never stop: step 1, step 2, …</span> <select name="frage-was-fehlt-3" data-left="3"><option value="">please choose</option><option value="2">does not terminate</option><option value="1">cannot be carried out</option><option value="0">ambiguous</option><option value="3">not finite</option></select></label></li>
+</ul>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Right answer:</strong> “Stir until it looks good.” – ambiguous; “Fly out of the window to the playground.” – cannot be carried out; “Count 1, 2, 3 and so on and never stop.” – does not terminate; A sheet on which the steps never stop: step 1, step 2, … – not finite</p>
+<p class="question-explanation">Everyone sees “looks good” differently. Nobody can fly. Someone who never stops counting is never finished. And a sheet with no end can't even be written down.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<p><strong>Right answer:</strong> “Stir until it looks good.” – ambiguous; “Fly out of the window to the playground.” – cannot be carried out; “Count 1, 2, 3 and so on and never stop.” – does not terminate; A sheet on which the steps never stop: step 1, step 2, … – not finite</p>
+<p class="question-explanation">Everyone sees “looks good” differently. Nobody can fly. Someone who never stops counting is never finished. And a sheet with no end can't even be written down.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"was-fehlt","text":"Which property is the set of instructions missing?","explanation":"Everyone sees “looks good” differently. Nobody can fly. Someone who never stops counting is never finished. And a sheet with no end can't even be written down.","links":[],"type":"matching","pairs":[{"left":"“Stir until it looks good.”","right":"ambiguous"},{"left":"“Fly out of the window to the playground.”","right":"cannot be carried out"},{"left":"“Count 1, 2, 3 and so on and never stop.”","right":"does not terminate"},{"left":"A sheet on which the steps never stop: step 1, step 2, …","right":"not finite"}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/2" data-block-id="31c37e0c" data-block-type="matching" data-block-order="9">
+<div class="explainer-exercise explainer-question" id="karten-reparieren">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-karten-reparieren" data-id="karten-reparieren" data-type="matching">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Mia fixes Tom's cards. Which card becomes which?</legend>
+<p class="question-hint">Choose the match for each entry.</p>
+<ul class="question-pairs">
+<li><label><span>“move a bit”</span> <select name="frage-karten-reparieren-0" data-left="0"><option value="">please choose</option><option value="1">“go around the wall”</option><option value="0">“move forward” (exactly one square)</option><option value="2">“turn left twice”</option></select></label></li>
+<li><label><span>“jump over the wall”</span> <select name="frage-karten-reparieren-1" data-left="1"><option value="">please choose</option><option value="1">“go around the wall”</option><option value="0">“move forward” (exactly one square)</option><option value="2">“turn left twice”</option></select></label></li>
+<li><label><span>“keep turning left again and again”</span> <select name="frage-karten-reparieren-2" data-left="2"><option value="">please choose</option><option value="1">“go around the wall”</option><option value="0">“move forward” (exactly one square)</option><option value="2">“turn left twice”</option></select></label></li>
+</ul>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Right answer:</strong> “move a bit” – “move forward” (exactly one square); “jump over the wall” – “go around the wall”; “keep turning left again and again” – “turn left twice”</p>
+<p class="question-explanation">The fixed cards are unambiguous, Kiko can carry them out, and each is finished after a few steps.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<p><strong>Right answer:</strong> “move a bit” – “move forward” (exactly one square); “jump over the wall” – “go around the wall”; “keep turning left again and again” – “turn left twice”</p>
+<p class="question-explanation">The fixed cards are unambiguous, Kiko can carry them out, and each is finished after a few steps.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"karten-reparieren","text":"Mia fixes Tom's cards. Which card becomes which?","explanation":"The fixed cards are unambiguous, Kiko can carry them out, and each is finished after a few steps.","links":[],"type":"matching","pairs":[{"left":"“move a bit”","right":"“move forward” (exactly one square)"},{"left":"“jump over the wall”","right":"“go around the wall”"},{"left":"“keep turning left again and again”","right":"“turn left twice”"}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/3" data-block-id="ed41f5f9" data-block-type="multiple-choice" data-block-order="10">
+<div class="explainer-exercise explainer-question" id="karten-in-ordnung">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-karten-in-ordnung" data-id="karten-in-ordnung" data-type="multiple-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Which cards can Kiko carry out on the board without guessing?</legend>
+<label class="question-option"><input type="checkbox" name="frage-karten-in-ordnung" value="0"> <span>“move forward”</span></label>
+<label class="question-option"><input type="checkbox" name="frage-karten-in-ordnung" value="1"> <span>“move a few squares”</span></label>
+<label class="question-option"><input type="checkbox" name="frage-karten-in-ordnung" value="2"> <span>“turn right”</span></label>
+<label class="question-option"><input type="checkbox" name="frage-karten-in-ordnung" value="3"> <span>“fly to the goal”</span></label>
+<label class="question-option"><input type="checkbox" name="frage-karten-in-ordnung" value="4"> <span>“turn left”</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>“move forward”</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Exactly one square in the direction Kiko faces. That is clear and doable.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>“move a few squares”</strong></p><p>How many is “a few”? The card is not unambiguous.</p></li>
+<li class="question-info question-info-right" data-option="2"><p class="question-info-head"><strong>“turn right”</strong> <span class="question-badge question-badge-right">right answer</span></p><p>A quarter turn on the spot. That is clear and doable.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>“fly to the goal”</strong></p><p>Kiko can't fly. The card cannot be carried out.</p></li>
+<li class="question-info question-info-right" data-option="4"><p class="question-info-head"><strong>“turn left”</strong> <span class="question-badge question-badge-right">right answer</span></p><p>A quarter turn on the spot, just the other way. That is clear and doable too.</p></li>
+</ul>
+<p class="question-explanation">Kiko knows three commands. Every card that means exactly one of them, Kiko can carry out without guessing.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>“move forward”</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Exactly one square in the direction Kiko faces. That is clear and doable.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>“move a few squares”</strong></p><p>How many is “a few”? The card is not unambiguous.</p></li>
+<li class="question-info question-info-right" data-option="2"><p class="question-info-head"><strong>“turn right”</strong> <span class="question-badge question-badge-right">right answer</span></p><p>A quarter turn on the spot. That is clear and doable.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>“fly to the goal”</strong></p><p>Kiko can't fly. The card cannot be carried out.</p></li>
+<li class="question-info question-info-right" data-option="4"><p class="question-info-head"><strong>“turn left”</strong> <span class="question-badge question-badge-right">right answer</span></p><p>A quarter turn on the spot, just the other way. That is clear and doable too.</p></li>
+</ul>
+<p class="question-explanation">Kiko knows three commands. Every card that means exactly one of them, Kiko can carry out without guessing.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"karten-in-ordnung","text":"Which cards can Kiko carry out on the board without guessing?","explanation":"Kiko knows three commands. Every card that means exactly one of them, Kiko can carry out without guessing.","links":[],"type":"multiple-choice","options":[{"text":"“move forward”","correct":true,"info":"Exactly one square in the direction Kiko faces. That is clear and doable."},{"text":"“move a few squares”","correct":false,"info":"How many is “a few”? The card is not unambiguous."},{"text":"“turn right”","correct":true,"info":"A quarter turn on the spot. That is clear and doable."},{"text":"“fly to the goal”","correct":false,"info":"Kiko can't fly. The card cannot be carried out."},{"text":"“turn left”","correct":true,"info":"A quarter turn on the spot, just the other way. That is clear and doable too."}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/4" data-block-id="7dfd09ab" data-block-type="true-false" data-block-order="11">
+<div class="explainer-exercise explainer-question" id="kurz-endet">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-kurz-endet" data-id="kurz-endet" data-type="true-false">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Jona says: “Instructions that are short to write down always terminate too.” Is that true?</legend>
+<label class="question-option"><input type="radio" name="frage-kurz-endet" value="true"> <span>True</span></label>
+<label class="question-option"><input type="radio" name="frage-kurz-endet" value="false"> <span>False</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Right answer:</strong> The statement is false.</p>
+<p class="question-explanation">“Keep turning left again and again” is short to write down, but Kiko keeps turning forever. Being finitely described doesn't mean that carrying it out terminates.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<p><strong>Right answer:</strong> The statement is false.</p>
+<p class="question-explanation">“Keep turning left again and again” is short to write down, but Kiko keeps turning forever. Being finitely described doesn't mean that carrying it out terminates.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"kurz-endet","text":"Jona says: “Instructions that are short to write down always terminate too.” Is that true?","explanation":"“Keep turning left again and again” is short to write down, but Kiko keeps turning forever. Being finitely described doesn't mean that carrying it out terminates.","links":[],"type":"true-false","answer":false},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="weiter">What comes next</h2>
+<div class="explainer-block" data-block="weiter/1" data-block-id="7c82dc6d" data-block-type="text" data-block-order="12">
+<div class="block-text"><p>You can now check with four questions whether a set of instructions is an algorithm. <strong>Mia</strong> writes: “With the fixed cards I get to the goal. But only if Jona lays them out right.” The next page is about the order of the cards.</p></div>
+</div>
+</section>
+<p class="explainer-feedback-invite" hidden><span>Found a mistake or have an idea for this app?</span> <button type="button" class="explainer-feedback-switch">Give feedback on “Algorithms and programs”</button></p>
+</main>
+<template class="explainer-feedback-template">
+<aside class="explainer-feedback" aria-labelledby="feedback-titel" hidden>
+<div class="explainer-feedback-head">
+<h2 id="feedback-titel">Feedback</h2>
+<button type="button" class="explainer-feedback-help-open" aria-expanded="false" aria-controls="feedback-hilfe">Help</button>
+<button type="button" class="explainer-feedback-collapse" aria-expanded="true" aria-controls="feedback-inhalt" aria-label="Collapse the bar" title="Collapse the bar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<button type="button" class="explainer-feedback-expand" hidden><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Expand the feedback bar</span></button>
+<div class="explainer-feedback-body" id="feedback-inhalt">
+<section class="explainer-feedback-help" id="feedback-hilfe" aria-labelledby="feedback-hilfe-titel" hidden>
+<h3 id="feedback-hilfe-titel">How to give feedback</h3>
+<ol><li>Go through the pages. Every paragraph, figure and exercise shows “Note”.</li><li>If you mark text in the block first, the note quotes it.</li><li>When you are done, choose “Open an issue on GitHub”. The app copies your notes, and you paste them into the issue. You need a GitHub account for this.</li></ol>
+<p class="explainer-feedback-privacy">Your notes stay in this browser on this device only. The app sends nothing. If you clear the browser's data, the notes are gone.</p>
+<p><button type="button" class="explainer-feedback-help-done">Got it</button></p>
+</section>
+<form class="explainer-feedback-form" hidden>
+<p class="explainer-feedback-new">New note on</p>
+<p class="explainer-feedback-where"></p>
+<blockquote class="explainer-feedback-quote" hidden></blockquote>
+<label for="feedback-text">Your note</label>
+<textarea id="feedback-text" class="explainer-feedback-text" rows="5" required></textarea>
+<p class="explainer-feedback-buttons"><button type="submit" class="explainer-feedback-save">Save</button> <button type="button" class="explainer-feedback-cancel">Cancel</button></p>
+</form>
+<p class="explainer-feedback-status" role="status" aria-live="polite"></p>
+<section class="explainer-feedback-notes" aria-labelledby="feedback-notizen">
+<h3 id="feedback-notizen" class="explainer-feedback-count"></h3>
+<p class="explainer-feedback-actions"><button type="button" class="explainer-feedback-copy">Copy</button> <a class="explainer-feedback-issue" href="#" target="_blank" rel="noopener">Open an issue on GitHub</a></p>
+<textarea class="explainer-feedback-export" readonly rows="6" aria-label="Text to copy" hidden></textarea>
+<div class="explainer-feedback-list"></div>
+</section>
+</div>
+<div class="explainer-feedback-foot">
+<button type="button" class="explainer-feedback-delete-all">Delete all …</button>
+<span class="explainer-feedback-local">Kept in this browser only</span>
+<button type="button" class="explainer-feedback-off">End</button>
+</div>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-algorithmen","app":"Algorithms and programs","root":"../../../en/","repository":"lernapps/informatik-algorithmen","revision":"d4fdfc3","page":{"title":"Properties of algorithms","order":1}}</script>
+</aside>
+</template>
+<nav class="explainer-pager" aria-label="Page through"><a rel="prev" href="../../../en/algorithmen/algorithmus/">Back: What is an algorithm?</a><a rel="next" href="../../../en/algorithmen/sequenz/">Next: Sequence</a></nav>
+<footer class="page-footer"><p>An explainer on lernapps.net · <a href="https://lernapps.net/imprint/">Imprint</a> · <a href="https://lernapps.net/privacy/">Privacy</a></p></footer>
+  </body>
+</html>

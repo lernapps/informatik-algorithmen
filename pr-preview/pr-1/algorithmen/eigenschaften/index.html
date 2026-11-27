@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="../../assets/index-DVOapkED.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/index-CtncCkFd.css">
+    <title>Eigenschaften von Algorithmen – Algorithmen und Programme</title>
+    <meta name="description" content="Mit vier Fragen prüfen, ob eine Anleitung ein Algorithmus ist: endlich beschrieben, eindeutig, ausführbar, endet." />
+    <meta name="lernapps-archetype" content="explainer" />
+    <link rel="alternate" hreflang="de" href="../../algorithmen/eigenschaften/" />
+    <link rel="alternate" hreflang="en" href="../../en/algorithmen/eigenschaften/" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="page-header"><nav class="page-languages" aria-label="Sprache"><ul><li><a href="../../algorithmen/eigenschaften/" hreflang="de" lang="de" aria-current="page">Deutsch</a></li><li><a href="../../en/algorithmen/eigenschaften/" hreflang="en" lang="en">English</a></li></ul></nav></header>
+<nav class="explainer-breadcrumbs" aria-label="Du bist hier"><ol><li><a href="../../">Start</a></li><li aria-current="page">Eigenschaften von Algorithmen</li></ol></nav>
+<main class="explainer" id="inhalt-der-seite">
+<div class="explainer-title-row">
+<h1>Eigenschaften von Algorithmen</h1>
+<div class="explainer-tutor explainer-tutor-page">
+<details class="explainer-tutor-off">
+<summary>Mit einem KI-Tutor lernen</summary>
+<p>Ein KI-Tutor erklärt dir diese Seite und hilft dir bei den Aufgaben. Wähl deinen Assistenten:</p>
+<p class="explainer-tutor-actions"><span class="explainer-tutor-way" hidden><select class="explainer-tutor-select" aria-label="Assistent"><option value="Claude">Claude</option><option value="ChatGPT">ChatGPT</option><option value="Mistral Vibe" data-hint="Mistral Vibe lädt keine Webseiten, wenn der Link aus einem Knopf kommt. Darum kopieren wir den Satz mit dem Link für dich. Ein Klick auf „Mit Mistral Vibe lernen“ öffnet Mistral Vibe mit einer kurzen Nachricht. Füg danach den kopierten Satz ein (Strg+V, am Mac ⌘+V) und schick ihn ab.">Mistral Vibe</option><option value="copy">Ein anderer: Text kopieren</option></select> <button type="button" class="explainer-tutor-on">Einschalten</button></span> <span class="explainer-tutor-plain"><a class="explainer-tutor-provider" href="https://claude.ai/new" rel="noopener" target="_blank">Mit Claude öffnen</a> <a class="explainer-tutor-provider" href="https://chatgpt.com/" rel="noopener" target="_blank">Mit ChatGPT öffnen</a> <a class="explainer-tutor-provider" href="https://chat.mistral.ai/chat" rel="noopener" target="_blank">Mit Mistral Vibe öffnen</a></span></p>
+<p class="explainer-tutor-hint" role="status" aria-live="polite" hidden></p>
+<p class="explainer-tutor-note">Du nutzt dein eigenes Konto beim Anbieter. Der Assistent ist kein Angebot von lernapps.net: lernapps liefert nur Inhalte und Aufgaben. Die Wahl gilt für alle Seiten, nur auf diesem Gerät.</p>
+<p><a class="explainer-tutor-guide" href="../../algorithmen/eigenschaften/tutor/">Ansehen, was dein Tutor zu dieser Seite bekommt</a></p>
+</details>
+<p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
+<p class="explainer-tutor-status" role="status" aria-live="polite"></p>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧algorithmen/eigenschaften/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"informatik-algorithmen","page":{"id":"eigenschaften","title":"Eigenschaften von Algorithmen","exercises":[{"id":"ein-stueck","section":"einstieg","numbered":false},{"id":"was-fehlt","section":"uebung","numbered":false},{"id":"karten-reparieren","section":"uebung","numbered":false},{"id":"karten-in-ordnung","section":"uebung","numbered":false},{"id":"kurz-endet","section":"uebung","numbered":false}],"sections":["einstieg","idee","ausprobieren","uebung","weiter"]},"tutor":"algorithmen/eigenschaften/tutor/","markdown":"algorithmen/eigenschaften/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
+</div>
+</div>
+
+<nav class="explainer-toc" aria-label="Auf dieser Seite"><p class="explainer-toc-title">Auf dieser Seite</p><ol><li><a href="#einstieg">Toms kaputte Karten</a></li><li><a href="#idee">Vier Fragen an eine Anleitung</a></li><li><a href="#ausprobieren">Selbst ausprobieren</a></li><li><a href="#uebung">Übung</a></li><li><a href="#weiter">Wie es weitergeht</a></li></ol></nav>
+<section class="explainer-section">
+<h2 id="einstieg">Toms kaputte Karten</h2>
+<div class="explainer-block" data-block="einstieg/1" data-block-id="d7dea2a8" data-block-type="text" data-block-order="1">
+<div class="block-text"><p>Im Klassenchat der 7b, nach der Informatikstunde:</p>
+<p><strong>Frau Berg:</strong> Danke fürs Mitspielen! Jede Karte war ein Schritt, und Mia hat genau gemacht, was draufstand.</p>
+<p><strong>Tom:</strong> Ich hab noch eigene Karten gemalt 😎</p>
+<p><strong>Mia:</strong> Bei „gehe ein Stück“ wusste ich nicht, wie weit. Und springen kann Kiko gar nicht!</p>
+<p>Hier lernst du vier Fragen, mit denen du prüfst, ob eine Anleitung ein Algorithmus ist.</p></div>
+</div>
+<div class="explainer-block" data-block="einstieg/2" data-block-id="eb998053" data-block-type="single-choice" data-block-order="2">
+<div class="explainer-exercise explainer-question" id="ein-stueck">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-ein-stueck" data-id="ein-stueck" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Was ist an Toms Karte „gehe ein Stück“ das Problem?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-eigenschaften-toms-karten-de.svg" alt="Drei Karten untereinander: 1 gehe ein Stück, 2 spring über die Wand, 3 drehe dich immer wieder nach links." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Toms selbst gemalte Karten</p></figcaption></figure></div>
+<label class="question-option"><input type="radio" name="frage-ein-stueck" value="0"> <span>Jede und jeder versteht etwas anderes darunter.</span></label>
+<label class="question-option"><input type="radio" name="frage-ein-stueck" value="1"> <span>Kiko kann das gar nicht.</span></label>
+<label class="question-option"><input type="radio" name="frage-ein-stueck" value="2"> <span>Kiko hört dann nie mehr auf.</span></label>
+<label class="question-option"><input type="radio" name="frage-ein-stueck" value="3"> <span>Die Karte hat zu viele Wörter.</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Jede und jeder versteht etwas anderes darunter.</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Ein Feld? Drei Felder? Bis zur Wand? Wer die Karte ausführt, muss raten.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Kiko kann das gar nicht.</strong></p><p>Gehen kann Kiko. Unklar ist nur, wie weit. Das gilt für „spring über die Wand“.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Kiko hört dann nie mehr auf.</strong></p><p>Ein Stück ist irgendwann gegangen. Nie aufhören würde Kiko bei Toms dritter Karte.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Die Karte hat zu viele Wörter.</strong></p><p>Die Karte ist kurz. Es kommt nicht auf die Länge an, sondern darauf, ob sie klar ist.</p></li>
+</ul>
+<p class="question-explanation">Bei „gehe ein Stück“ gibt es mehrere Möglichkeiten. Eine Anleitung für Kiko muss eindeutig sein.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Jede und jeder versteht etwas anderes darunter.</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Ein Feld? Drei Felder? Bis zur Wand? Wer die Karte ausführt, muss raten.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Kiko kann das gar nicht.</strong></p><p>Gehen kann Kiko. Unklar ist nur, wie weit. Das gilt für „spring über die Wand“.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Kiko hört dann nie mehr auf.</strong></p><p>Ein Stück ist irgendwann gegangen. Nie aufhören würde Kiko bei Toms dritter Karte.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Die Karte hat zu viele Wörter.</strong></p><p>Die Karte ist kurz. Es kommt nicht auf die Länge an, sondern darauf, ob sie klar ist.</p></li>
+</ul>
+<p class="question-explanation">Bei „gehe ein Stück“ gibt es mehrere Möglichkeiten. Eine Anleitung für Kiko muss eindeutig sein.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"ein-stueck","text":"Was ist an Toms Karte „gehe ein Stück“ das Problem?","explanation":"Bei „gehe ein Stück“ gibt es mehrere Möglichkeiten. Eine Anleitung für Kiko muss eindeutig sein.","links":[],"material":[{"type":"figure","image":"images/kiko-eigenschaften-toms-karten-de.svg","alt":"Drei Karten untereinander: 1 gehe ein Stück, 2 spring über die Wand, 3 drehe dich immer wieder nach links.","caption":"Toms selbst gemalte Karten","source":"eigene Zeichnung","licence":"CC-BY-4.0"}],"type":"single-choice","options":[{"text":"Jede und jeder versteht etwas anderes darunter.","correct":true,"info":"Ein Feld? Drei Felder? Bis zur Wand? Wer die Karte ausführt, muss raten."},{"text":"Kiko kann das gar nicht.","correct":false,"info":"Gehen kann Kiko. Unklar ist nur, wie weit. Das gilt für „spring über die Wand“."},{"text":"Kiko hört dann nie mehr auf.","correct":false,"info":"Ein Stück ist irgendwann gegangen. Nie aufhören würde Kiko bei Toms dritter Karte."},{"text":"Die Karte hat zu viele Wörter.","correct":false,"info":"Die Karte ist kurz. Es kommt nicht auf die Länge an, sondern darauf, ob sie klar ist."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="idee">Vier Fragen an eine Anleitung</h2>
+<div class="explainer-block" data-block="idee/1" data-block-id="e02ef178" data-block-type="table" data-block-order="3">
+<div class="block-table" role="region" aria-label="Die vier Eigenschaften eines Algorithmus, jede mit einer kaputten Karte als Gegenbeispiel" tabindex="0"><table><caption>Die vier Eigenschaften eines Algorithmus, jede mit einer kaputten Karte als Gegenbeispiel</caption><thead><tr><th scope="col">Eigenschaft</th><th scope="col">Prüffrage</th><th scope="col">Kaputte Karte</th></tr></thead><tbody><tr><td>endlich beschrieben</td><td>Hat der Zettel mit den Schritten ein Ende?</td><td>Schritt 1, Schritt 2, … ohne Ende</td></tr><tr><td>eindeutig</td><td>Ist bei jedem Schritt klar, was zu tun ist und was danach kommt?</td><td>„gehe ein Stück“</td></tr><tr><td>ausführbar</td><td>Kann der, der sie ausführt, jeden Schritt machen, hier Kiko?</td><td>„spring über die Wand“</td></tr><tr><td>endet</td><td>Ist man nach endlich vielen Schritten fertig?</td><td>„drehe dich immer wieder nach links“</td></tr></tbody></table></div>
+</div>
+<div class="explainer-block" data-block="idee/2" data-block-id="faa48ea7" data-block-type="definition" data-block-order="4">
+<dl class="explainer-definition"><dt><dfn id="begriff-eigenschaften-eines-algorithmus"><a href="../../glossar/#eigenschaften-eines-algorithmus">Eigenschaften eines Algorithmus</a></dfn></dt><dd><p>Ein Algorithmus hat vier Eigenschaften: Er ist endlich beschrieben, eindeutig, ausführbar, und er endet nach endlich vielen Schritten.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/3" data-block-id="82e962ce" data-block-type="note" data-block-order="5">
+<div class="explainer-box explainer-note">
+<h3 class="explainer-box-title">Merke</h3>
+<div class="explainer-block" data-block="idee/3/1" data-block-id="1ca81f7e" data-block-type="text" data-block-order="6">
+<div class="block-text"><p>„Endlich beschrieben“ ist nicht dasselbe wie „endet“. Toms dritte Karte ist kurz, aber wer sie ausführt, dreht sich für immer. Ein Programm, das nie endet, löst keine Aufgabe, die enden soll. Darum muss ein Algorithmus enden.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="ausprobieren">Selbst ausprobieren</h2>
+<div class="explainer-block" data-block="ausprobieren/1" data-block-id="f99e4c9a" data-block-type="text" data-block-order="7">
+<div class="block-text"><p><strong>Kartenspiel „Kaputte Karten“, ohne Computer, in zwei Gruppen:</strong></p>
+<ol>
+<li>Druckt das <a href="https://lernapps.net/coding/karten/de/spielfeld.svg" rel="noopener">Spielfeld</a> und die <a href="https://lernapps.net/coding/karten/de/befehlskarten-1.svg" rel="noopener">Befehlskarten</a> aus.</li>
+<li>Jede Gruppe malt heimlich eine kaputte Karte und mischt sie unter die richtigen Karten.</li>
+<li>Die andere Gruppe spielt Kiko. Bei der kaputten Karte ruft sie „Stopp!“ und sagt, welche der vier Fragen nicht stimmt.</li>
+<li>Gemeinsam repariert ihr die Karte. Dann wechselt ihr.</li>
+</ol></div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="uebung">Übung</h2>
+<div class="explainer-block" data-block="uebung/1" data-block-id="bd6b5b9f" data-block-type="matching" data-block-order="8">
+<div class="explainer-exercise explainer-question" id="was-fehlt">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-was-fehlt" data-id="was-fehlt" data-type="matching">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Welche Eigenschaft fehlt der Anleitung?</legend>
+<p class="question-hint">Wähle zu jedem Eintrag das Passende.</p>
+<ul class="question-pairs">
+<li><label><span>„Rühre, bis es gut aussieht.“</span> <select name="frage-was-fehlt-0" data-left="0"><option value="">bitte wählen</option><option value="2">endet nicht</option><option value="1">nicht ausführbar</option><option value="0">nicht eindeutig</option><option value="3">nicht endlich beschrieben</option></select></label></li>
+<li><label><span>„Flieg aus dem Fenster zum Schulhof.“</span> <select name="frage-was-fehlt-1" data-left="1"><option value="">bitte wählen</option><option value="2">endet nicht</option><option value="1">nicht ausführbar</option><option value="0">nicht eindeutig</option><option value="3">nicht endlich beschrieben</option></select></label></li>
+<li><label><span>„Zähl 1, 2, 3 und so weiter und hör nie auf.“</span> <select name="frage-was-fehlt-2" data-left="2"><option value="">bitte wählen</option><option value="2">endet nicht</option><option value="1">nicht ausführbar</option><option value="0">nicht eindeutig</option><option value="3">nicht endlich beschrieben</option></select></label></li>
+<li><label><span>Ein Zettel, auf dem die Schritte nie aufhören: Schritt 1, Schritt 2, …</span> <select name="frage-was-fehlt-3" data-left="3"><option value="">bitte wählen</option><option value="2">endet nicht</option><option value="1">nicht ausführbar</option><option value="0">nicht eindeutig</option><option value="3">nicht endlich beschrieben</option></select></label></li>
+</ul>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> „Rühre, bis es gut aussieht.“ – nicht eindeutig; „Flieg aus dem Fenster zum Schulhof.“ – nicht ausführbar; „Zähl 1, 2, 3 und so weiter und hör nie auf.“ – endet nicht; Ein Zettel, auf dem die Schritte nie aufhören: Schritt 1, Schritt 2, … – nicht endlich beschrieben</p>
+<p class="question-explanation">„Gut aussehen“ versteht jeder anders. Fliegen kann niemand. Wer nie aufhört zu zählen, ist nie fertig. Und ein Zettel ohne Ende lässt sich gar nicht aufschreiben.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> „Rühre, bis es gut aussieht.“ – nicht eindeutig; „Flieg aus dem Fenster zum Schulhof.“ – nicht ausführbar; „Zähl 1, 2, 3 und so weiter und hör nie auf.“ – endet nicht; Ein Zettel, auf dem die Schritte nie aufhören: Schritt 1, Schritt 2, … – nicht endlich beschrieben</p>
+<p class="question-explanation">„Gut aussehen“ versteht jeder anders. Fliegen kann niemand. Wer nie aufhört zu zählen, ist nie fertig. Und ein Zettel ohne Ende lässt sich gar nicht aufschreiben.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"was-fehlt","text":"Welche Eigenschaft fehlt der Anleitung?","explanation":"„Gut aussehen“ versteht jeder anders. Fliegen kann niemand. Wer nie aufhört zu zählen, ist nie fertig. Und ein Zettel ohne Ende lässt sich gar nicht aufschreiben.","links":[],"type":"matching","pairs":[{"left":"„Rühre, bis es gut aussieht.“","right":"nicht eindeutig"},{"left":"„Flieg aus dem Fenster zum Schulhof.“","right":"nicht ausführbar"},{"left":"„Zähl 1, 2, 3 und so weiter und hör nie auf.“","right":"endet nicht"},{"left":"Ein Zettel, auf dem die Schritte nie aufhören: Schritt 1, Schritt 2, …","right":"nicht endlich beschrieben"}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/2" data-block-id="31c37e0c" data-block-type="matching" data-block-order="9">
+<div class="explainer-exercise explainer-question" id="karten-reparieren">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-karten-reparieren" data-id="karten-reparieren" data-type="matching">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Mia repariert Toms Karten. Welche Karte wird zu welcher?</legend>
+<p class="question-hint">Wähle zu jedem Eintrag das Passende.</p>
+<ul class="question-pairs">
+<li><label><span>„gehe ein Stück“</span> <select name="frage-karten-reparieren-0" data-left="0"><option value="">bitte wählen</option><option value="1">„geh um die Wand herum“</option><option value="0">„gehe vorwärts“ (genau ein Feld)</option><option value="2">„drehe dich zweimal nach links“</option></select></label></li>
+<li><label><span>„spring über die Wand“</span> <select name="frage-karten-reparieren-1" data-left="1"><option value="">bitte wählen</option><option value="1">„geh um die Wand herum“</option><option value="0">„gehe vorwärts“ (genau ein Feld)</option><option value="2">„drehe dich zweimal nach links“</option></select></label></li>
+<li><label><span>„drehe dich immer wieder nach links“</span> <select name="frage-karten-reparieren-2" data-left="2"><option value="">bitte wählen</option><option value="1">„geh um die Wand herum“</option><option value="0">„gehe vorwärts“ (genau ein Feld)</option><option value="2">„drehe dich zweimal nach links“</option></select></label></li>
+</ul>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> „gehe ein Stück“ – „gehe vorwärts“ (genau ein Feld); „spring über die Wand“ – „geh um die Wand herum“; „drehe dich immer wieder nach links“ – „drehe dich zweimal nach links“</p>
+<p class="question-explanation">Die reparierten Karten sind eindeutig, Kiko kann sie ausführen, und jede ist nach wenigen Schritten fertig.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> „gehe ein Stück“ – „gehe vorwärts“ (genau ein Feld); „spring über die Wand“ – „geh um die Wand herum“; „drehe dich immer wieder nach links“ – „drehe dich zweimal nach links“</p>
+<p class="question-explanation">Die reparierten Karten sind eindeutig, Kiko kann sie ausführen, und jede ist nach wenigen Schritten fertig.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"karten-reparieren","text":"Mia repariert Toms Karten. Welche Karte wird zu welcher?","explanation":"Die reparierten Karten sind eindeutig, Kiko kann sie ausführen, und jede ist nach wenigen Schritten fertig.","links":[],"type":"matching","pairs":[{"left":"„gehe ein Stück“","right":"„gehe vorwärts“ (genau ein Feld)"},{"left":"„spring über die Wand“","right":"„geh um die Wand herum“"},{"left":"„drehe dich immer wieder nach links“","right":"„drehe dich zweimal nach links“"}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/3" data-block-id="ed41f5f9" data-block-type="multiple-choice" data-block-order="10">
+<div class="explainer-exercise explainer-question" id="karten-in-ordnung">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-karten-in-ordnung" data-id="karten-in-ordnung" data-type="multiple-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Welche Karten kann Kiko auf dem Spielfeld ausführen, ohne zu raten?</legend>
+<label class="question-option"><input type="checkbox" name="frage-karten-in-ordnung" value="0"> <span>„gehe vorwärts“</span></label>
+<label class="question-option"><input type="checkbox" name="frage-karten-in-ordnung" value="1"> <span>„gehe ein paar Felder“</span></label>
+<label class="question-option"><input type="checkbox" name="frage-karten-in-ordnung" value="2"> <span>„drehe dich nach rechts“</span></label>
+<label class="question-option"><input type="checkbox" name="frage-karten-in-ordnung" value="3"> <span>„fliege zum Ziel“</span></label>
+<label class="question-option"><input type="checkbox" name="frage-karten-in-ordnung" value="4"> <span>„drehe dich nach links“</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>„gehe vorwärts“</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Genau ein Feld in Blickrichtung. Das ist klar und machbar.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>„gehe ein paar Felder“</strong></p><p>Wie viele sind „ein paar“? Die Karte ist nicht eindeutig.</p></li>
+<li class="question-info question-info-right" data-option="2"><p class="question-info-head"><strong>„drehe dich nach rechts“</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Eine Vierteldrehung auf der Stelle. Das ist klar und machbar.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>„fliege zum Ziel“</strong></p><p>Kiko kann nicht fliegen. Die Karte ist nicht ausführbar.</p></li>
+<li class="question-info question-info-right" data-option="4"><p class="question-info-head"><strong>„drehe dich nach links“</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Eine Vierteldrehung auf der Stelle, nur andersherum. Auch das ist klar und machbar.</p></li>
+</ul>
+<p class="question-explanation">Kiko kennt drei Befehle. Jede Karte, die genau einen davon meint, kann er ohne Raten ausführen.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>„gehe vorwärts“</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Genau ein Feld in Blickrichtung. Das ist klar und machbar.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>„gehe ein paar Felder“</strong></p><p>Wie viele sind „ein paar“? Die Karte ist nicht eindeutig.</p></li>
+<li class="question-info question-info-right" data-option="2"><p class="question-info-head"><strong>„drehe dich nach rechts“</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Eine Vierteldrehung auf der Stelle. Das ist klar und machbar.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>„fliege zum Ziel“</strong></p><p>Kiko kann nicht fliegen. Die Karte ist nicht ausführbar.</p></li>
+<li class="question-info question-info-right" data-option="4"><p class="question-info-head"><strong>„drehe dich nach links“</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Eine Vierteldrehung auf der Stelle, nur andersherum. Auch das ist klar und machbar.</p></li>
+</ul>
+<p class="question-explanation">Kiko kennt drei Befehle. Jede Karte, die genau einen davon meint, kann er ohne Raten ausführen.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"karten-in-ordnung","text":"Welche Karten kann Kiko auf dem Spielfeld ausführen, ohne zu raten?","explanation":"Kiko kennt drei Befehle. Jede Karte, die genau einen davon meint, kann er ohne Raten ausführen.","links":[],"type":"multiple-choice","options":[{"text":"„gehe vorwärts“","correct":true,"info":"Genau ein Feld in Blickrichtung. Das ist klar und machbar."},{"text":"„gehe ein paar Felder“","correct":false,"info":"Wie viele sind „ein paar“? Die Karte ist nicht eindeutig."},{"text":"„drehe dich nach rechts“","correct":true,"info":"Eine Vierteldrehung auf der Stelle. Das ist klar und machbar."},{"text":"„fliege zum Ziel“","correct":false,"info":"Kiko kann nicht fliegen. Die Karte ist nicht ausführbar."},{"text":"„drehe dich nach links“","correct":true,"info":"Eine Vierteldrehung auf der Stelle, nur andersherum. Auch das ist klar und machbar."}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/4" data-block-id="7dfd09ab" data-block-type="true-false" data-block-order="11">
+<div class="explainer-exercise explainer-question" id="kurz-endet">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-kurz-endet" data-id="kurz-endet" data-type="true-false">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Jona sagt: „Eine Anleitung, die kurz aufgeschrieben ist, endet auch immer.“ Stimmt das?</legend>
+<label class="question-option"><input type="radio" name="frage-kurz-endet" value="true"> <span>Stimmt</span></label>
+<label class="question-option"><input type="radio" name="frage-kurz-endet" value="false"> <span>Stimmt nicht</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
+<p class="question-explanation">„Drehe dich immer wieder nach links“ ist kurz aufgeschrieben, aber Kiko dreht sich für immer. Endlich beschrieben heißt nicht, dass die Ausführung endet.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
+<p class="question-explanation">„Drehe dich immer wieder nach links“ ist kurz aufgeschrieben, aber Kiko dreht sich für immer. Endlich beschrieben heißt nicht, dass die Ausführung endet.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"kurz-endet","text":"Jona sagt: „Eine Anleitung, die kurz aufgeschrieben ist, endet auch immer.“ Stimmt das?","explanation":"„Drehe dich immer wieder nach links“ ist kurz aufgeschrieben, aber Kiko dreht sich für immer. Endlich beschrieben heißt nicht, dass die Ausführung endet.","links":[],"type":"true-false","answer":false},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="weiter">Wie es weitergeht</h2>
+<div class="explainer-block" data-block="weiter/1" data-block-id="7c82dc6d" data-block-type="text" data-block-order="12">
+<div class="block-text"><p>Du kannst jetzt mit vier Fragen prüfen, ob eine Anleitung ein Algorithmus ist. <strong>Mia</strong> schreibt: „Mit den reparierten Karten komme ich ans Ziel. Aber nur, wenn Jona sie richtig hinlegt.“ Auf der nächsten Seite geht es um die Reihenfolge der Karten.</p></div>
+</div>
+</section>
+<p class="explainer-feedback-invite" hidden><span>Fehler gefunden oder eine Idee für diese App?</span> <button type="button" class="explainer-feedback-switch">Feedback zu „Algorithmen und Programme“ geben</button></p>
+</main>
+<template class="explainer-feedback-template">
+<aside class="explainer-feedback" aria-labelledby="feedback-titel" hidden>
+<div class="explainer-feedback-head">
+<h2 id="feedback-titel">Feedback</h2>
+<button type="button" class="explainer-feedback-help-open" aria-expanded="false" aria-controls="feedback-hilfe">Hilfe</button>
+<button type="button" class="explainer-feedback-collapse" aria-expanded="true" aria-controls="feedback-inhalt" aria-label="Leiste einklappen" title="Leiste einklappen"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<button type="button" class="explainer-feedback-expand" hidden><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Feedback-Leiste ausklappen</span></button>
+<div class="explainer-feedback-body" id="feedback-inhalt">
+<section class="explainer-feedback-help" id="feedback-hilfe" aria-labelledby="feedback-hilfe-titel" hidden>
+<h3 id="feedback-hilfe-titel">So gibst du Feedback</h3>
+<ol><li>Geh die Seiten durch. Bei jedem Absatz, jeder Abbildung und jeder Aufgabe erscheint „Notiz“.</li><li>Markierst du vorher Text im Block, steht er als Zitat in der Notiz.</li><li>Bist du fertig, wähl „Issue auf GitHub öffnen“. Die App kopiert dabei deine Notizen, und du fügst sie im Issue ein. Dafür brauchst du ein GitHub-Konto.</li></ol>
+<p class="explainer-feedback-privacy">Deine Notizen bleiben nur in diesem Browser, auf diesem Gerät. Die App sendet nichts. Wenn du die Browserdaten löschst, sind die Notizen weg.</p>
+<p><button type="button" class="explainer-feedback-help-done">Verstanden</button></p>
+</section>
+<form class="explainer-feedback-form" hidden>
+<p class="explainer-feedback-new">Neue Notiz zu</p>
+<p class="explainer-feedback-where"></p>
+<blockquote class="explainer-feedback-quote" hidden></blockquote>
+<label for="feedback-text">Deine Notiz</label>
+<textarea id="feedback-text" class="explainer-feedback-text" rows="5" required></textarea>
+<p class="explainer-feedback-buttons"><button type="submit" class="explainer-feedback-save">Speichern</button> <button type="button" class="explainer-feedback-cancel">Abbrechen</button></p>
+</form>
+<p class="explainer-feedback-status" role="status" aria-live="polite"></p>
+<section class="explainer-feedback-notes" aria-labelledby="feedback-notizen">
+<h3 id="feedback-notizen" class="explainer-feedback-count"></h3>
+<p class="explainer-feedback-actions"><button type="button" class="explainer-feedback-copy">Kopieren</button> <a class="explainer-feedback-issue" href="#" target="_blank" rel="noopener">Issue auf GitHub öffnen</a></p>
+<textarea class="explainer-feedback-export" readonly rows="6" aria-label="Text zum Kopieren" hidden></textarea>
+<div class="explainer-feedback-list"></div>
+</section>
+</div>
+<div class="explainer-feedback-foot">
+<button type="button" class="explainer-feedback-delete-all">Alle löschen …</button>
+<span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
+<button type="button" class="explainer-feedback-off">Beenden</button>
+</div>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-algorithmen","app":"Algorithmen und Programme","root":"../../","repository":"lernapps/informatik-algorithmen","revision":"d4fdfc3","page":{"title":"Eigenschaften von Algorithmen","order":1}}</script>
+</aside>
+</template>
+<nav class="explainer-pager" aria-label="Weiterblättern"><a rel="prev" href="../../algorithmen/algorithmus/">Zurück: Was ist ein Algorithmus?</a><a rel="next" href="../../algorithmen/sequenz/">Weiter: Sequenz</a></nav>
+<footer class="page-footer"><p>Eine Erklär-App auf lernapps.net · <a href="https://lernapps.net/imprint/">Impressum</a> · <a href="https://lernapps.net/privacy/">Datenschutz</a></p></footer>
+  </body>
+</html>

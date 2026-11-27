@@ -45,9 +45,9 @@ Befehle nacheinander in fester Reihenfolge: Mit drei Befehlskarten steuerst du K
 
 Im Klassenchat der 7b, am Abend vor Informatik:
 
-**Frau Berg:** Morgen kleben wir ein Spielfeld auf den Boden. Eine oder einer von euch ist Kiko. Wir nehmen nur drei Karten: vorwärts, links drehen, rechts drehen.
+**Frau Berg:** Morgen spielen wir weiter, auf dem Spielfeld am Boden. Diesmal nur mit drei Karten: vorwärts, links drehen, rechts drehen. Wer ist Kiko?
 
-**Mia:** Ich bin Kiko!
+**Mia:** Wieder ich!
 
 **Jona:** Dann lege ich die Karten 😄
 

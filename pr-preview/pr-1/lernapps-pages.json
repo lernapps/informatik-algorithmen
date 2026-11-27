@@ -13,6 +13,16 @@
       ]
     },
     {
+      "path": "algorithmen/eigenschaften/",
+      "title": {
+        "de": "Eigenschaften von Algorithmen",
+        "en": "Properties of algorithms"
+      },
+      "competencies": [
+        "algorithmische-eigenschaften"
+      ]
+    },
+    {
       "path": "algorithmen/sequenz/",
       "title": {
         "de": "Sequenz",
