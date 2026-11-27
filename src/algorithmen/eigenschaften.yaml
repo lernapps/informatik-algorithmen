@@ -202,12 +202,14 @@ blocks:
           - left: { de: „gehe ein Stück“, en: “move a bit” }
             right: { de: „gehe vorwärts“ (genau ein Feld), en: “move forward” (exactly one square) }
           - left: { de: „spring über die Wand“, en: “jump over the wall” }
-            right: { de: „geh um die Wand herum“, en: “go around the wall” }
+            right:
+              de: "Karten, die um die Wand herumführen: drehen und vorwärts gehen"
+              en: "Cards that lead around the wall: turning and moving forward"
           - left: { de: „drehe dich immer wieder nach links“, en: “keep turning left again and again” }
-            right: { de: „drehe dich zweimal nach links“, en: “turn left twice” }
+            right: { de: zwei Karten „drehe dich nach links“, en: two “turn left” cards }
         explanation:
-          de: Die reparierten Karten sind eindeutig, Kiko kann sie ausführen, und jede ist nach wenigen Schritten fertig.
-          en: The fixed cards are unambiguous, Kiko can carry them out, and each is finished after a few steps.
+          de: Die reparierten Karten benutzen nur Kikos drei Befehle. Sie sind eindeutig, ausführbar, und Kiko ist nach wenigen Schritten fertig.
+          en: The fixed cards only use Kiko's three commands. They are unambiguous, can be carried out, and Kiko is finished after a few steps.
       - type: multiple-choice
         id: karten-in-ordnung
         text:

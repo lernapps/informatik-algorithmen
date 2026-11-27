@@ -81,8 +81,8 @@ blocks:
           - text: { de: Feld C, en: Square C }
             correct: false
             info:
-              de: Du hast beim letzten Block aufgehört zu zählen. Nach „drehe dich nach rechts“ kommt noch „gehe vorwärts“.
-              en: You stopped counting at the last block. After “turn right” there is one more “move forward”.
+              de: Du hast vor dem letzten Block aufgehört zu zählen. Nach „drehe dich nach rechts“ kommt noch „gehe vorwärts“.
+              en: You stopped counting before the last block. After “turn right” there is one more “move forward”.
           - text: { de: Feld D, en: Square D }
             correct: false
             info:

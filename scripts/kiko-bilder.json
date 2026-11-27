@@ -22,7 +22,7 @@
       "facing": "north"
     },
     "challenge-sequenz-schulhof": {
-      "title": "Spielfeld der Challenge „Kiko holt den Ball“",
+      "title": "Spielfeld der Challenge „Kiko läuft zur Fahne“",
       "map": ["#######", "#S..###", "###.###", "###..Z#", "#######"],
       "facing": "east"
     },
@@ -82,40 +82,15 @@
         "D": [6, 6]
       }
     },
-    "challenge-langer-gang": {
-      "title": "Spielfeld der Challenge „Der lange Gang“",
-      "map": ["############", "#S........Z#", "############"],
-      "facing": "east"
-    },
     "challenge-treppe": {
       "title": "Spielfeld der Challenge „Die breite Treppe“",
       "map": ["#########", "#######Z#", "#####...#", "###...###", "#S..#####", "#########"],
-      "facing": "east"
-    },
-    "challenge-gang-unbekannt-1": {
-      "title": "Spielfeld 1 der Challenge „Wie lang ist der Gang?“",
-      "map": ["#######", "#S...Z#", "#######"],
-      "facing": "east"
-    },
-    "challenge-gang-unbekannt-2": {
-      "title": "Spielfeld 2 der Challenge „Wie lang ist der Gang?“",
-      "map": ["##########", "#S......Z#", "##########"],
-      "facing": "east"
-    },
-    "challenge-gang-unbekannt-3": {
-      "title": "Spielfeld 3 der Challenge „Wie lang ist der Gang?“",
-      "map": ["#####", "#S.Z#", "#####"],
       "facing": "east"
     },
     "challenge-um-jede-ecke-1": {
       "title": "Spielfeld 1 der Challenge „Um jede Ecke“",
       "map": ["########", "#S.....#", "######.#", "#Z.....#", "########"],
       "facing": "east"
-    },
-    "challenge-um-jede-ecke-2": {
-      "title": "Spielfeld 2 der Challenge „Um jede Ecke“",
-      "map": ["########", "#...Z###", "#.######", "#.######", "#.....S#", "########"],
-      "facing": "west"
     }
   },
   "programme": {
@@ -419,8 +394,8 @@
     },
     "bedingt-endlos": {
       "title": {
-        "de": "Ein Programm, das nie endet",
-        "en": "A program that never ends"
+        "de": "Ein Programm mit „solange … tue“",
+        "en": "A program with “while … do”"
       },
       "program": {
         "main": [

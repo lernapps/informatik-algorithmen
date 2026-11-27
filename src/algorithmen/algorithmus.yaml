@@ -71,7 +71,7 @@ blocks:
               en: “Just ask someone in the corridor.”
             correct: false
             info:
-              de: Damit schiebt Jona die Aufgabe nur weiter. Wie Ali den Raum findet, steht nicht darin.
+              de: Damit wird die Aufgabe nur weitergeschoben. Wie Ali den Raum findet, steht nicht darin.
               en: That only passes the task on. It doesn't say how Ali finds the room.
         explanation:
           de: Selins Nachricht besteht aus Schritten, die Ali nacheinander ausführen kann, bis er am Ziel ist.

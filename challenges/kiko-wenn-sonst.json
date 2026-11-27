@@ -6,8 +6,8 @@
     "en": "Up or down?"
   },
   "task": {
-    "de": "Kiko geht ein Feld vor und steht dann vor einer Wand. Das Ziel ist mal oben, mal unten. Bau ein Programm mit „wenn … dann … sonst“, das in beiden Spielfeldern klappt.",
-    "en": "Kiko moves one square forward and then stands in front of a wall. The goal is sometimes up, sometimes down. Build a program with “if … then … else” that works on both boards."
+    "de": "Kiko geht ein Feld vor und steht dann vor einer Wand. Das Ziel ist mal im Bild oben, mal im Bild unten. Bau ein Programm mit „wenn … dann … sonst“, das in beiden Spielfeldern klappt.",
+    "en": "Kiko moves one square forward and then stands in front of a wall. The goal is sometimes up the board, sometimes down the board. Build a program with “if … then … else” that works on both boards."
   },
   "world": {
     "type": "labyrinth",

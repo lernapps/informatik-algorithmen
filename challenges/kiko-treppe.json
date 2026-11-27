@@ -26,8 +26,8 @@
   "checks": ["ziel-erreicht", "benutzt-block:wiederhole"],
   "hints": [
     {
-      "de": "Schreib erst die Befehle für die unterste Stufe auf. Danach schaut Kiko wieder nach rechts.",
-      "en": "First write down the commands for the lowest step. Afterwards Kiko faces right again."
+      "de": "Schreib erst die Befehle für die unterste Stufe auf. Danach schaut Kiko wieder im Bild nach rechts.",
+      "en": "First write down the commands for the lowest step. Afterwards Kiko faces right on the board again."
     },
     {
       "de": "Eine Stufe: 2-mal vorwärts, links drehen, vorwärts, rechts drehen.",

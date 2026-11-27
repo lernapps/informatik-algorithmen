@@ -6,8 +6,8 @@
     "en": "The long corridor"
   },
   "task": {
-    "de": "Kiko soll 9 Felder geradeaus gehen. Du hast nur 3 Blöcke. Benutz „wiederhole … mal“.",
-    "en": "Kiko has to go 9 squares straight ahead. You only have 3 blocks. Use “repeat … times”."
+    "de": "Kiko soll 9 Felder geradeaus gehen. Du hast höchstens 3 Blöcke. Benutz „wiederhole … mal“.",
+    "en": "Kiko has to go 9 squares straight ahead. You have at most 3 blocks. Use “repeat … times”."
   },
   "world": {
     "type": "labyrinth",

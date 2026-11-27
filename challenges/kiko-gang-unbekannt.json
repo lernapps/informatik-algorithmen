@@ -6,8 +6,8 @@
     "en": "How long is the corridor?"
   },
   "task": {
-    "de": "Der Gang ist in jedem Spielfeld anders lang. Das Ziel ist immer am Ende vor der Wand. Bau ein Programm, das in allen drei Spielfeldern klappt. Du hast nur 3 Blöcke.",
-    "en": "The corridor has a different length on each board. The goal is always at the end, in front of the wall. Build a program that works on all three boards. You only have 3 blocks."
+    "de": "Der Gang ist in jedem Spielfeld anders lang. Das Ziel ist immer am Ende vor der Wand. Bau ein Programm, das in allen drei Spielfeldern klappt. Du hast höchstens 3 Blöcke.",
+    "en": "The corridor has a different length on each board. The goal is always at the end, in front of the wall. Build a program that works on all three boards. You have at most 3 blocks."
   },
   "world": {
     "type": "labyrinth",
