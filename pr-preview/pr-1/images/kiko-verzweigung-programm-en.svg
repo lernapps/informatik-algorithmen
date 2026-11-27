@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193 252" width="193" height="252">
+<title>A program with selection</title>
+<desc>Kiko und die Welt nach der Programmierwerkstatt lernapps.net/coding, © 2026 Oliver Jägle, CC BY 4.0. Erzeugt mit scripts/kiko-bilder.ts.</desc>
+<style>.t{font:14px sans-serif;fill:#ffffff}.n{font:bold 13px sans-serif;fill:#1f2a44;text-anchor:middle}</style>
+<rect width="193" height="252" fill="#ffffff"/><rect x="8" y="40" width="10" height="138" fill="#2e6b30"/><rect x="8" y="8" width="82.88" height="30" rx="8" fill="#7a4f24"/><text x="20" y="28" class="t">Program</text><rect x="8" y="40" width="176.96" height="30" rx="5" fill="#2e6b30"/><text x="20" y="60" class="t">if wall ahead? then</text><rect x="30" y="72" width="106.4" height="30" rx="5" fill="#2f5d8a"/><text x="42" y="92" class="t">turn right</text><rect x="8" y="104" width="59.36" height="30" rx="5" fill="#2e6b30"/><text x="20" y="124" class="t">else</text><rect x="30" y="136" width="122.08000000000001" height="30" rx="5" fill="#2f5d8a"/><text x="42" y="156" class="t">move forward</text><rect x="8" y="168" width="60" height="10" rx="3" fill="#2e6b30"/><rect x="8" y="180" width="122.08000000000001" height="30" rx="5" fill="#2f5d8a"/><text x="20" y="200" class="t">move forward</text>
+</svg>

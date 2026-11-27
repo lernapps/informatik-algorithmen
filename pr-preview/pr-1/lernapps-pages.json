@@ -31,6 +31,46 @@
       "competencies": [
         "sequenz"
       ]
+    },
+    {
+      "path": "bloecke/bloecke/",
+      "title": {
+        "de": "Programmieren mit Blöcken",
+        "en": "Programming with blocks"
+      },
+      "competencies": [
+        "visuelle-programmierung"
+      ]
+    },
+    {
+      "path": "bloecke/verzweigung/",
+      "title": {
+        "de": "Verzweigung",
+        "en": "Selection"
+      },
+      "competencies": [
+        "verzweigung"
+      ]
+    },
+    {
+      "path": "bloecke/zaehlschleife/",
+      "title": {
+        "de": "Zählschleife",
+        "en": "Count-controlled loop"
+      },
+      "competencies": [
+        "wiederholung-feste-anzahl"
+      ]
+    },
+    {
+      "path": "bloecke/bedingte-wiederholung/",
+      "title": {
+        "de": "Bedingte Wiederholung",
+        "en": "Condition-controlled loop"
+      },
+      "competencies": [
+        "wiederholung-mit-bedingung"
+      ]
     }
   ]
 }

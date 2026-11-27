@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="../../../assets/index-DVOapkED.js"></script>
+    <link rel="stylesheet" crossorigin href="../../../assets/index-CtncCkFd.css">
+    <title>Condition-controlled loop – Algorithms and programs</title>
+    <meta name="description" content="With “while … do” Kiko repeats blocks as long as a condition is true, even when nobody knows beforehand how often." />
+    <meta name="lernapps-archetype" content="explainer" />
+    <link rel="alternate" hreflang="de" href="../../../bloecke/bedingte-wiederholung/" />
+    <link rel="alternate" hreflang="en" href="../../../en/bloecke/bedingte-wiederholung/" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="page-header"><nav class="page-languages" aria-label="Language"><ul><li><a href="../../../bloecke/bedingte-wiederholung/" hreflang="de" lang="de">Deutsch</a></li><li><a href="../../../en/bloecke/bedingte-wiederholung/" hreflang="en" lang="en" aria-current="page">English</a></li></ul></nav></header>
+<nav class="explainer-breadcrumbs" aria-label="You are here"><ol><li><a href="../../../en/">Start</a></li><li><a href="../../../en/bloecke/">Programming with blocks</a></li><li aria-current="page">Condition-controlled loop</li></ol></nav>
+<main class="explainer" id="inhalt-der-seite">
+<div class="explainer-title-row">
+<h1>Condition-controlled loop</h1>
+<div class="explainer-tutor explainer-tutor-page">
+<details class="explainer-tutor-off">
+<summary>Learn with an AI tutor</summary>
+<p>An AI tutor explains this page to you and helps you with the exercises. Choose your assistant:</p>
+<p class="explainer-tutor-actions"><span class="explainer-tutor-way" hidden><select class="explainer-tutor-select" aria-label="Assistant"><option value="Claude">Claude</option><option value="ChatGPT">ChatGPT</option><option value="Mistral Vibe" data-hint="Mistral Vibe does not load web pages when the link comes from a button. So we copy the sentence with the link for you. A click on “Learn with Mistral Vibe” opens Mistral Vibe with a short message. Then paste the copied sentence (Ctrl+V, ⌘+V on a Mac) and send it.">Mistral Vibe</option><option value="copy">Another one: copy the text</option></select> <button type="button" class="explainer-tutor-on">Switch on</button></span> <span class="explainer-tutor-plain"><a class="explainer-tutor-provider" href="https://claude.ai/new" rel="noopener" target="_blank">Open with Claude</a> <a class="explainer-tutor-provider" href="https://chatgpt.com/" rel="noopener" target="_blank">Open with ChatGPT</a> <a class="explainer-tutor-provider" href="https://chat.mistral.ai/chat" rel="noopener" target="_blank">Open with Mistral Vibe</a></span></p>
+<p class="explainer-tutor-hint" role="status" aria-live="polite" hidden></p>
+<p class="explainer-tutor-note">You use your own account with the provider. The assistant is not offered by lernapps.net: lernapps only provides the content and the exercises. The choice holds for all pages, on this device only.</p>
+<p><a class="explainer-tutor-guide" href="../../../en/bloecke/bedingte-wiederholung/tutor/">See what your tutor gets for this page</a></p>
+</details>
+<p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
+<p class="explainer-tutor-status" role="status" aria-live="polite"></p>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Load ⟦base⟧bloecke/bedingte-wiederholung/tutor/⟦query⟧ and be my tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../../en/","storage":"informatik-algorithmen","page":{"id":"bedingte-wiederholung","title":"Condition-controlled loop","exercises":[{"id":"welche-schleife","section":"einstieg","numbered":false},{"id":"wie-oft-vorwaerts","section":"uebung","numbered":true},{"id":"wie-oft-pruefen","section":"uebung","numbered":true},{"id":"endlosschleife","section":"uebung","numbered":false},{"id":"zahl-oder-bedingung","section":"uebung","numbered":false}],"sections":["einstieg","idee","ausprobieren","uebung","weiter"]},"tutor":"bloecke/bedingte-wiederholung/tutor/","markdown":"bloecke/bedingte-wiederholung/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"I need help with a learning unit. I will tell you in a moment what it is about.","go":"Learn with {name}","done":"✓ Copied – now paste it into {name}","copy":"Copy the text","copied":"The prompt is copied. Paste it into the chat of your AI assistant.","failed":"Copying did not work. Try again."}</script>
+</div>
+</div>
+
+<nav class="explainer-toc" aria-label="On this page"><p class="explainer-toc-title">On this page</p><ol><li><a href="#einstieg">Corridors of unknown length</a></li><li><a href="#idee">Repeating while the condition is true</a></li><li><a href="#ausprobieren">Try it yourself</a></li><li><a href="#uebung">Practice</a></li><li><a href="#weiter">Looking back and what comes next</a></li></ol></nav>
+<section class="explainer-section">
+<h2 id="einstieg">Corridors of unknown length</h2>
+<div class="explainer-block" data-block="einstieg/1" data-block-id="ba21f9d9" data-block-type="text" data-block-order="1">
+<div class="block-text"><p>In class 7b&#39;s group chat:</p>
+<p><strong>Selin:</strong> In my maze every corridor has a different length. With “repeat … times” it only ever works for one of them.</p>
+<p><strong>Ali:</strong> Kiko should just walk until the wall comes.</p>
+<p><strong>Frau Berg:</strong> That&#39;s exactly what “while … do” is for.</p>
+<p>Here you learn how Kiko repeats as long as a condition is true.</p></div>
+</div>
+<div class="explainer-block" data-block="einstieg/2" data-block-id="11e03990" data-block-type="single-choice" data-block-order="2">
+<div class="explainer-exercise explainer-question" id="welche-schleife">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-welche-schleife" data-id="welche-schleife" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Kiko has to walk up to just before the wall in every corridor, however long the corridor is. Which program always works?</legend>
+<label class="question-option"><input type="radio" name="frage-welche-schleife" value="0"> <span>while way ahead clear? do move forward</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-schleife" value="1"> <span>repeat 5 times: move forward</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-schleife" value="2"> <span>if way ahead clear? then move forward</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-schleife" value="3"> <span>while wall ahead? do move forward</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>while way ahead clear? do move forward</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Before every step Kiko checks whether the way is clear. When the wall comes, it stops, however many squares it took.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>repeat 5 times: move forward</strong></p><p>That only works in a corridor with exactly 5 free squares. In a shorter one Kiko walks into the wall.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>if way ahead clear? then move forward</strong></p><p>Selection only checks once. Kiko moves one square at most.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>while wall ahead? do move forward</strong></p><p>The condition is the wrong way round. If the way is clear, it is false, and Kiko doesn't start at all.</p></li>
+</ul>
+<p class="question-explanation">When nobody knows beforehand how often, a loop with a condition helps instead of one with a number.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>while way ahead clear? do move forward</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Before every step Kiko checks whether the way is clear. When the wall comes, it stops, however many squares it took.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>repeat 5 times: move forward</strong></p><p>That only works in a corridor with exactly 5 free squares. In a shorter one Kiko walks into the wall.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>if way ahead clear? then move forward</strong></p><p>Selection only checks once. Kiko moves one square at most.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>while wall ahead? do move forward</strong></p><p>The condition is the wrong way round. If the way is clear, it is false, and Kiko doesn't start at all.</p></li>
+</ul>
+<p class="question-explanation">When nobody knows beforehand how often, a loop with a condition helps instead of one with a number.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"welche-schleife","text":"Kiko has to walk up to just before the wall in every corridor, however long the corridor is. Which program always works?","explanation":"When nobody knows beforehand how often, a loop with a condition helps instead of one with a number.","links":[],"type":"single-choice","options":[{"text":"while way ahead clear? do move forward","correct":true,"info":"Before every step Kiko checks whether the way is clear. When the wall comes, it stops, however many squares it took."},{"text":"repeat 5 times: move forward","correct":false,"info":"That only works in a corridor with exactly 5 free squares. In a shorter one Kiko walks into the wall."},{"text":"if way ahead clear? then move forward","correct":false,"info":"Selection only checks once. Kiko moves one square at most."},{"text":"while wall ahead? do move forward","correct":false,"info":"The condition is the wrong way round. If the way is clear, it is false, and Kiko doesn't start at all."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="idee">Repeating while the condition is true</h2>
+<div class="explainer-block" data-block="idee/1" data-block-id="68d33ccf" data-block-type="figure" data-block-order="3">
+<figure class="block-figure"><div class="block-image-credit"><img src="../../../images/kiko-bedingt-programm-en.svg" alt="A program: while way ahead clear? do, inside it move forward." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Source: own drawing after lernapps.net/coding. Licence: CC-BY-4.0." aria-label="Source: own drawing after lernapps.net/coding. Licence: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Kiko walks until there is a wall in front of it.</p></figcaption></figure>
+</div>
+<div class="explainer-block" data-block="idee/2" data-block-id="a1ae77f0" data-block-type="definition" data-block-order="4">
+<dl class="explainer-definition"><dt><dfn id="begriff-bedingte-wiederholung"><a href="../../../en/glossar/#bedingte-wiederholung">condition-controlled loop</a></dfn></dt><dd><p>A condition-controlled loop runs the loop body while the condition is true. Kiko checks the condition before each pass; if it is false, the loop stops, even before the first pass.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/3" data-block-id="c9e7f879" data-block-type="note" data-block-order="5">
+<div class="explainer-box explainer-note">
+<h3 class="explainer-box-title">Remember</h3>
+<div class="explainer-block" data-block="idee/3/1" data-block-id="93a88e93" data-block-type="text" data-block-order="6">
+<div class="block-text"><p>“Walk until you reach the goal” is written like this: while not at the goal? do move forward. If the condition never becomes false, the loop never ends. That is an infinite loop. A program that never ends doesn&#39;t solve a task that is meant to end.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="ausprobieren">Try it yourself</h2>
+<div class="explainer-block" data-block="ausprobieren/1" data-block-id="81bc6010" data-block-type="text" data-block-order="7">
+<div class="block-text"><p><strong>Without a computer:</strong> lay the cards <a href="https://lernapps.net/coding/karten/en/befehlskarten-2.svg" rel="noopener">“while ___ do” and “way ahead clear?”</a> with “move forward” inside. Someone secretly puts the wall somewhere. Before every step Kiko asks out loud: “Way ahead clear?”</p>
+<p><strong>With a computer, two challenges:</strong></p>
+<ul>
+<li>Three corridors, each a different length, with only 3 blocks: <a href="https://lernapps.net/coding/en/app/?c=hZTNbuM2EMdfZcC9ysouctMlQJqiBXpZIAWCJshhJI7EqaihQFJWk8CAH8SbU9FH6Km3vImfpCVlO26BoL7IIOc_85svvqjW-QGjqr4UirWqVM-9W3Uo3WqSmnoUiapQkaMlVb0oTapSd0xgUTrgEEGThx9QuitVKBJVqR_dDNblW4iGoHHes3b-Sm0KFTH0Jz83B2n2wwK_kqYBbkcm25LVgKLJhxyqhBsMcM9kF-NhIA84wPeiCdbOZ4w7FF3CNU5ALPDVu87jMBSgMST3aC0JaE_8HoO8QG9xHGMJNxMYDBFk8nAJ1_btz6an8pjWz2epJDtA0Ny25EkiWJIuGnAChI2B2qHXJSRJ5zAhA9oZnwJgzDUh0UVCar2TCK7NhzNaW8L1xCl1GBd8iAYjzM73IblHayEaT7TECCX84iZwYp_A4JrgEmrrmj6Uqdiz81anasenMdXbYv3kWaJRhVqTD-wkN75x0nKXDAccVfWgPi0_VahPt2VZ3ud_h7PHQrXYsHSqUoQhqk1qq3O2dr8l7dr5GcnHoAplWfr09dSYfBBcaiapQs3UrVpPnPyFiD6qSiZrk2bgGBLMkomqLpMFjUFVXz5_TsEoJIOHlw_Bz9j_g58z2GyKj7SL7F2RjB8L1RjKKA_qmcmuyHvixqTNqEmm-BxXGbY65vdYKMNyoMyzvt--zkyavHGWYL_9Awa0--0ODNs2gmHyIMlnBTdMcI_Gwvz2u6ePF-M0mvvtztNIGLPfyAOF_fYbaEcBxEUwZEcw5KnKcybTUJOH2U1WQ01nY_zv-VWpTBn-J-4dBGdtWrVEFQN0ZEgKOGScd5DNAKmnaUVPcIvW5GCDWxO0aUC8BgzLM4HhMP1PgIZQp21pLKE_A7iN1PSw377eUZdDXKXSsaSjI0HOfaJ0MYlONwnxnXgpthDLie3rlEq2ew-d416l4rFEl-8MH_qlXTrH7Hp3nsliHlgTcCxVmpc10_xPY2rrqOnTuNfY5Hdv8vb0_F2wLK8v9yu0nfMczUBycVBd1KRZukir0-BM0l0c2T9S_7-DTZFeAnoHuZ_8219ND8-Th1vimPJ9vT6I4e5MvN_ujvGvsekhuty7EXP9d9850RzZyapxEr2zljRY58b99pvabDZ_Aw" rel="noopener">open the challenge “How long is the corridor?”</a></li>
+<li>Corridors with corners, a loop with selection inside: <a href="https://lernapps.net/coding/en/app/?c=hVXNbuM2EH6VweQqKVv0UugSbJpNEbSHAmmxQAIfKHEkTkWRBknF6wQG_CBOT4s-xd7yJn6SYmjZyS6wrS7mz8zHb36-8RN2PowqYf1DgayxxoEHX_I4Uig1jWWvXF861RosMHGyhPUTasIa_xzhL9IEH9qBsEByWOP74CengR4orKH1wVHATYFJxeHkd0UBLq1vB9hv_47eKtcTOG5NAjXCHZO9gDTRfrsDy9QniK3xDrQCgeaYoKOYKrh--WItsHEQfQFaxQi_8uBBT6E10BBrgl9ePgs6u5iBYfDjmGq4iQk0BfhIPXSBuICeTDq4P_iwevkcUiwgeieGQe4oQOTWgKQCArUmxeoY9R-GoJkj2q0MWwLnE6gEyRD0XtkL0H6_fQaOoGwgpddyFQiU09DxJ9IVXLOEkyB6SEbNbHpKEZIJfuoNND4ZyWpg7UOE5E_4NXCXNyu1BmVISaKgtaRCcQAa_QNF6HxYqaALIBtJHktTcBEC9yZVUqmVD1ZLqdJ6KcWyqlkHdknK_0Ahsne5VVrvOu7FcFRLrO_xbP6wwLPbSr68zN9heffN6dkZLgrsVMuuxxpJxYQbaRbvbeM_CajUQlFIEQu07Ab5PeQeC5xbBwtckXNlLhYWmDspH_al1BYLVGP5yGTluZhUSAfa7LC-f8KINeaaYY4qBy-ROy8o6riN5KKYODXK9ghZoAp9xPp-IdQbr9eyLlC6gTTWKUy0WWyE_sgpClrulIj1T8KGlhHrH9-9k7gpisH9038nt6qqu-PyzelXBlV1-908ryjneVFgaygTuUcJpaQQaM5dQ25Kj6nMVOs36V0UaNjNNLOab1xW0m1rLHFHQC7F1oj45g5uiPOcGOFKhGnV1IGj6SSeGxdFqdK81vvl3K6aWtYUQfWKHXg3j5SlilH6dH78N-pliAhB2G__Aa3mRWYrE4QdaKYTvQqug-prcTpq_2K_3R25_D4lkTB3GSQZOqCJWLJ6v6Zawfs41FnzJ9VlyV3st8-vJK-Uc_nFngy9jpf9dlfBrfDMlzJlCPQ3I0aM3kyZjLMTKR-VvN8-V_DBRso3ouaDmOUcpcgPTCuspenoMKcb1eZZPAV7Gsnn7A5_AzyUyvY-cDIjufPZ67whza5PVK6YNAXj7eT68yOx73n_P4DoQjX0SuRuCi9f2gEepwC3xIkkNZezM3x84_ymapeqHY7DcKl68dn97J3mxN6VrXcpeGtJ56Ll0mw2_wI" rel="noopener">open the challenge “Around every corner”</a></li>
+</ul></div>
+</div>
+<div class="explainer-block" data-block="ausprobieren/2" data-block-id="0d8e5148" data-block-type="figure" data-block-order="8">
+<figure class="block-figure"><div class="block-image-credit"><img src="../../../images/kiko-challenge-um-jede-ecke-1.svg" alt="Board 1 of the challenge “Around every corner”: Kiko stands in column 2, row 2 and faces right on the board. The corridor goes right to column 7, then 2 squares down and then left to the goal in column 2, row 4." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Source: own drawing, Kiko after lernapps.net/coding. Licence: CC-BY-4.0." aria-label="Source: own drawing, Kiko after lernapps.net/coding. Licence: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Board 1 of “Around every corner”. At every corner the corridor turns right.</p></figcaption></figure>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="uebung">Practice</h2>
+<div class="explainer-block" data-block="uebung/1" data-block-id="33d99de3" data-block-type="generated" data-block-order="9">
+<div class="explainer-exercise explainer-generated" id="wie-oft-vorwaerts">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="explainer-live" hidden></div>
+<p class="explainer-worked-intro">Three worked tasks, each with its solution:</p>
+<ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Task no. 1</p><p class="explainer-task">Program: while way ahead clear? do move forward. In front of Kiko there are 4 free squares, then a wall. How many times does Kiko move forward?</p><details class="explainer-hint"><summary>Hint</summary><p>Play it through for 2 free squares. How often is the way clear?</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>Before each of the 4 free squares the way is clear: Kiko moves forward.</li><li>After that the wall is ahead and the condition is false. Kiko moved forward 4 times.</li></ol><p><strong>Right answer:</strong> 4</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 2</p><p class="explainer-task">Program: while way ahead clear? do move forward. In front of Kiko there are 9 free squares, then a wall. How many times does Kiko move forward?</p><details class="explainer-hint"><summary>Hint</summary><p>Play it through for 2 free squares. How often is the way clear?</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>Before each of the 9 free squares the way is clear: Kiko moves forward.</li><li>After that the wall is ahead and the condition is false. Kiko moved forward 9 times.</li></ol><p><strong>Right answer:</strong> 9</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 3</p><p class="explainer-task">Program: while way ahead clear? do move forward. In front of Kiko there are 6 free squares, then a wall. How many times does Kiko move forward?</p><details class="explainer-hint"><summary>Hint</summary><p>Play it through for 2 free squares. How often is the way clear?</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>Before each of the 6 free squares the way is clear: Kiko moves forward.</li><li>After that the wall is ahead and the condition is false. Kiko moved forward 6 times.</li></ol><p><strong>Right answer:</strong> 6</p></details></li></ol>
+<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"en","spec":{"type":"generated","id":"wie-oft-vorwaerts","given":{"d":{"int":[2,10]}},"task":{"text":{"de":"Programm: solange Weg frei? tue gehe vorwärts. Vor Kiko liegen {{d}} freie Felder, dann kommt eine Wand. Wie oft geht Kiko vorwärts?","en":"Program: while way ahead clear? do move forward. In front of Kiko there are {{d}} free squares, then a wall. How many times does Kiko move forward?"}},"answer":{"value":"d","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"d + 1","message":{"de":"Vor der Wand ist die Bedingung falsch, dann hört Kiko auf. Gegen die Wand läuft er nicht.","en":"In front of the wall the condition is false, so Kiko stops. It doesn't walk into the wall."}},{"value":"d - 1","message":{"de":"Auch auf das letzte freie Feld darf Kiko noch gehen. Erst danach ist die Wand direkt vor ihm.","en":"Kiko may still move onto the last free square. Only then is the wall directly in front of it."}}],"hint":{"de":"Spiel es für 2 freie Felder durch. Wie oft ist der Weg frei?","en":"Play it through for 2 free squares. How often is the way clear?"},"steps":[{"de":"Vor jedem der {{d}} freien Felder ist der Weg frei: Kiko geht vorwärts.","en":"Before each of the {{d}} free squares the way is clear: Kiko moves forward."},{"de":"Danach ist die Wand voraus, die Bedingung ist falsch. Kiko ging {{answer}}-mal vorwärts.","en":"After that the wall is ahead and the condition is false. Kiko moved forward {{answer}} times."}]},"templates":{"en":{"task":"Program: while way ahead clear? do move forward. In front of Kiko there are ⟦d⟧ free squares, then a wall. How many times does Kiko move forward?","steps":["Before each of the ⟦d⟧ free squares the way is clear: Kiko moves forward.","After that the wall is ahead and the condition is false. Kiko moved forward ⟦answer⟧ times."],"hint":"Play it through for 2 free squares. How often is the way clear?","messages":["In front of the wall the condition is false, so Kiko stops. It doesn't walk into the wall.","Kiko may still move onto the last free square. Only then is the wall directly in front of it."]}},"data":{},"seeds":[1,2,3,6,7,10,12,17,36],"texts":{"newTask":"New task","practice":"Practise yourself, with new tasks each time:","hint":"Hint","solution":"Solution","taskNumber":"Task no. {n}"}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/2" data-block-id="0782566a" data-block-type="generated" data-block-order="10">
+<div class="explainer-exercise explainer-generated" id="wie-oft-pruefen">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="explainer-live" hidden></div>
+<p class="explainer-worked-intro">Three worked tasks, each with its solution:</p>
+<ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Task no. 1</p><p class="explainer-task">Program: while way ahead clear? do move forward. In front of Kiko there are 7 free squares, then a wall. How many times does Kiko check the condition “way ahead clear?”?</p><details class="explainer-hint"><summary>Hint</summary><p>Kiko checks before every pass and once at the end, when the answer is false.</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>7 checks with the answer true, each time Kiko moves one square.</li><li>Plus 1 check with the answer false: 8 in all.</li></ol><p><strong>Right answer:</strong> 8</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 2</p><p class="explainer-task">Program: while way ahead clear? do move forward. In front of Kiko there are 9 free squares, then a wall. How many times does Kiko check the condition “way ahead clear?”?</p><details class="explainer-hint"><summary>Hint</summary><p>Kiko checks before every pass and once at the end, when the answer is false.</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>9 checks with the answer true, each time Kiko moves one square.</li><li>Plus 1 check with the answer false: 10 in all.</li></ol><p><strong>Right answer:</strong> 10</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 3</p><p class="explainer-task">Program: while way ahead clear? do move forward. In front of Kiko there are 6 free squares, then a wall. How many times does Kiko check the condition “way ahead clear?”?</p><details class="explainer-hint"><summary>Hint</summary><p>Kiko checks before every pass and once at the end, when the answer is false.</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>6 checks with the answer true, each time Kiko moves one square.</li><li>Plus 1 check with the answer false: 7 in all.</li></ol><p><strong>Right answer:</strong> 7</p></details></li></ol>
+<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"en","spec":{"type":"generated","id":"wie-oft-pruefen","given":{"d":{"int":[2,10]}},"task":{"text":{"de":"Programm: solange Weg frei? tue gehe vorwärts. Vor Kiko liegen {{d}} freie Felder, dann eine Wand. Wie oft prüft Kiko die Bedingung „Weg frei?“?","en":"Program: while way ahead clear? do move forward. In front of Kiko there are {{d}} free squares, then a wall. How many times does Kiko check the condition “way ahead clear?”?"}},"answer":{"value":"d + 1","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"d","message":{"de":"Du hast die letzte Prüfung vergessen. Vor der Wand fragt Kiko noch einmal und bekommt falsch, erst dann hört er auf.","en":"You forgot the last check. In front of the wall Kiko asks once more and gets false; only then does it stop."}}],"hint":{"de":"Kiko prüft vor jedem Durchlauf und einmal am Ende, wenn die Antwort falsch ist.","en":"Kiko checks before every pass and once at the end, when the answer is false."},"steps":[{"de":"{{d}} Prüfungen mit der Antwort wahr, jedes Mal geht Kiko ein Feld.","en":"{{d}} checks with the answer true, each time Kiko moves one square."},{"de":"Dazu 1 Prüfung mit der Antwort falsch: zusammen {{answer}}.","en":"Plus 1 check with the answer false: {{answer}} in all."}]},"templates":{"en":{"task":"Program: while way ahead clear? do move forward. In front of Kiko there are ⟦d⟧ free squares, then a wall. How many times does Kiko check the condition “way ahead clear?”?","steps":["⟦d⟧ checks with the answer true, each time Kiko moves one square.","Plus 1 check with the answer false: ⟦answer⟧ in all."],"hint":"Kiko checks before every pass and once at the end, when the answer is false.","messages":["You forgot the last check. In front of the wall Kiko asks once more and gets false; only then does it stop."]}},"data":{},"seeds":[1,2,4,6,7,10,15,16,17],"texts":{"newTask":"New task","practice":"Practise yourself, with new tasks each time:","hint":"Hint","solution":"Solution","taskNumber":"Task no. {n}"}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/3" data-block-id="7b34b49d" data-block-type="true-false" data-block-order="11">
+<div class="explainer-exercise explainer-question" id="endlosschleife">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-endlosschleife" data-id="endlosschleife" data-type="true-false">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Kiko is not on the goal and carries out this program. Is it true that the program never ends?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../../images/kiko-bedingt-endlos-en.svg" alt="A program: while not at the goal? do, inside it turn left." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Source: own drawing after lernapps.net/coding. Licence: CC-BY-4.0." aria-label="Source: own drawing after lernapps.net/coding. Licence: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>A program with a condition-controlled loop</p></figcaption></figure></div>
+<label class="question-option"><input type="radio" name="frage-endlosschleife" value="true"> <span>True</span></label>
+<label class="question-option"><input type="radio" name="frage-endlosschleife" value="false"> <span>False</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Right answer:</strong> The statement is true.</p>
+<p class="question-explanation">When turning, Kiko stays on its square and never reaches the goal. The condition stays true; that is an infinite loop.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<p><strong>Right answer:</strong> The statement is true.</p>
+<p class="question-explanation">When turning, Kiko stays on its square and never reaches the goal. The condition stays true; that is an infinite loop.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"endlosschleife","text":"Kiko is not on the goal and carries out this program. Is it true that the program never ends?","explanation":"When turning, Kiko stays on its square and never reaches the goal. The condition stays true; that is an infinite loop.","links":[],"material":[{"type":"figure","image":"images/kiko-bedingt-endlos-en.svg","alt":"A program: while not at the goal? do, inside it turn left.","caption":"A program with a condition-controlled loop","source":"own drawing after lernapps.net/coding","licence":"CC-BY-4.0"}],"type":"true-false","answer":true},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/4" data-block-id="bb7826a2" data-block-type="matching" data-block-order="12">
+<div class="explainer-exercise explainer-question" id="zahl-oder-bedingung">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-zahl-oder-bedingung" data-id="zahl-oder-bedingung" data-type="matching">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Which loop fits which task?</legend>
+<p class="question-hint">Choose the match for each entry.</p>
+<ul class="question-pairs">
+<li><label><span>Kiko has to move exactly 6 squares.</span> <select name="frage-zahl-oder-bedingung-0" data-left="0"><option value="">please choose</option><option value="1">while way ahead clear? do move forward</option><option value="2">No loop helps: turning doesn't get it to the goal.</option><option value="0">repeat 6 times: move forward</option></select></label></li>
+<li><label><span>Kiko has to move up to the wall.</span> <select name="frage-zahl-oder-bedingung-1" data-left="1"><option value="">please choose</option><option value="1">while way ahead clear? do move forward</option><option value="2">No loop helps: turning doesn't get it to the goal.</option><option value="0">repeat 6 times: move forward</option></select></label></li>
+<li><label><span>Kiko has to turn until it is at the goal.</span> <select name="frage-zahl-oder-bedingung-2" data-left="2"><option value="">please choose</option><option value="1">while way ahead clear? do move forward</option><option value="2">No loop helps: turning doesn't get it to the goal.</option><option value="0">repeat 6 times: move forward</option></select></label></li>
+</ul>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Right answer:</strong> Kiko has to move exactly 6 squares. – repeat 6 times: move forward; Kiko has to move up to the wall. – while way ahead clear? do move forward; Kiko has to turn until it is at the goal. – No loop helps: turning doesn't get it to the goal.</p>
+<p class="question-explanation">If the number is known, the count-controlled loop fits. If it depends on the board, the condition-controlled loop fits. And a body that doesn't bring Kiko closer never ends.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<p><strong>Right answer:</strong> Kiko has to move exactly 6 squares. – repeat 6 times: move forward; Kiko has to move up to the wall. – while way ahead clear? do move forward; Kiko has to turn until it is at the goal. – No loop helps: turning doesn't get it to the goal.</p>
+<p class="question-explanation">If the number is known, the count-controlled loop fits. If it depends on the board, the condition-controlled loop fits. And a body that doesn't bring Kiko closer never ends.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"zahl-oder-bedingung","text":"Which loop fits which task?","explanation":"If the number is known, the count-controlled loop fits. If it depends on the board, the condition-controlled loop fits. And a body that doesn't bring Kiko closer never ends.","links":[],"type":"matching","pairs":[{"left":"Kiko has to move exactly 6 squares.","right":"repeat 6 times: move forward"},{"left":"Kiko has to move up to the wall.","right":"while way ahead clear? do move forward"},{"left":"Kiko has to turn until it is at the goal.","right":"No loop helps: turning doesn't get it to the goal."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="weiter">Looking back and what comes next</h2>
+<div class="explainer-block" data-block="weiter/1" data-block-id="36739b77" data-block-type="text" data-block-order="13">
+<div class="block-text"><p>In this chapter you built and debugged programs from blocks and let Kiko decide with selection and repeat with loops. <strong>Selin</strong> writes: “Kiko now finds its way through my whole maze! 🎉” Later, in grades 9 and 10, you write the same programs as a Nassi-Shneiderman diagram, as pseudocode and as text.</p></div>
+</div>
+</section>
+<p class="explainer-feedback-invite" hidden><span>Found a mistake or have an idea for this app?</span> <button type="button" class="explainer-feedback-switch">Give feedback on “Algorithms and programs”</button></p>
+</main>
+<template class="explainer-feedback-template">
+<aside class="explainer-feedback" aria-labelledby="feedback-titel" hidden>
+<div class="explainer-feedback-head">
+<h2 id="feedback-titel">Feedback</h2>
+<button type="button" class="explainer-feedback-help-open" aria-expanded="false" aria-controls="feedback-hilfe">Help</button>
+<button type="button" class="explainer-feedback-collapse" aria-expanded="true" aria-controls="feedback-inhalt" aria-label="Collapse the bar" title="Collapse the bar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<button type="button" class="explainer-feedback-expand" hidden><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Expand the feedback bar</span></button>
+<div class="explainer-feedback-body" id="feedback-inhalt">
+<section class="explainer-feedback-help" id="feedback-hilfe" aria-labelledby="feedback-hilfe-titel" hidden>
+<h3 id="feedback-hilfe-titel">How to give feedback</h3>
+<ol><li>Go through the pages. Every paragraph, figure and exercise shows “Note”.</li><li>If you mark text in the block first, the note quotes it.</li><li>When you are done, choose “Open an issue on GitHub”. The app copies your notes, and you paste them into the issue. You need a GitHub account for this.</li></ol>
+<p class="explainer-feedback-privacy">Your notes stay in this browser on this device only. The app sends nothing. If you clear the browser's data, the notes are gone.</p>
+<p><button type="button" class="explainer-feedback-help-done">Got it</button></p>
+</section>
+<form class="explainer-feedback-form" hidden>
+<p class="explainer-feedback-new">New note on</p>
+<p class="explainer-feedback-where"></p>
+<blockquote class="explainer-feedback-quote" hidden></blockquote>
+<label for="feedback-text">Your note</label>
+<textarea id="feedback-text" class="explainer-feedback-text" rows="5" required></textarea>
+<p class="explainer-feedback-buttons"><button type="submit" class="explainer-feedback-save">Save</button> <button type="button" class="explainer-feedback-cancel">Cancel</button></p>
+</form>
+<p class="explainer-feedback-status" role="status" aria-live="polite"></p>
+<section class="explainer-feedback-notes" aria-labelledby="feedback-notizen">
+<h3 id="feedback-notizen" class="explainer-feedback-count"></h3>
+<p class="explainer-feedback-actions"><button type="button" class="explainer-feedback-copy">Copy</button> <a class="explainer-feedback-issue" href="#" target="_blank" rel="noopener">Open an issue on GitHub</a></p>
+<textarea class="explainer-feedback-export" readonly rows="6" aria-label="Text to copy" hidden></textarea>
+<div class="explainer-feedback-list"></div>
+</section>
+</div>
+<div class="explainer-feedback-foot">
+<button type="button" class="explainer-feedback-delete-all">Delete all …</button>
+<span class="explainer-feedback-local">Kept in this browser only</span>
+<button type="button" class="explainer-feedback-off">End</button>
+</div>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-algorithmen","app":"Algorithms and programs","root":"../../../en/","repository":"lernapps/informatik-algorithmen","revision":"2899074","page":{"title":"Condition-controlled loop","order":6}}</script>
+</aside>
+</template>
+<nav class="explainer-pager" aria-label="Page through"><a rel="prev" href="../../../en/bloecke/zaehlschleife/">Back: Count-controlled loop</a></nav>
+<footer class="page-footer"><p>An explainer on lernapps.net · <a href="https://lernapps.net/imprint/">Imprint</a> · <a href="https://lernapps.net/privacy/">Privacy</a></p></footer>
+  </body>
+</html>

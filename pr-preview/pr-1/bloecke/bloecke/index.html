@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="../../assets/index-DVOapkED.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/index-CtncCkFd.css">
+    <title>Programmieren mit Blöcken – Algorithmen und Programme</title>
+    <meta name="description" content="Aus Befehlskarten werden Blöcke: ein Programm in einer blockbasierten Programmiersprache bauen, testen und Fehler finden." />
+    <meta name="lernapps-archetype" content="explainer" />
+    <link rel="alternate" hreflang="de" href="../../bloecke/bloecke/" />
+    <link rel="alternate" hreflang="en" href="../../en/bloecke/bloecke/" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="page-header"><nav class="page-languages" aria-label="Sprache"><ul><li><a href="../../bloecke/bloecke/" hreflang="de" lang="de" aria-current="page">Deutsch</a></li><li><a href="../../en/bloecke/bloecke/" hreflang="en" lang="en">English</a></li></ul></nav></header>
+<nav class="explainer-breadcrumbs" aria-label="Du bist hier"><ol><li><a href="../../">Start</a></li><li><a href="../../bloecke/">Programmieren mit Blöcken</a></li><li aria-current="page">Programmieren mit Blöcken</li></ol></nav>
+<main class="explainer" id="inhalt-der-seite">
+<div class="explainer-title-row">
+<h1>Programmieren mit Blöcken</h1>
+<div class="explainer-tutor explainer-tutor-page">
+<details class="explainer-tutor-off">
+<summary>Mit einem KI-Tutor lernen</summary>
+<p>Ein KI-Tutor erklärt dir diese Seite und hilft dir bei den Aufgaben. Wähl deinen Assistenten:</p>
+<p class="explainer-tutor-actions"><span class="explainer-tutor-way" hidden><select class="explainer-tutor-select" aria-label="Assistent"><option value="Claude">Claude</option><option value="ChatGPT">ChatGPT</option><option value="Mistral Vibe" data-hint="Mistral Vibe lädt keine Webseiten, wenn der Link aus einem Knopf kommt. Darum kopieren wir den Satz mit dem Link für dich. Ein Klick auf „Mit Mistral Vibe lernen“ öffnet Mistral Vibe mit einer kurzen Nachricht. Füg danach den kopierten Satz ein (Strg+V, am Mac ⌘+V) und schick ihn ab.">Mistral Vibe</option><option value="copy">Ein anderer: Text kopieren</option></select> <button type="button" class="explainer-tutor-on">Einschalten</button></span> <span class="explainer-tutor-plain"><a class="explainer-tutor-provider" href="https://claude.ai/new" rel="noopener" target="_blank">Mit Claude öffnen</a> <a class="explainer-tutor-provider" href="https://chatgpt.com/" rel="noopener" target="_blank">Mit ChatGPT öffnen</a> <a class="explainer-tutor-provider" href="https://chat.mistral.ai/chat" rel="noopener" target="_blank">Mit Mistral Vibe öffnen</a></span></p>
+<p class="explainer-tutor-hint" role="status" aria-live="polite" hidden></p>
+<p class="explainer-tutor-note">Du nutzt dein eigenes Konto beim Anbieter. Der Assistent ist kein Angebot von lernapps.net: lernapps liefert nur Inhalte und Aufgaben. Die Wahl gilt für alle Seiten, nur auf diesem Gerät.</p>
+<p><a class="explainer-tutor-guide" href="../../bloecke/bloecke/tutor/">Ansehen, was dein Tutor zu dieser Seite bekommt</a></p>
+</details>
+<p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
+<p class="explainer-tutor-status" role="status" aria-live="polite"></p>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧bloecke/bloecke/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"informatik-algorithmen","page":{"id":"bloecke","title":"Programmieren mit Blöcken","exercises":[{"id":"was-macht-das-programm","section":"einstieg","numbered":false},{"id":"welcher-block-falsch","section":"uebung","numbered":false},{"id":"werkstatt-teile","section":"uebung","numbered":false},{"id":"computer-raet","section":"uebung","numbered":false},{"id":"bloecke-zaehlen","section":"uebung","numbered":false}],"sections":["einstieg","idee","ausprobieren","uebung","weiter"]},"tutor":"bloecke/bloecke/tutor/","markdown":"bloecke/bloecke/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
+</div>
+</div>
+
+<nav class="explainer-toc" aria-label="Auf dieser Seite"><p class="explainer-toc-title">Auf dieser Seite</p><ol><li><a href="#einstieg">Kiko liest keine Karten</a></li><li><a href="#idee">Vom Algorithmus zum Programm</a></li><li><a href="#ausprobieren">Selbst ausprobieren</a></li><li><a href="#uebung">Übung</a></li><li><a href="#weiter">Wie es weitergeht</a></li></ol></nav>
+<section class="explainer-section">
+<h2 id="einstieg">Kiko liest keine Karten</h2>
+<div class="explainer-block" data-block="einstieg/1" data-block-id="8cf0d321" data-block-type="text" data-block-order="1">
+<div class="block-text"><p>Im Klassenchat der 7b:</p>
+<p><strong>Mia:</strong> Ich will nicht mehr Kiko sein. Kann der echte Kiko nicht selbst laufen?</p>
+<p><strong>Frau Berg:</strong> Kann er! Aber Karten kann er nicht lesen. Er braucht ein Programm. In der Werkstatt steckt ihr dafür Blöcke zusammen.</p>
+<p><strong>Ben:</strong> Ich hab schon eins gebaut. Was macht es?</p>
+<p>Hier lernst du, wie aus Karten ein Programm wird und wie du Fehler darin findest.</p></div>
+</div>
+<div class="explainer-block" data-block="einstieg/2" data-block-id="72a89d83" data-block-type="single-choice" data-block-order="2">
+<div class="explainer-exercise explainer-question" id="was-macht-das-programm">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-was-macht-das-programm" data-id="was-macht-das-programm" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Kiko schaut im Bild nach rechts. Auf welchem Feld steht er, wenn das Programm fertig ist?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-bloecke-wo.svg" alt="Ein Spielfeld mit Spalten 1 bis 7 und Zeilen 1 bis 7. Kiko steht in Spalte 2, Zeile 6 und schaut im Bild nach rechts. Markiert sind A in Spalte 5, Zeile 3; B in Spalte 4, Zeile 4; C in Spalte 3, Zeile 4; D in Spalte 4, Zeile 5." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Das Spielfeld. Dunkle Felder sind Wände.</p></figcaption></figure><figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-bloecke-wo-programm-de.svg" alt="Ein Programm aus Blöcken unter dem Kopf „Programm“: gehe vorwärts, drehe dich nach links, gehe vorwärts, gehe vorwärts, drehe dich nach rechts, gehe vorwärts." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Bens Programm. Kiko führt die Blöcke von oben nach unten aus.</p></figcaption></figure></div>
+<label class="question-option"><input type="radio" name="frage-was-macht-das-programm" value="0"> <span>Feld A</span></label>
+<label class="question-option"><input type="radio" name="frage-was-macht-das-programm" value="1"> <span>Feld B</span></label>
+<label class="question-option"><input type="radio" name="frage-was-macht-das-programm" value="2"> <span>Feld C</span></label>
+<label class="question-option"><input type="radio" name="frage-was-macht-das-programm" value="3"> <span>Feld D</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info" data-option="0"><p class="question-info-head"><strong>Feld A</strong></p><p>Du hast jede Drehung wie einen Schritt gezählt. Beim Drehen bleibt Kiko auf seinem Feld.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Feld B</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Richtig: ein Feld nach rechts, zwei Felder hoch, dann wieder ein Feld nach rechts.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Feld C</strong></p><p>Du hast beim letzten Block aufgehört zu zählen. Nach „drehe dich nach rechts“ kommt noch „gehe vorwärts“.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Feld D</strong></p><p>Du hast einen Block übersprungen. Nach dem Linksdrehen geht Kiko zweimal vorwärts.</p></li>
+</ul>
+<p class="question-explanation">Ein Programm wird Block für Block ausgeführt, genau wie die Karten. Kiko endet in Spalte 4, Zeile 4.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<ul class="question-infos">
+<li class="question-info" data-option="0"><p class="question-info-head"><strong>Feld A</strong></p><p>Du hast jede Drehung wie einen Schritt gezählt. Beim Drehen bleibt Kiko auf seinem Feld.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Feld B</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Richtig: ein Feld nach rechts, zwei Felder hoch, dann wieder ein Feld nach rechts.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Feld C</strong></p><p>Du hast beim letzten Block aufgehört zu zählen. Nach „drehe dich nach rechts“ kommt noch „gehe vorwärts“.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Feld D</strong></p><p>Du hast einen Block übersprungen. Nach dem Linksdrehen geht Kiko zweimal vorwärts.</p></li>
+</ul>
+<p class="question-explanation">Ein Programm wird Block für Block ausgeführt, genau wie die Karten. Kiko endet in Spalte 4, Zeile 4.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"was-macht-das-programm","text":"Kiko schaut im Bild nach rechts. Auf welchem Feld steht er, wenn das Programm fertig ist?","explanation":"Ein Programm wird Block für Block ausgeführt, genau wie die Karten. Kiko endet in Spalte 4, Zeile 4.","links":[],"material":[{"type":"figure","image":"images/kiko-bloecke-wo.svg","alt":"Ein Spielfeld mit Spalten 1 bis 7 und Zeilen 1 bis 7. Kiko steht in Spalte 2, Zeile 6 und schaut im Bild nach rechts. Markiert sind A in Spalte 5, Zeile 3; B in Spalte 4, Zeile 4; C in Spalte 3, Zeile 4; D in Spalte 4, Zeile 5.","caption":"Das Spielfeld. Dunkle Felder sind Wände.","source":"eigene Zeichnung, Kiko nach lernapps.net/coding","licence":"CC-BY-4.0"},{"type":"figure","image":"images/kiko-bloecke-wo-programm-de.svg","alt":"Ein Programm aus Blöcken unter dem Kopf „Programm“: gehe vorwärts, drehe dich nach links, gehe vorwärts, gehe vorwärts, drehe dich nach rechts, gehe vorwärts.","caption":"Bens Programm. Kiko führt die Blöcke von oben nach unten aus.","source":"eigene Zeichnung nach lernapps.net/coding","licence":"CC-BY-4.0"}],"type":"single-choice","options":[{"text":"Feld A","correct":false,"info":"Du hast jede Drehung wie einen Schritt gezählt. Beim Drehen bleibt Kiko auf seinem Feld."},{"text":"Feld B","correct":true,"info":"Richtig: ein Feld nach rechts, zwei Felder hoch, dann wieder ein Feld nach rechts."},{"text":"Feld C","correct":false,"info":"Du hast beim letzten Block aufgehört zu zählen. Nach „drehe dich nach rechts“ kommt noch „gehe vorwärts“."},{"text":"Feld D","correct":false,"info":"Du hast einen Block übersprungen. Nach dem Linksdrehen geht Kiko zweimal vorwärts."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="idee">Vom Algorithmus zum Programm</h2>
+<div class="explainer-block" data-block="idee/1" data-block-id="236c6eaf" data-block-type="text" data-block-order="3">
+<div class="block-text"><p>Die Blöcke haben dieselben Wörter und Farben wie die Karten. Neu ist: Ein Computer führt sie aus, und der rät nie. Darum schreibst du den Algorithmus in einer Sprache auf, die er versteht.</p></div>
+</div>
+<div class="explainer-block" data-block="idee/2" data-block-id="2f0edb3d" data-block-type="figure" data-block-order="4">
+<figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-bloecke-karten-als-bloecke-de.svg" alt="Unter dem braunen Kopf „Programm“ hängen drei blaue Blöcke: gehe vorwärts, drehe dich nach links, gehe vorwärts." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Jonas drei Karten aus Kapitel 1, jetzt als Blöcke</p></figcaption></figure>
+</div>
+<div class="explainer-block" data-block="idee/3" data-block-id="eb308dd4" data-block-type="definition" data-block-order="5">
+<dl class="explainer-definition"><dt><dfn id="begriff-programm"><a href="../../glossar/#programm">Programm</a></dfn></dt><dd><p>Ein Programm ist ein Algorithmus, aufgeschrieben in einer Programmiersprache, damit ein Computer ihn ausführen kann.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/4" data-block-id="bb98a59c" data-block-type="definition" data-block-order="6">
+<dl class="explainer-definition"><dt><dfn id="begriff-blockbasierte-programmiersprache"><a href="../../glossar/#blockbasierte-programmiersprache">blockbasierte Programmiersprache</a></dfn></dt><dd><p>In einer blockbasierten (visuellen) Programmiersprache baust du Programme aus Blöcken, die du zusammensteckst, statt sie zu tippen.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/5" data-block-id="7041697f" data-block-type="note" data-block-order="7">
+<div class="explainer-box explainer-note">
+<h3 class="explainer-box-title">Merke</h3>
+<div class="explainer-block" data-block="idee/5/1" data-block-id="dd557bbb" data-block-type="text" data-block-order="8">
+<div class="block-text"><p>Ein Block, der nicht am Kopf „Programm“ hängt, wird nicht ausgeführt. Läuft Kiko falsch, ist das ein Fehler im Programm. Fehler finden und beheben heißt debuggen: Geh das Programm Schritt für Schritt durch.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="ausprobieren">Selbst ausprobieren</h2>
+<div class="explainer-block" data-block="ausprobieren/1" data-block-id="48c85daa" data-block-type="text" data-block-order="9">
+<div class="block-text"><p><strong>In der Werkstatt:</strong> Links liegen die Blöcke (die Werkzeugkiste), rechts baust du dein Programm unter den Kopf „Programm“ (die Arbeitsfläche). „Start“ lässt Kiko das ganze Programm laufen, „Ein Schritt“ führt einen Block nach dem anderen aus.</p>
+<p>Ben hat ein Programm gebaut, aber Kiko läuft gegen die Wand. Finde den einen falschen Block und tausch ihn aus: <a href="https://lernapps.net/coding/app/?c=zVSxbuQ2EP2VwbiVdUgZNcE5zl0RIDnABxiw4WJEjcQ5UcMFSVnxGQtskc_wpco3pErnP9kvCUjtroODE6TMNhK4jzNvnt68R-x9mChh802F0mGDo4z-vGfrOJz3oh0rVpgkOcbmETvGBt_lY-hY4V3BYYWsh3NIlqGdB9xWmCiOp0sXrGApAYvCh-CHQNMEA7c0pwqo5QA_yujBPf8-9wkGHlihE4Zr0q6Gy_D8pxlhv_vtB1G4MjZISvvdE8zaQTSW5gpaFljYGcsTXDhvRuCY_xPuB7aphudftePAoHPIpSPriqugI1WI3rmVhGiEG2EHo58m1vo4YJ6hncUlINisM1TQzmm9tZAbI4gmX0RYyLkaPgSOEfa7p5-VISbe7HdfgLSDhZKxsFgxFtrCdvAcYQlehxq-t6QDg1f3ACnL1q5Ek2Vdu0XrZ9dBYDK29Bs8uTrLvvjguqx7ethk5R21D0E0WazwnkMUr-VzG6-9DBk40QabWzwrP6zw7Ko-vJy9vNQ360vB3FXYkxEdsEGmmHCbv7f3rvW_5FL3PizEIUWs0ImO-RnY2BTz1ZgopLWxKDa3jxixQTN1WKHSlEn_vQCFIWJze7etXgEeq_8r6D9X-z-1vdtm7SZJMUtVDBCx-TYLzTEVTIXGcjm-xc_C7pxDYDE2ZZWtaEEdFvA9W-govizfJOmVhermYGwN196Krpt1sLdmo33i7rhd3x234n32e_DzsPrwsBiwSLJfGb-G6-L3hR6gy24vhXsyDNQnDlDM3K7Vs1CF-CWHQ9DkOmZMIJpjhANcBrazDkATvNWedDit6sc1hkDyRgJBmoOCMoXCsRiwfmnxU-6bJ-MQE5_0gGmOB5IywYW4blVh1gwq4rDWcEkRJJZo4xOlAlwtfyL1tgyZCfQSYiqyVGt9SxHSQYvOL7rmqKfQ1fAxB4DE4xSHfAky2DzDXYX3wgs22SJsRsYKWzIleefgTgH8RnTNehnPyQ0-SLIT65vDrdPzSPaf8K9dyU6lll-a3cxrYH-eA1yxJM5Ou3DPf5iR97unU6CSGY_zbGjIqKdirrjffcHtdvsX" rel="noopener">Challenge „Finde den Fehler“ öffnen</a></p></div>
+</div>
+<div class="explainer-block" data-block="ausprobieren/2" data-block-id="80d0597b" data-block-type="figure" data-block-order="10">
+<figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-challenge-fehler-finden.svg" alt="Das Spielfeld der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Ein Weg führt 1 Feld nach rechts, 2 nach unten und 2 nach rechts zum Ziel in Spalte 5, Zeile 4." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>So sieht die Challenge in der Werkstatt aus.</p></figcaption></figure>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="uebung">Übung</h2>
+<div class="explainer-block" data-block="uebung/1" data-block-id="673e672a" data-block-type="single-choice" data-block-order="11">
+<div class="explainer-exercise explainer-question" id="welcher-block-falsch">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-welcher-block-falsch" data-id="welcher-block-falsch" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Bens Programm soll Kiko zum Ziel bringen, aber Kiko läuft gegen eine Wand. Welcher Block ist falsch?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-bloecke-fehler.svg" alt="Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Der Weg führt 2 Felder nach rechts, 2 nach unten und 1 nach rechts zum Ziel in Spalte 5, Zeile 4." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Das Spielfeld zu Bens Programm</p></figcaption></figure><figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-bloecke-fehler-programm-de.svg" alt="Bens Programm mit Nummern: 1 gehe vorwärts, 2 gehe vorwärts, 3 drehe dich nach links, 4 gehe vorwärts, 5 gehe vorwärts, 6 drehe dich nach links, 7 gehe vorwärts." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Bens Programm, jeder Block mit Nummer</p></figcaption></figure></div>
+<label class="question-option"><input type="radio" name="frage-welcher-block-falsch" value="0"> <span>Block 3</span></label>
+<label class="question-option"><input type="radio" name="frage-welcher-block-falsch" value="1"> <span>Block 6</span></label>
+<label class="question-option"><input type="radio" name="frage-welcher-block-falsch" value="2"> <span>Block 2</span></label>
+<label class="question-option"><input type="radio" name="frage-welcher-block-falsch" value="3"> <span>Block 7</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Block 3</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Nach zwei Schritten muss Kiko im Bild nach unten. Dafür dreht er sich nach rechts, nicht nach links.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Block 6</strong></p><p>Dieser Block stimmt. Kiko schaut dann im Bild nach unten, und nach links gedreht schaut er zum Ziel.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Block 2</strong></p><p>Zwei Schritte geradeaus passen, die Kurve kommt nach dem zweiten Feld.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Block 7</strong></p><p>Bis Block 7 kommt Kiko gar nicht. Er läuft schon vorher gegen die Wand.</p></li>
+</ul>
+<p class="question-explanation">Geh das Programm Block für Block durch. Bei Block 3 schaut Kiko nach links gedreht im Bild nach oben, und bei Block 4 läuft er gegen die Wand.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>Block 3</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Nach zwei Schritten muss Kiko im Bild nach unten. Dafür dreht er sich nach rechts, nicht nach links.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Block 6</strong></p><p>Dieser Block stimmt. Kiko schaut dann im Bild nach unten, und nach links gedreht schaut er zum Ziel.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Block 2</strong></p><p>Zwei Schritte geradeaus passen, die Kurve kommt nach dem zweiten Feld.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Block 7</strong></p><p>Bis Block 7 kommt Kiko gar nicht. Er läuft schon vorher gegen die Wand.</p></li>
+</ul>
+<p class="question-explanation">Geh das Programm Block für Block durch. Bei Block 3 schaut Kiko nach links gedreht im Bild nach oben, und bei Block 4 läuft er gegen die Wand.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"welcher-block-falsch","text":"Bens Programm soll Kiko zum Ziel bringen, aber Kiko läuft gegen eine Wand. Welcher Block ist falsch?","explanation":"Geh das Programm Block für Block durch. Bei Block 3 schaut Kiko nach links gedreht im Bild nach oben, und bei Block 4 läuft er gegen die Wand.","links":[],"material":[{"type":"figure","image":"images/kiko-bloecke-fehler.svg","alt":"Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Der Weg führt 2 Felder nach rechts, 2 nach unten und 1 nach rechts zum Ziel in Spalte 5, Zeile 4.","caption":"Das Spielfeld zu Bens Programm","source":"eigene Zeichnung, Kiko nach lernapps.net/coding","licence":"CC-BY-4.0"},{"type":"figure","image":"images/kiko-bloecke-fehler-programm-de.svg","alt":"Bens Programm mit Nummern: 1 gehe vorwärts, 2 gehe vorwärts, 3 drehe dich nach links, 4 gehe vorwärts, 5 gehe vorwärts, 6 drehe dich nach links, 7 gehe vorwärts.","caption":"Bens Programm, jeder Block mit Nummer","source":"eigene Zeichnung nach lernapps.net/coding","licence":"CC-BY-4.0"}],"type":"single-choice","options":[{"text":"Block 3","correct":true,"info":"Nach zwei Schritten muss Kiko im Bild nach unten. Dafür dreht er sich nach rechts, nicht nach links."},{"text":"Block 6","correct":false,"info":"Dieser Block stimmt. Kiko schaut dann im Bild nach unten, und nach links gedreht schaut er zum Ziel."},{"text":"Block 2","correct":false,"info":"Zwei Schritte geradeaus passen, die Kurve kommt nach dem zweiten Feld."},{"text":"Block 7","correct":false,"info":"Bis Block 7 kommt Kiko gar nicht. Er läuft schon vorher gegen die Wand."}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/2" data-block-id="fc94ba86" data-block-type="matching" data-block-order="12">
+<div class="explainer-exercise explainer-question" id="werkstatt-teile">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-werkstatt-teile" data-id="werkstatt-teile" data-type="matching">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Wofür ist welcher Teil der Werkstatt da?</legend>
+<p class="question-hint">Wähle zu jedem Eintrag das Passende.</p>
+<ul class="question-pairs">
+<li><label><span>Werkzeugkiste</span> <select name="frage-werkstatt-teile-0" data-left="0"><option value="">bitte wählen</option><option value="3">Kiko führt nur den nächsten Block aus.</option><option value="2">Kiko führt das ganze Programm aus.</option><option value="1">Hier steckst du das Programm zusammen.</option><option value="0">Hier liegen die Blöcke, die du benutzen darfst.</option></select></label></li>
+<li><label><span>Arbeitsfläche</span> <select name="frage-werkstatt-teile-1" data-left="1"><option value="">bitte wählen</option><option value="3">Kiko führt nur den nächsten Block aus.</option><option value="2">Kiko führt das ganze Programm aus.</option><option value="1">Hier steckst du das Programm zusammen.</option><option value="0">Hier liegen die Blöcke, die du benutzen darfst.</option></select></label></li>
+<li><label><span>Start</span> <select name="frage-werkstatt-teile-2" data-left="2"><option value="">bitte wählen</option><option value="3">Kiko führt nur den nächsten Block aus.</option><option value="2">Kiko führt das ganze Programm aus.</option><option value="1">Hier steckst du das Programm zusammen.</option><option value="0">Hier liegen die Blöcke, die du benutzen darfst.</option></select></label></li>
+<li><label><span>Ein Schritt</span> <select name="frage-werkstatt-teile-3" data-left="3"><option value="">bitte wählen</option><option value="3">Kiko führt nur den nächsten Block aus.</option><option value="2">Kiko führt das ganze Programm aus.</option><option value="1">Hier steckst du das Programm zusammen.</option><option value="0">Hier liegen die Blöcke, die du benutzen darfst.</option></select></label></li>
+</ul>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> Werkzeugkiste – Hier liegen die Blöcke, die du benutzen darfst.; Arbeitsfläche – Hier steckst du das Programm zusammen.; Start – Kiko führt das ganze Programm aus.; Ein Schritt – Kiko führt nur den nächsten Block aus.</p>
+<p class="question-explanation">Mit „Ein Schritt“ siehst du genau, bei welchem Block etwas schiefgeht. Das hilft beim Debuggen.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> Werkzeugkiste – Hier liegen die Blöcke, die du benutzen darfst.; Arbeitsfläche – Hier steckst du das Programm zusammen.; Start – Kiko führt das ganze Programm aus.; Ein Schritt – Kiko führt nur den nächsten Block aus.</p>
+<p class="question-explanation">Mit „Ein Schritt“ siehst du genau, bei welchem Block etwas schiefgeht. Das hilft beim Debuggen.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"werkstatt-teile","text":"Wofür ist welcher Teil der Werkstatt da?","explanation":"Mit „Ein Schritt“ siehst du genau, bei welchem Block etwas schiefgeht. Das hilft beim Debuggen.","links":[],"type":"matching","pairs":[{"left":"Werkzeugkiste","right":"Hier liegen die Blöcke, die du benutzen darfst."},{"left":"Arbeitsfläche","right":"Hier steckst du das Programm zusammen."},{"left":"Start","right":"Kiko führt das ganze Programm aus."},{"left":"Ein Schritt","right":"Kiko führt nur den nächsten Block aus."}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/3" data-block-id="c90c26aa" data-block-type="true-false" data-block-order="13">
+<div class="explainer-exercise explainer-question" id="computer-raet">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-computer-raet" data-id="computer-raet" data-type="true-false">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Ben sagt: „Wenn ich einen Block vergesse, merkt der Computer schon, was ich gemeint habe.“ Stimmt das?</legend>
+<label class="question-option"><input type="radio" name="frage-computer-raet" value="true"> <span>Stimmt</span></label>
+<label class="question-option"><input type="radio" name="frage-computer-raet" value="false"> <span>Stimmt nicht</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
+<p class="question-explanation">Ein Computer führt genau die Blöcke aus, die im Programm stehen, nicht mehr und nicht weniger. Er rät nie, was gemeint war.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
+<p class="question-explanation">Ein Computer führt genau die Blöcke aus, die im Programm stehen, nicht mehr und nicht weniger. Er rät nie, was gemeint war.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"computer-raet","text":"Ben sagt: „Wenn ich einen Block vergesse, merkt der Computer schon, was ich gemeint habe.“ Stimmt das?","explanation":"Ein Computer führt genau die Blöcke aus, die im Programm stehen, nicht mehr und nicht weniger. Er rät nie, was gemeint war.","links":[],"type":"true-false","answer":false},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/4" data-block-id="4a81e02c" data-block-type="number" data-block-order="14">
+<div class="explainer-exercise explainer-question" id="bloecke-zaehlen">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-bloecke-zaehlen" data-id="bloecke-zaehlen" data-type="number">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Kiko schaut im Bild nach rechts und soll 3 Felder vorwärts, sich nach links drehen und 2 Felder vorwärts gehen. Aus wie vielen Blöcken besteht das Programm, ohne den Kopf „Programm“?</legend>
+<label class="question-number">Deine Antwort <input type="text" inputmode="decimal" autocomplete="off" name="frage-bloecke-zaehlen">  </label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> 6</p>
+<p class="question-explanation">3-mal „gehe vorwärts“, 1-mal „drehe dich nach links“ und 2-mal „gehe vorwärts“: zusammen 6 Blöcke.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> 6</p>
+<p class="question-explanation">3-mal „gehe vorwärts“, 1-mal „drehe dich nach links“ und 2-mal „gehe vorwärts“: zusammen 6 Blöcke.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"bloecke-zaehlen","text":"Kiko schaut im Bild nach rechts und soll 3 Felder vorwärts, sich nach links drehen und 2 Felder vorwärts gehen. Aus wie vielen Blöcken besteht das Programm, ohne den Kopf „Programm“?","explanation":"3-mal „gehe vorwärts“, 1-mal „drehe dich nach links“ und 2-mal „gehe vorwärts“: zusammen 6 Blöcke.","links":[],"type":"number","answer":6,"tolerance":0,"mistakes":[{"answer":3,"message":"Du hast für jede Strecke einen Block gezählt. Jeder Block „gehe vorwärts“ geht aber nur ein Feld."},{"answer":5,"message":"Die Drehung ist auch ein Block."},{"answer":7,"message":"Den Kopf „Programm“ zählst du nicht mit. Er ist kein Befehl."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="weiter">Wie es weitergeht</h2>
+<div class="explainer-block" data-block="weiter/1" data-block-id="61a972ad" data-block-type="text" data-block-order="15">
+<div class="block-text"><p>Du kannst jetzt ein Programm aus Blöcken bauen, laufen lassen und debuggen. <strong>Lea</strong> schreibt: „Bens Programm klappt nur auf diesem einen Spielfeld. Steht woanders eine Wand, läuft Kiko dagegen.“ Auf der nächsten Seite lernt Kiko, vorher nachzusehen.</p></div>
+</div>
+</section>
+<p class="explainer-feedback-invite" hidden><span>Fehler gefunden oder eine Idee für diese App?</span> <button type="button" class="explainer-feedback-switch">Feedback zu „Algorithmen und Programme“ geben</button></p>
+</main>
+<template class="explainer-feedback-template">
+<aside class="explainer-feedback" aria-labelledby="feedback-titel" hidden>
+<div class="explainer-feedback-head">
+<h2 id="feedback-titel">Feedback</h2>
+<button type="button" class="explainer-feedback-help-open" aria-expanded="false" aria-controls="feedback-hilfe">Hilfe</button>
+<button type="button" class="explainer-feedback-collapse" aria-expanded="true" aria-controls="feedback-inhalt" aria-label="Leiste einklappen" title="Leiste einklappen"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<button type="button" class="explainer-feedback-expand" hidden><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Feedback-Leiste ausklappen</span></button>
+<div class="explainer-feedback-body" id="feedback-inhalt">
+<section class="explainer-feedback-help" id="feedback-hilfe" aria-labelledby="feedback-hilfe-titel" hidden>
+<h3 id="feedback-hilfe-titel">So gibst du Feedback</h3>
+<ol><li>Geh die Seiten durch. Bei jedem Absatz, jeder Abbildung und jeder Aufgabe erscheint „Notiz“.</li><li>Markierst du vorher Text im Block, steht er als Zitat in der Notiz.</li><li>Bist du fertig, wähl „Issue auf GitHub öffnen“. Die App kopiert dabei deine Notizen, und du fügst sie im Issue ein. Dafür brauchst du ein GitHub-Konto.</li></ol>
+<p class="explainer-feedback-privacy">Deine Notizen bleiben nur in diesem Browser, auf diesem Gerät. Die App sendet nichts. Wenn du die Browserdaten löschst, sind die Notizen weg.</p>
+<p><button type="button" class="explainer-feedback-help-done">Verstanden</button></p>
+</section>
+<form class="explainer-feedback-form" hidden>
+<p class="explainer-feedback-new">Neue Notiz zu</p>
+<p class="explainer-feedback-where"></p>
+<blockquote class="explainer-feedback-quote" hidden></blockquote>
+<label for="feedback-text">Deine Notiz</label>
+<textarea id="feedback-text" class="explainer-feedback-text" rows="5" required></textarea>
+<p class="explainer-feedback-buttons"><button type="submit" class="explainer-feedback-save">Speichern</button> <button type="button" class="explainer-feedback-cancel">Abbrechen</button></p>
+</form>
+<p class="explainer-feedback-status" role="status" aria-live="polite"></p>
+<section class="explainer-feedback-notes" aria-labelledby="feedback-notizen">
+<h3 id="feedback-notizen" class="explainer-feedback-count"></h3>
+<p class="explainer-feedback-actions"><button type="button" class="explainer-feedback-copy">Kopieren</button> <a class="explainer-feedback-issue" href="#" target="_blank" rel="noopener">Issue auf GitHub öffnen</a></p>
+<textarea class="explainer-feedback-export" readonly rows="6" aria-label="Text zum Kopieren" hidden></textarea>
+<div class="explainer-feedback-list"></div>
+</section>
+</div>
+<div class="explainer-feedback-foot">
+<button type="button" class="explainer-feedback-delete-all">Alle löschen …</button>
+<span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
+<button type="button" class="explainer-feedback-off">Beenden</button>
+</div>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-algorithmen","app":"Algorithmen und Programme","root":"../../","repository":"lernapps/informatik-algorithmen","revision":"2899074","page":{"title":"Programmieren mit Blöcken","order":3}}</script>
+</aside>
+</template>
+<nav class="explainer-pager" aria-label="Weiterblättern"><a rel="prev" href="../../algorithmen/sequenz/">Zurück: Sequenz</a><a rel="next" href="../../bloecke/verzweigung/">Weiter: Verzweigung</a></nav>
+<footer class="page-footer"><p>Eine Erklär-App auf lernapps.net · <a href="https://lernapps.net/imprint/">Impressum</a> · <a href="https://lernapps.net/privacy/">Datenschutz</a></p></footer>
+  </body>
+</html>

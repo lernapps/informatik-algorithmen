@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="../../assets/index-DVOapkED.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/index-CtncCkFd.css">
+    <title>Zählschleife – Algorithmen und Programme</title>
+    <meta name="description" content="Mit „wiederhole … mal“ führt Kiko Blöcke mehrmals aus: kürzere Programme für lange Wege und Muster." />
+    <meta name="lernapps-archetype" content="explainer" />
+    <link rel="alternate" hreflang="de" href="../../bloecke/zaehlschleife/" />
+    <link rel="alternate" hreflang="en" href="../../en/bloecke/zaehlschleife/" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="page-header"><nav class="page-languages" aria-label="Sprache"><ul><li><a href="../../bloecke/zaehlschleife/" hreflang="de" lang="de" aria-current="page">Deutsch</a></li><li><a href="../../en/bloecke/zaehlschleife/" hreflang="en" lang="en">English</a></li></ul></nav></header>
+<nav class="explainer-breadcrumbs" aria-label="Du bist hier"><ol><li><a href="../../">Start</a></li><li><a href="../../bloecke/">Programmieren mit Blöcken</a></li><li aria-current="page">Zählschleife</li></ol></nav>
+<main class="explainer" id="inhalt-der-seite">
+<div class="explainer-title-row">
+<h1>Zählschleife</h1>
+<div class="explainer-tutor explainer-tutor-page">
+<details class="explainer-tutor-off">
+<summary>Mit einem KI-Tutor lernen</summary>
+<p>Ein KI-Tutor erklärt dir diese Seite und hilft dir bei den Aufgaben. Wähl deinen Assistenten:</p>
+<p class="explainer-tutor-actions"><span class="explainer-tutor-way" hidden><select class="explainer-tutor-select" aria-label="Assistent"><option value="Claude">Claude</option><option value="ChatGPT">ChatGPT</option><option value="Mistral Vibe" data-hint="Mistral Vibe lädt keine Webseiten, wenn der Link aus einem Knopf kommt. Darum kopieren wir den Satz mit dem Link für dich. Ein Klick auf „Mit Mistral Vibe lernen“ öffnet Mistral Vibe mit einer kurzen Nachricht. Füg danach den kopierten Satz ein (Strg+V, am Mac ⌘+V) und schick ihn ab.">Mistral Vibe</option><option value="copy">Ein anderer: Text kopieren</option></select> <button type="button" class="explainer-tutor-on">Einschalten</button></span> <span class="explainer-tutor-plain"><a class="explainer-tutor-provider" href="https://claude.ai/new" rel="noopener" target="_blank">Mit Claude öffnen</a> <a class="explainer-tutor-provider" href="https://chatgpt.com/" rel="noopener" target="_blank">Mit ChatGPT öffnen</a> <a class="explainer-tutor-provider" href="https://chat.mistral.ai/chat" rel="noopener" target="_blank">Mit Mistral Vibe öffnen</a></span></p>
+<p class="explainer-tutor-hint" role="status" aria-live="polite" hidden></p>
+<p class="explainer-tutor-note">Du nutzt dein eigenes Konto beim Anbieter. Der Assistent ist kein Angebot von lernapps.net: lernapps liefert nur Inhalte und Aufgaben. Die Wahl gilt für alle Seiten, nur auf diesem Gerät.</p>
+<p><a class="explainer-tutor-guide" href="../../bloecke/zaehlschleife/tutor/">Ansehen, was dein Tutor zu dieser Seite bekommt</a></p>
+</details>
+<p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
+<p class="explainer-tutor-status" role="status" aria-live="polite"></p>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧bloecke/zaehlschleife/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"informatik-algorithmen","page":{"id":"zaehlschleife","title":"Zählschleife","exercises":[{"id":"wo-nach-schleife","section":"einstieg","numbered":false},{"id":"befehle-zaehlen","section":"uebung","numbered":true},{"id":"wie-oft-wiederholen","section":"uebung","numbered":true},{"id":"sequenz-zu-schleife","section":"uebung","numbered":false},{"id":"rumpf-reihenfolge","section":"uebung","numbered":false}],"sections":["einstieg","idee","ausprobieren","uebung","weiter"]},"tutor":"bloecke/zaehlschleife/tutor/","markdown":"bloecke/zaehlschleife/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
+</div>
+</div>
+
+<nav class="explainer-toc" aria-label="Auf dieser Seite"><p class="explainer-toc-title">Auf dieser Seite</p><ol><li><a href="#einstieg">Neunmal derselbe Block</a></li><li><a href="#idee">Wiederholen mit fester Anzahl</a></li><li><a href="#ausprobieren">Selbst ausprobieren</a></li><li><a href="#uebung">Übung</a></li><li><a href="#weiter">Wie es weitergeht</a></li></ol></nav>
+<section class="explainer-section">
+<h2 id="einstieg">Neunmal derselbe Block</h2>
+<div class="explainer-block" data-block="einstieg/1" data-block-id="8f13d273" data-block-type="text" data-block-order="1">
+<div class="block-text"><p>Im Klassenchat der 7b:</p>
+<p><strong>Jona:</strong> Mein Gang ist 9 Felder lang. Ich hab 9-mal „gehe vorwärts“ gezogen 😩</p>
+<p><strong>Selin:</strong> Nimm „wiederhole … mal“. Dann reicht ein „gehe vorwärts“.</p>
+<p><strong>Jona:</strong> Und wie oft wiederholt Kiko?</p>
+<p>Hier lernst du, wie Kiko Blöcke mit einer Zählschleife mehrmals ausführt.</p></div>
+</div>
+<div class="explainer-block" data-block="einstieg/2" data-block-id="9af18f43" data-block-type="single-choice" data-block-order="2">
+<div class="explainer-exercise explainer-question" id="wo-nach-schleife">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-wo-nach-schleife" data-id="wo-nach-schleife" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Kiko schaut im Bild nach rechts und führt das Programm mit der Schleife aus. Auf welchem Feld endet er?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-zaehlschleife-programm-de.svg" alt="Ein Programm: wiederhole 2 mal, darin: gehe vorwärts, gehe vorwärts, drehe dich nach links." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Das Programm. Die drei Blöcke stehen in der Schleife.</p></figcaption></figure><figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-zaehlschleife-wo.svg" alt="Ein Spielfeld mit Spalten 1 bis 7 und Zeilen 1 bis 7. Kiko steht in Spalte 2, Zeile 6 und schaut im Bild nach rechts. Markiert sind A in Spalte 2, Zeile 4; B in Spalte 4, Zeile 6; C in Spalte 4, Zeile 4; D in Spalte 6, Zeile 6." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Das Spielfeld</p></figcaption></figure></div>
+<label class="question-option"><input type="radio" name="frage-wo-nach-schleife" value="0"> <span>Feld A</span></label>
+<label class="question-option"><input type="radio" name="frage-wo-nach-schleife" value="1"> <span>Feld B</span></label>
+<label class="question-option"><input type="radio" name="frage-wo-nach-schleife" value="2"> <span>Feld C</span></label>
+<label class="question-option"><input type="radio" name="frage-wo-nach-schleife" value="3"> <span>Feld D</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info" data-option="0"><p class="question-info-head"><strong>Feld A</strong></p><p>So wäre es nach drei Durchläufen. Die Schleife läuft aber nur 2-mal.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Feld B</strong></p><p>Das ist das Ende des ersten Durchlaufs. Danach läuft die Schleife noch ein zweites Mal.</p></li>
+<li class="question-info question-info-right" data-option="2"><p class="question-info-head"><strong>Feld C</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Richtig: Erster Durchlauf 2 Felder nach rechts, links drehen. Zweiter Durchlauf 2 Felder hoch, links drehen.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Feld D</strong></p><p>Du hast die Drehungen übersehen. Nach jedem Durchlauf dreht Kiko sich nach links.</p></li>
+</ul>
+<p class="question-explanation">Kiko führt den ganzen Inhalt der Schleife aus, dann noch einmal. Nach 2 Durchläufen steht er in Spalte 4, Zeile 4.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<ul class="question-infos">
+<li class="question-info" data-option="0"><p class="question-info-head"><strong>Feld A</strong></p><p>So wäre es nach drei Durchläufen. Die Schleife läuft aber nur 2-mal.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>Feld B</strong></p><p>Das ist das Ende des ersten Durchlaufs. Danach läuft die Schleife noch ein zweites Mal.</p></li>
+<li class="question-info question-info-right" data-option="2"><p class="question-info-head"><strong>Feld C</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Richtig: Erster Durchlauf 2 Felder nach rechts, links drehen. Zweiter Durchlauf 2 Felder hoch, links drehen.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Feld D</strong></p><p>Du hast die Drehungen übersehen. Nach jedem Durchlauf dreht Kiko sich nach links.</p></li>
+</ul>
+<p class="question-explanation">Kiko führt den ganzen Inhalt der Schleife aus, dann noch einmal. Nach 2 Durchläufen steht er in Spalte 4, Zeile 4.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"wo-nach-schleife","text":"Kiko schaut im Bild nach rechts und führt das Programm mit der Schleife aus. Auf welchem Feld endet er?","explanation":"Kiko führt den ganzen Inhalt der Schleife aus, dann noch einmal. Nach 2 Durchläufen steht er in Spalte 4, Zeile 4.","links":[],"material":[{"type":"figure","image":"images/kiko-zaehlschleife-programm-de.svg","alt":"Ein Programm: wiederhole 2 mal, darin: gehe vorwärts, gehe vorwärts, drehe dich nach links.","caption":"Das Programm. Die drei Blöcke stehen in der Schleife.","source":"eigene Zeichnung nach lernapps.net/coding","licence":"CC-BY-4.0"},{"type":"figure","image":"images/kiko-zaehlschleife-wo.svg","alt":"Ein Spielfeld mit Spalten 1 bis 7 und Zeilen 1 bis 7. Kiko steht in Spalte 2, Zeile 6 und schaut im Bild nach rechts. Markiert sind A in Spalte 2, Zeile 4; B in Spalte 4, Zeile 6; C in Spalte 4, Zeile 4; D in Spalte 6, Zeile 6.","caption":"Das Spielfeld","source":"eigene Zeichnung, Kiko nach lernapps.net/coding","licence":"CC-BY-4.0"}],"type":"single-choice","options":[{"text":"Feld A","correct":false,"info":"So wäre es nach drei Durchläufen. Die Schleife läuft aber nur 2-mal."},{"text":"Feld B","correct":false,"info":"Das ist das Ende des ersten Durchlaufs. Danach läuft die Schleife noch ein zweites Mal."},{"text":"Feld C","correct":true,"info":"Richtig: Erster Durchlauf 2 Felder nach rechts, links drehen. Zweiter Durchlauf 2 Felder hoch, links drehen."},{"text":"Feld D","correct":false,"info":"Du hast die Drehungen übersehen. Nach jedem Durchlauf dreht Kiko sich nach links."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="idee">Wiederholen mit fester Anzahl</h2>
+<div class="explainer-block" data-block="idee/1" data-block-id="bd182f39" data-block-type="figure" data-block-order="3">
+<figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-zaehlschleife-lang-de.svg" alt="Ein Programm aus neun Blöcken „gehe vorwärts“ untereinander." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Jonas Programm mit 9 Blöcken</p></figcaption></figure>
+</div>
+<div class="explainer-block" data-block="idee/2" data-block-id="eb664ba0" data-block-type="figure" data-block-order="4">
+<figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-zaehlschleife-kurz-de.svg" alt="Ein Programm aus zwei Blöcken: wiederhole 9 mal, darin gehe vorwärts." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Selins Programm mit 2 Blöcken. Kiko läuft genauso weit.</p></figcaption></figure>
+</div>
+<div class="explainer-block" data-block="idee/3" data-block-id="b4fa4d34" data-block-type="definition" data-block-order="5">
+<dl class="explainer-definition"><dt><dfn id="begriff-zaehlschleife"><a href="../../glossar/#zaehlschleife">Zählschleife</a></dfn></dt><dd><p>Eine Zählschleife (Wiederholung mit fester Anzahl) führt ihren Schleifenrumpf so oft aus, wie die Zahl sagt.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/4" data-block-id="8fe8986d" data-block-type="definition" data-block-order="6">
+<dl class="explainer-definition"><dt><dfn id="begriff-schleifenrumpf"><a href="../../glossar/#schleifenrumpf">Schleifenrumpf</a></dfn></dt><dd><p>Der Schleifenrumpf sind die Blöcke in der Schleife. Er ist eine Sequenz, die mehrmals ausgeführt wird.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/5" data-block-id="b20d461f" data-block-type="note" data-block-order="7">
+<div class="explainer-box explainer-note">
+<h3 class="explainer-box-title">Merke</h3>
+<div class="explainer-block" data-block="idee/5/1" data-block-id="a62264a3" data-block-type="text" data-block-order="8">
+<div class="block-text"><p>Zähl die Felder, die Kiko gehen soll. Sein eigenes Feld zählt nicht mit. In einem Durchlauf führt Kiko den ganzen Rumpf aus, von oben nach unten, erst dann beginnt der nächste.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="ausprobieren">Selbst ausprobieren</h2>
+<div class="explainer-block" data-block="ausprobieren/1" data-block-id="d313f2a3" data-block-type="text" data-block-order="9">
+<div class="block-text"><p><strong>Ohne Computer:</strong> Legt die Karte <a href="https://lernapps.net/coding/karten/de/befehlskarten-2.svg" rel="noopener">„wiederhole ___ mal“</a> mit einer Zahl und Karten darin. Kiko sagt bei jedem Durchlauf laut, der wievielte es ist.</p>
+<p><strong>Mit Computer, zwei Challenges:</strong></p>
+<ul>
+<li>Ein Gang von 9 Feldern mit nur 3 Blöcken: <a href="https://lernapps.net/coding/app/?c=dVTNbuNGDH4VgnuVFRQ5Rcc0aA_toUC2hzrIgdbQmoFGQ3eG4zReGPCDJHta9BF66i1v4icpZmx5U2BXF0H8-T7yI6lPuJY4kWL3Q4POYIejG2XhKQwcFwOFARtUp56x-4SGscM7jlD98PPJzQE7_GgZvIQBeonRGYm4b1ApjZe8X9wokMR7uIGf2BuOMHAkw5QTDGw5tHCXwVJSCDnCNdz6t3_6kVu45ZB1B8fD5yfHhqMVz3A8_A0T-ePhpZ2LqBSWEqjAIHAD6c9MkRMkjeQGq0CWybTwh2SQ4J_B0pbhGlZe-jG18HsquC-RN0xaGdRNnI6H17b08yTRm9KQPm9KS55Wz9EFtdjglmNyEqqQvYS1G0rgRBvsHvDDuwcb_HDfnp9l_XzvfWxwTb0LA3bIlBT3RUgRv5K_CtRW4hNx1IQNehfG8o7c22r4Kk_BSUpRsQvZ-xI7OU2lplOz2F0XYE7F-PDYYG-5mh9w59gvOEZ2vVVscFXl10VN7P7PYV2oAOch3ywm8mVQZaBQan37EjUdDy-QXDCwy7B17Pky23l0Nyeli_qTbBnWpc1ojodXcGWeAhOF53lQuG_OhL_y8G06F8A4hvveenZrhhwMJGXvq3lJ1gO7cOH_Les3uUNyhkHrdssGqKCwVkPI04rju1qWb1_sCf6831sJUHdy5RLs8gRLx76FO0o1ogHKazA8nYKSstUGdgVFIRTxYXJ6KfFHyeHEPK_1Oso5V6U6BiHfwsdLyAxMwSSQAEY4QRCFvmC1uH9scOv4CbuyFdyPXMZNfb3aHP3leK9cOP0o3LggP0h0aicOV-esqx2x9ems9dVc8feyvp-4b8pR8VfiZY5v__Yj7HKEe3Za7vNzFXpOOh5eZr5b6sdZig0N9Zaraotegkbxnk2d4_Hwivv9_j8" rel="noopener">Challenge „Der lange Gang“ öffnen</a></li>
+<li>Eine Treppe mit Stufen aus 2 Feldern: <a href="https://lernapps.net/coding/app/?c=dVTNbtw2EH6VAX3VyogPPugS1HWCoj20wBooasOHWXK0HIgit-RoVTtYwA-S9pRnyCm3fRM_SUBK2nUP0UWD4cw33_x-Um2IPYpq3lWKjWpUx11YSaTdjlSlhMWRaj4pQ6pRt0ywicRCcLdYkFeNurMEIxuCJMhRYyJ1qJRg6k6-v3EXIAnxVoDYLwhgg7Y1_EqGYC1DS8BJ4Ao-kjMUp2gweAPvimo2v8EBDCb4I4ZtxL6H9vgtTrATSPZwmBJQgpHJULTBka_hdgCLScAev2qbhHyCa7hxx6-6o3pJp3DVjvtNAjznVMMH1DYnsQNOcAXp7wFjiWAIsJCcVGB5m2kO7AyIJdhNRKENEYKnCSN7OBJggUg7Qqnhr5D57QlQoA9J4Bo2Lugu1bmgY4jO5IrK0y7X1OHmKbIXqyq1p5g4-NJIHXzL22zY4041D-pi-VS1yPcnua7rWc7SZLMu0lv7iwv1WKkWNfutahRhEnXITQ7BbcI_Oco-xBEpSlKVcuy7_I-kbVGcu5BxkmAU1fjBuWzbs6RMd8pVNdcZmFJWPjxWSlsq6gf1zORWFCOxtqIqtSE_yLOsimPz_xiWfQGYB3CtbSTeAMUkYJjghlqyjqbZyYrBS35cZgiHtoZb9KXn2uIgUAZjigJFP6V3GpyPnMHHmDfEhNGX3uvQ9-hNKs3PChdGSlJmoIafWqE4YjRpQm9RU4LIWyuAW2SfOz-n8OE04A1crXp0kEt-_BIlVVAqDiaSJV-9fZg4zi8nqr_PU9hkWjk-yMiaKpAhenDUSrW8zLrC6Q2bP5lgz-RmSh4sToWdNvs9rAOEVs77l-s-nAj8Ekbo0T8VFglMoFSqc1q3sgjv4S7DcgIbxgxHHp7CsCyMOjxWas80qiYPD-ku36QN6nJ4huhO9-eS_XTquFuh24bIYnvyl7PX5TOSdUlbR9zS5ULyR14_djxUeS3pHPh-iMdvuoPnIcK63M7Xl__uj1_OTq8vn5d4N6g7kDDdDNxm288_h8HLSgcvMThHBlwIu9eXf9XhcPgO" rel="noopener">Challenge „Die breite Treppe“ öffnen</a></li>
+</ul></div>
+</div>
+<div class="explainer-block" data-block="ausprobieren/2" data-block-id="2180003c" data-block-type="figure" data-block-order="10">
+<figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-challenge-treppe.svg" alt="Das Spielfeld der Challenge „Die breite Treppe“: Kiko steht in Spalte 2, Zeile 5 und schaut im Bild nach rechts. Drei Stufen führen nach oben, jede 2 Felder breit und 1 Feld hoch, bis zum Ziel in Spalte 8, Zeile 2." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Die Treppe. Jede Stufe braucht dieselben Blöcke.</p></figcaption></figure>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="uebung">Übung</h2>
+<div class="explainer-block" data-block="uebung/1" data-block-id="e9514552" data-block-type="generated" data-block-order="11">
+<div class="explainer-exercise explainer-generated" id="befehle-zaehlen">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="explainer-live" hidden></div>
+<p class="explainer-worked-intro">Drei Beispielaufgaben, jede mit ihrer Lösung:</p>
+<ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 1</p><p class="explainer-task">Im Schleifenrumpf von „wiederhole 7 mal“ stehen 2 Befehle. Wie viele Befehle führt Kiko insgesamt aus?</p><details class="explainer-hint"><summary>Tipp</summary><p>Wie viele Befehle sind es in einem Durchlauf? Und wie viele Durchläufe gibt es?</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>Ein Durchlauf: 2 Befehle.</li><li>7 Durchläufe: 7 · 2 = 14 Befehle.</li></ol><p><strong>Richtige Antwort:</strong> 14</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 2</p><p class="explainer-task">Im Schleifenrumpf von „wiederhole 6 mal“ stehen 2 Befehle. Wie viele Befehle führt Kiko insgesamt aus?</p><details class="explainer-hint"><summary>Tipp</summary><p>Wie viele Befehle sind es in einem Durchlauf? Und wie viele Durchläufe gibt es?</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>Ein Durchlauf: 2 Befehle.</li><li>6 Durchläufe: 6 · 2 = 12 Befehle.</li></ol><p><strong>Richtige Antwort:</strong> 12</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 3</p><p class="explainer-task">Im Schleifenrumpf von „wiederhole 3 mal“ stehen 2 Befehle. Wie viele Befehle führt Kiko insgesamt aus?</p><details class="explainer-hint"><summary>Tipp</summary><p>Wie viele Befehle sind es in einem Durchlauf? Und wie viele Durchläufe gibt es?</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>Ein Durchlauf: 2 Befehle.</li><li>3 Durchläufe: 3 · 2 = 6 Befehle.</li></ol><p><strong>Richtige Antwort:</strong> 6</p></details></li></ol>
+<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"de","spec":{"type":"generated","id":"befehle-zaehlen","given":{"n":{"int":[2,9]},"k":{"int":[2,4]}},"where":["n * k != n + k"],"task":{"text":{"de":"Im Schleifenrumpf von „wiederhole {{n}} mal“ stehen {{k}} Befehle. Wie viele Befehle führt Kiko insgesamt aus?","en":"The loop body of “repeat {{n}} times” holds {{k}} commands. How many commands does Kiko carry out in total?"}},"answer":{"value":"n * k","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"n + k","message":{"de":"Du hast addiert. In jedem der {{n}} Durchläufe führt Kiko alle {{k}} Befehle aus, also malnehmen.","en":"You added. In each of the {{n}} passes Kiko carries out all {{k}} commands, so multiply."}},{"value":"k","message":{"de":"Das ist nur ein Durchlauf. Die Schleife läuft {{n}}-mal.","en":"That is only one pass. The loop runs {{n}} times."}}],"hint":{"de":"Wie viele Befehle sind es in einem Durchlauf? Und wie viele Durchläufe gibt es?","en":"How many commands are there in one pass? And how many passes are there?"},"steps":[{"de":"Ein Durchlauf: {{k}} Befehle.","en":"One pass: {{k}} commands."},{"de":"{{n}} Durchläufe: {{n}} · {{k}} = {{answer}} Befehle.","en":"{{n}} passes: {{n}} · {{k}} = {{answer}} commands."}]},"templates":{"de":{"task":"Im Schleifenrumpf von „wiederhole ⟦n⟧ mal“ stehen ⟦k⟧ Befehle. Wie viele Befehle führt Kiko insgesamt aus?","steps":["Ein Durchlauf: ⟦k⟧ Befehle.","⟦n⟧ Durchläufe: ⟦n⟧ · ⟦k⟧ = ⟦answer⟧ Befehle."],"hint":"Wie viele Befehle sind es in einem Durchlauf? Und wie viele Durchläufe gibt es?","messages":["Du hast addiert. In jedem der ⟦n⟧ Durchläufe führt Kiko alle ⟦k⟧ Befehle aus, also malnehmen.","Das ist nur ein Durchlauf. Die Schleife läuft ⟦n⟧-mal."]}},"data":{},"seeds":[1,2,3,4,5,6,7,8,10,11,12,13,17,22,24,27,33,35,38,49,51,52,55],"texts":{"newTask":"Neue Aufgabe","practice":"Übe selbst, mit immer neuen Aufgaben:","hint":"Tipp","solution":"Lösung","taskNumber":"Aufgabe Nr. {n}"}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/2" data-block-id="5509a81b" data-block-type="generated" data-block-order="12">
+<div class="explainer-exercise explainer-generated" id="wie-oft-wiederholen">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="explainer-live" hidden></div>
+<p class="explainer-worked-intro">Drei Beispielaufgaben, jede mit ihrer Lösung:</p>
+<ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 1</p><p class="explainer-task">Kiko steht am Anfang eines geraden Gangs und schaut zum Ziel. Zählst du die Felder von Kiko bis zum Ziel, das Ziel mit, aber Kikos Feld nicht, sind es 4. Welche Zahl gehört in „wiederhole … mal: gehe vorwärts“?</p><details class="explainer-hint"><summary>Tipp</summary><p>Jedes „gehe vorwärts“ bringt Kiko genau ein Feld weiter.</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>Kiko muss 4 Felder gehen, jedes mit einem „gehe vorwärts“.</li><li>Also: wiederhole 4 mal gehe vorwärts.</li></ol><p><strong>Richtige Antwort:</strong> 4</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 2</p><p class="explainer-task">Kiko steht am Anfang eines geraden Gangs und schaut zum Ziel. Zählst du die Felder von Kiko bis zum Ziel, das Ziel mit, aber Kikos Feld nicht, sind es 11. Welche Zahl gehört in „wiederhole … mal: gehe vorwärts“?</p><details class="explainer-hint"><summary>Tipp</summary><p>Jedes „gehe vorwärts“ bringt Kiko genau ein Feld weiter.</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>Kiko muss 11 Felder gehen, jedes mit einem „gehe vorwärts“.</li><li>Also: wiederhole 11 mal gehe vorwärts.</li></ol><p><strong>Richtige Antwort:</strong> 11</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 3</p><p class="explainer-task">Kiko steht am Anfang eines geraden Gangs und schaut zum Ziel. Zählst du die Felder von Kiko bis zum Ziel, das Ziel mit, aber Kikos Feld nicht, sind es 5. Welche Zahl gehört in „wiederhole … mal: gehe vorwärts“?</p><details class="explainer-hint"><summary>Tipp</summary><p>Jedes „gehe vorwärts“ bringt Kiko genau ein Feld weiter.</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>Kiko muss 5 Felder gehen, jedes mit einem „gehe vorwärts“.</li><li>Also: wiederhole 5 mal gehe vorwärts.</li></ol><p><strong>Richtige Antwort:</strong> 5</p></details></li></ol>
+<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"de","spec":{"type":"generated","id":"wie-oft-wiederholen","given":{"d":{"int":[3,11]}},"task":{"text":{"de":"Kiko steht am Anfang eines geraden Gangs und schaut zum Ziel. Zählst du die Felder von Kiko bis zum Ziel, das Ziel mit, aber Kikos Feld nicht, sind es {{d}}. Welche Zahl gehört in „wiederhole … mal: gehe vorwärts“?","en":"Kiko stands at the start of a straight corridor, facing the goal. If you count the squares from Kiko to the goal, including the goal but not Kiko's square, there are {{d}}. Which number goes into “repeat … times: move forward”?"}},"answer":{"value":"d","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"d + 1","message":{"de":"Du hast Kikos eigenes Feld mitgezählt. Dorthin muss er nicht gehen.","en":"You counted Kiko's own square. It doesn't have to move there."}},{"value":"d - 1","message":{"de":"Das Ziel zählt mit. Kiko muss auch auf das Zielfeld gehen.","en":"The goal counts. Kiko also has to move onto the goal square."}}],"hint":{"de":"Jedes „gehe vorwärts“ bringt Kiko genau ein Feld weiter.","en":"Each “move forward” takes Kiko exactly one square further."},"steps":[{"de":"Kiko muss {{d}} Felder gehen, jedes mit einem „gehe vorwärts“.","en":"Kiko has to move {{d}} squares, each with one “move forward”."},{"de":"Also: wiederhole {{answer}} mal gehe vorwärts.","en":"So: repeat {{answer}} times move forward."}]},"templates":{"de":{"task":"Kiko steht am Anfang eines geraden Gangs und schaut zum Ziel. Zählst du die Felder von Kiko bis zum Ziel, das Ziel mit, aber Kikos Feld nicht, sind es ⟦d⟧. Welche Zahl gehört in „wiederhole … mal: gehe vorwärts“?","steps":["Kiko muss ⟦d⟧ Felder gehen, jedes mit einem „gehe vorwärts“.","Also: wiederhole ⟦answer⟧ mal gehe vorwärts."],"hint":"Jedes „gehe vorwärts“ bringt Kiko genau ein Feld weiter.","messages":["Du hast Kikos eigenes Feld mitgezählt. Dorthin muss er nicht gehen.","Das Ziel zählt mit. Kiko muss auch auf das Zielfeld gehen."]}},"data":{},"seeds":[1,2,3,4,6,7,9,13,18],"texts":{"newTask":"Neue Aufgabe","practice":"Übe selbst, mit immer neuen Aufgaben:","hint":"Tipp","solution":"Lösung","taskNumber":"Aufgabe Nr. {n}"}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/3" data-block-id="f57b00b0" data-block-type="matching" data-block-order="13">
+<div class="explainer-exercise explainer-question" id="sequenz-zu-schleife">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-sequenz-zu-schleife" data-id="sequenz-zu-schleife" data-type="matching">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Welche Zählschleife macht dasselbe wie die Befehlsfolge?</legend>
+<p class="question-hint">Wähle zu jedem Eintrag das Passende.</p>
+<ul class="question-pairs">
+<li><label><span>vorwärts, vorwärts, vorwärts</span> <select name="frage-sequenz-zu-schleife-0" data-left="0"><option value="">bitte wählen</option><option value="2">wiederhole 2 mal: vorwärts, links</option><option value="1">wiederhole 2 mal: rechts</option><option value="0">wiederhole 3 mal: vorwärts</option><option value="4">wiederhole 3 mal: vorwärts, links</option><option value="3">wiederhole 2 mal: vorwärts, vorwärts, links</option></select></label></li>
+<li><label><span>rechts, rechts</span> <select name="frage-sequenz-zu-schleife-1" data-left="1"><option value="">bitte wählen</option><option value="2">wiederhole 2 mal: vorwärts, links</option><option value="1">wiederhole 2 mal: rechts</option><option value="0">wiederhole 3 mal: vorwärts</option><option value="4">wiederhole 3 mal: vorwärts, links</option><option value="3">wiederhole 2 mal: vorwärts, vorwärts, links</option></select></label></li>
+<li><label><span>vorwärts, links, vorwärts, links</span> <select name="frage-sequenz-zu-schleife-2" data-left="2"><option value="">bitte wählen</option><option value="2">wiederhole 2 mal: vorwärts, links</option><option value="1">wiederhole 2 mal: rechts</option><option value="0">wiederhole 3 mal: vorwärts</option><option value="4">wiederhole 3 mal: vorwärts, links</option><option value="3">wiederhole 2 mal: vorwärts, vorwärts, links</option></select></label></li>
+<li><label><span>vorwärts, vorwärts, links, vorwärts, vorwärts, links</span> <select name="frage-sequenz-zu-schleife-3" data-left="3"><option value="">bitte wählen</option><option value="2">wiederhole 2 mal: vorwärts, links</option><option value="1">wiederhole 2 mal: rechts</option><option value="0">wiederhole 3 mal: vorwärts</option><option value="4">wiederhole 3 mal: vorwärts, links</option><option value="3">wiederhole 2 mal: vorwärts, vorwärts, links</option></select></label></li>
+</ul>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> vorwärts, vorwärts, vorwärts – wiederhole 3 mal: vorwärts; rechts, rechts – wiederhole 2 mal: rechts; vorwärts, links, vorwärts, links – wiederhole 2 mal: vorwärts, links; vorwärts, vorwärts, links, vorwärts, vorwärts, links – wiederhole 2 mal: vorwärts, vorwärts, links</p>
+<p class="question-explanation">Such das Stück, das sich wiederholt. Das wird der Schleifenrumpf, und die Zahl sagt, wie oft es vorkommt.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> vorwärts, vorwärts, vorwärts – wiederhole 3 mal: vorwärts; rechts, rechts – wiederhole 2 mal: rechts; vorwärts, links, vorwärts, links – wiederhole 2 mal: vorwärts, links; vorwärts, vorwärts, links, vorwärts, vorwärts, links – wiederhole 2 mal: vorwärts, vorwärts, links</p>
+<p class="question-explanation">Such das Stück, das sich wiederholt. Das wird der Schleifenrumpf, und die Zahl sagt, wie oft es vorkommt.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"sequenz-zu-schleife","text":"Welche Zählschleife macht dasselbe wie die Befehlsfolge?","explanation":"Such das Stück, das sich wiederholt. Das wird der Schleifenrumpf, und die Zahl sagt, wie oft es vorkommt.","links":[],"type":"matching","pairs":[{"left":"vorwärts, vorwärts, vorwärts","right":"wiederhole 3 mal: vorwärts"},{"left":"rechts, rechts","right":"wiederhole 2 mal: rechts"},{"left":"vorwärts, links, vorwärts, links","right":"wiederhole 2 mal: vorwärts, links"},{"left":"vorwärts, vorwärts, links, vorwärts, vorwärts, links","right":"wiederhole 2 mal: vorwärts, vorwärts, links"}],"distractors":["wiederhole 3 mal: vorwärts, links"]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/4" data-block-id="fe5ecbf5" data-block-type="true-false" data-block-order="14">
+<div class="explainer-exercise explainer-question" id="rumpf-reihenfolge">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-rumpf-reihenfolge" data-id="rumpf-reihenfolge" data-type="true-false">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Selin sagt: „Bei ‚wiederhole 3 mal: vorwärts, links‘ geht Kiko erst 3-mal vorwärts und dreht sich dann 3-mal.“ Stimmt das?</legend>
+<label class="question-option"><input type="radio" name="frage-rumpf-reihenfolge" value="true"> <span>Stimmt</span></label>
+<label class="question-option"><input type="radio" name="frage-rumpf-reihenfolge" value="false"> <span>Stimmt nicht</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
+<p class="question-explanation">In jedem Durchlauf führt Kiko den ganzen Rumpf aus: vorwärts, links, vorwärts, links, vorwärts, links.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
+<p class="question-explanation">In jedem Durchlauf führt Kiko den ganzen Rumpf aus: vorwärts, links, vorwärts, links, vorwärts, links.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"rumpf-reihenfolge","text":"Selin sagt: „Bei ‚wiederhole 3 mal: vorwärts, links‘ geht Kiko erst 3-mal vorwärts und dreht sich dann 3-mal.“ Stimmt das?","explanation":"In jedem Durchlauf führt Kiko den ganzen Rumpf aus: vorwärts, links, vorwärts, links, vorwärts, links.","links":[],"type":"true-false","answer":false},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="weiter">Wie es weitergeht</h2>
+<div class="explainer-block" data-block="weiter/1" data-block-id="722f3c9c" data-block-type="text" data-block-order="15">
+<div class="block-text"><p>Du kannst jetzt mit einer Zählschleife Blöcke mehrmals ausführen lassen. <strong>Selin</strong> schreibt: „Mein Labyrinth hat Gänge, die jedes Mal anders lang sind. Welche Zahl soll ich da eintragen?“ Auf der nächsten Seite wiederholt Kiko, ohne vorher zu zählen.</p></div>
+</div>
+</section>
+<p class="explainer-feedback-invite" hidden><span>Fehler gefunden oder eine Idee für diese App?</span> <button type="button" class="explainer-feedback-switch">Feedback zu „Algorithmen und Programme“ geben</button></p>
+</main>
+<template class="explainer-feedback-template">
+<aside class="explainer-feedback" aria-labelledby="feedback-titel" hidden>
+<div class="explainer-feedback-head">
+<h2 id="feedback-titel">Feedback</h2>
+<button type="button" class="explainer-feedback-help-open" aria-expanded="false" aria-controls="feedback-hilfe">Hilfe</button>
+<button type="button" class="explainer-feedback-collapse" aria-expanded="true" aria-controls="feedback-inhalt" aria-label="Leiste einklappen" title="Leiste einklappen"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<button type="button" class="explainer-feedback-expand" hidden><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Feedback-Leiste ausklappen</span></button>
+<div class="explainer-feedback-body" id="feedback-inhalt">
+<section class="explainer-feedback-help" id="feedback-hilfe" aria-labelledby="feedback-hilfe-titel" hidden>
+<h3 id="feedback-hilfe-titel">So gibst du Feedback</h3>
+<ol><li>Geh die Seiten durch. Bei jedem Absatz, jeder Abbildung und jeder Aufgabe erscheint „Notiz“.</li><li>Markierst du vorher Text im Block, steht er als Zitat in der Notiz.</li><li>Bist du fertig, wähl „Issue auf GitHub öffnen“. Die App kopiert dabei deine Notizen, und du fügst sie im Issue ein. Dafür brauchst du ein GitHub-Konto.</li></ol>
+<p class="explainer-feedback-privacy">Deine Notizen bleiben nur in diesem Browser, auf diesem Gerät. Die App sendet nichts. Wenn du die Browserdaten löschst, sind die Notizen weg.</p>
+<p><button type="button" class="explainer-feedback-help-done">Verstanden</button></p>
+</section>
+<form class="explainer-feedback-form" hidden>
+<p class="explainer-feedback-new">Neue Notiz zu</p>
+<p class="explainer-feedback-where"></p>
+<blockquote class="explainer-feedback-quote" hidden></blockquote>
+<label for="feedback-text">Deine Notiz</label>
+<textarea id="feedback-text" class="explainer-feedback-text" rows="5" required></textarea>
+<p class="explainer-feedback-buttons"><button type="submit" class="explainer-feedback-save">Speichern</button> <button type="button" class="explainer-feedback-cancel">Abbrechen</button></p>
+</form>
+<p class="explainer-feedback-status" role="status" aria-live="polite"></p>
+<section class="explainer-feedback-notes" aria-labelledby="feedback-notizen">
+<h3 id="feedback-notizen" class="explainer-feedback-count"></h3>
+<p class="explainer-feedback-actions"><button type="button" class="explainer-feedback-copy">Kopieren</button> <a class="explainer-feedback-issue" href="#" target="_blank" rel="noopener">Issue auf GitHub öffnen</a></p>
+<textarea class="explainer-feedback-export" readonly rows="6" aria-label="Text zum Kopieren" hidden></textarea>
+<div class="explainer-feedback-list"></div>
+</section>
+</div>
+<div class="explainer-feedback-foot">
+<button type="button" class="explainer-feedback-delete-all">Alle löschen …</button>
+<span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
+<button type="button" class="explainer-feedback-off">Beenden</button>
+</div>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-algorithmen","app":"Algorithmen und Programme","root":"../../","repository":"lernapps/informatik-algorithmen","revision":"2899074","page":{"title":"Zählschleife","order":5}}</script>
+</aside>
+</template>
+<nav class="explainer-pager" aria-label="Weiterblättern"><a rel="prev" href="../../bloecke/verzweigung/">Zurück: Verzweigung</a><a rel="next" href="../../bloecke/bedingte-wiederholung/">Weiter: Bedingte Wiederholung</a></nav>
+<footer class="page-footer"><p>Eine Erklär-App auf lernapps.net · <a href="https://lernapps.net/imprint/">Impressum</a> · <a href="https://lernapps.net/privacy/">Datenschutz</a></p></footer>
+  </body>
+</html>

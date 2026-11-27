@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="../../assets/index-DVOapkED.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/index-CtncCkFd.css">
+    <title>Bedingte Wiederholung – Algorithmen und Programme</title>
+    <meta name="description" content="Mit „solange … tue“ wiederholt Kiko Blöcke, solange eine Bedingung wahr ist, auch wenn niemand vorher weiß, wie oft." />
+    <meta name="lernapps-archetype" content="explainer" />
+    <link rel="alternate" hreflang="de" href="../../bloecke/bedingte-wiederholung/" />
+    <link rel="alternate" hreflang="en" href="../../en/bloecke/bedingte-wiederholung/" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="page-header"><nav class="page-languages" aria-label="Sprache"><ul><li><a href="../../bloecke/bedingte-wiederholung/" hreflang="de" lang="de" aria-current="page">Deutsch</a></li><li><a href="../../en/bloecke/bedingte-wiederholung/" hreflang="en" lang="en">English</a></li></ul></nav></header>
+<nav class="explainer-breadcrumbs" aria-label="Du bist hier"><ol><li><a href="../../">Start</a></li><li><a href="../../bloecke/">Programmieren mit Blöcken</a></li><li aria-current="page">Bedingte Wiederholung</li></ol></nav>
+<main class="explainer" id="inhalt-der-seite">
+<div class="explainer-title-row">
+<h1>Bedingte Wiederholung</h1>
+<div class="explainer-tutor explainer-tutor-page">
+<details class="explainer-tutor-off">
+<summary>Mit einem KI-Tutor lernen</summary>
+<p>Ein KI-Tutor erklärt dir diese Seite und hilft dir bei den Aufgaben. Wähl deinen Assistenten:</p>
+<p class="explainer-tutor-actions"><span class="explainer-tutor-way" hidden><select class="explainer-tutor-select" aria-label="Assistent"><option value="Claude">Claude</option><option value="ChatGPT">ChatGPT</option><option value="Mistral Vibe" data-hint="Mistral Vibe lädt keine Webseiten, wenn der Link aus einem Knopf kommt. Darum kopieren wir den Satz mit dem Link für dich. Ein Klick auf „Mit Mistral Vibe lernen“ öffnet Mistral Vibe mit einer kurzen Nachricht. Füg danach den kopierten Satz ein (Strg+V, am Mac ⌘+V) und schick ihn ab.">Mistral Vibe</option><option value="copy">Ein anderer: Text kopieren</option></select> <button type="button" class="explainer-tutor-on">Einschalten</button></span> <span class="explainer-tutor-plain"><a class="explainer-tutor-provider" href="https://claude.ai/new" rel="noopener" target="_blank">Mit Claude öffnen</a> <a class="explainer-tutor-provider" href="https://chatgpt.com/" rel="noopener" target="_blank">Mit ChatGPT öffnen</a> <a class="explainer-tutor-provider" href="https://chat.mistral.ai/chat" rel="noopener" target="_blank">Mit Mistral Vibe öffnen</a></span></p>
+<p class="explainer-tutor-hint" role="status" aria-live="polite" hidden></p>
+<p class="explainer-tutor-note">Du nutzt dein eigenes Konto beim Anbieter. Der Assistent ist kein Angebot von lernapps.net: lernapps liefert nur Inhalte und Aufgaben. Die Wahl gilt für alle Seiten, nur auf diesem Gerät.</p>
+<p><a class="explainer-tutor-guide" href="../../bloecke/bedingte-wiederholung/tutor/">Ansehen, was dein Tutor zu dieser Seite bekommt</a></p>
+</details>
+<p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
+<p class="explainer-tutor-status" role="status" aria-live="polite"></p>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧bloecke/bedingte-wiederholung/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"informatik-algorithmen","page":{"id":"bedingte-wiederholung","title":"Bedingte Wiederholung","exercises":[{"id":"welche-schleife","section":"einstieg","numbered":false},{"id":"wie-oft-vorwaerts","section":"uebung","numbered":true},{"id":"wie-oft-pruefen","section":"uebung","numbered":true},{"id":"endlosschleife","section":"uebung","numbered":false},{"id":"zahl-oder-bedingung","section":"uebung","numbered":false}],"sections":["einstieg","idee","ausprobieren","uebung","weiter"]},"tutor":"bloecke/bedingte-wiederholung/tutor/","markdown":"bloecke/bedingte-wiederholung/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
+</div>
+</div>
+
+<nav class="explainer-toc" aria-label="Auf dieser Seite"><p class="explainer-toc-title">Auf dieser Seite</p><ol><li><a href="#einstieg">Gänge ohne bekannte Länge</a></li><li><a href="#idee">Wiederholen, solange die Bedingung wahr ist</a></li><li><a href="#ausprobieren">Selbst ausprobieren</a></li><li><a href="#uebung">Übung</a></li><li><a href="#weiter">Rückblick und wie es weitergeht</a></li></ol></nav>
+<section class="explainer-section">
+<h2 id="einstieg">Gänge ohne bekannte Länge</h2>
+<div class="explainer-block" data-block="einstieg/1" data-block-id="ba21f9d9" data-block-type="text" data-block-order="1">
+<div class="block-text"><p>Im Klassenchat der 7b:</p>
+<p><strong>Selin:</strong> In meinem Labyrinth ist jeder Gang anders lang. Mit „wiederhole … mal“ klappt es immer nur bei einem.</p>
+<p><strong>Ali:</strong> Kiko soll einfach laufen, bis die Wand kommt.</p>
+<p><strong>Frau Berg:</strong> Genau dafür gibt es „solange … tue“.</p>
+<p>Hier lernst du, wie Kiko wiederholt, solange eine Bedingung wahr ist.</p></div>
+</div>
+<div class="explainer-block" data-block="einstieg/2" data-block-id="11e03990" data-block-type="single-choice" data-block-order="2">
+<div class="explainer-exercise explainer-question" id="welche-schleife">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-welche-schleife" data-id="welche-schleife" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Kiko soll in jedem Gang bis kurz vor die Wand laufen, egal wie lang der Gang ist. Welches Programm klappt immer?</legend>
+<label class="question-option"><input type="radio" name="frage-welche-schleife" value="0"> <span>solange Weg frei? tue gehe vorwärts</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-schleife" value="1"> <span>wiederhole 5 mal: gehe vorwärts</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-schleife" value="2"> <span>wenn Weg frei? dann gehe vorwärts</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-schleife" value="3"> <span>solange Wand voraus? tue gehe vorwärts</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>solange Weg frei? tue gehe vorwärts</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Vor jedem Schritt prüft Kiko, ob frei ist. Kommt die Wand, hört er auf, egal nach wie vielen Feldern.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>wiederhole 5 mal: gehe vorwärts</strong></p><p>Das klappt nur bei einem Gang mit genau 5 freien Feldern. Bei einem kürzeren läuft Kiko gegen die Wand.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>wenn Weg frei? dann gehe vorwärts</strong></p><p>Eine Verzweigung prüft nur einmal. Kiko geht höchstens ein Feld.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>solange Wand voraus? tue gehe vorwärts</strong></p><p>Die Bedingung ist verkehrt herum. Ist frei, ist sie falsch, und Kiko geht gar nicht los.</p></li>
+</ul>
+<p class="question-explanation">Wenn niemand vorher weiß, wie oft, hilft eine Schleife mit Bedingung statt mit Zahl.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>solange Weg frei? tue gehe vorwärts</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Vor jedem Schritt prüft Kiko, ob frei ist. Kommt die Wand, hört er auf, egal nach wie vielen Feldern.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>wiederhole 5 mal: gehe vorwärts</strong></p><p>Das klappt nur bei einem Gang mit genau 5 freien Feldern. Bei einem kürzeren läuft Kiko gegen die Wand.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>wenn Weg frei? dann gehe vorwärts</strong></p><p>Eine Verzweigung prüft nur einmal. Kiko geht höchstens ein Feld.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>solange Wand voraus? tue gehe vorwärts</strong></p><p>Die Bedingung ist verkehrt herum. Ist frei, ist sie falsch, und Kiko geht gar nicht los.</p></li>
+</ul>
+<p class="question-explanation">Wenn niemand vorher weiß, wie oft, hilft eine Schleife mit Bedingung statt mit Zahl.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"welche-schleife","text":"Kiko soll in jedem Gang bis kurz vor die Wand laufen, egal wie lang der Gang ist. Welches Programm klappt immer?","explanation":"Wenn niemand vorher weiß, wie oft, hilft eine Schleife mit Bedingung statt mit Zahl.","links":[],"type":"single-choice","options":[{"text":"solange Weg frei? tue gehe vorwärts","correct":true,"info":"Vor jedem Schritt prüft Kiko, ob frei ist. Kommt die Wand, hört er auf, egal nach wie vielen Feldern."},{"text":"wiederhole 5 mal: gehe vorwärts","correct":false,"info":"Das klappt nur bei einem Gang mit genau 5 freien Feldern. Bei einem kürzeren läuft Kiko gegen die Wand."},{"text":"wenn Weg frei? dann gehe vorwärts","correct":false,"info":"Eine Verzweigung prüft nur einmal. Kiko geht höchstens ein Feld."},{"text":"solange Wand voraus? tue gehe vorwärts","correct":false,"info":"Die Bedingung ist verkehrt herum. Ist frei, ist sie falsch, und Kiko geht gar nicht los."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="idee">Wiederholen, solange die Bedingung wahr ist</h2>
+<div class="explainer-block" data-block="idee/1" data-block-id="68d33ccf" data-block-type="figure" data-block-order="3">
+<figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-bedingt-programm-de.svg" alt="Ein Programm: solange Weg frei? tue, darin gehe vorwärts." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Kiko läuft, bis eine Wand vor ihm ist.</p></figcaption></figure>
+</div>
+<div class="explainer-block" data-block="idee/2" data-block-id="a1ae77f0" data-block-type="definition" data-block-order="4">
+<dl class="explainer-definition"><dt><dfn id="begriff-bedingte-wiederholung"><a href="../../glossar/#bedingte-wiederholung">bedingte Wiederholung</a></dfn></dt><dd><p>Eine bedingte Wiederholung führt den Schleifenrumpf aus, solange die Bedingung wahr ist. Kiko prüft die Bedingung vor jedem Durchlauf. Ist sie falsch, hört die Wiederholung auf, auch schon vor dem ersten Durchlauf.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/3" data-block-id="c9e7f879" data-block-type="note" data-block-order="5">
+<div class="explainer-box explainer-note">
+<h3 class="explainer-box-title">Merke</h3>
+<div class="explainer-block" data-block="idee/3/1" data-block-id="93a88e93" data-block-type="text" data-block-order="6">
+<div class="block-text"><p>„Lauf, bis du am Ziel bist“ schreibst du so: solange nicht am Ziel? tue gehe vorwärts. Wird die Bedingung nie falsch, endet die Schleife nie. Das ist eine Endlosschleife. Ein Programm, das nie endet, löst keine Aufgabe, die enden soll.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="ausprobieren">Selbst ausprobieren</h2>
+<div class="explainer-block" data-block="ausprobieren/1" data-block-id="81bc6010" data-block-type="text" data-block-order="7">
+<div class="block-text"><p><strong>Ohne Computer:</strong> Legt die Karten <a href="https://lernapps.net/coding/karten/de/befehlskarten-2.svg" rel="noopener">„solange ___ tue“ und „Weg frei?“</a> mit „gehe vorwärts“ darin. Jemand stellt die Wand heimlich irgendwohin. Kiko fragt vor jedem Schritt laut: „Weg frei?“</p>
+<p><strong>Mit Computer, zwei Challenges:</strong></p>
+<ul>
+<li>Drei Gänge, jeder anders lang, mit nur 3 Blöcken: <a href="https://lernapps.net/coding/app/?c=hZTNbuM2EMdfZcC9ysouctMlQJqiBXpZIAWCJshhJI7EqaihQFJWk8CAH8SbU9FH6Km3vImfpCVlO26BoL7IIOc_85svvqjW-QGjqr4UirWqVM-9W3Uo3WqSmnoUiapQkaMlVb0oTapSd0xgUTrgEEGThx9QuitVKBJVqR_dDNblW4iGoHHes3b-Sm0KFTH0Jz83B2n2wwK_kqYBbkcm25LVgKLJhxyqhBsMcM9kF-NhIA84wPeiCdbOZ4w7FF3CNU5ALPDVu87jMBSgMST3aC0JaE_8HoO8QG9xHGMJNxMYDBFk8nAJ1_btz6an8pjWz2epJDtA0Ny25EkiWJIuGnAChI2B2qHXJSRJ5zAhA9oZnwJgzDUh0UVCar2TCK7NhzNaW8L1xCl1GBd8iAYjzM73IblHayEaT7TECCX84iZwYp_A4JrgEmrrmj6Uqdiz81anasenMdXbYv3kWaJRhVqTD-wkN75x0nKXDAccVfWgPi0_VahPt2VZ3ud_h7PHQrXYsHSqUoQhqk1qq3O2dr8l7dr5GcnHoAplWfr09dSYfBBcaiapQs3UrVpPnPyFiD6qSiZrk2bgGBLMkomqLpMFjUFVXz5_TsEoJIOHlw_Bz9j_g58z2GyKj7SL7F2RjB8L1RjKKA_qmcmuyHvixqTNqEmm-BxXGbY65vdYKMNyoMyzvt--zkyavHGWYL_9Awa0--0ODNs2gmHyIMlnBTdMcI_Gwvz2u6ePF-M0mvvtztNIGLPfyAOF_fYbaEcBxEUwZEcw5KnKcybTUJOH2U1WQ01nY_zv-VWpTBn-J-4dBGdtWrVEFQN0ZEgKOGScd5DNAKmnaUVPcIvW5GCDWxO0aUC8BgzLM4HhMP1PgIZQp21pLKE_A7iN1PSw377eUZdDXKXSsaSjI0HOfaJ0MYlONwnxnXgpthDLie3rlEq2ew-d416l4rFEl-8MH_qlXTrH7Hp3nsliHlgTcCxVmpc10_xPY2rrqOnTuNfY5Hdv8vb0_F2wLK8v9yu0nfMczUBycVBd1KRZukir0-BM0l0c2T9S_7-DTZFeAnoHuZ_8219ND8-Th1vimPJ9vT6I4e5MvN_ujvGvsekhuty7EXP9d9850RzZyapxEr2zljRY58b99pvabDZ_Aw" rel="noopener">Challenge „Wie lang ist der Gang?“ öffnen</a></li>
+<li>Gänge mit Ecken, eine Schleife mit Verzweigung darin: <a href="https://lernapps.net/coding/app/?c=hVXNbuM2EH6VweQqKVv0UugSbJpNEbSHAmmxQAIfKHEkTkWRBknF6wQG_CBOT4s-xd7yJn6SYmjZyS6wrS7mz8zHb36-8RN2PowqYf1DgayxxoEHX_I4Uig1jWWvXF861RosMHGyhPUTasIa_xzhL9IEH9qBsEByWOP74CengR4orKH1wVHATYFJxeHkd0UBLq1vB9hv_47eKtcTOG5NAjXCHZO9gDTRfrsDy9QniK3xDrQCgeaYoKOYKrh--WItsHEQfQFaxQi_8uBBT6E10BBrgl9ePgs6u5iBYfDjmGq4iQk0BfhIPXSBuICeTDq4P_iwevkcUiwgeieGQe4oQOTWgKQCArUmxeoY9R-GoJkj2q0MWwLnE6gEyRD0XtkL0H6_fQaOoGwgpddyFQiU09DxJ9IVXLOEkyB6SEbNbHpKEZIJfuoNND4ZyWpg7UOE5E_4NXCXNyu1BmVISaKgtaRCcQAa_QNF6HxYqaALIBtJHktTcBEC9yZVUqmVD1ZLqdJ6KcWyqlkHdknK_0Ahsne5VVrvOu7FcFRLrO_xbP6wwLPbSr68zN9heffN6dkZLgrsVMuuxxpJxYQbaRbvbeM_CajUQlFIEQu07Ab5PeQeC5xbBwtckXNlLhYWmDspH_al1BYLVGP5yGTluZhUSAfa7LC-f8KINeaaYY4qBy-ROy8o6riN5KKYODXK9ghZoAp9xPp-IdQbr9eyLlC6gTTWKUy0WWyE_sgpClrulIj1T8KGlhHrH9-9k7gpisH9038nt6qqu-PyzelXBlV1-908ryjneVFgaygTuUcJpaQQaM5dQ25Kj6nMVOs36V0UaNjNNLOab1xW0m1rLHFHQC7F1oj45g5uiPOcGOFKhGnV1IGj6SSeGxdFqdK81vvl3K6aWtYUQfWKHXg3j5SlilH6dH78N-pliAhB2G__Aa3mRWYrE4QdaKYTvQqug-prcTpq_2K_3R25_D4lkTB3GSQZOqCJWLJ6v6Zawfs41FnzJ9VlyV3st8-vJK-Uc_nFngy9jpf9dlfBrfDMlzJlCPQ3I0aM3kyZjLMTKR-VvN8-V_DBRso3ouaDmOUcpcgPTCuspenoMKcb1eZZPAV7Gsnn7A5_AzyUyvY-cDIjufPZ67whza5PVK6YNAXj7eT68yOx73n_P4DoQjX0SuRuCi9f2gEepwC3xIkkNZezM3x84_ymapeqHY7DcKl68dn97J3mxN6VrXcpeGtJ56Ll0mw2_wI" rel="noopener">Challenge „Um jede Ecke“ öffnen</a></li>
+</ul></div>
+</div>
+<div class="explainer-block" data-block="ausprobieren/2" data-block-id="0d8e5148" data-block-type="figure" data-block-order="8">
+<figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-challenge-um-jede-ecke-1.svg" alt="Spielfeld 1 der Challenge „Um jede Ecke“: Kiko steht in Spalte 2, Zeile 2 und schaut im Bild nach rechts. Der Gang führt nach rechts bis Spalte 7, dann 2 Felder nach unten und dann nach links bis zum Ziel in Spalte 2, Zeile 4." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Spielfeld 1 von „Um jede Ecke“. An jeder Ecke biegt der Gang nach rechts ab.</p></figcaption></figure>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="uebung">Übung</h2>
+<div class="explainer-block" data-block="uebung/1" data-block-id="33d99de3" data-block-type="generated" data-block-order="9">
+<div class="explainer-exercise explainer-generated" id="wie-oft-vorwaerts">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="explainer-live" hidden></div>
+<p class="explainer-worked-intro">Drei Beispielaufgaben, jede mit ihrer Lösung:</p>
+<ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 1</p><p class="explainer-task">Programm: solange Weg frei? tue gehe vorwärts. Vor Kiko liegen 4 freie Felder, dann kommt eine Wand. Wie oft geht Kiko vorwärts?</p><details class="explainer-hint"><summary>Tipp</summary><p>Spiel es für 2 freie Felder durch. Wie oft ist der Weg frei?</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>Vor jedem der 4 freien Felder ist der Weg frei: Kiko geht vorwärts.</li><li>Danach ist die Wand voraus, die Bedingung ist falsch. Kiko ging 4-mal vorwärts.</li></ol><p><strong>Richtige Antwort:</strong> 4</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 2</p><p class="explainer-task">Programm: solange Weg frei? tue gehe vorwärts. Vor Kiko liegen 9 freie Felder, dann kommt eine Wand. Wie oft geht Kiko vorwärts?</p><details class="explainer-hint"><summary>Tipp</summary><p>Spiel es für 2 freie Felder durch. Wie oft ist der Weg frei?</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>Vor jedem der 9 freien Felder ist der Weg frei: Kiko geht vorwärts.</li><li>Danach ist die Wand voraus, die Bedingung ist falsch. Kiko ging 9-mal vorwärts.</li></ol><p><strong>Richtige Antwort:</strong> 9</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 3</p><p class="explainer-task">Programm: solange Weg frei? tue gehe vorwärts. Vor Kiko liegen 6 freie Felder, dann kommt eine Wand. Wie oft geht Kiko vorwärts?</p><details class="explainer-hint"><summary>Tipp</summary><p>Spiel es für 2 freie Felder durch. Wie oft ist der Weg frei?</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>Vor jedem der 6 freien Felder ist der Weg frei: Kiko geht vorwärts.</li><li>Danach ist die Wand voraus, die Bedingung ist falsch. Kiko ging 6-mal vorwärts.</li></ol><p><strong>Richtige Antwort:</strong> 6</p></details></li></ol>
+<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"de","spec":{"type":"generated","id":"wie-oft-vorwaerts","given":{"d":{"int":[2,10]}},"task":{"text":{"de":"Programm: solange Weg frei? tue gehe vorwärts. Vor Kiko liegen {{d}} freie Felder, dann kommt eine Wand. Wie oft geht Kiko vorwärts?","en":"Program: while way ahead clear? do move forward. In front of Kiko there are {{d}} free squares, then a wall. How many times does Kiko move forward?"}},"answer":{"value":"d","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"d + 1","message":{"de":"Vor der Wand ist die Bedingung falsch, dann hört Kiko auf. Gegen die Wand läuft er nicht.","en":"In front of the wall the condition is false, so Kiko stops. It doesn't walk into the wall."}},{"value":"d - 1","message":{"de":"Auch auf das letzte freie Feld darf Kiko noch gehen. Erst danach ist die Wand direkt vor ihm.","en":"Kiko may still move onto the last free square. Only then is the wall directly in front of it."}}],"hint":{"de":"Spiel es für 2 freie Felder durch. Wie oft ist der Weg frei?","en":"Play it through for 2 free squares. How often is the way clear?"},"steps":[{"de":"Vor jedem der {{d}} freien Felder ist der Weg frei: Kiko geht vorwärts.","en":"Before each of the {{d}} free squares the way is clear: Kiko moves forward."},{"de":"Danach ist die Wand voraus, die Bedingung ist falsch. Kiko ging {{answer}}-mal vorwärts.","en":"After that the wall is ahead and the condition is false. Kiko moved forward {{answer}} times."}]},"templates":{"de":{"task":"Programm: solange Weg frei? tue gehe vorwärts. Vor Kiko liegen ⟦d⟧ freie Felder, dann kommt eine Wand. Wie oft geht Kiko vorwärts?","steps":["Vor jedem der ⟦d⟧ freien Felder ist der Weg frei: Kiko geht vorwärts.","Danach ist die Wand voraus, die Bedingung ist falsch. Kiko ging ⟦answer⟧-mal vorwärts."],"hint":"Spiel es für 2 freie Felder durch. Wie oft ist der Weg frei?","messages":["Vor der Wand ist die Bedingung falsch, dann hört Kiko auf. Gegen die Wand läuft er nicht.","Auch auf das letzte freie Feld darf Kiko noch gehen. Erst danach ist die Wand direkt vor ihm."]}},"data":{},"seeds":[1,2,3,6,7,10,12,17,36],"texts":{"newTask":"Neue Aufgabe","practice":"Übe selbst, mit immer neuen Aufgaben:","hint":"Tipp","solution":"Lösung","taskNumber":"Aufgabe Nr. {n}"}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/2" data-block-id="0782566a" data-block-type="generated" data-block-order="10">
+<div class="explainer-exercise explainer-generated" id="wie-oft-pruefen">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="explainer-live" hidden></div>
+<p class="explainer-worked-intro">Drei Beispielaufgaben, jede mit ihrer Lösung:</p>
+<ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 1</p><p class="explainer-task">Programm: solange Weg frei? tue gehe vorwärts. Vor Kiko liegen 7 freie Felder, dann eine Wand. Wie oft prüft Kiko die Bedingung „Weg frei?“?</p><details class="explainer-hint"><summary>Tipp</summary><p>Kiko prüft vor jedem Durchlauf und einmal am Ende, wenn die Antwort falsch ist.</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>7 Prüfungen mit der Antwort wahr, jedes Mal geht Kiko ein Feld.</li><li>Dazu 1 Prüfung mit der Antwort falsch: zusammen 8.</li></ol><p><strong>Richtige Antwort:</strong> 8</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 2</p><p class="explainer-task">Programm: solange Weg frei? tue gehe vorwärts. Vor Kiko liegen 9 freie Felder, dann eine Wand. Wie oft prüft Kiko die Bedingung „Weg frei?“?</p><details class="explainer-hint"><summary>Tipp</summary><p>Kiko prüft vor jedem Durchlauf und einmal am Ende, wenn die Antwort falsch ist.</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>9 Prüfungen mit der Antwort wahr, jedes Mal geht Kiko ein Feld.</li><li>Dazu 1 Prüfung mit der Antwort falsch: zusammen 10.</li></ol><p><strong>Richtige Antwort:</strong> 10</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 3</p><p class="explainer-task">Programm: solange Weg frei? tue gehe vorwärts. Vor Kiko liegen 6 freie Felder, dann eine Wand. Wie oft prüft Kiko die Bedingung „Weg frei?“?</p><details class="explainer-hint"><summary>Tipp</summary><p>Kiko prüft vor jedem Durchlauf und einmal am Ende, wenn die Antwort falsch ist.</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>6 Prüfungen mit der Antwort wahr, jedes Mal geht Kiko ein Feld.</li><li>Dazu 1 Prüfung mit der Antwort falsch: zusammen 7.</li></ol><p><strong>Richtige Antwort:</strong> 7</p></details></li></ol>
+<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"de","spec":{"type":"generated","id":"wie-oft-pruefen","given":{"d":{"int":[2,10]}},"task":{"text":{"de":"Programm: solange Weg frei? tue gehe vorwärts. Vor Kiko liegen {{d}} freie Felder, dann eine Wand. Wie oft prüft Kiko die Bedingung „Weg frei?“?","en":"Program: while way ahead clear? do move forward. In front of Kiko there are {{d}} free squares, then a wall. How many times does Kiko check the condition “way ahead clear?”?"}},"answer":{"value":"d + 1","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"d","message":{"de":"Du hast die letzte Prüfung vergessen. Vor der Wand fragt Kiko noch einmal und bekommt falsch, erst dann hört er auf.","en":"You forgot the last check. In front of the wall Kiko asks once more and gets false; only then does it stop."}}],"hint":{"de":"Kiko prüft vor jedem Durchlauf und einmal am Ende, wenn die Antwort falsch ist.","en":"Kiko checks before every pass and once at the end, when the answer is false."},"steps":[{"de":"{{d}} Prüfungen mit der Antwort wahr, jedes Mal geht Kiko ein Feld.","en":"{{d}} checks with the answer true, each time Kiko moves one square."},{"de":"Dazu 1 Prüfung mit der Antwort falsch: zusammen {{answer}}.","en":"Plus 1 check with the answer false: {{answer}} in all."}]},"templates":{"de":{"task":"Programm: solange Weg frei? tue gehe vorwärts. Vor Kiko liegen ⟦d⟧ freie Felder, dann eine Wand. Wie oft prüft Kiko die Bedingung „Weg frei?“?","steps":["⟦d⟧ Prüfungen mit der Antwort wahr, jedes Mal geht Kiko ein Feld.","Dazu 1 Prüfung mit der Antwort falsch: zusammen ⟦answer⟧."],"hint":"Kiko prüft vor jedem Durchlauf und einmal am Ende, wenn die Antwort falsch ist.","messages":["Du hast die letzte Prüfung vergessen. Vor der Wand fragt Kiko noch einmal und bekommt falsch, erst dann hört er auf."]}},"data":{},"seeds":[1,2,4,6,7,10,15,16,17],"texts":{"newTask":"Neue Aufgabe","practice":"Übe selbst, mit immer neuen Aufgaben:","hint":"Tipp","solution":"Lösung","taskNumber":"Aufgabe Nr. {n}"}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/3" data-block-id="7b34b49d" data-block-type="true-false" data-block-order="11">
+<div class="explainer-exercise explainer-question" id="endlosschleife">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-endlosschleife" data-id="endlosschleife" data-type="true-false">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Kiko steht nicht am Ziel und führt dieses Programm aus. Stimmt es, dass das Programm nie endet?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-bedingt-endlos-de.svg" alt="Ein Programm: solange nicht am Ziel? tue, darin drehe dich nach links." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Ein Programm mit bedingter Wiederholung</p></figcaption></figure></div>
+<label class="question-option"><input type="radio" name="frage-endlosschleife" value="true"> <span>Stimmt</span></label>
+<label class="question-option"><input type="radio" name="frage-endlosschleife" value="false"> <span>Stimmt nicht</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> Die Aussage stimmt.</p>
+<p class="question-explanation">Beim Drehen bleibt Kiko auf seinem Feld und kommt nie ans Ziel. Die Bedingung bleibt wahr, das ist eine Endlosschleife.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> Die Aussage stimmt.</p>
+<p class="question-explanation">Beim Drehen bleibt Kiko auf seinem Feld und kommt nie ans Ziel. Die Bedingung bleibt wahr, das ist eine Endlosschleife.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"endlosschleife","text":"Kiko steht nicht am Ziel und führt dieses Programm aus. Stimmt es, dass das Programm nie endet?","explanation":"Beim Drehen bleibt Kiko auf seinem Feld und kommt nie ans Ziel. Die Bedingung bleibt wahr, das ist eine Endlosschleife.","links":[],"material":[{"type":"figure","image":"images/kiko-bedingt-endlos-de.svg","alt":"Ein Programm: solange nicht am Ziel? tue, darin drehe dich nach links.","caption":"Ein Programm mit bedingter Wiederholung","source":"eigene Zeichnung nach lernapps.net/coding","licence":"CC-BY-4.0"}],"type":"true-false","answer":true},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/4" data-block-id="bb7826a2" data-block-type="matching" data-block-order="12">
+<div class="explainer-exercise explainer-question" id="zahl-oder-bedingung">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-zahl-oder-bedingung" data-id="zahl-oder-bedingung" data-type="matching">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Welche Schleife passt zu welcher Aufgabe?</legend>
+<p class="question-hint">Wähle zu jedem Eintrag das Passende.</p>
+<ul class="question-pairs">
+<li><label><span>Kiko soll genau 6 Felder gehen.</span> <select name="frage-zahl-oder-bedingung-0" data-left="0"><option value="">bitte wählen</option><option value="1">solange Weg frei? tue gehe vorwärts</option><option value="2">Keine Schleife hilft: Drehen bringt ihn nicht ans Ziel.</option><option value="0">wiederhole 6 mal: gehe vorwärts</option></select></label></li>
+<li><label><span>Kiko soll bis zur Wand gehen.</span> <select name="frage-zahl-oder-bedingung-1" data-left="1"><option value="">bitte wählen</option><option value="1">solange Weg frei? tue gehe vorwärts</option><option value="2">Keine Schleife hilft: Drehen bringt ihn nicht ans Ziel.</option><option value="0">wiederhole 6 mal: gehe vorwärts</option></select></label></li>
+<li><label><span>Kiko soll sich drehen, bis er am Ziel ist.</span> <select name="frage-zahl-oder-bedingung-2" data-left="2"><option value="">bitte wählen</option><option value="1">solange Weg frei? tue gehe vorwärts</option><option value="2">Keine Schleife hilft: Drehen bringt ihn nicht ans Ziel.</option><option value="0">wiederhole 6 mal: gehe vorwärts</option></select></label></li>
+</ul>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> Kiko soll genau 6 Felder gehen. – wiederhole 6 mal: gehe vorwärts; Kiko soll bis zur Wand gehen. – solange Weg frei? tue gehe vorwärts; Kiko soll sich drehen, bis er am Ziel ist. – Keine Schleife hilft: Drehen bringt ihn nicht ans Ziel.</p>
+<p class="question-explanation">Ist die Anzahl bekannt, passt die Zählschleife. Hängt sie vom Spielfeld ab, passt die bedingte Wiederholung. Und ein Rumpf, der Kiko nicht näher bringt, endet nie.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> Kiko soll genau 6 Felder gehen. – wiederhole 6 mal: gehe vorwärts; Kiko soll bis zur Wand gehen. – solange Weg frei? tue gehe vorwärts; Kiko soll sich drehen, bis er am Ziel ist. – Keine Schleife hilft: Drehen bringt ihn nicht ans Ziel.</p>
+<p class="question-explanation">Ist die Anzahl bekannt, passt die Zählschleife. Hängt sie vom Spielfeld ab, passt die bedingte Wiederholung. Und ein Rumpf, der Kiko nicht näher bringt, endet nie.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"zahl-oder-bedingung","text":"Welche Schleife passt zu welcher Aufgabe?","explanation":"Ist die Anzahl bekannt, passt die Zählschleife. Hängt sie vom Spielfeld ab, passt die bedingte Wiederholung. Und ein Rumpf, der Kiko nicht näher bringt, endet nie.","links":[],"type":"matching","pairs":[{"left":"Kiko soll genau 6 Felder gehen.","right":"wiederhole 6 mal: gehe vorwärts"},{"left":"Kiko soll bis zur Wand gehen.","right":"solange Weg frei? tue gehe vorwärts"},{"left":"Kiko soll sich drehen, bis er am Ziel ist.","right":"Keine Schleife hilft: Drehen bringt ihn nicht ans Ziel."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="weiter">Rückblick und wie es weitergeht</h2>
+<div class="explainer-block" data-block="weiter/1" data-block-id="36739b77" data-block-type="text" data-block-order="13">
+<div class="block-text"><p>In diesem Kapitel hast du Programme aus Blöcken gebaut und debuggt, Kiko mit Verzweigungen entscheiden und mit Schleifen wiederholen lassen. <strong>Selin</strong> schreibt: „Kiko findet jetzt durch mein ganzes Labyrinth! 🎉“ Später, in Klasse 9 und 10, schreibst du dieselben Programme als Struktogramm, als Pseudocode und als Text.</p></div>
+</div>
+</section>
+<p class="explainer-feedback-invite" hidden><span>Fehler gefunden oder eine Idee für diese App?</span> <button type="button" class="explainer-feedback-switch">Feedback zu „Algorithmen und Programme“ geben</button></p>
+</main>
+<template class="explainer-feedback-template">
+<aside class="explainer-feedback" aria-labelledby="feedback-titel" hidden>
+<div class="explainer-feedback-head">
+<h2 id="feedback-titel">Feedback</h2>
+<button type="button" class="explainer-feedback-help-open" aria-expanded="false" aria-controls="feedback-hilfe">Hilfe</button>
+<button type="button" class="explainer-feedback-collapse" aria-expanded="true" aria-controls="feedback-inhalt" aria-label="Leiste einklappen" title="Leiste einklappen"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<button type="button" class="explainer-feedback-expand" hidden><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Feedback-Leiste ausklappen</span></button>
+<div class="explainer-feedback-body" id="feedback-inhalt">
+<section class="explainer-feedback-help" id="feedback-hilfe" aria-labelledby="feedback-hilfe-titel" hidden>
+<h3 id="feedback-hilfe-titel">So gibst du Feedback</h3>
+<ol><li>Geh die Seiten durch. Bei jedem Absatz, jeder Abbildung und jeder Aufgabe erscheint „Notiz“.</li><li>Markierst du vorher Text im Block, steht er als Zitat in der Notiz.</li><li>Bist du fertig, wähl „Issue auf GitHub öffnen“. Die App kopiert dabei deine Notizen, und du fügst sie im Issue ein. Dafür brauchst du ein GitHub-Konto.</li></ol>
+<p class="explainer-feedback-privacy">Deine Notizen bleiben nur in diesem Browser, auf diesem Gerät. Die App sendet nichts. Wenn du die Browserdaten löschst, sind die Notizen weg.</p>
+<p><button type="button" class="explainer-feedback-help-done">Verstanden</button></p>
+</section>
+<form class="explainer-feedback-form" hidden>
+<p class="explainer-feedback-new">Neue Notiz zu</p>
+<p class="explainer-feedback-where"></p>
+<blockquote class="explainer-feedback-quote" hidden></blockquote>
+<label for="feedback-text">Deine Notiz</label>
+<textarea id="feedback-text" class="explainer-feedback-text" rows="5" required></textarea>
+<p class="explainer-feedback-buttons"><button type="submit" class="explainer-feedback-save">Speichern</button> <button type="button" class="explainer-feedback-cancel">Abbrechen</button></p>
+</form>
+<p class="explainer-feedback-status" role="status" aria-live="polite"></p>
+<section class="explainer-feedback-notes" aria-labelledby="feedback-notizen">
+<h3 id="feedback-notizen" class="explainer-feedback-count"></h3>
+<p class="explainer-feedback-actions"><button type="button" class="explainer-feedback-copy">Kopieren</button> <a class="explainer-feedback-issue" href="#" target="_blank" rel="noopener">Issue auf GitHub öffnen</a></p>
+<textarea class="explainer-feedback-export" readonly rows="6" aria-label="Text zum Kopieren" hidden></textarea>
+<div class="explainer-feedback-list"></div>
+</section>
+</div>
+<div class="explainer-feedback-foot">
+<button type="button" class="explainer-feedback-delete-all">Alle löschen …</button>
+<span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
+<button type="button" class="explainer-feedback-off">Beenden</button>
+</div>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-algorithmen","app":"Algorithmen und Programme","root":"../../","repository":"lernapps/informatik-algorithmen","revision":"2899074","page":{"title":"Bedingte Wiederholung","order":6}}</script>
+</aside>
+</template>
+<nav class="explainer-pager" aria-label="Weiterblättern"><a rel="prev" href="../../bloecke/zaehlschleife/">Zurück: Zählschleife</a></nav>
+<footer class="page-footer"><p>Eine Erklär-App auf lernapps.net · <a href="https://lernapps.net/imprint/">Impressum</a> · <a href="https://lernapps.net/privacy/">Datenschutz</a></p></footer>
+  </body>
+</html>
