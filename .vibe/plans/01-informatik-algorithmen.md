@@ -219,8 +219,8 @@ Die Antworten stehen im Auftrag des Orchestrators (Epic lernapps/apps#509, Issue
 - [x] Seite bloecke/zaehlschleife (wiederholung-feste-anzahl): wiederhole … mal, Schleifenrumpf, Challenges C4 und C5, Übungen mit generated.
 - [x] Seite bloecke/bedingte-wiederholung (wiederholung-mit-bedingung): solange … tue, Endlosschleife, Challenges C6 und C7, Übungen mit generated, Rückblick auf Kapitel 2.
 <!-- tasks: pages (6 added): the other pages or screens, after the pattern -->
-- [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
-- [ ] Run `npx --no -- lernapps check` until it passes.
+- [x] Update the content guide so that it describes the app as built (`app-content-matches`).
+- [x] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
 - [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you

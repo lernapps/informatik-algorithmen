@@ -24,9 +24,12 @@ Werkstatt. **Programmieren findet in der Werkstatt statt.** Der Explainer erklä
 Kapitel 1 `algorithmen` · Was ist ein Algorithmus?
 
 - `algorithmus-begriff` · „Ich kann erklären, was ein Algorithmus ist, und für einen Ablauf aus dem Alltag eine
-  eindeutige Handlungsvorschrift aufschreiben.“ · `src/algorithmen/algorithmus.yaml`
+  eindeutige Handlungsvorschrift aufschreiben.“ · `src/algorithmen/algorithmus.yaml` · Übungen `welche-beschreibung`,
+  `welche-sind-algorithmen`, `algorithmus-aufgabe`, `weg-sekretariat`, `nur-computer` · Bild `schulhaus-plan.svg`
+  (von Hand gezeichnet, Namen als Marker der `labelled-figure`)
 - `algorithmische-eigenschaften` · „Ich kann prüfen, ob eine Handlungsvorschrift ein Algorithmus ist: endlich
-  beschrieben, eindeutig und nach endlich vielen Schritten fertig.“ · `src/algorithmen/eigenschaften.yaml`
+  beschrieben, eindeutig und nach endlich vielen Schritten fertig.“ · `src/algorithmen/eigenschaften.yaml` · Übungen
+  `ein-stueck`, `was-fehlt`, `karten-reparieren`, `karten-in-ordnung`, `kurz-endet`
 - `sequenz` · „Ich kann Anweisungen in der richtigen Reihenfolge zu einer Sequenz anordnen.“ ·
   `src/algorithmen/sequenz.yaml` · Übungen `wo-steht-kiko`, `karten-zaehlen`, `welche-folge`, `hin-und-zurueck`,
   `drehen-ist-schritt` · Challenge `kiko-sequenz-schulhof`
@@ -34,13 +37,17 @@ Kapitel 1 `algorithmen` · Was ist ein Algorithmus?
 Kapitel 2 `bloecke` · Programmieren mit Blöcken
 
 - `visuelle-programmierung` · „Ich kann einen Algorithmus in einer blockbasierten (visuellen) Programmiersprache als
-  Programm umsetzen und ausführen.“ · `src/bloecke/bloecke.yaml` · Challenge `kiko-fehler-finden`
+  Programm umsetzen und ausführen.“ · `src/bloecke/bloecke.yaml` · Übungen `was-macht-das-programm`,
+  `welcher-block-falsch`, `werkstatt-teile`, `computer-raet`, `bloecke-zaehlen` · Challenge `kiko-fehler-finden`
 - `verzweigung` · „Ich kann mit einer Verzweigung (wenn – dann – sonst) festlegen, dass ein Algorithmus abhängig von
-  einer Bedingung verschiedene Anweisungen ausführt.“ · `src/bloecke/verzweigung.yaml` · Challenge `kiko-wenn-sonst`
+  einer Bedingung verschiedene Anweisungen ausführt.“ · `src/bloecke/verzweigung.yaml` · Übungen `spielfeld-b`,
+  `spielfeld-a-felder`, `welcher-zweig`, `was-ist-bedingung`, `ohne-sonst` · Challenge `kiko-wenn-sonst`
 - `wiederholung-feste-anzahl` · „Ich kann mit einer Wiederholung mit fester Anzahl Anweisungen mehrmals ausführen
-  lassen.“ · `src/bloecke/zaehlschleife.yaml` · Challenges `kiko-langer-gang`, `kiko-treppe`
+  lassen.“ · `src/bloecke/zaehlschleife.yaml` · Übungen `wo-nach-schleife`, `befehle-zaehlen`, `wie-oft-wiederholen`,
+  `sequenz-zu-schleife`, `rumpf-reihenfolge` · Challenges `kiko-langer-gang`, `kiko-treppe`
 - `wiederholung-mit-bedingung` · „Ich kann mit einer Wiederholung mit Bedingung Anweisungen so lange ausführen
-  lassen, bis eine Bedingung erfüllt ist.“ · `src/bloecke/bedingte-wiederholung.yaml` · Challenges
+  lassen, bis eine Bedingung erfüllt ist.“ · `src/bloecke/bedingte-wiederholung.yaml` · Übungen `welche-schleife`,
+  `wie-oft-vorwaerts`, `wie-oft-pruefen`, `endlosschleife`, `zahl-oder-bedingung` · Challenges
   `kiko-gang-unbekannt`, `kiko-immer-dem-gang-nach`
 
 Keine Recap-Seite und kein `ahead`: Jede Voraussetzung liegt im Strang und kommt auf einer früheren Seite.
@@ -183,6 +190,10 @@ Keine Recap-Seite und kein `ahead`: Jede Voraussetzung liegt im Strang und kommt
 - Zu jeder Challenge mindestens eine typische falsche Lösung als `challenges/<id>.falsch-<n>.json` (links/rechts
   verwechselt, Drehungen vergessen, eins zu weit, Schleife statt Sequenz …). Der Test verlangt, dass jede durchfällt;
   sonst prüft die Challenge zu wenig (dann Blocklimit, `benutzt-block:…` oder weitere Testfälle ergänzen).
+- Höchstens 8 Blöcke in der Musterlösung, solange die Arbeitsfläche der Werkstatt klein ist (Orchestrator,
+  Checkpoint Musterseite). `back.label` „Zurück zur Seite „<Titel>““ / “Back to the page “<title>””.
+- Die Challenge-Seite zeigt das Spielfeld der Challenge als Bild (`kiko-challenge-<name>.svg`) und erklärt einmal
+  (auf `sequenz`), dass die Werkstatt Felder kurz als (Spalte|Zeile) nennt.
 - Fehlt in der Werkstatt etwas (Block, Welt, Aufgabentyp): dem Orchestrator melden, nicht selbst bauen.
 
 ## Adding a chapter or round
