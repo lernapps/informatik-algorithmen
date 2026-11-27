@@ -275,12 +275,25 @@ Die Antworten stehen im Auftrag des Orchestrators (Epic lernapps/apps#509, Issue
 
 ### Phases reached
 
-<!-- Last phase completed, checkpoints passed. E.g. "commit; confirmed, published". -->
+Code abgeschlossen, Commit bis Checkpoint „Veröffentlichen“ (gemeldet, Antwort ausstehend). Checkpoints Recherche,
+Plan und Musterseite bestätigt. Merge, Veröffentlichen und Katalogeintrag machen Orchestrator und Mensch.
 
 ### Creator turns after the plan
 
-<!-- Number of creator messages after the confirmation, topic of each. Target: at most 3. -->
+4 Nachrichten des Orchestrators nach der Bestätigung des Plans: Nachtrag 5 (falsche Lösungen per Skript, Übungen
+allein verständlich, Kernbegriffe früh fachlich klären); Ja zur Musterseite mit „höchstens 8 Blöcke“; Eingang des
+Checkpoints mit der Bitte um Tastaturprobe, Suchwörter, Kompetenz-ids und Retro; dazu 1 Nachricht des Menschen
+(„Du darfst npx ausführen“) vor Code.
 
 ### Where I had to guess
 
-<!-- Each gap in plan, skills, messages or answers, and your choice. "None" if none. -->
+- `init` war zuerst vom Auto-Modus gesperrt; Recherche und Plan liefen über die geklonten Skills, Entwürfe im
+  Scratchpad, bis der Mensch `npx` freigab.
+- `tasks.start`: Standard `random` statt `first` (Schema: `first` für junge Lernende).
+- `src/images/` erlaubt keine Unterordner: Bilder heißen `kiko-*.svg`.
+- Skripte als TypeScript (Regel `strict-typescript`) mit `@types/node` per Referenz, weil `tsconfig` des Presets nur
+  `vite-plus/client` lädt.
+- Die Kopie des Prüfskripts formatiert `vp check --fix` (leeres `export {};` fällt weg); ausnehmen ginge nur im
+  Preset. Der Dateikopf sagt es.
+- Vorhersage-Aufgaben (coding#4) kamen nach der Musterseite; ohne Musterlösung, der Test wurde dafür erweitert.
+- Englische Klassenstufen: „class 7b“ wie in #490; im Rückblick keine Jahrgangsstufe (England zählt anders).
