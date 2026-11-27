@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "strand": "informatik/algorithmen",
+  "pages": [
+    {
+      "path": "algorithmen/sequenz/",
+      "title": {
+        "de": "Sequenz",
+        "en": "Sequence"
+      },
+      "competencies": [
+        "sequenz"
+      ]
+    }
+  ]
+}

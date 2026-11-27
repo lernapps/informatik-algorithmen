@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="../../../assets/index-DVOapkED.js"></script>
+    <link rel="stylesheet" crossorigin href="../../../assets/index-CtncCkFd.css">
+    <title>Sequence – Algorithms and programs</title>
+    <meta name="description" content="Commands one after another in a fixed order: with three command cards you steer Kiko across the board." />
+    <meta name="lernapps-archetype" content="explainer" />
+    <link rel="alternate" hreflang="de" href="../../../algorithmen/sequenz/" />
+    <link rel="alternate" hreflang="en" href="../../../en/algorithmen/sequenz/" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="page-header"><nav class="page-languages" aria-label="Language"><ul><li><a href="../../../algorithmen/sequenz/" hreflang="de" lang="de">Deutsch</a></li><li><a href="../../../en/algorithmen/sequenz/" hreflang="en" lang="en" aria-current="page">English</a></li></ul></nav></header>
+<nav class="explainer-breadcrumbs" aria-label="You are here"><ol><li><a href="../../../en/">Start</a></li><li aria-current="page">Sequence</li></ol></nav>
+<main class="explainer" id="inhalt-der-seite">
+<div class="explainer-title-row">
+<h1>Sequence</h1>
+<div class="explainer-tutor explainer-tutor-page">
+<details class="explainer-tutor-off">
+<summary>Learn with an AI tutor</summary>
+<p>An AI tutor explains this page to you and helps you with the exercises. Choose your assistant:</p>
+<p class="explainer-tutor-actions"><span class="explainer-tutor-way" hidden><select class="explainer-tutor-select" aria-label="Assistant"><option value="Claude">Claude</option><option value="ChatGPT">ChatGPT</option><option value="Mistral Vibe" data-hint="Mistral Vibe does not load web pages when the link comes from a button. So we copy the sentence with the link for you. A click on “Learn with Mistral Vibe” opens Mistral Vibe with a short message. Then paste the copied sentence (Ctrl+V, ⌘+V on a Mac) and send it.">Mistral Vibe</option><option value="copy">Another one: copy the text</option></select> <button type="button" class="explainer-tutor-on">Switch on</button></span> <span class="explainer-tutor-plain"><a class="explainer-tutor-provider" href="https://claude.ai/new" rel="noopener" target="_blank">Open with Claude</a> <a class="explainer-tutor-provider" href="https://chatgpt.com/" rel="noopener" target="_blank">Open with ChatGPT</a> <a class="explainer-tutor-provider" href="https://chat.mistral.ai/chat" rel="noopener" target="_blank">Open with Mistral Vibe</a></span></p>
+<p class="explainer-tutor-hint" role="status" aria-live="polite" hidden></p>
+<p class="explainer-tutor-note">You use your own account with the provider. The assistant is not offered by lernapps.net: lernapps only provides the content and the exercises. The choice holds for all pages, on this device only.</p>
+<p><a class="explainer-tutor-guide" href="../../../en/algorithmen/sequenz/tutor/">See what your tutor gets for this page</a></p>
+</details>
+<p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
+<p class="explainer-tutor-status" role="status" aria-live="polite"></p>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Load ⟦base⟧algorithmen/sequenz/tutor/⟦query⟧ and be my tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../../en/","storage":"informatik-algorithmen","page":{"id":"sequenz","title":"Sequence","exercises":[{"id":"wo-steht-kiko","section":"einstieg","numbered":false},{"id":"karten-zaehlen","section":"uebung","numbered":false},{"id":"welche-folge","section":"uebung","numbered":false},{"id":"hin-und-zurueck","section":"uebung","numbered":true},{"id":"drehen-ist-schritt","section":"uebung","numbered":false}],"sections":["einstieg","idee","ausprobieren","uebung","weiter"]},"tutor":"algorithmen/sequenz/tutor/","markdown":"algorithmen/sequenz/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"I need help with a learning unit. I will tell you in a moment what it is about.","go":"Learn with {name}","done":"✓ Copied – now paste it into {name}","copy":"Copy the text","copied":"The prompt is copied. Paste it into the chat of your AI assistant.","failed":"Copying did not work. Try again."}</script>
+</div>
+</div>
+
+<nav class="explainer-toc" aria-label="On this page"><p class="explainer-toc-title">On this page</p><ol><li><a href="#einstieg">Mia is Kiko</a></li><li><a href="#idee">Three commands in a fixed order</a></li><li><a href="#ausprobieren">Try it yourself</a></li><li><a href="#uebung">Practice</a></li><li><a href="#weiter">Looking back and what comes next</a></li></ol></nav>
+<section class="explainer-section">
+<h2 id="einstieg">Mia is Kiko</h2>
+<div class="explainer-block" data-block="einstieg/1" data-block-id="ccf60f83" data-block-type="text" data-block-order="1">
+<div class="block-text"><p>In class 7b&#39;s group chat, the evening before computing:</p>
+<p><strong>Frau Berg:</strong> Tomorrow we&#39;ll tape a board on the floor. One of you will be Kiko. There are only three cards left: forward, turn left, turn right.</p>
+<p><strong>Mia:</strong> I&#39;ll be Kiko!</p>
+<p><strong>Jona:</strong> Then I&#39;ll lay the cards. Mia, you do exactly what they say 😄</p>
+<p>Here you learn to bring Kiko to the goal with three commands, first with cards, then in the workshop.</p></div>
+</div>
+<div class="explainer-block" data-block="einstieg/2" data-block-id="ea19ef44" data-block-type="single-choice" data-block-order="2">
+<div class="explainer-exercise explainer-question" id="wo-steht-kiko">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-wo-steht-kiko" data-id="wo-steht-kiko" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Kiko faces right; the yellow triangle shows which way it is facing. Jona lays the three cards. Which square is Kiko on afterwards?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../../images/kiko-sequenz-einstieg.svg" alt="A board with columns 1 to 7 and rows 1 to 6. Kiko stands in column 2, row 4 and faces right. Marked are A in column 3, row 2; B in column 3, row 3; C in column 2, row 2; D in column 3, row 5." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Source: own drawing, Kiko after lernapps.net/coding. Licence: CC-BY-4.0." aria-label="Source: own drawing, Kiko after lernapps.net/coding. Licence: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>The board. Dark squares are walls.</p></figcaption></figure><figure class="block-figure"><div class="block-image-credit"><img src="../../../images/kiko-sequenz-einstieg-karten-en.svg" alt="Three cards, one below the other: 1 move forward, 2 turn left, 3 move forward." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Source: own drawing. Licence: CC-BY-4.0." aria-label="Source: own drawing. Licence: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Jona&#39;s cards, from top to bottom</p></figcaption></figure></div>
+<label class="question-option"><input type="radio" name="frage-wo-steht-kiko" value="0"> <span>Square A</span></label>
+<label class="question-option"><input type="radio" name="frage-wo-steht-kiko" value="1"> <span>Square B</span></label>
+<label class="question-option"><input type="radio" name="frage-wo-steht-kiko" value="2"> <span>Square C</span></label>
+<label class="question-option"><input type="radio" name="frage-wo-steht-kiko" value="3"> <span>Square D</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info" data-option="0"><p class="question-info-head"><strong>Square A</strong></p><p>You counted the turn as a step. When Kiko turns, it stays on its square.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Square B</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Right: one square to the right, then turn to face up, then one square up.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Square C</strong></p><p>That would happen if Kiko turned first. But the first card is “move forward”.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Square D</strong></p><p>You mixed up left and right. Kiko faces right. If it turns left, it faces up.</p></li>
+</ul>
+<p class="question-explanation">Forward to column 3, row 4. Turn left: Kiko faces up. Forward to column 3, row 3.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<ul class="question-infos">
+<li class="question-info" data-option="0"><p class="question-info-head"><strong>Square A</strong></p><p>You counted the turn as a step. When Kiko turns, it stays on its square.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Square B</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Right: one square to the right, then turn to face up, then one square up.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Square C</strong></p><p>That would happen if Kiko turned first. But the first card is “move forward”.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Square D</strong></p><p>You mixed up left and right. Kiko faces right. If it turns left, it faces up.</p></li>
+</ul>
+<p class="question-explanation">Forward to column 3, row 4. Turn left: Kiko faces up. Forward to column 3, row 3.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"wo-steht-kiko","text":"Kiko faces right; the yellow triangle shows which way it is facing. Jona lays the three cards. Which square is Kiko on afterwards?","explanation":"Forward to column 3, row 4. Turn left: Kiko faces up. Forward to column 3, row 3.","links":[],"material":[{"type":"figure","image":"images/kiko-sequenz-einstieg.svg","alt":"A board with columns 1 to 7 and rows 1 to 6. Kiko stands in column 2, row 4 and faces right. Marked are A in column 3, row 2; B in column 3, row 3; C in column 2, row 2; D in column 3, row 5.","caption":"The board. Dark squares are walls.","source":"own drawing, Kiko after lernapps.net/coding","licence":"CC-BY-4.0"},{"type":"figure","image":"images/kiko-sequenz-einstieg-karten-en.svg","alt":"Three cards, one below the other: 1 move forward, 2 turn left, 3 move forward.","caption":"Jona's cards, from top to bottom","source":"own drawing","licence":"CC-BY-4.0"}],"type":"single-choice","options":[{"text":"Square A","correct":false,"info":"You counted the turn as a step. When Kiko turns, it stays on its square."},{"text":"Square B","correct":true,"info":"Right: one square to the right, then turn to face up, then one square up."},{"text":"Square C","correct":false,"info":"That would happen if Kiko turned first. But the first card is “move forward”."},{"text":"Square D","correct":false,"info":"You mixed up left and right. Kiko faces right. If it turns left, it faces up."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="idee">Three commands in a fixed order</h2>
+<div class="explainer-block" data-block="idee/1" data-block-id="b7672fe7" data-block-type="text" data-block-order="3">
+<div class="block-text"><p>Kiko stands on a square and faces one way. It knows three commands: <strong>move forward</strong> (one square on) and <strong>turn left</strong> and <strong>turn right</strong> (a quarter turn on the spot). A command is an instruction that Kiko carries out without asking.</p></div>
+</div>
+<div class="explainer-block" data-block="idee/2" data-block-id="4c3ddf38" data-block-type="definition" data-block-order="4">
+<dl class="explainer-definition"><dt><dfn id="begriff-sequenz"><a href="../../../en/glossar/#sequenz">sequence</a></dfn></dt><dd><p>A sequence is a series of instructions that are carried out one after another, each exactly once, in the order in which they are written.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/3" data-block-id="b4ea152e" data-block-type="note" data-block-order="5">
+<div class="explainer-box explainer-note">
+<h3 class="explainer-box-title">Remember</h3>
+<div class="explainer-block" data-block="idee/3/1" data-block-id="40da16ef" data-block-type="text" data-block-order="6">
+<div class="block-text"><p>Turning only changes the direction Kiko faces; it stays on its square. Left and right are from Kiko&#39;s point of view. And the order matters: turning first, then moving leads somewhere else than moving first, then turning.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="ausprobieren">Try it yourself</h2>
+<div class="explainer-block" data-block="ausprobieren/1" data-block-id="89826d17" data-block-type="text" data-block-order="7">
+<div class="block-text"><p><strong>Without a computer, in threes or fours:</strong></p>
+<ol>
+<li>Print the <a href="https://lernapps.net/coding/karten/en/spielfeld.svg" rel="noopener">board</a> and the <a href="https://lernapps.net/coding/karten/en/befehlskarten-1.svg" rel="noopener">command cards</a>, or tape a board on the floor.</li>
+<li>Put out Kiko, the goal and a few walls.</li>
+<li>One person lays the cards one below the other.</li>
+<li>One person is Kiko and follows the cards from top to bottom, exactly as they lie.</li>
+<li>If Kiko misses the goal, find the wrong card together. Then swap roles.</li>
+</ol>
+<p><strong>With a computer:</strong> in the workshop, the cards become blocks with the same words. Bring Kiko to the ball: <a href="https://lernapps.net/coding/en/app/?c=dVTBctw2DP0VDPeqlSc56hY39SU9ZNK0nbHHB4qCRFQkuAGh3diZ_Zt8Rm_-sQ4p7cY5RBeBBPHwiAfwmxmTRKume9MYGkxnZprTPuOXBfl5n51fgk-jaYySBjTdNzOg6cwHmhP4FBQGZLi1IZjGIF88I6rzmEE9Ql-c58aozfM1_j1KjYJAOClQhHvC0MIfOMFACLc4og8IxHUp5LzShPAJySOPKUzYwGAjKdSEyTPCX_GEEzwvcYWeU4zarv7svF0UbIR3PFqegK3zIOi85vZC_fPGFiiD1Up-Sja08HFZVy7FaHnIhVZZC01eIcmAAjmBervRmVAzaLreH06kPhUCMKCmRVp4t0JmtaLNGjVah3kFbUvFTknCUEqmT4dStGD7JyFWbxpzRMmUuOrmEo80lYPRHkz3YHbrZxqz-7NtN2u3e2W17WbtdvdXa7czj40ZrSOeTGfQZjXnolxKoU9fC_IxycmiaDaNCcRz-a9VLKH1MqbjJYTijqS5sOpDcnM23Zu3BQxz2X14bIzzWPcfzDNh2KMIFp0Lkieup7Z2ubNeaqf9gxOgZIWi_IAR7ognlCpnC_cv332oDXOHoYjSU4bnRWoIMnxY5IhXue-oAKlYh1WKg1VfhYKntAiMFbmF39LCm1ZfFiuYYTlctB0rRI88FME2sn8ngX-xpK_5YBD0W19kKjTfC3pk6PFUe98zcLk3HFOsxNufZkkX4Qw9jkkQsLRtzQefF2HiCYaEGTgpxHREIIU0jkCaN7qviJWhW9u_g7f7aAMUOV--i-YyTMzbQFTGyD_NRZW2g7HoLwPoiRw2pQZcCV679rExR8KT6Yrq6GY0jemtq5O_SLg-ADfE68tD896GKQmpj8g3r-3tFbq58PhVzK_Czk0ZGfyR9H6Rl__cXJ-I378egiVGuaDfWjdfdMWr83w-_w8" rel="noopener">open the challenge “Kiko fetches the ball”</a></p></div>
+</div>
+<div class="explainer-block" data-block="ausprobieren/2" data-block-id="de25d249" data-block-type="figure" data-block-order="8">
+<figure class="block-figure"><div class="block-image-credit"><img src="../../../images/kiko-challenge-sequenz-schulhof.svg" alt="The board of the challenge: Kiko stands in column 2, row 2 and faces right. A path leads 2 squares right, 2 down, 2 right and 1 down to the goal in column 6, row 5." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Source: own drawing, Kiko after lernapps.net/coding. Licence: CC-BY-4.0." aria-label="Source: own drawing, Kiko after lernapps.net/coding. Licence: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>This is what the challenge looks like in the workshop.</p></figcaption></figure>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="uebung">Practice</h2>
+<div class="explainer-block" data-block="uebung/1" data-block-id="8f867cb4" data-block-type="number" data-block-order="9">
+<div class="explainer-exercise explainer-question" id="karten-zaehlen">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-karten-zaehlen" data-id="karten-zaehlen" data-type="number">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">What is the smallest number of cards Kiko needs on this board to reach the goal?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../../images/kiko-sequenz-zaehlen.svg" alt="Kiko stands in column 2, row 2 and faces right. The path leads 3 squares right, 2 down, 1 right and 1 down to the goal in column 6, row 5." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Source: own drawing, Kiko after lernapps.net/coding. Licence: CC-BY-4.0." aria-label="Source: own drawing, Kiko after lernapps.net/coding. Licence: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Every square forward and every turn is one card.</p></figcaption></figure></div>
+<label class="question-number">Your answer <input type="text" inputmode="decimal" autocomplete="off" name="frage-karten-zaehlen">  </label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Right answer:</strong> 10</p>
+<p class="question-explanation">7 “move forward” cards and 3 turns: right, left, right.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<p><strong>Right answer:</strong> 10</p>
+<p class="question-explanation">7 “move forward” cards and 3 turns: right, left, right.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"karten-zaehlen","text":"What is the smallest number of cards Kiko needs on this board to reach the goal?","explanation":"7 “move forward” cards and 3 turns: right, left, right.","links":[],"material":[{"type":"figure","image":"images/kiko-sequenz-zaehlen.svg","alt":"Kiko stands in column 2, row 2 and faces right. The path leads 3 squares right, 2 down, 1 right and 1 down to the goal in column 6, row 5.","caption":"Every square forward and every turn is one card.","source":"own drawing, Kiko after lernapps.net/coding","licence":"CC-BY-4.0"}],"type":"number","answer":10,"tolerance":0,"mistakes":[{"answer":7,"message":"You only counted the squares. Every turn is a card too."},{"answer":9,"message":"Count the turns again: Kiko turns at each of the three bends."}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/2" data-block-id="8dcdbfa2" data-block-type="single-choice" data-block-order="10">
+<div class="explainer-exercise explainer-question" id="welche-folge">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-welche-folge" data-id="welche-folge" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Kiko faces up. Which sequence takes it to the goal?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../../images/kiko-sequenz-auswahl.svg" alt="Kiko stands in column 2, row 4 and faces up. The path leads 2 squares up and then 3 squares right to the goal in column 5, row 2." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Source: own drawing, Kiko after lernapps.net/coding. Licence: CC-BY-4.0." aria-label="Source: own drawing, Kiko after lernapps.net/coding. Licence: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>A path with one bend</p></figcaption></figure></div>
+<label class="question-option"><input type="radio" name="frage-welche-folge" value="0"> <span>forward, forward, right, forward, forward, forward</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-folge" value="1"> <span>forward, forward, left, forward, forward, forward</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-folge" value="2"> <span>forward, forward, forward, right, forward, forward</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-folge" value="3"> <span>right, forward, forward, forward, forward, forward</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>forward, forward, right, forward, forward, forward</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Right: 2 squares up, turn right at the bend, 3 squares to the goal.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>forward, forward, left, forward, forward, forward</strong></p><p>Turning left makes Kiko face the wall. From its point of view the goal is on the right.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>forward, forward, forward, right, forward, forward</strong></p><p>On the third “forward” Kiko walks into the wall. The bend comes after 2 squares.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>right, forward, forward, forward, forward, forward</strong></p><p>The cards are right, the order is not. If Kiko turns first, it walks into the wall.</p></li>
+</ul>
+<p class="question-explanation">First straight on to the bend, then turn, then on.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>forward, forward, right, forward, forward, forward</strong> <span class="question-badge question-badge-right">right answer</span></p><p>Right: 2 squares up, turn right at the bend, 3 squares to the goal.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>forward, forward, left, forward, forward, forward</strong></p><p>Turning left makes Kiko face the wall. From its point of view the goal is on the right.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>forward, forward, forward, right, forward, forward</strong></p><p>On the third “forward” Kiko walks into the wall. The bend comes after 2 squares.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>right, forward, forward, forward, forward, forward</strong></p><p>The cards are right, the order is not. If Kiko turns first, it walks into the wall.</p></li>
+</ul>
+<p class="question-explanation">First straight on to the bend, then turn, then on.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"welche-folge","text":"Kiko faces up. Which sequence takes it to the goal?","explanation":"First straight on to the bend, then turn, then on.","links":[],"material":[{"type":"figure","image":"images/kiko-sequenz-auswahl.svg","alt":"Kiko stands in column 2, row 4 and faces up. The path leads 2 squares up and then 3 squares right to the goal in column 5, row 2.","caption":"A path with one bend","source":"own drawing, Kiko after lernapps.net/coding","licence":"CC-BY-4.0"}],"type":"single-choice","options":[{"text":"forward, forward, right, forward, forward, forward","correct":true,"info":"Right: 2 squares up, turn right at the bend, 3 squares to the goal."},{"text":"forward, forward, left, forward, forward, forward","correct":false,"info":"Turning left makes Kiko face the wall. From its point of view the goal is on the right."},{"text":"forward, forward, forward, right, forward, forward","correct":false,"info":"On the third “forward” Kiko walks into the wall. The bend comes after 2 squares."},{"text":"right, forward, forward, forward, forward, forward","correct":false,"info":"The cards are right, the order is not. If Kiko turns first, it walks into the wall."}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/3" data-block-id="b800b1b7" data-block-type="generated" data-block-order="11">
+<div class="explainer-exercise explainer-generated" id="hin-und-zurueck">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="explainer-live" hidden></div>
+<p class="explainer-worked-intro">Three worked tasks, each with its solution:</p>
+<ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Task no. 1</p><p class="explainer-task">Kiko is in a long, straight corridor. It moves forward 6 times, turns right twice and moves forward 2 times. How many squares is Kiko away from its starting square now?</p><details class="explainer-hint"><summary>Hint</summary><p>Draw the corridor and move Kiko step by step. Which way does it face after two right turns?</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>After moving forward 6 times, Kiko is 6 squares from the start.</li><li>Two quarter turns to the right make a half turn. Kiko now faces back towards the start.</li><li>It goes 2 squares back: 6 − 2 = 4 squares from the start.</li></ol><p><strong>Right answer:</strong> 4</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 2</p><p class="explainer-task">Kiko is in a long, straight corridor. It moves forward 8 times, turns right twice and moves forward 5 times. How many squares is Kiko away from its starting square now?</p><details class="explainer-hint"><summary>Hint</summary><p>Draw the corridor and move Kiko step by step. Which way does it face after two right turns?</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>After moving forward 8 times, Kiko is 8 squares from the start.</li><li>Two quarter turns to the right make a half turn. Kiko now faces back towards the start.</li><li>It goes 5 squares back: 8 − 5 = 3 squares from the start.</li></ol><p><strong>Right answer:</strong> 3</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 3</p><p class="explainer-task">Kiko is in a long, straight corridor. It moves forward 3 times, turns right twice and moves forward 2 times. How many squares is Kiko away from its starting square now?</p><details class="explainer-hint"><summary>Hint</summary><p>Draw the corridor and move Kiko step by step. Which way does it face after two right turns?</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>After moving forward 3 times, Kiko is 3 squares from the start.</li><li>Two quarter turns to the right make a half turn. Kiko now faces back towards the start.</li><li>It goes 2 squares back: 3 − 2 = 1 squares from the start.</li></ol><p><strong>Right answer:</strong> 1</p></details></li></ol>
+<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"en","spec":{"type":"generated","id":"hin-und-zurueck","given":{"a":{"int":[3,9]},"b":{"int":[1,8]}},"where":["b \u003c a","a != 2 * b"],"task":{"text":{"de":"Kiko steht in einem langen, geraden Gang. Er geht {{a}}-mal vorwärts, dreht sich zweimal nach rechts und geht {{b}}-mal vorwärts. Wie viele Felder ist Kiko jetzt von seinem Startfeld entfernt?","en":"Kiko is in a long, straight corridor. It moves forward {{a}} times, turns right twice and moves forward {{b}} times. How many squares is Kiko away from its starting square now?"}},"answer":{"value":"a - b","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"a + b","message":{"de":"Zweimal rechts drehen ist eine halbe Drehung: Danach schaut Kiko zurück. Die {{b}} Schritte gehen also zurück zum Start.","en":"Turning right twice is a half turn: afterwards Kiko faces back. So the {{b}} steps go back towards the start."}},{"value":"b","message":{"de":"Das sind nur die Schritte nach dem Drehen. Kiko war vorher schon {{a}} Felder weit gegangen.","en":"Those are only the steps after turning. Before that, Kiko had already gone {{a}} squares."}}],"hint":{"de":"Zeichne den Gang auf und setz Kiko Schritt für Schritt weiter. Wohin schaut er nach zwei Rechtsdrehungen?","en":"Draw the corridor and move Kiko step by step. Which way does it face after two right turns?"},"steps":[{"de":"Nach {{a}}-mal vorwärts ist Kiko {{a}} Felder vom Start entfernt.","en":"After moving forward {{a}} times, Kiko is {{a}} squares from the start."},{"de":"Zwei Vierteldrehungen nach rechts sind eine halbe Drehung. Kiko schaut jetzt zum Start zurück.","en":"Two quarter turns to the right make a half turn. Kiko now faces back towards the start."},{"de":"Er geht {{b}} Felder zurück: {{a}} − {{b}} = {{answer}} Felder vom Start.","en":"It goes {{b}} squares back: {{a}} − {{b}} = {{answer}} squares from the start."}]},"templates":{"en":{"task":"Kiko is in a long, straight corridor. It moves forward ⟦a⟧ times, turns right twice and moves forward ⟦b⟧ times. How many squares is Kiko away from its starting square now?","steps":["After moving forward ⟦a⟧ times, Kiko is ⟦a⟧ squares from the start.","Two quarter turns to the right make a half turn. Kiko now faces back towards the start.","It goes ⟦b⟧ squares back: ⟦a⟧ − ⟦b⟧ = ⟦answer⟧ squares from the start."],"hint":"Draw the corridor and move Kiko step by step. Which way does it face after two right turns?","messages":["Turning right twice is a half turn: afterwards Kiko faces back. So the ⟦b⟧ steps go back towards the start.","Those are only the steps after turning. Before that, Kiko had already gone ⟦a⟧ squares."]}},"data":{},"seeds":[1,2,3,4,5,6,7,8,9,10,11,17,18,19,22,23,28,30,32,35,41,47,48,51,55,69,77,82,90,98,105,110],"texts":{"newTask":"New task","practice":"Practise yourself, with new tasks each time:","hint":"Hint","solution":"Solution","taskNumber":"Task no. {n}"}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/4" data-block-id="89741aed" data-block-type="true-false" data-block-order="12">
+<div class="explainer-exercise explainer-question" id="drehen-ist-schritt">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-drehen-ist-schritt" data-id="drehen-ist-schritt" data-type="true-false">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Selin says: “The card ‘turn left’ takes Kiko one square to the left.” Is that true?</legend>
+<label class="question-option"><input type="radio" name="frage-drehen-ist-schritt" value="true"> <span>True</span></label>
+<label class="question-option"><input type="radio" name="frage-drehen-ist-schritt" value="false"> <span>False</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Right answer:</strong> The statement is false.</p>
+<p class="question-explanation">Turning does not move Kiko off its square. Only “move forward” takes it to the square on its left.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<p><strong>Right answer:</strong> The statement is false.</p>
+<p class="question-explanation">Turning does not move Kiko off its square. Only “move forward” takes it to the square on its left.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"drehen-ist-schritt","text":"Selin says: “The card ‘turn left’ takes Kiko one square to the left.” Is that true?","explanation":"Turning does not move Kiko off its square. Only “move forward” takes it to the square on its left.","links":[],"type":"true-false","answer":false},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="weiter">Looking back and what comes next</h2>
+<div class="explainer-block" data-block="weiter/1" data-block-id="531b57ee" data-block-type="text" data-block-order="13">
+<div class="block-text"><p>In this chapter you found algorithms in everyday life, checked their properties and brought Kiko to the goal with a sequence. After the lesson <strong>Mia</strong> writes: “I&#39;m dizzy. Can&#39;t Kiko do that?” In the next chapter the cards become blocks, and Kiko carries out the program itself.</p></div>
+</div>
+</section>
+<p class="explainer-feedback-invite" hidden><span>Found a mistake or have an idea for this app?</span> <button type="button" class="explainer-feedback-switch">Give feedback on “Algorithms and programs”</button></p>
+</main>
+<template class="explainer-feedback-template">
+<aside class="explainer-feedback" aria-labelledby="feedback-titel" hidden>
+<div class="explainer-feedback-head">
+<h2 id="feedback-titel">Feedback</h2>
+<button type="button" class="explainer-feedback-help-open" aria-expanded="false" aria-controls="feedback-hilfe">Help</button>
+<button type="button" class="explainer-feedback-collapse" aria-expanded="true" aria-controls="feedback-inhalt" aria-label="Collapse the bar" title="Collapse the bar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<button type="button" class="explainer-feedback-expand" hidden><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Expand the feedback bar</span></button>
+<div class="explainer-feedback-body" id="feedback-inhalt">
+<section class="explainer-feedback-help" id="feedback-hilfe" aria-labelledby="feedback-hilfe-titel" hidden>
+<h3 id="feedback-hilfe-titel">How to give feedback</h3>
+<ol><li>Go through the pages. Every paragraph, figure and exercise shows “Note”.</li><li>If you mark text in the block first, the note quotes it.</li><li>When you are done, choose “Open an issue on GitHub”. The app copies your notes, and you paste them into the issue. You need a GitHub account for this.</li></ol>
+<p class="explainer-feedback-privacy">Your notes stay in this browser on this device only. The app sends nothing. If you clear the browser's data, the notes are gone.</p>
+<p><button type="button" class="explainer-feedback-help-done">Got it</button></p>
+</section>
+<form class="explainer-feedback-form" hidden>
+<p class="explainer-feedback-new">New note on</p>
+<p class="explainer-feedback-where"></p>
+<blockquote class="explainer-feedback-quote" hidden></blockquote>
+<label for="feedback-text">Your note</label>
+<textarea id="feedback-text" class="explainer-feedback-text" rows="5" required></textarea>
+<p class="explainer-feedback-buttons"><button type="submit" class="explainer-feedback-save">Save</button> <button type="button" class="explainer-feedback-cancel">Cancel</button></p>
+</form>
+<p class="explainer-feedback-status" role="status" aria-live="polite"></p>
+<section class="explainer-feedback-notes" aria-labelledby="feedback-notizen">
+<h3 id="feedback-notizen" class="explainer-feedback-count"></h3>
+<p class="explainer-feedback-actions"><button type="button" class="explainer-feedback-copy">Copy</button> <a class="explainer-feedback-issue" href="#" target="_blank" rel="noopener">Open an issue on GitHub</a></p>
+<textarea class="explainer-feedback-export" readonly rows="6" aria-label="Text to copy" hidden></textarea>
+<div class="explainer-feedback-list"></div>
+</section>
+</div>
+<div class="explainer-feedback-foot">
+<button type="button" class="explainer-feedback-delete-all">Delete all …</button>
+<span class="explainer-feedback-local">Kept in this browser only</span>
+<button type="button" class="explainer-feedback-off">End</button>
+</div>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-algorithmen","app":"Algorithms and programs","root":"../../../en/","repository":"lernapps/informatik-algorithmen","revision":"16b6d59","page":{"title":"Sequence","order":0}}</script>
+</aside>
+</template>
+<nav class="explainer-pager" aria-label="Page through"></nav>
+<footer class="page-footer"><p>An explainer on lernapps.net · <a href="https://lernapps.net/imprint/">Imprint</a> · <a href="https://lernapps.net/privacy/">Privacy</a></p></footer>
+  </body>
+</html>

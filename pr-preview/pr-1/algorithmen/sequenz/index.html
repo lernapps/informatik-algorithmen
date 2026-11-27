@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="../../assets/index-DVOapkED.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/index-CtncCkFd.css">
+    <title>Sequenz – Algorithmen und Programme</title>
+    <meta name="description" content="Befehle nacheinander in fester Reihenfolge: Mit drei Befehlskarten steuerst du Kiko über das Spielfeld." />
+    <meta name="lernapps-archetype" content="explainer" />
+    <link rel="alternate" hreflang="de" href="../../algorithmen/sequenz/" />
+    <link rel="alternate" hreflang="en" href="../../en/algorithmen/sequenz/" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header class="page-header"><nav class="page-languages" aria-label="Sprache"><ul><li><a href="../../algorithmen/sequenz/" hreflang="de" lang="de" aria-current="page">Deutsch</a></li><li><a href="../../en/algorithmen/sequenz/" hreflang="en" lang="en">English</a></li></ul></nav></header>
+<nav class="explainer-breadcrumbs" aria-label="Du bist hier"><ol><li><a href="../../">Start</a></li><li aria-current="page">Sequenz</li></ol></nav>
+<main class="explainer" id="inhalt-der-seite">
+<div class="explainer-title-row">
+<h1>Sequenz</h1>
+<div class="explainer-tutor explainer-tutor-page">
+<details class="explainer-tutor-off">
+<summary>Mit einem KI-Tutor lernen</summary>
+<p>Ein KI-Tutor erklärt dir diese Seite und hilft dir bei den Aufgaben. Wähl deinen Assistenten:</p>
+<p class="explainer-tutor-actions"><span class="explainer-tutor-way" hidden><select class="explainer-tutor-select" aria-label="Assistent"><option value="Claude">Claude</option><option value="ChatGPT">ChatGPT</option><option value="Mistral Vibe" data-hint="Mistral Vibe lädt keine Webseiten, wenn der Link aus einem Knopf kommt. Darum kopieren wir den Satz mit dem Link für dich. Ein Klick auf „Mit Mistral Vibe lernen“ öffnet Mistral Vibe mit einer kurzen Nachricht. Füg danach den kopierten Satz ein (Strg+V, am Mac ⌘+V) und schick ihn ab.">Mistral Vibe</option><option value="copy">Ein anderer: Text kopieren</option></select> <button type="button" class="explainer-tutor-on">Einschalten</button></span> <span class="explainer-tutor-plain"><a class="explainer-tutor-provider" href="https://claude.ai/new" rel="noopener" target="_blank">Mit Claude öffnen</a> <a class="explainer-tutor-provider" href="https://chatgpt.com/" rel="noopener" target="_blank">Mit ChatGPT öffnen</a> <a class="explainer-tutor-provider" href="https://chat.mistral.ai/chat" rel="noopener" target="_blank">Mit Mistral Vibe öffnen</a></span></p>
+<p class="explainer-tutor-hint" role="status" aria-live="polite" hidden></p>
+<p class="explainer-tutor-note">Du nutzt dein eigenes Konto beim Anbieter. Der Assistent ist kein Angebot von lernapps.net: lernapps liefert nur Inhalte und Aufgaben. Die Wahl gilt für alle Seiten, nur auf diesem Gerät.</p>
+<p><a class="explainer-tutor-guide" href="../../algorithmen/sequenz/tutor/">Ansehen, was dein Tutor zu dieser Seite bekommt</a></p>
+</details>
+<p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
+<p class="explainer-tutor-status" role="status" aria-live="polite"></p>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧algorithmen/sequenz/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"informatik-algorithmen","page":{"id":"sequenz","title":"Sequenz","exercises":[{"id":"wo-steht-kiko","section":"einstieg","numbered":false},{"id":"karten-zaehlen","section":"uebung","numbered":false},{"id":"welche-folge","section":"uebung","numbered":false},{"id":"hin-und-zurueck","section":"uebung","numbered":true},{"id":"drehen-ist-schritt","section":"uebung","numbered":false}],"sections":["einstieg","idee","ausprobieren","uebung","weiter"]},"tutor":"algorithmen/sequenz/tutor/","markdown":"algorithmen/sequenz/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
+</div>
+</div>
+
+<nav class="explainer-toc" aria-label="Auf dieser Seite"><p class="explainer-toc-title">Auf dieser Seite</p><ol><li><a href="#einstieg">Mia ist Kiko</a></li><li><a href="#idee">Drei Befehle in fester Reihenfolge</a></li><li><a href="#ausprobieren">Selbst ausprobieren</a></li><li><a href="#uebung">Übung</a></li><li><a href="#weiter">Rückblick und wie es weitergeht</a></li></ol></nav>
+<section class="explainer-section">
+<h2 id="einstieg">Mia ist Kiko</h2>
+<div class="explainer-block" data-block="einstieg/1" data-block-id="ccf60f83" data-block-type="text" data-block-order="1">
+<div class="block-text"><p>Im Klassenchat der 7b, am Abend vor Informatik:</p>
+<p><strong>Frau Berg:</strong> Morgen kleben wir ein Spielfeld auf den Boden. Eine oder einer von euch ist Kiko. Es gibt nur noch drei Karten: vorwärts, links drehen, rechts drehen.</p>
+<p><strong>Mia:</strong> Ich bin Kiko!</p>
+<p><strong>Jona:</strong> Dann lege ich die Karten. Mia, du machst genau, was draufsteht 😄</p>
+<p>Hier lernst du, Kiko mit drei Befehlen ans Ziel zu bringen, erst mit Karten, dann in der Werkstatt.</p></div>
+</div>
+<div class="explainer-block" data-block="einstieg/2" data-block-id="ea19ef44" data-block-type="single-choice" data-block-order="2">
+<div class="explainer-exercise explainer-question" id="wo-steht-kiko">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-wo-steht-kiko" data-id="wo-steht-kiko" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Kiko schaut nach rechts, das gelbe Dreieck zeigt die Blickrichtung. Jona legt die drei Karten. Auf welchem Feld steht Kiko danach?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-sequenz-einstieg.svg" alt="Ein Spielfeld mit Spalten 1 bis 7 und Zeilen 1 bis 6. Kiko steht in Spalte 2, Zeile 4 und schaut nach rechts. Markiert sind A in Spalte 3, Zeile 2; B in Spalte 3, Zeile 3; C in Spalte 2, Zeile 2; D in Spalte 3, Zeile 5." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Das Spielfeld. Dunkle Felder sind Wände.</p></figcaption></figure><figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-sequenz-einstieg-karten-de.svg" alt="Drei Karten untereinander: 1 gehe vorwärts, 2 drehe dich nach links, 3 gehe vorwärts." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Jonas Karten, von oben nach unten</p></figcaption></figure></div>
+<label class="question-option"><input type="radio" name="frage-wo-steht-kiko" value="0"> <span>Feld A</span></label>
+<label class="question-option"><input type="radio" name="frage-wo-steht-kiko" value="1"> <span>Feld B</span></label>
+<label class="question-option"><input type="radio" name="frage-wo-steht-kiko" value="2"> <span>Feld C</span></label>
+<label class="question-option"><input type="radio" name="frage-wo-steht-kiko" value="3"> <span>Feld D</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info" data-option="0"><p class="question-info-head"><strong>Feld A</strong></p><p>Du hast das Drehen als Schritt gezählt. Beim Drehen bleibt Kiko auf seinem Feld.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Feld B</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Richtig: ein Feld nach rechts, dann nach oben drehen, dann ein Feld nach oben.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Feld C</strong></p><p>So wäre es, wenn Kiko sich zuerst dreht. Die erste Karte ist aber „gehe vorwärts“.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Feld D</strong></p><p>Du hast links und rechts verwechselt. Kiko schaut nach rechts. Dreht er sich nach links, schaut er nach oben.</p></li>
+</ul>
+<p class="question-explanation">Vorwärts auf Spalte 3, Zeile 4. Links drehen: Kiko schaut nach oben. Vorwärts auf Spalte 3, Zeile 3.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<ul class="question-infos">
+<li class="question-info" data-option="0"><p class="question-info-head"><strong>Feld A</strong></p><p>Du hast das Drehen als Schritt gezählt. Beim Drehen bleibt Kiko auf seinem Feld.</p></li>
+<li class="question-info question-info-right" data-option="1"><p class="question-info-head"><strong>Feld B</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Richtig: ein Feld nach rechts, dann nach oben drehen, dann ein Feld nach oben.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>Feld C</strong></p><p>So wäre es, wenn Kiko sich zuerst dreht. Die erste Karte ist aber „gehe vorwärts“.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>Feld D</strong></p><p>Du hast links und rechts verwechselt. Kiko schaut nach rechts. Dreht er sich nach links, schaut er nach oben.</p></li>
+</ul>
+<p class="question-explanation">Vorwärts auf Spalte 3, Zeile 4. Links drehen: Kiko schaut nach oben. Vorwärts auf Spalte 3, Zeile 3.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"wo-steht-kiko","text":"Kiko schaut nach rechts, das gelbe Dreieck zeigt die Blickrichtung. Jona legt die drei Karten. Auf welchem Feld steht Kiko danach?","explanation":"Vorwärts auf Spalte 3, Zeile 4. Links drehen: Kiko schaut nach oben. Vorwärts auf Spalte 3, Zeile 3.","links":[],"material":[{"type":"figure","image":"images/kiko-sequenz-einstieg.svg","alt":"Ein Spielfeld mit Spalten 1 bis 7 und Zeilen 1 bis 6. Kiko steht in Spalte 2, Zeile 4 und schaut nach rechts. Markiert sind A in Spalte 3, Zeile 2; B in Spalte 3, Zeile 3; C in Spalte 2, Zeile 2; D in Spalte 3, Zeile 5.","caption":"Das Spielfeld. Dunkle Felder sind Wände.","source":"eigene Zeichnung, Kiko nach lernapps.net/coding","licence":"CC-BY-4.0"},{"type":"figure","image":"images/kiko-sequenz-einstieg-karten-de.svg","alt":"Drei Karten untereinander: 1 gehe vorwärts, 2 drehe dich nach links, 3 gehe vorwärts.","caption":"Jonas Karten, von oben nach unten","source":"eigene Zeichnung","licence":"CC-BY-4.0"}],"type":"single-choice","options":[{"text":"Feld A","correct":false,"info":"Du hast das Drehen als Schritt gezählt. Beim Drehen bleibt Kiko auf seinem Feld."},{"text":"Feld B","correct":true,"info":"Richtig: ein Feld nach rechts, dann nach oben drehen, dann ein Feld nach oben."},{"text":"Feld C","correct":false,"info":"So wäre es, wenn Kiko sich zuerst dreht. Die erste Karte ist aber „gehe vorwärts“."},{"text":"Feld D","correct":false,"info":"Du hast links und rechts verwechselt. Kiko schaut nach rechts. Dreht er sich nach links, schaut er nach oben."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="idee">Drei Befehle in fester Reihenfolge</h2>
+<div class="explainer-block" data-block="idee/1" data-block-id="b7672fe7" data-block-type="text" data-block-order="3">
+<div class="block-text"><p>Kiko steht auf einem Feld und schaut in eine Richtung. Er kennt drei Befehle: <strong>gehe vorwärts</strong> (ein Feld weiter) sowie <strong>drehe dich nach links</strong> und <strong>drehe dich nach rechts</strong> (eine Vierteldrehung auf der Stelle). Ein Befehl ist eine Anweisung, die Kiko ohne Nachfragen ausführt.</p></div>
+</div>
+<div class="explainer-block" data-block="idee/2" data-block-id="4c3ddf38" data-block-type="definition" data-block-order="4">
+<dl class="explainer-definition"><dt><dfn id="begriff-sequenz"><a href="../../glossar/#sequenz">Sequenz</a></dfn></dt><dd><p>Eine Sequenz ist eine Folge von Anweisungen, die nacheinander ausgeführt werden, jede genau einmal, in der Reihenfolge, in der sie aufgeschrieben sind.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/3" data-block-id="b4ea152e" data-block-type="note" data-block-order="5">
+<div class="explainer-box explainer-note">
+<h3 class="explainer-box-title">Merke</h3>
+<div class="explainer-block" data-block="idee/3/1" data-block-id="40da16ef" data-block-type="text" data-block-order="6">
+<div class="block-text"><p>Drehen ändert nur die Blickrichtung, Kiko bleibt auf dem Feld. Links und rechts gelten aus Kikos Sicht. Und die Reihenfolge zählt: Erst drehen, dann gehen führt woandershin als erst gehen, dann drehen.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="ausprobieren">Selbst ausprobieren</h2>
+<div class="explainer-block" data-block="ausprobieren/1" data-block-id="89826d17" data-block-type="text" data-block-order="7">
+<div class="block-text"><p><strong>Ohne Computer, zu dritt oder zu viert:</strong></p>
+<ol>
+<li>Druckt das <a href="https://lernapps.net/coding/karten/de/spielfeld.svg" rel="noopener">Spielfeld</a> und die <a href="https://lernapps.net/coding/karten/de/befehlskarten-1.svg" rel="noopener">Befehlskarten</a> aus oder klebt ein Spielfeld mit Klebeband auf den Boden.</li>
+<li>Legt Kiko, das Ziel und ein paar Wände aus.</li>
+<li>Ein Kind legt die Karten untereinander.</li>
+<li>Ein Kind ist Kiko und folgt den Karten von oben nach unten, genau wie sie daliegen.</li>
+<li>Kommt Kiko nicht ans Ziel, sucht gemeinsam die falsche Karte. Dann tauscht die Rollen.</li>
+</ol>
+<p><strong>Mit Computer:</strong> In der Werkstatt werden die Karten zu Blöcken mit denselben Wörtern. Bring Kiko zum Ball: <a href="https://lernapps.net/coding/app/?c=dVTBctw2DP0VDPeqlSc56hY39SU9ZNK0nbHHB4qCRFQkuAGh3diZ_Zt8Rm_-sQ4p7cY5RBeBBPHwiAfwmxmTRKume9MYGkxnZprTPuOXBfl5n51fgk-jaYySBjTdNzOg6cwHmhP4FBQGZLi1IZjGIF88I6rzmEE9Ql-c58aozfM1_j1KjYJAOClQhHvC0MIfOMFACLc4og8IxHUp5LzShPAJySOPKUzYwGAjKdSEyTPCX_GEEzwvcYWeU4zarv7svF0UbIR3PFqegK3zIOi85vZC_fPGFiiD1Up-Sja08HFZVy7FaHnIhVZZC01eIcmAAjmBervRmVAzaLreH06kPhUCMKCmRVp4t0JmtaLNGjVah3kFbUvFTknCUEqmT4dStGD7JyFWbxpzRMmUuOrmEo80lYPRHkz3YHbrZxqz-7NtN2u3e2W17WbtdvdXa7czj40ZrSOeTGfQZjXnolxKoU9fC_IxycmiaDaNCcRz-a9VLKH1MqbjJYTijqS5sOpDcnM23Zu3BQxz2X14bIzzWPcfzDNh2KMIFp0Lkieup7Z2ubNeaqf9gxOgZIWi_IAR7ognlCpnC_cv332oDXOHoYjSU4bnRWoIMnxY5IhXue-oAKlYh1WKg1VfhYKntAiMFbmF39LCm1ZfFiuYYTlctB0rRI88FME2sn8ngX-xpK_5YBD0W19kKjTfC3pk6PFUe98zcLk3HFOsxNufZkkX4Qw9jkkQsLRtzQefF2HiCYaEGTgpxHREIIU0jkCaN7qviJWhW9u_g7f7aAMUOV--i-YyTMzbQFTGyD_NRZW2g7HoLwPoiRw2pQZcCV679rExR8KT6Yrq6GY0jemtq5O_SLg-ADfE68tD896GKQmpj8g3r-3tFbq58PhVzK_Czk0ZGfyR9H6Rl__cXJ-I378egiVGuaDfWjdfdMWr83w-_w8" rel="noopener">Challenge „Kiko holt den Ball“ öffnen</a></p></div>
+</div>
+<div class="explainer-block" data-block="ausprobieren/2" data-block-id="de25d249" data-block-type="figure" data-block-order="8">
+<figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-challenge-sequenz-schulhof.svg" alt="Das Spielfeld der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut nach rechts. Ein Weg führt 2 Felder nach rechts, 2 nach unten, 2 nach rechts und 1 nach unten zum Ziel in Spalte 6, Zeile 5." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>So sieht die Challenge in der Werkstatt aus.</p></figcaption></figure>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="uebung">Übung</h2>
+<div class="explainer-block" data-block="uebung/1" data-block-id="8f867cb4" data-block-type="number" data-block-order="9">
+<div class="explainer-exercise explainer-question" id="karten-zaehlen">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-karten-zaehlen" data-id="karten-zaehlen" data-type="number">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Wie viele Karten braucht Kiko auf diesem Spielfeld mindestens, um ins Ziel zu kommen?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-sequenz-zaehlen.svg" alt="Kiko steht in Spalte 2, Zeile 2 und schaut nach rechts. Der Weg führt 3 Felder nach rechts, 2 nach unten, 1 nach rechts und 1 nach unten zum Ziel in Spalte 6, Zeile 5." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Jedes Feld vorwärts und jede Drehung ist eine Karte.</p></figcaption></figure></div>
+<label class="question-number">Deine Antwort <input type="text" inputmode="decimal" autocomplete="off" name="frage-karten-zaehlen">  </label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> 10</p>
+<p class="question-explanation">7 Karten „gehe vorwärts“ und 3 Drehungen: rechts, links, rechts.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> 10</p>
+<p class="question-explanation">7 Karten „gehe vorwärts“ und 3 Drehungen: rechts, links, rechts.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"karten-zaehlen","text":"Wie viele Karten braucht Kiko auf diesem Spielfeld mindestens, um ins Ziel zu kommen?","explanation":"7 Karten „gehe vorwärts“ und 3 Drehungen: rechts, links, rechts.","links":[],"material":[{"type":"figure","image":"images/kiko-sequenz-zaehlen.svg","alt":"Kiko steht in Spalte 2, Zeile 2 und schaut nach rechts. Der Weg führt 3 Felder nach rechts, 2 nach unten, 1 nach rechts und 1 nach unten zum Ziel in Spalte 6, Zeile 5.","caption":"Jedes Feld vorwärts und jede Drehung ist eine Karte.","source":"eigene Zeichnung, Kiko nach lernapps.net/coding","licence":"CC-BY-4.0"}],"type":"number","answer":10,"tolerance":0,"mistakes":[{"answer":7,"message":"Du hast nur die Felder gezählt. Jede Drehung ist auch eine Karte."},{"answer":9,"message":"Zähl die Drehungen noch einmal: An jeder der drei Kurven dreht Kiko sich."}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/2" data-block-id="8dcdbfa2" data-block-type="single-choice" data-block-order="10">
+<div class="explainer-exercise explainer-question" id="welche-folge">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-welche-folge" data-id="welche-folge" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Kiko schaut nach oben. Welche Folge bringt ihn ins Ziel?</legend>
+<div class="question-material"><figure class="block-figure"><div class="block-image-credit"><img src="../../images/kiko-sequenz-auswahl.svg" alt="Kiko steht in Spalte 2, Zeile 4 und schaut nach oben. Der Weg führt 2 Felder nach oben und dann 3 Felder nach rechts zum Ziel in Spalte 5, Zeile 2." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0." aria-label="Quelle: eigene Zeichnung, Kiko nach lernapps.net/coding. Lizenz: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>Ein Weg mit einer Kurve</p></figcaption></figure></div>
+<label class="question-option"><input type="radio" name="frage-welche-folge" value="0"> <span>vorwärts, vorwärts, rechts, vorwärts, vorwärts, vorwärts</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-folge" value="1"> <span>vorwärts, vorwärts, links, vorwärts, vorwärts, vorwärts</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-folge" value="2"> <span>vorwärts, vorwärts, vorwärts, rechts, vorwärts, vorwärts</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-folge" value="3"> <span>rechts, vorwärts, vorwärts, vorwärts, vorwärts, vorwärts</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>vorwärts, vorwärts, rechts, vorwärts, vorwärts, vorwärts</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Richtig: 2 Felder hoch, an der Kurve nach rechts drehen, 3 Felder bis zum Ziel.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>vorwärts, vorwärts, links, vorwärts, vorwärts, vorwärts</strong></p><p>Nach links schaut Kiko gegen die Wand. Aus seiner Sicht liegt das Ziel rechts.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>vorwärts, vorwärts, vorwärts, rechts, vorwärts, vorwärts</strong></p><p>Beim dritten „vorwärts“ läuft Kiko gegen die Wand. Die Kurve kommt schon nach 2 Feldern.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>rechts, vorwärts, vorwärts, vorwärts, vorwärts, vorwärts</strong></p><p>Die Karten stimmen, die Reihenfolge nicht. Dreht Kiko sich zuerst, läuft er gegen die Wand.</p></li>
+</ul>
+<p class="question-explanation">Erst geradeaus bis zur Kurve, dann drehen, dann weiter.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>vorwärts, vorwärts, rechts, vorwärts, vorwärts, vorwärts</strong> <span class="question-badge question-badge-right">richtige Antwort</span></p><p>Richtig: 2 Felder hoch, an der Kurve nach rechts drehen, 3 Felder bis zum Ziel.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>vorwärts, vorwärts, links, vorwärts, vorwärts, vorwärts</strong></p><p>Nach links schaut Kiko gegen die Wand. Aus seiner Sicht liegt das Ziel rechts.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>vorwärts, vorwärts, vorwärts, rechts, vorwärts, vorwärts</strong></p><p>Beim dritten „vorwärts“ läuft Kiko gegen die Wand. Die Kurve kommt schon nach 2 Feldern.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>rechts, vorwärts, vorwärts, vorwärts, vorwärts, vorwärts</strong></p><p>Die Karten stimmen, die Reihenfolge nicht. Dreht Kiko sich zuerst, läuft er gegen die Wand.</p></li>
+</ul>
+<p class="question-explanation">Erst geradeaus bis zur Kurve, dann drehen, dann weiter.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"welche-folge","text":"Kiko schaut nach oben. Welche Folge bringt ihn ins Ziel?","explanation":"Erst geradeaus bis zur Kurve, dann drehen, dann weiter.","links":[],"material":[{"type":"figure","image":"images/kiko-sequenz-auswahl.svg","alt":"Kiko steht in Spalte 2, Zeile 4 und schaut nach oben. Der Weg führt 2 Felder nach oben und dann 3 Felder nach rechts zum Ziel in Spalte 5, Zeile 2.","caption":"Ein Weg mit einer Kurve","source":"eigene Zeichnung, Kiko nach lernapps.net/coding","licence":"CC-BY-4.0"}],"type":"single-choice","options":[{"text":"vorwärts, vorwärts, rechts, vorwärts, vorwärts, vorwärts","correct":true,"info":"Richtig: 2 Felder hoch, an der Kurve nach rechts drehen, 3 Felder bis zum Ziel."},{"text":"vorwärts, vorwärts, links, vorwärts, vorwärts, vorwärts","correct":false,"info":"Nach links schaut Kiko gegen die Wand. Aus seiner Sicht liegt das Ziel rechts."},{"text":"vorwärts, vorwärts, vorwärts, rechts, vorwärts, vorwärts","correct":false,"info":"Beim dritten „vorwärts“ läuft Kiko gegen die Wand. Die Kurve kommt schon nach 2 Feldern."},{"text":"rechts, vorwärts, vorwärts, vorwärts, vorwärts, vorwärts","correct":false,"info":"Die Karten stimmen, die Reihenfolge nicht. Dreht Kiko sich zuerst, läuft er gegen die Wand."}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/3" data-block-id="b800b1b7" data-block-type="generated" data-block-order="11">
+<div class="explainer-exercise explainer-generated" id="hin-und-zurueck">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="explainer-live" hidden></div>
+<p class="explainer-worked-intro">Drei Beispielaufgaben, jede mit ihrer Lösung:</p>
+<ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 1</p><p class="explainer-task">Kiko steht in einem langen, geraden Gang. Er geht 6-mal vorwärts, dreht sich zweimal nach rechts und geht 2-mal vorwärts. Wie viele Felder ist Kiko jetzt von seinem Startfeld entfernt?</p><details class="explainer-hint"><summary>Tipp</summary><p>Zeichne den Gang auf und setz Kiko Schritt für Schritt weiter. Wohin schaut er nach zwei Rechtsdrehungen?</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>Nach 6-mal vorwärts ist Kiko 6 Felder vom Start entfernt.</li><li>Zwei Vierteldrehungen nach rechts sind eine halbe Drehung. Kiko schaut jetzt zum Start zurück.</li><li>Er geht 2 Felder zurück: 6 − 2 = 4 Felder vom Start.</li></ol><p><strong>Richtige Antwort:</strong> 4</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 2</p><p class="explainer-task">Kiko steht in einem langen, geraden Gang. Er geht 8-mal vorwärts, dreht sich zweimal nach rechts und geht 5-mal vorwärts. Wie viele Felder ist Kiko jetzt von seinem Startfeld entfernt?</p><details class="explainer-hint"><summary>Tipp</summary><p>Zeichne den Gang auf und setz Kiko Schritt für Schritt weiter. Wohin schaut er nach zwei Rechtsdrehungen?</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>Nach 8-mal vorwärts ist Kiko 8 Felder vom Start entfernt.</li><li>Zwei Vierteldrehungen nach rechts sind eine halbe Drehung. Kiko schaut jetzt zum Start zurück.</li><li>Er geht 5 Felder zurück: 8 − 5 = 3 Felder vom Start.</li></ol><p><strong>Richtige Antwort:</strong> 3</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Aufgabe Nr. 3</p><p class="explainer-task">Kiko steht in einem langen, geraden Gang. Er geht 3-mal vorwärts, dreht sich zweimal nach rechts und geht 2-mal vorwärts. Wie viele Felder ist Kiko jetzt von seinem Startfeld entfernt?</p><details class="explainer-hint"><summary>Tipp</summary><p>Zeichne den Gang auf und setz Kiko Schritt für Schritt weiter. Wohin schaut er nach zwei Rechtsdrehungen?</p></details><details class="explainer-solution"><summary>Lösung</summary><ol class="explainer-steps"><li>Nach 3-mal vorwärts ist Kiko 3 Felder vom Start entfernt.</li><li>Zwei Vierteldrehungen nach rechts sind eine halbe Drehung. Kiko schaut jetzt zum Start zurück.</li><li>Er geht 2 Felder zurück: 3 − 2 = 1 Felder vom Start.</li></ol><p><strong>Richtige Antwort:</strong> 1</p></details></li></ol>
+<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"de","spec":{"type":"generated","id":"hin-und-zurueck","given":{"a":{"int":[3,9]},"b":{"int":[1,8]}},"where":["b \u003c a","a != 2 * b"],"task":{"text":{"de":"Kiko steht in einem langen, geraden Gang. Er geht {{a}}-mal vorwärts, dreht sich zweimal nach rechts und geht {{b}}-mal vorwärts. Wie viele Felder ist Kiko jetzt von seinem Startfeld entfernt?","en":"Kiko is in a long, straight corridor. It moves forward {{a}} times, turns right twice and moves forward {{b}} times. How many squares is Kiko away from its starting square now?"}},"answer":{"value":"a - b","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"a + b","message":{"de":"Zweimal rechts drehen ist eine halbe Drehung: Danach schaut Kiko zurück. Die {{b}} Schritte gehen also zurück zum Start.","en":"Turning right twice is a half turn: afterwards Kiko faces back. So the {{b}} steps go back towards the start."}},{"value":"b","message":{"de":"Das sind nur die Schritte nach dem Drehen. Kiko war vorher schon {{a}} Felder weit gegangen.","en":"Those are only the steps after turning. Before that, Kiko had already gone {{a}} squares."}}],"hint":{"de":"Zeichne den Gang auf und setz Kiko Schritt für Schritt weiter. Wohin schaut er nach zwei Rechtsdrehungen?","en":"Draw the corridor and move Kiko step by step. Which way does it face after two right turns?"},"steps":[{"de":"Nach {{a}}-mal vorwärts ist Kiko {{a}} Felder vom Start entfernt.","en":"After moving forward {{a}} times, Kiko is {{a}} squares from the start."},{"de":"Zwei Vierteldrehungen nach rechts sind eine halbe Drehung. Kiko schaut jetzt zum Start zurück.","en":"Two quarter turns to the right make a half turn. Kiko now faces back towards the start."},{"de":"Er geht {{b}} Felder zurück: {{a}} − {{b}} = {{answer}} Felder vom Start.","en":"It goes {{b}} squares back: {{a}} − {{b}} = {{answer}} squares from the start."}]},"templates":{"de":{"task":"Kiko steht in einem langen, geraden Gang. Er geht ⟦a⟧-mal vorwärts, dreht sich zweimal nach rechts und geht ⟦b⟧-mal vorwärts. Wie viele Felder ist Kiko jetzt von seinem Startfeld entfernt?","steps":["Nach ⟦a⟧-mal vorwärts ist Kiko ⟦a⟧ Felder vom Start entfernt.","Zwei Vierteldrehungen nach rechts sind eine halbe Drehung. Kiko schaut jetzt zum Start zurück.","Er geht ⟦b⟧ Felder zurück: ⟦a⟧ − ⟦b⟧ = ⟦answer⟧ Felder vom Start."],"hint":"Zeichne den Gang auf und setz Kiko Schritt für Schritt weiter. Wohin schaut er nach zwei Rechtsdrehungen?","messages":["Zweimal rechts drehen ist eine halbe Drehung: Danach schaut Kiko zurück. Die ⟦b⟧ Schritte gehen also zurück zum Start.","Das sind nur die Schritte nach dem Drehen. Kiko war vorher schon ⟦a⟧ Felder weit gegangen."]}},"data":{},"seeds":[1,2,3,4,5,6,7,8,9,10,11,17,18,19,22,23,28,30,32,35,41,47,48,51,55,69,77,82,90,98,105,110],"texts":{"newTask":"Neue Aufgabe","practice":"Übe selbst, mit immer neuen Aufgaben:","hint":"Tipp","solution":"Lösung","taskNumber":"Aufgabe Nr. {n}"}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/4" data-block-id="89741aed" data-block-type="true-false" data-block-order="12">
+<div class="explainer-exercise explainer-question" id="drehen-ist-schritt">
+<p class="explainer-exercise-label">Aufgabe</p>
+<div class="question" id="frage-drehen-ist-schritt" data-id="drehen-ist-schritt" data-type="true-false">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Selin sagt: „Die Karte ‚drehe dich nach links‘ bringt Kiko ein Feld nach links.“ Stimmt das?</legend>
+<label class="question-option"><input type="radio" name="frage-drehen-ist-schritt" value="true"> <span>Stimmt</span></label>
+<label class="question-option"><input type="radio" name="frage-drehen-ist-schritt" value="false"> <span>Stimmt nicht</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
+<p class="question-explanation">Drehen bewegt Kiko nicht vom Feld. Erst „gehe vorwärts“ bringt ihn auf das Feld links von ihm.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Lösung</summary>
+<p><strong>Richtige Antwort:</strong> Die Aussage stimmt nicht.</p>
+<p class="question-explanation">Drehen bewegt Kiko nicht vom Feld. Erst „gehe vorwärts“ bringt ihn auf das Feld links von ihm.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"drehen-ist-schritt","text":"Selin sagt: „Die Karte ‚drehe dich nach links‘ bringt Kiko ein Feld nach links.“ Stimmt das?","explanation":"Drehen bewegt Kiko nicht vom Feld. Erst „gehe vorwärts“ bringt ihn auf das Feld links von ihm.","links":[],"type":"true-false","answer":false},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="weiter">Rückblick und wie es weitergeht</h2>
+<div class="explainer-block" data-block="weiter/1" data-block-id="531b57ee" data-block-type="text" data-block-order="13">
+<div class="block-text"><p>In diesem Kapitel hast du Algorithmen im Alltag gefunden, ihre Eigenschaften geprüft und Kiko mit einer Sequenz ans Ziel gebracht. <strong>Mia</strong> schreibt nach der Stunde: „Mir ist schwindelig. Kann das nicht Kiko machen?“ Im nächsten Kapitel werden aus den Karten Blöcke, und Kiko führt das Programm selbst aus.</p></div>
+</div>
+</section>
+<p class="explainer-feedback-invite" hidden><span>Fehler gefunden oder eine Idee für diese App?</span> <button type="button" class="explainer-feedback-switch">Feedback zu „Algorithmen und Programme“ geben</button></p>
+</main>
+<template class="explainer-feedback-template">
+<aside class="explainer-feedback" aria-labelledby="feedback-titel" hidden>
+<div class="explainer-feedback-head">
+<h2 id="feedback-titel">Feedback</h2>
+<button type="button" class="explainer-feedback-help-open" aria-expanded="false" aria-controls="feedback-hilfe">Hilfe</button>
+<button type="button" class="explainer-feedback-collapse" aria-expanded="true" aria-controls="feedback-inhalt" aria-label="Leiste einklappen" title="Leiste einklappen"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<button type="button" class="explainer-feedback-expand" hidden><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Feedback-Leiste ausklappen</span></button>
+<div class="explainer-feedback-body" id="feedback-inhalt">
+<section class="explainer-feedback-help" id="feedback-hilfe" aria-labelledby="feedback-hilfe-titel" hidden>
+<h3 id="feedback-hilfe-titel">So gibst du Feedback</h3>
+<ol><li>Geh die Seiten durch. Bei jedem Absatz, jeder Abbildung und jeder Aufgabe erscheint „Notiz“.</li><li>Markierst du vorher Text im Block, steht er als Zitat in der Notiz.</li><li>Bist du fertig, wähl „Issue auf GitHub öffnen“. Die App kopiert dabei deine Notizen, und du fügst sie im Issue ein. Dafür brauchst du ein GitHub-Konto.</li></ol>
+<p class="explainer-feedback-privacy">Deine Notizen bleiben nur in diesem Browser, auf diesem Gerät. Die App sendet nichts. Wenn du die Browserdaten löschst, sind die Notizen weg.</p>
+<p><button type="button" class="explainer-feedback-help-done">Verstanden</button></p>
+</section>
+<form class="explainer-feedback-form" hidden>
+<p class="explainer-feedback-new">Neue Notiz zu</p>
+<p class="explainer-feedback-where"></p>
+<blockquote class="explainer-feedback-quote" hidden></blockquote>
+<label for="feedback-text">Deine Notiz</label>
+<textarea id="feedback-text" class="explainer-feedback-text" rows="5" required></textarea>
+<p class="explainer-feedback-buttons"><button type="submit" class="explainer-feedback-save">Speichern</button> <button type="button" class="explainer-feedback-cancel">Abbrechen</button></p>
+</form>
+<p class="explainer-feedback-status" role="status" aria-live="polite"></p>
+<section class="explainer-feedback-notes" aria-labelledby="feedback-notizen">
+<h3 id="feedback-notizen" class="explainer-feedback-count"></h3>
+<p class="explainer-feedback-actions"><button type="button" class="explainer-feedback-copy">Kopieren</button> <a class="explainer-feedback-issue" href="#" target="_blank" rel="noopener">Issue auf GitHub öffnen</a></p>
+<textarea class="explainer-feedback-export" readonly rows="6" aria-label="Text zum Kopieren" hidden></textarea>
+<div class="explainer-feedback-list"></div>
+</section>
+</div>
+<div class="explainer-feedback-foot">
+<button type="button" class="explainer-feedback-delete-all">Alle löschen …</button>
+<span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
+<button type="button" class="explainer-feedback-off">Beenden</button>
+</div>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-algorithmen","app":"Algorithmen und Programme","root":"../../","repository":"lernapps/informatik-algorithmen","revision":"16b6d59","page":{"title":"Sequenz","order":0}}</script>
+</aside>
+</template>
+<nav class="explainer-pager" aria-label="Weiterblättern"></nav>
+<footer class="page-footer"><p>Eine Erklär-App auf lernapps.net · <a href="https://lernapps.net/imprint/">Impressum</a> · <a href="https://lernapps.net/privacy/">Datenschutz</a></p></footer>
+  </body>
+</html>
