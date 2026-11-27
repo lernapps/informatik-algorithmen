@@ -118,8 +118,8 @@ You can now check with four questions whether a set of instructions is an algori
 
 - Task: Mia fixes Tom's cards. Which card becomes which?
 - Answer format: match each item on the left with one on the right
-- Solution: “move a bit” – “move forward” (exactly one square); “jump over the wall” – “go around the wall”; “keep turning left again and again” – “turn left twice”
-- Explanation: The fixed cards are unambiguous, Kiko can carry them out, and each is finished after a few steps.
+- Solution: “move a bit” – “move forward” (exactly one square); “jump over the wall” – Cards that lead around the wall: turning and moving forward; “keep turning left again and again” – two “turn left” cards
+- Explanation: The fixed cards only use Kiko's three commands. They are unambiguous, can be carried out, and Kiko is finished after a few steps.
 - Link: [../?via=tutor#karten-reparieren](../?via=tutor#karten-reparieren)
 
 ### Exercise karten-in-ordnung

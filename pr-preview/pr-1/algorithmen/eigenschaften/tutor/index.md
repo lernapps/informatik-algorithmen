@@ -118,8 +118,8 @@ Du kannst jetzt mit vier Fragen prüfen, ob eine Anleitung ein Algorithmus ist. 
 
 - Aufgabe: Mia repariert Toms Karten. Welche Karte wird zu welcher?
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: „gehe ein Stück“ – „gehe vorwärts“ (genau ein Feld); „spring über die Wand“ – „geh um die Wand herum“; „drehe dich immer wieder nach links“ – „drehe dich zweimal nach links“
-- Erklärung: Die reparierten Karten sind eindeutig, Kiko kann sie ausführen, und jede ist nach wenigen Schritten fertig.
+- Lösung: „gehe ein Stück“ – „gehe vorwärts“ (genau ein Feld); „spring über die Wand“ – Karten, die um die Wand herumführen: drehen und vorwärts gehen; „drehe dich immer wieder nach links“ – zwei Karten „drehe dich nach links“
+- Erklärung: Die reparierten Karten benutzen nur Kikos drei Befehle. Sie sind eindeutig, ausführbar, und Kiko ist nach wenigen Schritten fertig.
 - Link: [../?via=tutor#karten-reparieren](../?via=tutor#karten-reparieren)
 
 ### Aufgabe karten-in-ordnung

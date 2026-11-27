@@ -91,7 +91,7 @@ Picture: The board of the challenge: Kiko stands in column 2, row 2 and faces ri
 
 ### Looking back and what comes next
 
-Your first program has taken Kiko to the goal. That ends the chapter: spotting algorithms, checking them and writing them down as a sequence. **Mia** writes: “Jona had to lay new cards for every wall.” In the next chapter Kiko learns to notice walls itself.
+Your first sequence has taken Kiko to the goal. That ends the chapter: spotting algorithms, checking them and writing them down as a sequence. **Mia** writes: “Jona had to lay new cards for every wall.” In the next chapter Kiko learns to notice walls itself.
 
 ### Exercise wo-steht-kiko
 

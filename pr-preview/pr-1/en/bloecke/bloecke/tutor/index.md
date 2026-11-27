@@ -98,7 +98,7 @@ You can now build a program from blocks, run it and debug it. **Lea** writes: �
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✗ Square A – You counted every turn as a step. When Kiko turns, it stays on its square.
   - ✓ Square B – Right: one square to the right, two squares up, then one more square to the right.
-  - ✗ Square C – You stopped counting at the last block. After “turn right” there is one more “move forward”.
+  - ✗ Square C – You stopped counting before the last block. After “turn right” there is one more “move forward”.
   - ✗ Square D – You skipped a block. After turning left, Kiko moves forward twice.
 - Solution: Square B
 - Explanation: A program is carried out block by block, just like the cards. Kiko ends in column 4, row 4.

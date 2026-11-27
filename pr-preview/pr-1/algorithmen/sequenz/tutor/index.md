@@ -91,7 +91,7 @@ Bild: Das Spielfeld der Challenge: Kiko steht in Spalte 2, Zeile 2 und schaut im
 
 ### Rückblick und wie es weitergeht
 
-Kiko ist mit deinem ersten Programm am Ziel. Damit endet das Kapitel: Algorithmen erkennen, prüfen und als Sequenz aufschreiben. **Mia** schreibt: „Bei jeder Wand musste Jona neue Karten legen.“ Im nächsten Kapitel lernt Kiko, Wände selbst zu bemerken.
+Kiko ist mit deiner ersten Sequenz am Ziel. Damit endet das Kapitel: Algorithmen erkennen, prüfen und als Sequenz aufschreiben. **Mia** schreibt: „Bei jeder Wand musste Jona neue Karten legen.“ Im nächsten Kapitel lernt Kiko, Wände selbst zu bemerken.
 
 ### Aufgabe wo-steht-kiko
 

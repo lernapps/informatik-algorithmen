@@ -98,7 +98,7 @@ Du kannst jetzt ein Programm aus Blöcken bauen, laufen lassen und debuggen. **L
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✗ Feld A – Du hast jede Drehung wie einen Schritt gezählt. Beim Drehen bleibt Kiko auf seinem Feld.
   - ✓ Feld B – Richtig: ein Feld nach rechts, zwei Felder hoch, dann wieder ein Feld nach rechts.
-  - ✗ Feld C – Du hast beim letzten Block aufgehört zu zählen. Nach „drehe dich nach rechts“ kommt noch „gehe vorwärts“.
+  - ✗ Feld C – Du hast vor dem letzten Block aufgehört zu zählen. Nach „drehe dich nach rechts“ kommt noch „gehe vorwärts“.
   - ✗ Feld D – Du hast einen Block übersprungen. Nach dem Linksdrehen geht Kiko zweimal vorwärts.
 - Lösung: Feld B
 - Erklärung: Ein Programm wird Block für Block ausgeführt, genau wie die Karten. Kiko endet in Spalte 4, Zeile 4.

@@ -100,7 +100,7 @@ Du kannst jetzt erklären, was ein Algorithmus ist, und einen Weg als Schritte a
   - ✓ Selins vier Schritte – Jeder Schritt sagt genau, was Ali tun soll, und die Reihenfolge ist klar. Er muss nichts raten.
   - ✗ Jonas „Einfach rein, dann irgendwo links“ – „Irgendwo links“ kann vieles heißen: Ali muss raten, wo er abbiegen soll.
   - ✗ „Raum 112 ist im 1. Stock.“ – Das stimmt, sagt aber nicht, was Ali tun soll. Wo die Treppe ist, weiß er nicht.
-  - ✗ „Frag im Gang einfach jemanden.“ – Damit schiebt Jona die Aufgabe nur weiter. Wie Ali den Raum findet, steht nicht darin.
+  - ✗ „Frag im Gang einfach jemanden.“ – Damit wird die Aufgabe nur weitergeschoben. Wie Ali den Raum findet, steht nicht darin.
 - Lösung: Selins vier Schritte
 - Erklärung: Selins Nachricht besteht aus Schritten, die Ali nacheinander ausführen kann, bis er am Ziel ist.
 - Link: [../?via=tutor#welche-beschreibung](../?via=tutor#welche-beschreibung)

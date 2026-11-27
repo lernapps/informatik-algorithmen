@@ -67,13 +67,13 @@ Picture: Board A: Kiko stands in column 2, row 2 and faces right on the board. I
 
 **Remember: Remember**
 
-Kiko only ever carries out one branch. So test a program with selection on several boards, so that every branch gets its turn. If there is no “else”, Kiko simply does nothing when the answer is false.
+Kiko only ever carries out one branch. So test a program with selection on several boards, so that every branch gets its turn. If there is no “else” (one-sided selection), Kiko skips the “then” part when the answer is false and carries on with the next block.
 
 ### Try it yourself
 
 **Without a computer:** use the [cards for choices](https://lernapps.net/coding/karten/en/befehlskarten-2.svg) “if ___ then”, “else” and “wall ahead?” to lay out a program. Kiko plays it twice: once with a wall in front, once without.
 
-**With a computer:** the goal is sometimes up the board, sometimes down. Build a program that works on both boards: [open the challenge “Up or down?”](https://lernapps.net/coding/en/app/?c=fVRLjuM2EL1Kgb2l3ZMsstCmkUYwQJAgCeAkDXSjF7RYkghRRaVYsjLdMOCDeLLMKWaXm_gkSdGf9iwm2vCj-ryqeo-vpkk8ODHVV9YEbyrThz4tZiRa5ERZjDUSJKKpXo1HU5mf10iQPDJMJEh3xhokU5nfRkgMPs10Z7bWiMv9xeeH0CdosRPAQPAeo4dN0gAesui1d0TlCgMhw4Mjv4TvXIbHgBFCFhhchLRGsmVXUi_h3k0l4i-cWnbDAEMQOOz-Uvhw2P19jKubUstht7fgXYZAsMbgkWA1BowNRo9M0Ec3jrI8V1RQD2mDGRIh5D8mxwhN4tmxB0cepEOCLI58idlwIoHUgIPZxbiEXzuENjmtAHIaUMKAGabRXp20Y0u4n0L04GA8VgJzkA4Ou31oCvySSDcYMx52H0E6JzAn7hUbrNN_1uvk2OelNn9OHL12Xz6M2v_o1h84kHTGmg1yDonKwOtETWjVcHCjqZ7MjX7Gmpubx-O6Wp7Oev9sTePqQK2pDLosZquDTimu05_qvdHWIEs21sRAva6MdVcuPqPU7MgvziblcLJ7tiaLYzEVTTFqmCFIVoTrmOo-m-obtcAxm-rrd5oes_5_ev2fYi5FPF4Xs90-W1N3WKI-mZeAcYHMGOpOIa6RJnmRRclbXaF_tqYLdEpa6L2qOzeBD3xk1TWpwNESHpRyWSAM8DJjECRlD3K-iOfHlHpw8tkg4UFnHDL40DTIqNQiZQJkrBN5JaVK7QTiJ1d34HEA5KwZVnXHQQQadq2AcrlSaai0oHT-7rDbn_N_2whyid0EzqKqHG1xApf7rJ57pfQZQcRG7g67j2_pH1RyJW7RcJGwFm3Bsyq8xMqh7oAU6HHc9qjL41VxVtWXE6W6K9o-1XFR5feNImDUzhx1dg3qBFompgwc2k5s0Uz5WQRJRcxDYixVLo3SYBNwNpVyDOsedfquLs_XxPHyit0GOj6WoV-42CYO0g1Ityev2w2yjredqL09o_2Sz5fctlbFim9JHyf-51Pdw8vEsFLu6BB_f3O5GuK9q3uQVHoxulYt9yuMWEtIVIa13f4L)
+**With a computer:** the goal is sometimes up the board, sometimes down. Build a program that works on both boards: [open the challenge “Up or down?”](https://lernapps.net/coding/en/app/?c=fVRBbus2EL3KgNnKTttFF9oEDYoCRYu2gNsGSJAFJY4kQtRQHY6s_gQGfBD_LnuKv-tNfJJ2KNtxFr_aSBxxZt7jvMdX00QerJjyy8J4Z0rT-z6uZiRapUhJTGHES0BTvhqHpjQ_V0gQHTJMJEh3pjBIpjS_jRAZXJzpzuwKIzb1l5wffB-hxU4APcF3GBxsoxZwkETDzhLlEHpChgdLbg3f2gSPHgP4JDDYAH6Aex8cxAqpeBfJUNZwb6fc4ReOLdthgMELHPd_KR047v9e-uhH5nbcHwpwNoEnqNA7JNiMHkODwSET9MGOo6zPDDOLIW4xQSSE9MdkGaGJPFt2YMmBdEiQxJLLNRuOJBAbsDDbENbwa4fQRsWdIMUBxQ-YYBo1Eapo2RVXcT3Ltz9ruJ-UqoVxYQezlw6O-4NvMqXcXD8wJDzuP4J0VmCO3CteqOJ_u3OltNYBzZGD0wnJh1FnFGz1gT1JZwqzRU4-UhZFHanxrW4c7GjKJ3OjjynMzc3j8t6sT2uNPxemsbWn1pQGbRKzUzHEGKr4p2Zv9biQJZnCBE-9vhnrLgfeyW625FbnLXlx2vdcmCSWxZQ0haBlBi9JEVYh1n0y5de6A8dkyq--0PaY9P_T6_-QuZB4vCaz2z0Xpu4wV30yLx7DCpnR151CrJAmeZFV7lteoX8uTOfp1DRbYFN3dgLneVHatdDA0hoeVIZJVNEvM3pBUkUhp4vBfoyxByvvBgkPOmOfwPmmQUaV26KZhHUkp0JVO55A_GTrDhwOgJy0w6bu2ItAw7YVUH2Xahe1H-STvzvuD-f-3zSCnGs3npOoc8ciJ4FNfdLMg8r8jCBgI3fH_ce39g9qw1w3-zzbXEkX4FhvgVwr-boDUqDLuIvFq0soJ-vNkFcU6y77_cTj4tTvG0XAqCezeO8a1Am0TEwJ2LedFNkz-Wc2KWWDD5Exs1wblcHW42xK1RjWPer0bZ2vuInD5aa79bRcqL5f2dBG9tINSLenrNstso63nai9PaP9XM7n0naFmhXfmj5O_M-nuoeXiWGj2tEh_v6WcjXEe1v3IDGfxWhb3XnYYMBafKQ8rN3uXw)
 
 Picture: Board 1 of the challenge: Kiko stands in column 2, row 3 and faces right on the board. After one square there is a wall; the goal is above, in column 3, row 2. Caption: Board 1 of the challenge, goal at the top
 
@@ -144,5 +144,5 @@ You can now build a program with “if … then … else” that works on differ
 - Task: Program: if wall ahead? then turn right. There is no “else”. The way ahead of Kiko is clear. Is it true that Kiko then does nothing?
 - Answer format: choose “true” or “false”
 - Solution: The statement is true.
-- Explanation: The condition is false, and without “else” there is nothing to do. That is a one-sided selection.
+- Explanation: The condition is false, and without “else” there is nothing to do. That is an if statement without else (one-sided selection).
 - Link: [../?via=tutor#ohne-sonst](../?via=tutor#ohne-sonst)
