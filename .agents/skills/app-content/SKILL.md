@@ -90,6 +90,9 @@ Keine Recap-Seite und kein `ahead`: Jede Voraussetzung liegt im Strang und kommt
 
 ## Exercise patterns
 
+- Jede Übung ist allein verständlich: Sie erscheint auch in der Selbsteinschätzung und beim Tutor. Kein „oben“, kein
+  „drück Prüfen“; was sie braucht, steht in ihrem Text oder ihrem `material`.
+
 - **Wo endet Kiko?** · Programm lesen (sequenz, Schleifen, Verzweigung) · `single-choice` mit `material`: Spielfeld
   mit Markern A–D und Karten- oder Blockbild. Fest: Optionen A–D; jedes falsche Feld ist ein typischer Fehler
   (Drehen als Schritt, Reihenfolge vertauscht, links/rechts verwechselt, Startfeld mitgezählt) mit eigener `info`.
@@ -110,9 +113,8 @@ Keine Recap-Seite und kein `ahead`: Jede Voraussetzung liegt im Strang und kommt
 
 ## Figures
 
-- Spielfelder, Befehlskarten und Blockprogramme: statische SVGs in `src/images/kiko/`, erzeugt von
-  `node scripts/kiko-bilder.mjs` aus `scripts/kiko-bilder.json`. Nie von Hand ändern; `npm test` prüft mit
-  `--check`, dass sie zur Quelle passen.
+- Spielfelder, Befehlskarten und Blockprogramme: statische SVGs `src/images/kiko-*.svg`, erzeugt von
+  `node scripts/kiko-bilder.ts` aus `scripts/kiko-bilder.json`. Nie von Hand ändern; `test/kiko-bilder.test.ts` prüft, dass sie zur Quelle passen.
   - `felder.<name>`: `map` (wie in den Challenges: `#` Wand, `.` Weg, `S` Kiko, `Z` Ziel), `facing`
     (`north|east|south|west`), `marks` (`{ "A": [spalte, zeile] }`, gezählt wie die Randnummern ab 1). Ohne
     Wörter, eine Datei `<name>.svg` für beide Sprachen.
@@ -144,14 +146,15 @@ Keine Recap-Seite und kein `ahead`: Jede Voraussetzung liegt im Strang und kommt
 - `challenges/<id>.json` nach dem Schema challenge.v1 und `challenges/<id>.loesung.json` (Musterlösung als
   Programm-IR). `id` = Dateiname. `back.url`: `{ "de": "/informatik-algorithmen/<kapitel>/<seite>/", "en":
   "/informatik-algorithmen/en/<kapitel>/<seite>/" }`, `back.label` „Zurück zum Explainer“ / “Back to the explainer”.
-- Den Link holen: `node scripts/challenges.mjs --links`. Im deutschen Text `https://lernapps.net/coding/app/?c=…`,
+- Den Link holen: `node scripts/challenges.ts --links`. Im deutschen Text `https://lernapps.net/coding/app/?c=…`,
   im englischen `https://lernapps.net/coding/en/app/?c=…`. Nach jeder Änderung an einer Challenge die Links in der
   Seite ersetzen.
-- `npm test` (`node scripts/challenges.mjs`) prüft: Prüfskript v1 mit Musterlösung, Format und Version 1, jeder
+- Die Unit-Tests (`test/challenges.test.ts`, auch `node scripts/challenges.ts`) prüft: Prüfskript v1 mit Musterlösung, Format und Version 1, jeder
   Werkstatt-Link in `src/**/*.yaml` gehört zu einer Challenge und zur Sprache des Textes, jede Challenge ist auf
   ihrer `back.url`-Seite in beiden Sprachen verlinkt.
-- Zur Gegenprobe eine typische falsche Lösung mit `node scripts/challenge-check.v1.mjs <challenge> <falsch.json>`
-  prüfen: Sie muss durchfallen (Blocklimit, `benutzt-block:…` oder mehrere Testfälle).
+- Zu jeder Challenge mindestens eine typische falsche Lösung als `challenges/<id>.falsch-<n>.json` (links/rechts
+  verwechselt, Drehungen vergessen, eins zu weit, Schleife statt Sequenz …). Der Test verlangt, dass jede durchfällt;
+  sonst prüft die Challenge zu wenig (dann Blocklimit, `benutzt-block:…` oder weitere Testfälle ergänzen).
 - Fehlt in der Werkstatt etwas (Block, Welt, Aufgabentyp): dem Orchestrator melden, nicht selbst bauen.
 
 ## Adding a chapter or round
@@ -164,9 +167,9 @@ Keine Recap-Seite und kein `ahead`: Jede Voraussetzung liegt im Strang und kommt
    eintragen.
 3. Je Baustein eine Seite nach „Content structure“, mit Übungen nach „Exercise patterns“; dieselbe Kiko-Aufgabe in
    allen Ansichten (Blöcke, Struktogramm nach DIN 66261, PAP, Pseudocode) nebeneinander.
-4. Bilder in `scripts/kiko-bilder.json` eintragen, `node scripts/kiko-bilder.mjs`.
-5. Challenges in `challenges/`, Links mit `node scripts/challenges.mjs --links` holen.
-6. `npx vp check --fix`, `npm test`, `npx --no -- lernapps check`, Commit.
+4. Bilder in `scripts/kiko-bilder.json` eintragen, `node scripts/kiko-bilder.ts`.
+5. Challenges in `challenges/`, Links mit `node scripts/challenges.ts --links` holen.
+6. `npx vp check --fix`, `npx vp test`, `npx --no -- lernapps check`, Commit.
 
 ## Rules learned from mistakes
 

@@ -8,6 +8,7 @@
 // 3. Jeder Werkstatt-Link in src/**/*.yaml ist genau der Link, den das Prüfskript für eine Challenge ausgibt:
 //    im deutschen Text /coding/app/?c=…, im englischen /coding/en/app/?c=….
 // 4. Jede Challenge ist auf der Seite verlinkt, auf die ihr back.url zeigt, in beiden Sprachen.
+// 5. Jede falsche Lösung challenges/<id>.falsch-<n>.json fällt durch (mindestens eine je Challenge).
 //
 // Aufruf: node scripts/challenges.ts          prüft alles (auch test/challenges.test.ts)
 //         node scripts/challenges.ts --links  gibt die Links je Challenge aus (zum Einfügen in eine Seite)
@@ -40,7 +41,8 @@ export function challenges(): { list: Challenge[]; problems: string[] } {
     fail("scripts/challenge-check.v1.mjs", "Die Kennung „// source:“ der Werkstatt fehlt: Ist es eine Kopie von v1?");
 
   const list: Challenge[] = [];
-  const names = readdirSync(DIR).filter((n) => n.endsWith(".json") && !n.endsWith(".loesung.json"));
+  const all = readdirSync(DIR);
+  const names = all.filter((n) => /^[a-z0-9-]+\.json$/.test(n));
   for (const name of names.sort()) {
     const id = name.slice(0, -".json".length);
     const where = `challenges/${name}`;
@@ -83,6 +85,18 @@ export function challenges(): { list: Challenge[]; problems: string[] } {
     if (de === undefined || en === undefined) {
       fail(where, "Das Prüfskript hat keine Links ausgegeben.");
       continue;
+    }
+    // Falsche Lösungen (challenges/<id>.falsch-<n>.json): Jede muss das Prüfskript ablehnen. Mindestens eine.
+    const wrong = all.filter((n) => n.startsWith(`${id}.falsch-`) && n.endsWith(".json")).sort();
+    if (wrong.length === 0)
+      fail(where, `Es fehlt eine falsche Lösung challenges/${id}.falsch-1.json, die durchfallen muss.`);
+    for (const w of wrong) {
+      try {
+        execFileSync(process.execPath, [CHECK, join(DIR, name), join(DIR, w)], { stdio: ["ignore", "pipe", "pipe"] });
+        fail(`challenges/${w}`, "Diese falsche Lösung besteht das Prüfskript: Die Challenge prüft zu wenig.");
+      } catch {
+        // abgelehnt, wie es sein soll
+      }
     }
     list.push({ id, de, en, back: { de: back.de, en: back.en } });
   }
