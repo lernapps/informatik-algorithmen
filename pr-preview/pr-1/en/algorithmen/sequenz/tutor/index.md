@@ -57,13 +57,13 @@ Here you learn to bring Kiko to the goal with three commands, first with cards, 
 
 ### Three commands in a fixed order
 
-Kiko stands on a square and faces one way. It knows three commands: **move forward** (one square on) and **turn left** and **turn right** (a quarter turn on the spot). A command is an instruction that Kiko carries out without asking.
+Kiko stands on a square and faces one way. It knows three commands: **move forward** (one square forward) and **turn left** and **turn right** (a quarter turn on the spot). A command is a simple instruction that Kiko knows and can carry out directly.
 
 - **sequence**: A sequence is a series of instructions that are carried out one after another, each exactly once, in the order in which they are written.
 
 **Remember: Remember**
 
-Turning only changes the direction Kiko faces; it stays on its square. Left and right are from Kiko's point of view. And the order matters: turning first, then moving leads somewhere else than moving first, then turning.
+Turning only changes the direction Kiko faces; it stays on its square. Left and right are from Kiko's point of view. And the order matters: turning first, then moving leads somewhere different from moving first, then turning.
 
 ### Try it yourself
 
@@ -95,15 +95,15 @@ In this chapter you found algorithms in everyday life, checked their properties 
 
 ### Exercise wo-steht-kiko
 
-- Task: Kiko faces right; the yellow triangle shows which way it is facing. Jona lays the three cards. Which square is Kiko on afterwards?
+- Task: Kiko faces right on the board; the yellow triangle shows which way it is facing. Jona lays the three cards. Which square is Kiko on afterwards?
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
-  - ✗ Square A – You counted the turn as a step. When Kiko turns, it stays on its square.
+  - ✗ Square A – You counted “turn left” as “turn and move one square”. When Kiko turns, it stays on its square.
   - ✓ Square B – Right: one square to the right, then turn to face up, then one square up.
   - ✗ Square C – That would happen if Kiko turned first. But the first card is “move forward”.
-  - ✗ Square D – You mixed up left and right. Kiko faces right. If it turns left, it faces up.
+  - ✗ Square D – You mixed up left and right. Kiko faces right on the board. If it turns left, it faces up the board.
 - Solution: Square B
-- Explanation: Forward to column 3, row 4. Turn left: Kiko faces up. Forward to column 3, row 3.
+- Explanation: Forward to column 3, row 4. Turn left: Kiko faces up the board. Forward to column 3, row 3.
 - Link: [../?via=tutor#wo-steht-kiko](../?via=tutor#wo-steht-kiko)
 
 ### Exercise karten-zaehlen
@@ -119,7 +119,7 @@ In this chapter you found algorithms in everyday life, checked their properties 
 
 ### Exercise welche-folge
 
-- Task: Kiko faces up. Which sequence takes it to the goal?
+- Task: Kiko faces up the board. Which sequence takes it to the goal?
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ forward, forward, right, forward, forward, forward – Right: 2 squares up, turn right at the bend, 3 squares to the goal.
@@ -186,5 +186,5 @@ No. | a | b | Solution | F1 | F2
 - Task: Selin says: “The card ‘turn left’ takes Kiko one square to the left.” Is that true?
 - Answer format: choose “true” or “false”
 - Solution: The statement is false.
-- Explanation: Turning does not move Kiko off its square. Only “move forward” takes it to the square on its left.
+- Explanation: Turning does not move Kiko off its square. Only after that does “move forward” take it to the square that was on its left before.
 - Link: [../?via=tutor#drehen-ist-schritt](../?via=tutor#drehen-ist-schritt)

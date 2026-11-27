@@ -57,7 +57,7 @@ Hier lernst du, Kiko mit drei Befehlen ans Ziel zu bringen, erst mit Karten, dan
 
 ### Drei Befehle in fester Reihenfolge
 
-Kiko steht auf einem Feld und schaut in eine Richtung. Er kennt drei Befehle: **gehe vorwärts** (ein Feld weiter) sowie **drehe dich nach links** und **drehe dich nach rechts** (eine Vierteldrehung auf der Stelle). Ein Befehl ist eine Anweisung, die Kiko ohne Nachfragen ausführt.
+Kiko steht auf einem Feld und schaut in eine Richtung. Er kennt drei Befehle: **gehe vorwärts** (ein Feld weiter) sowie **drehe dich nach links** und **drehe dich nach rechts** (eine Vierteldrehung auf der Stelle). Ein Befehl ist eine einfache Anweisung, die Kiko kennt und direkt ausführen kann.
 
 - **Sequenz**: Eine Sequenz ist eine Folge von Anweisungen, die nacheinander ausgeführt werden, jede genau einmal, in der Reihenfolge, in der sie aufgeschrieben sind.
 
@@ -95,15 +95,15 @@ In diesem Kapitel hast du Algorithmen im Alltag gefunden, ihre Eigenschaften gep
 
 ### Aufgabe wo-steht-kiko
 
-- Aufgabe: Kiko schaut nach rechts, das gelbe Dreieck zeigt die Blickrichtung. Jona legt die drei Karten. Auf welchem Feld steht Kiko danach?
+- Aufgabe: Kiko schaut im Bild nach rechts, das gelbe Dreieck zeigt seine Blickrichtung. Jona legt die drei Karten. Auf welchem Feld steht Kiko danach?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✗ Feld A – Du hast das Drehen als Schritt gezählt. Beim Drehen bleibt Kiko auf seinem Feld.
+  - ✗ Feld A – Du hast „drehe dich nach links“ wie „drehe dich und geh ein Feld“ gezählt. Beim Drehen bleibt Kiko auf seinem Feld.
   - ✓ Feld B – Richtig: ein Feld nach rechts, dann nach oben drehen, dann ein Feld nach oben.
   - ✗ Feld C – So wäre es, wenn Kiko sich zuerst dreht. Die erste Karte ist aber „gehe vorwärts“.
-  - ✗ Feld D – Du hast links und rechts verwechselt. Kiko schaut nach rechts. Dreht er sich nach links, schaut er nach oben.
+  - ✗ Feld D – Du hast links und rechts verwechselt. Kiko schaut im Bild nach rechts. Dreht er sich nach links, schaut er im Bild nach oben.
 - Lösung: Feld B
-- Erklärung: Vorwärts auf Spalte 3, Zeile 4. Links drehen: Kiko schaut nach oben. Vorwärts auf Spalte 3, Zeile 3.
+- Erklärung: Vorwärts auf Spalte 3, Zeile 4. Links drehen: Kiko schaut im Bild nach oben. Vorwärts auf Spalte 3, Zeile 3.
 - Link: [../?via=tutor#wo-steht-kiko](../?via=tutor#wo-steht-kiko)
 
 ### Aufgabe karten-zaehlen
@@ -119,7 +119,7 @@ In diesem Kapitel hast du Algorithmen im Alltag gefunden, ihre Eigenschaften gep
 
 ### Aufgabe welche-folge
 
-- Aufgabe: Kiko schaut nach oben. Welche Folge bringt ihn ins Ziel?
+- Aufgabe: Kiko schaut im Bild nach oben. Welche Folge bringt ihn ins Ziel?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ vorwärts, vorwärts, rechts, vorwärts, vorwärts, vorwärts – Richtig: 2 Felder hoch, an der Kurve nach rechts drehen, 3 Felder bis zum Ziel.
@@ -186,5 +186,5 @@ Nr. | a | b | Lösung | F1 | F2
 - Aufgabe: Selin sagt: „Die Karte ‚drehe dich nach links‘ bringt Kiko ein Feld nach links.“ Stimmt das?
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
-- Erklärung: Drehen bewegt Kiko nicht vom Feld. Erst „gehe vorwärts“ bringt ihn auf das Feld links von ihm.
+- Erklärung: Drehen bewegt Kiko nicht vom Feld. Erst danach bringt „gehe vorwärts“ ihn auf das Feld, das vorher links von ihm lag.
 - Link: [../?via=tutor#drehen-ist-schritt](../?via=tutor#drehen-ist-schritt)
